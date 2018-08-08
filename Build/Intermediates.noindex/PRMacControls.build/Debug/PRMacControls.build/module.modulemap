@@ -1,0 +1,11 @@
+framework module PRMacControls {
+  umbrella header "PRMacControls.h"
+
+  export *
+  module * { export * }
+}
+
+module PRMacControls.Swift {
+    header "PRMacControls-Swift.h"
+    requires objc
+}

@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/PRMacControls.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PRMacControls-Swift.h",
+          'external-contents': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/PRMacControls.framework/Versions/A/Headers/PRMacControls-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PRMacControls.h",
+          'external-contents': "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/PRMacControls.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/PRMacControls.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

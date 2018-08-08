@@ -1,0 +1,374 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ceditWindow"
+provides-nominal:
+- "13PRMacControls11ceditWindowC"
+provides-member:
+- ["13PRMacControls11ceditWindowC", ""]
+provides-dynamic-lookup:
+- "Ajouter"
+- "Annuler"
+- "afterSend"
+- "chargements"
+- "enregistrer"
+depends-top-level:
+- "Bool"
+- "NSCoder"
+- "NSNotification"
+- "NSWindow"
+- "String"
+- "Void"
+- "cbaseController"
+- "ceditWindow"
+- "cmyControl"
+- "cmyTable"
+- "webServiceProtocolDelegate"
+depends-member:
+- !private ["s7CVarArgP", "Ajouter"]
+- !private ["s7CVarArgP", "Annuler"]
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "afterSend"]
+- !private ["s7CVarArgP", "chargements"]
+- !private ["s7CVarArgP", "closeWindow"]
+- !private ["s7CVarArgP", "enregistrer"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "selected"]
+- !private ["s28CustomDebugStringConvertibleP", "Ajouter"]
+- !private ["s28CustomDebugStringConvertibleP", "Annuler"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "afterSend"]
+- !private ["s28CustomDebugStringConvertibleP", "chargements"]
+- !private ["s28CustomDebugStringConvertibleP", "closeWindow"]
+- !private ["s28CustomDebugStringConvertibleP", "enregistrer"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "selected"]
+- !private ["s23CustomStringConvertibleP", "Ajouter"]
+- !private ["s23CustomStringConvertibleP", "Annuler"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "afterSend"]
+- !private ["s23CustomStringConvertibleP", "chargements"]
+- !private ["s23CustomStringConvertibleP", "closeWindow"]
+- !private ["s23CustomStringConvertibleP", "enregistrer"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "selected"]
+- !private ["s9EquatableP", "Ajouter"]
+- !private ["s9EquatableP", "Annuler"]
+- ["s9EquatableP", ""]
+- ["s9EquatableP", "afterSend"]
+- !private ["s9EquatableP", "chargements"]
+- !private ["s9EquatableP", "closeWindow"]
+- !private ["s9EquatableP", "enregistrer"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "selected"]
+- !private ["s8HashableP", "Ajouter"]
+- !private ["s8HashableP", "Annuler"]
+- ["s8HashableP", ""]
+- ["s8HashableP", "afterSend"]
+- !private ["s8HashableP", "chargements"]
+- !private ["s8HashableP", "closeWindow"]
+- !private ["s8HashableP", "enregistrer"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "selected"]
+- !private ["So8NSCodingP", "Ajouter"]
+- !private ["So8NSCodingP", "Annuler"]
+- ["So8NSCodingP", ""]
+- ["So8NSCodingP", "afterSend"]
+- !private ["So8NSCodingP", "chargements"]
+- !private ["So8NSCodingP", "closeWindow"]
+- !private ["So8NSCodingP", "enregistrer"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "selected"]
+- !private ["So20NSComboBoxDataSourceP", "Ajouter"]
+- !private ["So20NSComboBoxDataSourceP", "Annuler"]
+- ["So20NSComboBoxDataSourceP", ""]
+- ["So20NSComboBoxDataSourceP", "afterSend"]
+- !private ["So20NSComboBoxDataSourceP", "chargements"]
+- !private ["So20NSComboBoxDataSourceP", "closeWindow"]
+- !private ["So20NSComboBoxDataSourceP", "enregistrer"]
+- !private ["So20NSComboBoxDataSourceP", "init"]
+- !private ["So20NSComboBoxDataSourceP", "selected"]
+- !private ["So18NSComboBoxDelegateP", "Ajouter"]
+- !private ["So18NSComboBoxDelegateP", "Annuler"]
+- ["So18NSComboBoxDelegateP", ""]
+- ["So18NSComboBoxDelegateP", "afterSend"]
+- !private ["So18NSComboBoxDelegateP", "chargements"]
+- !private ["So18NSComboBoxDelegateP", "closeWindow"]
+- !private ["So18NSComboBoxDelegateP", "enregistrer"]
+- !private ["So18NSComboBoxDelegateP", "init"]
+- !private ["So18NSComboBoxDelegateP", "selected"]
+- !private ["So28NSControlTextEditingDelegateP", "Ajouter"]
+- !private ["So28NSControlTextEditingDelegateP", "Annuler"]
+- ["So28NSControlTextEditingDelegateP", ""]
+- ["So28NSControlTextEditingDelegateP", "afterSend"]
+- !private ["So28NSControlTextEditingDelegateP", "chargements"]
+- !private ["So28NSControlTextEditingDelegateP", "closeWindow"]
+- !private ["So28NSControlTextEditingDelegateP", "enregistrer"]
+- !private ["So28NSControlTextEditingDelegateP", "init"]
+- !private ["So28NSControlTextEditingDelegateP", "selected"]
+- ["So8NSObjectC", "Ajouter"]
+- ["So8NSObjectC", "Annuler"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "NSNotification"]
+- ["So8NSObjectC", "NSWindow"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", "afterInput"]
+- ["So8NSObjectC", "afterSend"]
+- ["So8NSObjectC", "chargements"]
+- ["So8NSObjectC", "closeWindow"]
+- ["So8NSObjectC", "cmyControl"]
+- ["So8NSObjectC", "cmyTable"]
+- ["So8NSObjectC", "enregistrer"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "selected"]
+- ["So8NSObjectC", "transformDonnees"]
+- !private ["So16NSObjectProtocolP", "Ajouter"]
+- !private ["So16NSObjectProtocolP", "Annuler"]
+- ["So16NSObjectProtocolP", ""]
+- ["So16NSObjectProtocolP", "afterSend"]
+- !private ["So16NSObjectProtocolP", "chargements"]
+- !private ["So16NSObjectProtocolP", "closeWindow"]
+- !private ["So16NSObjectProtocolP", "enregistrer"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "selected"]
+- !private ["So17NSPopoverDelegateP", "Ajouter"]
+- !private ["So17NSPopoverDelegateP", "Annuler"]
+- ["So17NSPopoverDelegateP", ""]
+- ["So17NSPopoverDelegateP", "afterSend"]
+- !private ["So17NSPopoverDelegateP", "chargements"]
+- !private ["So17NSPopoverDelegateP", "closeWindow"]
+- !private ["So17NSPopoverDelegateP", "enregistrer"]
+- !private ["So17NSPopoverDelegateP", "init"]
+- !private ["So17NSPopoverDelegateP", "selected"]
+- ["So11NSResponderC", "Ajouter"]
+- ["So11NSResponderC", "Annuler"]
+- ["So11NSResponderC", "Bool"]
+- ["So11NSResponderC", "NSCoder"]
+- ["So11NSResponderC", "NSNotification"]
+- ["So11NSResponderC", "NSWindow"]
+- ["So11NSResponderC", "String"]
+- ["So11NSResponderC", "Void"]
+- ["So11NSResponderC", "afterInput"]
+- ["So11NSResponderC", "afterSend"]
+- ["So11NSResponderC", "chargements"]
+- ["So11NSResponderC", "closeWindow"]
+- ["So11NSResponderC", "cmyControl"]
+- ["So11NSResponderC", "cmyTable"]
+- ["So11NSResponderC", "enregistrer"]
+- ["So11NSResponderC", "init"]
+- ["So11NSResponderC", "selected"]
+- ["So11NSResponderC", "transformDonnees"]
+- !private ["So17NSSeguePerformingP", "Ajouter"]
+- !private ["So17NSSeguePerformingP", "Annuler"]
+- ["So17NSSeguePerformingP", ""]
+- ["So17NSSeguePerformingP", "afterSend"]
+- !private ["So17NSSeguePerformingP", "chargements"]
+- !private ["So17NSSeguePerformingP", "closeWindow"]
+- !private ["So17NSSeguePerformingP", "enregistrer"]
+- !private ["So17NSSeguePerformingP", "init"]
+- !private ["So17NSSeguePerformingP", "selected"]
+- !private ["So17NSTabViewDelegateP", "Ajouter"]
+- !private ["So17NSTabViewDelegateP", "Annuler"]
+- ["So17NSTabViewDelegateP", ""]
+- ["So17NSTabViewDelegateP", "afterSend"]
+- !private ["So17NSTabViewDelegateP", "chargements"]
+- !private ["So17NSTabViewDelegateP", "closeWindow"]
+- !private ["So17NSTabViewDelegateP", "enregistrer"]
+- !private ["So17NSTabViewDelegateP", "init"]
+- !private ["So17NSTabViewDelegateP", "selected"]
+- !private ["So21NSTableViewDataSourceP", "Ajouter"]
+- !private ["So21NSTableViewDataSourceP", "Annuler"]
+- ["So21NSTableViewDataSourceP", ""]
+- ["So21NSTableViewDataSourceP", "afterSend"]
+- !private ["So21NSTableViewDataSourceP", "chargements"]
+- !private ["So21NSTableViewDataSourceP", "closeWindow"]
+- !private ["So21NSTableViewDataSourceP", "enregistrer"]
+- !private ["So21NSTableViewDataSourceP", "init"]
+- !private ["So21NSTableViewDataSourceP", "selected"]
+- !private ["So19NSTableViewDelegateP", "Ajouter"]
+- !private ["So19NSTableViewDelegateP", "Annuler"]
+- ["So19NSTableViewDelegateP", ""]
+- ["So19NSTableViewDelegateP", "afterSend"]
+- !private ["So19NSTableViewDelegateP", "chargements"]
+- !private ["So19NSTableViewDelegateP", "closeWindow"]
+- !private ["So19NSTableViewDelegateP", "enregistrer"]
+- !private ["So19NSTableViewDelegateP", "init"]
+- !private ["So19NSTableViewDelegateP", "selected"]
+- !private ["So19NSTextFieldDelegateP", "Ajouter"]
+- !private ["So19NSTextFieldDelegateP", "Annuler"]
+- ["So19NSTextFieldDelegateP", ""]
+- ["So19NSTextFieldDelegateP", "afterSend"]
+- !private ["So19NSTextFieldDelegateP", "chargements"]
+- !private ["So19NSTextFieldDelegateP", "closeWindow"]
+- !private ["So19NSTextFieldDelegateP", "enregistrer"]
+- !private ["So19NSTextFieldDelegateP", "init"]
+- !private ["So19NSTextFieldDelegateP", "selected"]
+- !private ["So18NSTouchBarProviderP", "Ajouter"]
+- !private ["So18NSTouchBarProviderP", "Annuler"]
+- ["So18NSTouchBarProviderP", ""]
+- ["So18NSTouchBarProviderP", "afterSend"]
+- !private ["So18NSTouchBarProviderP", "chargements"]
+- !private ["So18NSTouchBarProviderP", "closeWindow"]
+- !private ["So18NSTouchBarProviderP", "enregistrer"]
+- !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "selected"]
+- ["So18NSWindowControllerC", "Ajouter"]
+- ["So18NSWindowControllerC", "Annuler"]
+- ["So18NSWindowControllerC", "Bool"]
+- ["So18NSWindowControllerC", "NSCoder"]
+- ["So18NSWindowControllerC", "NSNotification"]
+- ["So18NSWindowControllerC", "NSWindow"]
+- ["So18NSWindowControllerC", "String"]
+- ["So18NSWindowControllerC", "Void"]
+- ["So18NSWindowControllerC", "afterInput"]
+- ["So18NSWindowControllerC", "afterSend"]
+- ["So18NSWindowControllerC", "chargements"]
+- ["So18NSWindowControllerC", "closeWindow"]
+- ["So18NSWindowControllerC", "cmyControl"]
+- ["So18NSWindowControllerC", "cmyTable"]
+- ["So18NSWindowControllerC", "enregistrer"]
+- ["So18NSWindowControllerC", "init"]
+- ["So18NSWindowControllerC", "selected"]
+- ["So18NSWindowControllerC", "transformDonnees"]
+- !private ["So16NSWindowDelegateP", "Ajouter"]
+- !private ["So16NSWindowDelegateP", "Annuler"]
+- ["So16NSWindowDelegateP", ""]
+- ["So16NSWindowDelegateP", "afterSend"]
+- !private ["So16NSWindowDelegateP", "chargements"]
+- !private ["So16NSWindowDelegateP", "closeWindow"]
+- !private ["So16NSWindowDelegateP", "enregistrer"]
+- !private ["So16NSWindowDelegateP", "init"]
+- !private ["So16NSWindowDelegateP", "selected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Ajouter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Annuler"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "afterSend"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "chargements"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "closeWindow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enregistrer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selected"]
+- ["13PRMacControls15cbaseControllerC", "Ajouter"]
+- ["13PRMacControls15cbaseControllerC", "Annuler"]
+- ["13PRMacControls15cbaseControllerC", "Bool"]
+- ["13PRMacControls15cbaseControllerC", "NSCoder"]
+- ["13PRMacControls15cbaseControllerC", "NSNotification"]
+- ["13PRMacControls15cbaseControllerC", "NSWindow"]
+- ["13PRMacControls15cbaseControllerC", "String"]
+- ["13PRMacControls15cbaseControllerC", "Void"]
+- ["13PRMacControls15cbaseControllerC", ""]
+- ["13PRMacControls15cbaseControllerC", "afterInput"]
+- ["13PRMacControls15cbaseControllerC", "afterSend"]
+- ["13PRMacControls15cbaseControllerC", "chargements"]
+- ["13PRMacControls15cbaseControllerC", "closeWindow"]
+- ["13PRMacControls15cbaseControllerC", "cmyControl"]
+- ["13PRMacControls15cbaseControllerC", "cmyTable"]
+- !private ["13PRMacControls15cbaseControllerC", "deinit"]
+- ["13PRMacControls15cbaseControllerC", "enregistrer"]
+- ["13PRMacControls15cbaseControllerC", "init"]
+- ["13PRMacControls15cbaseControllerC", "selected"]
+- ["13PRMacControls15cbaseControllerC", "transformDonnees"]
+- ["13PRMacControls11ceditWindowC", "Ajouter"]
+- ["13PRMacControls11ceditWindowC", "Annuler"]
+- ["13PRMacControls11ceditWindowC", "Bool"]
+- ["13PRMacControls11ceditWindowC", "NSCoder"]
+- ["13PRMacControls11ceditWindowC", "NSNotification"]
+- ["13PRMacControls11ceditWindowC", "NSWindow"]
+- ["13PRMacControls11ceditWindowC", "String"]
+- ["13PRMacControls11ceditWindowC", "Void"]
+- ["13PRMacControls11ceditWindowC", "afterInput"]
+- ["13PRMacControls11ceditWindowC", "afterSend"]
+- ["13PRMacControls11ceditWindowC", "chargements"]
+- ["13PRMacControls11ceditWindowC", "closeWindow"]
+- ["13PRMacControls11ceditWindowC", "cmyControl"]
+- ["13PRMacControls11ceditWindowC", "cmyTable"]
+- ["13PRMacControls11ceditWindowC", "deinit"]
+- ["13PRMacControls11ceditWindowC", "enregistrer"]
+- ["13PRMacControls11ceditWindowC", "init"]
+- ["13PRMacControls11ceditWindowC", "selected"]
+- ["13PRMacControls11ceditWindowC", "transformDonnees"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "Ajouter"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "Annuler"]
+- ["13PRMacControls31myBaseServiceProtocolOperationsP", ""]
+- ["13PRMacControls31myBaseServiceProtocolOperationsP", "afterSend"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "chargements"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "closeWindow"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "enregistrer"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "init"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "selected"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "Ajouter"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "Annuler"]
+- ["13PRMacControls20myBaseServiceTabviewP", ""]
+- ["13PRMacControls20myBaseServiceTabviewP", "afterSend"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "chargements"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "closeWindow"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "enregistrer"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "init"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "selected"]
+- ["13PRMacControls26webServiceProtocolDelegateP", ""]
+- ["13PRMacControls26webServiceProtocolDelegateP", "afterSend"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So20NSComboBoxDataSourceP"
+- "So18NSComboBoxDelegateP"
+- "So28NSControlTextEditingDelegateP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So17NSPopoverDelegateP"
+- "So11NSResponderC"
+- "So17NSSeguePerformingP"
+- "So17NSTabViewDelegateP"
+- "So21NSTableViewDataSourceP"
+- "So19NSTableViewDelegateP"
+- "So19NSTextFieldDelegateP"
+- "So18NSTouchBarProviderP"
+- "So18NSWindowControllerC"
+- "So16NSWindowDelegateP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "13PRMacControls15cbaseControllerC"
+- "13PRMacControls11ceditWindowC"
+- "13PRMacControls31myBaseServiceProtocolOperationsP"
+- "13PRMacControls20myBaseServiceTabviewP"
+- "13PRMacControls26webServiceProtocolDelegateP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/PRMacControls.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "1cad4fffefdca595ac45719636195865"
