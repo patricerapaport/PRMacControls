@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 // GESTION de la toolbar
 //
 // si la valeur boutonsAttaches de la table est ) true, c'est la table qui gère la toolbar (s'il n'y a pas d'onglet ou que le bon onglet est actif). Sinon la toolbar est gérée par cbaseController

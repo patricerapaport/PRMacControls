@@ -6,8 +6,6 @@
 //  Copyright © 2018 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 class documentReference {
     var nomsociete: String!
     var repertoire: String!

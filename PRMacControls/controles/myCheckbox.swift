@@ -6,7 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
 
 @IBDesignable open class cmyCheckbox: NSButton {
     open var parent: cmyControl!

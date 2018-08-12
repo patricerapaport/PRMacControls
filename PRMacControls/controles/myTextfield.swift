@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 @IBDesignable open class cmyTextfield: NSTextField, NSTextFieldDelegate {
     public var parent: cmyControl!
     @IBInspectable public var obligatoire: Bool = false

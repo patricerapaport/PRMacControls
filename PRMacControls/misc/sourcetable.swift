@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 open class crowsTable {
     //var controller: NSResponder!
     var table: cmyTable!

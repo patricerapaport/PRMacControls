@@ -55,7 +55,7 @@ open class cdownloadManager {
                 data.append("\(value)".data(using: String.Encoding.utf8)!, withName: key as String)
             }
             data.append(URL(fileURLWithPath: filename) as URL, withName: "upload")
-        }, to: server) { [weak self] (encodingResult) in            switch encodingResult {
+        }, to: server) {  (encodingResult) in            switch encodingResult {
             case .success(let upload, _, _):
                 upload.responseJSON { response in
                     var resDict: [String:String] = [:]

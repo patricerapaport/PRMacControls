@@ -6,7 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import AppKit
 import Foundation
 
 var globalBookmarks = [URL: Data]()

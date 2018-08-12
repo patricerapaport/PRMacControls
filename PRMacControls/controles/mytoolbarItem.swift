@@ -13,8 +13,6 @@
 // Lorsque la fonction didSelect du protocol NSTabViewDelegate est appelée, la toolbar est mise à jour
 // Le controller peut contenir une méthode pour valider ou invalider le bouton. (voir paramàtres d'initialisation)
 
-import Cocoa
-
 class toolbarConfig {
     var nomConfig: String!
     var table: cmyTable!

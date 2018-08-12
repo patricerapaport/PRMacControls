@@ -6,8 +6,6 @@
 //  Copyright © 2018 Patrice Rapaport. All rights reserved.
 //
 
-import AppKit
-
 open class cmyTextfieldTelephone: cmyTextfield {
     
     override open var stringValue: String {

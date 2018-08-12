@@ -6,6 +6,8 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
         
+import Cocoa
+        
 public var activesWindow: [NSWindowController] = []
 public var user: cUtilisateur!
 public var myApp : NSApplication! // myApp doit -être renseignée dans applicationDidFinishLaunching de appDelegate du projet

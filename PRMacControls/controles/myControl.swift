@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import AppKit
-
 class myNewOption {
     var cle: String
     var valeur: String

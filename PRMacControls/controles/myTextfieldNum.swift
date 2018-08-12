@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import AppKit
-
 //MARK: opérations dans zone de saisie
 struct extractionNumerique {
     var start: Int!

@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import AppKit
-
 open class cmyTextFieldDecimal : cmyTextFieldNum {
     @IBInspectable var decimales: Int = 2
     @IBInspectable var bz: Bool = false

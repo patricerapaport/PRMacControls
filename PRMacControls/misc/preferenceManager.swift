@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 private let webServerType = "webServerType"
 private let webAdresseLocal = "webAdresseLocal"
 private let webRepertoireLocal = "webRepertoireLocal"

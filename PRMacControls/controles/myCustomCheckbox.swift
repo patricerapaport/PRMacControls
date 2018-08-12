@@ -5,8 +5,6 @@ Abstract:
 An example demonstrating adding accessibility to an NSView subclass that behaves like a checkbox by implementing the NSAccessibilityCheckBox protocol.
 */
 
-import Cocoa
-
 /*
  IMPORTANT: This is not a template for developing a custom control.
  This sample is intended to demonstrate how to add accessibility to

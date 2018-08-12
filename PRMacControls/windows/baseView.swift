@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 open class cbaseView: NSViewController, myBaseServiceTabview {
     var ctrls: clisteControles!
     var donnees: [String: String] = [:]

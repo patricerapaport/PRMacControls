@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A67394C92111766600339E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67394C82111766600339E80 /* Assets.xcassets */; };
-		A6C998B4211568720030A669 /* ivrit1.xcworkspace in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6C998B3211568720030A669 /* ivrit1.xcworkspace */; };
 		A6E81A2D210D80D400B9139E /* PRMacControls.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E81A2B210D80D400B9139E /* PRMacControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6E81A46210D811500B9139E /* myControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A34210D811500B9139E /* myControl.swift */; };
 		A6E81A47210D811500B9139E /* myTextfieldDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A35210D811500B9139E /* myTextfieldDate.swift */; };
@@ -59,7 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				A6C998B4211568720030A669 /* ivrit1.xcworkspace in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +67,7 @@
 		59F4FD50EB06BF834B6062E4 /* Pods-PRMacControls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRMacControls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRMacControls/Pods-PRMacControls.debug.xcconfig"; sourceTree = "<group>"; };
 		7AADA83157A37A29708041CA /* Pods-PRMacControls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRMacControls.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRMacControls/Pods-PRMacControls.release.xcconfig"; sourceTree = "<group>"; };
 		A67394C82111766600339E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A6C998B3211568720030A669 /* ivrit1.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = ivrit1.xcworkspace; path = ../ivrit1/ivrit1.xcworkspace; sourceTree = "<group>"; };
+		A6DB8B07212012CC00A0EAF3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A6E426652115665000FC00D9 /* Pods_PRMacControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PRMacControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E81A28210D80D400B9139E /* PRMacControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRMacControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E81A2B210D80D400B9139E /* PRMacControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRMacControls.h; sourceTree = "<group>"; };
@@ -139,6 +137,7 @@
 		9FFDC6C6FBC1B50E4756D225 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6DB8B07212012CC00A0EAF3 /* Cocoa.framework */,
 				A6E426652115665000FC00D9 /* Pods_PRMacControls.framework */,
 			);
 			name = Frameworks;
@@ -147,7 +146,6 @@
 		A6E81A1E210D80D400B9139E = {
 			isa = PBXGroup;
 			children = (
-				A6C998B3211568720030A669 /* ivrit1.xcworkspace */,
 				A6E81A2A210D80D400B9139E /* PRMacControls */,
 				A6E81A29210D80D400B9139E /* Products */,
 				76EB8A384146108F6A540790 /* Pods */,

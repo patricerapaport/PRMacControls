@@ -6,9 +6,6 @@
 //  Copyright © 2018 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
-
 open class cmyView: NSView {
     var clickingZones: [NSTableCellView]!
     

@@ -7,8 +7,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 open class cmyWindow: NSWindow {
     public var controller: cbaseController!
     
@@ -87,27 +85,6 @@ open class cmyWindow: NSWindow {
         case .mouseExited, .mouseMoved, .leftMouseDragged,  .leftMouseUp, .scrollWheel,  .cursorUpdate: break
         case .leftMouseDown:
             break
-            Swift.print("\n\n")
-            Swift.print("\(event.description)")
-            Swift.print("mouseLocationOutsideOfEventStream: \(mouseLocationOutsideOfEventStream)")
-            //Swift.print("mouseLocation: \(event.mouseLocation)")
-            let tableCourante = controller.tableCourante
-            if tableCourante != nil  && (tableCourante!.tabviewItem == nil || tableCourante?.tabviewItem == tableCourante?.tabviewItem.tabView?.selectedTabViewItem) {
-                let point = tableCourante?.ctrl.convert(mouseLocationOutsideOfEventStream, to: tableCourante?.ctrl)
-                let frame = tableCourante?.ctrl.frame
-                if frame?.contains(point!) == true {
-                    let tbl = controller.tableCourante.ctrl as! cmyTable
-                    let column = tbl.column(at: mouseLocationOutsideOfEventStream)
-                    let row = tbl.row(at: mouseLocationOutsideOfEventStream)
-                    if column != -1 && tableCourante?.ctrl is cmyTable {
-                        let columnCtrl = (tableCourante?.ctrl as! cmyTable).getCellControl (ixColumn: column, ixRow: row)
-                        if columnCtrl is cmyControlDoc {
-                            (columnCtrl as! cmyControlDoc).mouseDown(with: event)
-                        }
-                    }
-                    Swift.print("column cliquée: \(column.description)")
-                }
-            }
         case .mouseEntered:
             break
         case .keyDown:
@@ -130,13 +107,11 @@ open class cmyWindow: NSWindow {
 Swift.print("my window va appeler keyUp")
                 if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains(event.keyCode) {
                     (currentFocus?.ctrl as! cmyTextfield).keyUp(with: event)
-return
                     let newEvent = NSEvent.keyEvent(with: event.type, location: event.locationInWindow, modifierFlags: event.modifierFlags, timestamp: event.timestamp, windowNumber: event.windowNumber, context: nil, characters: "", charactersIgnoringModifiers: event.charactersIgnoringModifiers!, isARepeat: event.isARepeat, keyCode: 0)
                     super.sendEvent(newEvent!)
                     return
                 }
             }
-break
             
             if (event.modifierFlags.contains(.command) || event.modifierFlags.contains(.control) ) && controller.state == .nonedition {
                 controller.closeWindow()

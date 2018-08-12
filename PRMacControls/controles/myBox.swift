@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 open class cmyBox: NSBox {
     var ctrls: [cmyControl]=[]
     

@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 @IBDesignable open class cmyCombo: NSComboBox {
     public var parent: cmyControl!
     var valeurInitiale: String!

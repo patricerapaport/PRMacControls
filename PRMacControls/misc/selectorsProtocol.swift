@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import Cocoa
-
 enum nomSelectors : Int {
     case modification = 0
     case ajout       = 1

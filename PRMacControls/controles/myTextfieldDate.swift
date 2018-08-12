@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import AppKit
-
 open class cmyTextfieldDate : cmyTextfield {
     var mm : Int!
     var jj: Int!

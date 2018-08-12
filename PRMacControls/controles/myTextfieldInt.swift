@@ -6,8 +6,6 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-import AppKit
-
 open class cmyTextFieldInt : cmyTextFieldNum {
     @IBInspectable var bz: Bool = false
     

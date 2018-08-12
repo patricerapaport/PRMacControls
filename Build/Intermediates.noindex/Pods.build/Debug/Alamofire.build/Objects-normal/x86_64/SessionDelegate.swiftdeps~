@@ -738,7 +738,7 @@ depends-member:
 - ["9Alamofire15SessionDelegateC", "init"]
 - !private ["9Alamofire15SessionDelegateC", "instancesRespond"]
 - !private ["9Alamofire15SessionDelegateC", "lock"]
-- !private ["9Alamofire15SessionDelegateC", "requests"]
+- ["9Alamofire15SessionDelegateC", "requests"]
 - ["9Alamofire15SessionDelegateC", "responds"]
 - ["9Alamofire15SessionDelegateC", "retrier"]
 - ["9Alamofire15SessionDelegateC", "sessionDidBecomeInvalidWithError"]
@@ -1220,4 +1220,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "d2d33f736b03079395791d4881cbabdf"
+interface-hash: "f54a374ea13caae1641a4a016b864a90"
