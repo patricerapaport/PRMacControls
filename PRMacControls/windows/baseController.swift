@@ -99,6 +99,7 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     }
     
     override public init(window: NSWindow!) {
+Swift.print("appel constructeur de cbaseController")
         super.init(window: window)
         if window == nil {
             _ = Bundle.main.loadNibNamed(windowNibName!, owner: self, topLevelObjects: nil)
