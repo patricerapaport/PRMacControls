@@ -29,7 +29,6 @@
     
     override open func becomeFirstResponder() -> Bool {
         let bRes = super.becomeFirstResponder()
-        Swift.print("\(String(describing: identifier)) becomeFirstResponder")
         if parent == nil {
             return true
         }
@@ -57,7 +56,6 @@
     }
     
     override open func resignFirstResponder() -> Bool {
-        Swift.print("\(String(describing: identifier)) resignFirstResponder")
         if parent != nil && parent.resignMethod != nil {
             if controller is cbaseController {
                 let theController = controller as! cbaseController
