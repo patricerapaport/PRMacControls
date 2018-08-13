@@ -30,7 +30,6 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
-        Swift.print("\(String(describing: identifier))becomeFirstResponder")
         if parent == nil {
             return true
         }
@@ -53,7 +52,6 @@
     }
     
     override open func resignFirstResponder() -> Bool {
-        Swift.print("\(String(describing: identifier)) resignFirstResponder")
         return true
     }
     
