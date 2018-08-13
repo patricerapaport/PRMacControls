@@ -10,13 +10,10 @@ class popoverController: NSViewController {
     @IBOutlet weak var label: NSTextField!
     
     override public init(nibName: NSNib.Name?, bundle: Bundle?) {
+        //super.init(nibName: nibName, bundle: bundle)
         let nibname = NSNib.Name("popoverController")
-        //let selfBundle = Bundle(for: popoverController.self)
-        super.init(nibName: nibname, bundle: bundle)
-        //let podBundle = Bundle(for: popoverController.self)
-        //let bundleURL = podBundle.url(forResource: "PRMacControls", withExtension: "bundle")
-        //let bundle = Bundle(url: bundleURL!)
-        //super.init(nibName: nibname, bundle: bundle)
+        let selfBundle = Bundle(for: popoverController.self)
+        super.init(nibName: nibname, bundle: selfBundle)
     }
     
     required public init?(coder: NSCoder) {
