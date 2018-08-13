@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.source_files  = "PRMacControls/controles", "PRMacControls/web", "PRMacControls/windows", "PRMacControls/misc"
+  s.source_files  = "PRMacControls/controles", "PRMacControls/web", "PRMacControls/windows", "PRMacControls/misc", "PRMacControls/**/*.nib"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
