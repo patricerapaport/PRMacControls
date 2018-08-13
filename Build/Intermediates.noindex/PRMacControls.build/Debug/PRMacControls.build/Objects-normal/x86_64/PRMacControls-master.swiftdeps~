@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "38bbcb5442189469c6b1dfeec1a154b3"
-build_time: [1534171193, 138334000]
+build_time: [1534171265, 230798000]
 inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myOutline.swift": [1534051694, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDecimal.swift": [1534051720, 0]
@@ -14,7 +14,7 @@ inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldAdresse.swift": [1523087124, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myCombo.swift": [1534051572, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDate.swift": [1534051712, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/popoverController.swift": !private [1534171191, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/popoverController.swift": [1534171264, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/selectorsProtocol.swift": [1534052003, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/preferenceManager.swift": [1534051996, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfield.swift": [1534155127, 0]
