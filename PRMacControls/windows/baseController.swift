@@ -290,7 +290,8 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
             // the popover retains us and we retain the popover,
             // we drop the popover whenever it is closed to avoid a cycle
             if aController == nil {
-                popoverViewController = popoverController(nibName: nil, bundle: nil)
+                //popoverViewController = popoverController(nibName: nil, bundle: nil)
+                popoverViewController = popoverController()
                 myPopover.contentViewController = popoverViewController
             } else {
                 popoverViewController = popoverController(nibName: nil, bundle: nil)
