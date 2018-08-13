@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
   s.resource_bundles = {
     'PRMacControls' => [
-        'PRMacControls/**/*.xib'
+        'PRMacControls/**/*.xib', 'PRMacControls/**/*.nib'
     ]
   }
 
