@@ -206,7 +206,7 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     }
     
     open func stopNotifyChargements() {
-        NotificationCenter.default.removeObserver(self, name: .chargement, object: nil)
+        //NotificationCenter.default.removeObserver(self, name: .chargement, object: nil)
     }
     
     open func afterChargements() {
