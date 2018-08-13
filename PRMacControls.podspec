@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.source_files  = "PRMacControls/controles", "PRMacControls/web", "PRMacControls/windows", "PRMacControls/misc", "PRMacControls/**/*.xib"
+  s.source_files  = "PRMacControls/controles", "PRMacControls/web", "PRMacControls/windows", "PRMacControls/misc", "PRMacControls/**/*.xib", "PRMacControls/**/*.nib"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -109,7 +109,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.{png,jpeg,jpg,xib,nib}", "PRMacControls/**/*.{png,jpeg,jpg,xib,nib}"
+  s.resources = "PRMacControls/windows/*.xib"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
   s.resource_bundles = {
