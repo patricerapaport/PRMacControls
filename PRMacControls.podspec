@@ -109,7 +109,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png", "PRMacControls/**/*.{png,jpeg,jpg,xib}"
+  # s.resources = "Resources/*.{png,jpeg,jpg,xib,nib}", "PRMacControls/**/*.{png,jpeg,jpg,xib,nib}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
   s.resource_bundles = {
