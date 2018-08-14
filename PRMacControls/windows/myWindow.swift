@@ -104,7 +104,6 @@ open class cmyWindow: NSWindow {
                 return
             }
             if currentFocus?.ctrl is cmyTextfield {
-Swift.print("my window va appeler keyUp")
                 if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains(event.keyCode) {
                     (currentFocus?.ctrl as! cmyTextfield).keyUp(with: event)
                     let newEvent = NSEvent.keyEvent(with: event.type, location: event.locationInWindow, modifierFlags: event.modifierFlags, timestamp: event.timestamp, windowNumber: event.windowNumber, context: nil, characters: "", charactersIgnoringModifiers: event.charactersIgnoringModifiers!, isARepeat: event.isARepeat, keyCode: 0)
