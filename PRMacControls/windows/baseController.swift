@@ -36,13 +36,13 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     public var currentFocus: cmyControl!
     public var ctrls: clisteControles!
     public var chargementParticulier = false // toute subclass doit armer cette variable à true quand la méthode chargements est surchargée
+    public var myPopover: NSPopover!
     
     var mustBeLogged: Bool = true
     var tabView: NSTabView!
     var tabviewSelected: NSTabViewItem!
     var state: etatWindow = .nonedition
     var boutonsToolbar: [cmyToolbarItem]!
-    var myPopover: NSPopover!
     var popoverViewController: NSViewController!          // Popover pour afficher une liste de documents
     var docPopoverController: documentPopoverController!
     var documentPopover: NSPopover!
