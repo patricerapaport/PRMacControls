@@ -504,7 +504,6 @@ SWIFT_CLASS("_TtC13PRMacControls12cmyTextfield")
 @property (nonatomic, readonly) BOOL acceptsFirstResponder;
 - (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
-- (void)keyDown:(NSEvent * _Nonnull)event;
 - (void)keyUp:(NSEvent * _Nonnull)event;
 - (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

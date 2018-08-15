@@ -1,13 +1,13 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "38bbcb5442189469c6b1dfeec1a154b3"
-build_time: [1534270295, 367573000]
+build_time: [1534355577, 503921000]
 inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myOutline.swift": [1534051694, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDecimal.swift": [1534051720, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/enumerations.swift": [1533463391, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControl.swift": [1534051675, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/user.swift": [1534052014, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/listeControles.swift": [1534050429, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/listeControles.swift": [1534355573, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myCheckbox.swift": [1534051566, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/myWindow.swift": [1534268931, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTabviewitem.swift": [1534051603, 0]
@@ -17,10 +17,10 @@ inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/popoverController.swift": [1534174680, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/selectorsProtocol.swift": [1534052003, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/preferenceManager.swift": [1534051996, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfield.swift": [1534155127, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfield.swift": [1534348075, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/myView.swift": [1534051841, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/nums.swift": [1523090136, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift": [1534270291, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift": [1534270618, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/keyboardKeys.swift": [1532969979, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControlDoc.swift": [1534051683, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldTelephone.swift": [1534051737, 0]

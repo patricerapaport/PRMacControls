@@ -118,11 +118,6 @@
         return true
     }
     
-    override open func keyDown(with event: NSEvent) {
-        Swift.print("\(String(describing: identifier)) Keydown \(event)")
-        super.keyDown(with: event)
-    }
-    
     override open func keyUp(with event: NSEvent) {
          if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains( event.keyCode) {
             closePopover()

@@ -7,7 +7,7 @@
 //
 
 open class clisteControles {
-    var controles: [cmyControl]=[]
+    public var controles: [cmyControl]=[]
     var myController: NSResponder!
     var enVerification = false
     
