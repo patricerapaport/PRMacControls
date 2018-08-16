@@ -52,6 +52,8 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     var tableCourante: cmyControl!  // contient le nom de la dernière table recherchée pour éviter d'appeler 36 fois getControl
     var stayInEdition: Bool = false; // si positionné à true, la grille reste en mode édition après un save
     
+    var chgtObserver: NSObject!
+    
     override open var windowNibName: NSNib.Name? {
         let els = className.components(separatedBy: ".")
         if els.count > 1 {
@@ -202,11 +204,15 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     }
     
     open func addNotifyChargements() {
-        NotificationCenter.default.addObserver(self, selector: #selector(chargements(_:)), name: .chargement, object: nil)
+        if chgtObserver == nil {
+            chgtObserver = NSObject()
+        }
+        NotificationCenter.default.addObserver(chgtObserver, selector: #selector(chargements(_:)), name: .chargement, object: nil)
     }
     
     open func stopNotifyChargements() {
-        NotificationCenter.default.removeObserver(self, name: .chargement, object: nil)
+        NotificationCenter.default.removeObserver(chgtObserver, name: .chargement, object: nil)
+        chgtObserver = nil
     }
     
     open func afterChargements() {
