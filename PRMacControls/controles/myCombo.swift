@@ -30,6 +30,36 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
+        if parent != nil {
+            var currentFocus: cmyControl!
+            if controller is cbaseController {
+                currentFocus = (controller as! cbaseController).currentFocus
+            } else if controller is cbaseView {
+                currentFocus = (controller as! cbaseView).currentFocus
+            }
+            if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
+                let currentFocusControles = currentFocus?.parent.controles
+                let controles = parent.parent.controles
+                if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
+                    currentFocus?.verifControl(completion: {
+                        res  in
+                        if res {
+                            var myPopover: NSPopover!
+                            if self.controller is cbaseController {
+                                myPopover = (self.controller as! cbaseController).myPopover
+                            } else if self.controller is cbaseView {
+                                myPopover = (self.controller as! cbaseView).myPopover
+                            }
+                            if myPopover != nil &&  myPopover.isShown {
+                                myPopover.close()
+                            }
+                            
+                            //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
+                        }
+                    })
+                }
+            }
+        }
         if parent == nil {
             return true
         }
