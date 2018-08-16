@@ -35,7 +35,7 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     public var donnees: [String: String] = [:]
     public var currentFocus: cmyControl!
     public var ctrls: clisteControles!
-    public var chargementParticulier = false // toute subclass doit armer cette variable à true quand la méthode chargements est surchargée
+    public var maxChargements = 0 // nbre" de" fois ou chargements est appelé
     public var myPopover: NSPopover!
     
     var mustBeLogged: Bool = true
@@ -217,18 +217,14 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     
     // A surcharger pour effectuer les lectures web initiales
     @objc open func chargements(_ notification: NSNotification) {
-        if chargementParticulier == true {
-            let userinfo = notification.userInfo as! [String: Int]
-            let numrequete = userinfo["numrequete"]
-            let info = ["numrequete": numrequete!+1]
-            NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
-        } else {
-            stopNotifyChargements()
-            afterChargements()
-        }
     }
     
     open func chargements (_ numrequete: Int) {
+        if numrequete < maxChargements-1 {
+            chargements(numrequete+1)
+        } else {
+            afterChargements()
+        }
     }
     
     func refreshDoc (iddocument: Int) { // A surcharger pour rafraichir le document
