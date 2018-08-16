@@ -227,8 +227,7 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
         }
     }
     
-    public func chargements (_ numrequete: Int) {
-        
+    open func chargements (_ numrequete: Int) {
     }
     
     func refreshDoc (iddocument: Int) { // A surcharger pour rafraichir le document
