@@ -207,11 +207,11 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
         if chgtObserver == nil {
             chgtObserver = NSObject()
         }
-        NotificationCenter.default.addObserver(chgtObserver, selector: #selector(chargements(_:)), name: .chargement, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(chargements(_:)), name: .chargement, object: nil)
     }
     
     open func stopNotifyChargements() {
-        NotificationCenter.default.removeObserver(chgtObserver, name: .chargement, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .chargement, object: nil)
         chgtObserver = nil
     }
     
@@ -227,7 +227,7 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
             let info = ["numrequete": numrequete!+1]
             NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
         } else {
-            stopNotifyChargements()
+            //stopNotifyChargements()
             afterChargements()
         }
     }
