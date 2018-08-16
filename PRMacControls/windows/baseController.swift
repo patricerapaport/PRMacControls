@@ -52,8 +52,6 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     var tableCourante: cmyControl!  // contient le nom de la dernière table recherchée pour éviter d'appeler 36 fois getControl
     var stayInEdition: Bool = false; // si positionné à true, la grille reste en mode édition après un save
     
-    var chgtObserver: NSObject!
-    
     override open var windowNibName: NSNib.Name? {
         let els = className.components(separatedBy: ".")
         if els.count > 1 {
@@ -96,8 +94,9 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
         
         
         setConfigs()
-        let info = ["numrequete": 0]
-        NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
+        chargements (0)
+        //let info = ["numrequete": 0]
+        //NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
     }
     
     override public init(window: NSWindow!) {
@@ -204,15 +203,11 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     }
     
     open func addNotifyChargements() {
-        if chgtObserver == nil {
-            chgtObserver = NSObject()
-        }
-        NotificationCenter.default.addObserver(self, selector: #selector(chargements(_:)), name: .chargement, object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(chargements(_:)), name: .chargement, object: nil)
     }
     
     open func stopNotifyChargements() {
-        NotificationCenter.default.removeObserver(self, name: .chargement, object: nil)
-        chgtObserver = nil
+        //NotificationCenter.default.removeObserver(self, name: .chargement, object: nil)
     }
     
     open func afterChargements() {
@@ -227,9 +222,13 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
             let info = ["numrequete": numrequete!+1]
             NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
         } else {
-            //stopNotifyChargements()
+            stopNotifyChargements()
             afterChargements()
         }
+    }
+    
+    open func chargements (_ numrequete: Int) {
+        
     }
     
     func refreshDoc (iddocument: Int) { // A surcharger pour rafraichir le document
