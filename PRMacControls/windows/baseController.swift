@@ -227,7 +227,7 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
         }
     }
     
-    open func chargements (_ numrequete: Int) {
+    public func chargements (_ numrequete: Int) {
         
     }
     
