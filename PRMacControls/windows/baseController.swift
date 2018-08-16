@@ -123,8 +123,9 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
         setControls(view: content, tabviewItem: nil)
         
         setConfigs()
-        let info = ["numrequete": 0]
-        NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
+        //let info = ["numrequete": 0]
+        //NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
+        chargements (0)
     }
     
     required public init?(coder: NSCoder) {
