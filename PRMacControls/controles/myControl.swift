@@ -590,7 +590,7 @@ open class cmyControl: NSObject {
         }
     }
     
-    func verifControl() ->Bool {
+    public func verifControl() ->Bool {
         if ctrl is cmyTextfield  {
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
@@ -624,7 +624,7 @@ open class cmyControl: NSObject {
         }
     }
     
-    func verifControl (completion: @escaping(Bool) -> Void) {
+    public func verifControl (completion: @escaping(Bool) -> Void) {
         if ctrl is cmyTextfield  {
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
