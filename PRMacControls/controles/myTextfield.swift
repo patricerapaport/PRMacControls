@@ -53,6 +53,8 @@
                             }
                             
                             //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
+                        } else {
+                            currentFocus.ctrl.becomeFirstResponder()
                         }
                     })
                 }
