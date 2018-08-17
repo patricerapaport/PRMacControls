@@ -35,7 +35,7 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     public var donnees: [String: String] = [:]
     public var currentFocus: cmyControl!
     public var ctrls: clisteControles!
-    public var maxChargements = 0 // nbre" de" fois ou chargements est appelé
+    public var maxChargements = 0 // nbre de fois ou chargements est appelé
     public var myPopover: NSPopover!
     
     var mustBeLogged: Bool = true
@@ -1070,6 +1070,7 @@ Swift.print("tableview didClick \(tableColumn.description)")
                 return false
             } else if (tableView as! cmyTable).state != .nonedition && columnCtrl is cmyTextfield {
                 if (columnCtrl as! cmyTextfield).isEnabled {
+                    (tableView as! cmyTable).rowselected = row
                     columnCtrl?.becomeFirstResponder()
                     return false
                 }
