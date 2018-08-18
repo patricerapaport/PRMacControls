@@ -48,6 +48,7 @@ open class cmyControl: NSObject {
     var verifControlParams: Selector!
     var resignMethod: Selector!
     var nextFocusControl: Selector!
+    var previousFocusControl: Selector!
     var getfocusMethod: Selector!
     var submitMethod: Selector!
     var acceptKeyMethod: Selector!
@@ -341,6 +342,12 @@ open class cmyControl: NSObject {
         methode = Selector(nomMethode)
         if controller.responds (to: methode) {
             nextFocusControl = methode
+        }
+        
+        nomMethode = "previousfocus"+(ctrl.identifier?.rawValue.capitalized)!+"WithCtrl:"
+        methode = Selector(nomMethode)
+        if controller.responds (to: methode) {
+            previousFocusControl = methode
         }
         
         nomMethode = "getfocus"+identifier.capitalized+"WithCtrl:"

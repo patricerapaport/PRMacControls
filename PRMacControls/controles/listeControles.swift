@@ -201,6 +201,15 @@ open class clisteControles {
     }
     
     func previousFocus(_ aControl: cmyControl) -> cmyControl? {
+        if aControl.previousFocusControl != nil {
+            let res = myController.perform(aControl.previousFocusControl, with: aControl.ctrl as! NSControl)
+            if res == nil {
+                return nil
+            }
+            let next = Unmanaged<AnyObject>.fromOpaque(
+                res!.toOpaque()).takeUnretainedValue()
+            return next as? cmyControl
+        }
         var index = getIndex(aControl)
         while index != -1 && index > 0 {
             if controles[index - 1].isLabel && controles[1+index].isEnabled {
