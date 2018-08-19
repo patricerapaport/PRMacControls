@@ -599,7 +599,7 @@ open class cmyControl: NSObject {
     
     public func verifControl() ->Bool {
         if tableView != nil && tableView is cmyTable && (tableView as! cmyTable).verifProc != nil {
-            let nomMethode =  "load"+(tableView as! cmyTable).verifProc!+"WithCtrl:"
+            let nomMethode =  (tableView as! cmyTable).verifProc!+"WithCtrl:"
             let methode = Selector(nomMethode)
             if controller.responds (to: methode) {
                 //controller.perform(methode)
@@ -647,7 +647,7 @@ open class cmyControl: NSObject {
     
     public func verifControl (completion: @escaping(Bool) -> Void) {
         if tableView != nil && tableView is cmyTable && (tableView as! cmyTable).verifProc != nil {
-            let nomMethode =  "load"+(tableView as! cmyTable).verifProc!+"WithCtrl:"
+            let nomMethode =  (tableView as! cmyTable).verifProc!+"WithCtrl:"
             let methode = Selector(nomMethode)
             if controller.responds (to: methode) {
                 //controller.perform(methode)
