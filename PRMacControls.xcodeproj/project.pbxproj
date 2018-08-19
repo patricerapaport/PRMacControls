@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A67394C92111766600339E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67394C82111766600339E80 /* Assets.xcassets */; };
+		A68EE22A212942E700896592 /* alertes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68EE229212942E700896592 /* alertes.swift */; };
 		A6E81A2D210D80D400B9139E /* PRMacControls.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E81A2B210D80D400B9139E /* PRMacControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6E81A46210D811500B9139E /* myControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A34210D811500B9139E /* myControl.swift */; };
 		A6E81A47210D811500B9139E /* myTextfieldDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A35210D811500B9139E /* myTextfieldDate.swift */; };
@@ -67,6 +68,7 @@
 		59F4FD50EB06BF834B6062E4 /* Pods-PRMacControls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRMacControls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRMacControls/Pods-PRMacControls.debug.xcconfig"; sourceTree = "<group>"; };
 		7AADA83157A37A29708041CA /* Pods-PRMacControls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRMacControls.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRMacControls/Pods-PRMacControls.release.xcconfig"; sourceTree = "<group>"; };
 		A67394C82111766600339E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A68EE229212942E700896592 /* alertes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertes.swift; sourceTree = "<group>"; };
 		A6DB8B07212012CC00A0EAF3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A6E426652115665000FC00D9 /* Pods_PRMacControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PRMacControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E81A28210D80D400B9139E /* PRMacControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRMacControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A6E81A63210D924000B9139E /* dates.swift */,
+				A68EE229212942E700896592 /* alertes.swift */,
 				A6E81A5B210D8FEE00B9139E /* enumerations.swift */,
 				A6E81A6C210D935000B9139E /* keyboardKeys.swift */,
 				A6E81A6A210D931700B9139E /* nums.swift */,
@@ -351,6 +354,7 @@
 				A6E81A56210D811500B9139E /* myTextfieldDecimal.swift in Sources */,
 				A6E81A5C210D8FEE00B9139E /* enumerations.swift in Sources */,
 				A6E81A46210D811500B9139E /* myControl.swift in Sources */,
+				A68EE22A212942E700896592 /* alertes.swift in Sources */,
 				A6E81A6F210D93D700B9139E /* user.swift in Sources */,
 				A6E81A51210D811500B9139E /* listeControles.swift in Sources */,
 				A6E81A54210D811500B9139E /* myCheckbox.swift in Sources */,
