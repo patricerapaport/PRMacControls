@@ -269,7 +269,6 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "capitalized"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s23ExpressibleByNilLiteralP", "perform"]
 - !private ["s26ExpressibleByStringLiteralP", "capitalized"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "capitalized"]
@@ -303,7 +302,6 @@ depends-member:
 - !private ["s8HashableP", "textColor"]
 - !private ["s8HashableP", "textColorMethod"]
 - !private ["s8HashableP", "verifControl"]
-- !private ["SQ", "perform"]
 - !private ["s10DictionaryV4KeysV", "contains"]
 - !private ["s22LazyCollectionProtocolP", "ctrl"]
 - !private ["s22LazyCollectionProtocolP", "isEnabled"]
@@ -654,7 +652,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "keys"]
-- !private ["s21_ObjectiveCBridgeableP", "perform"]
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "capitalized"]
@@ -703,7 +700,6 @@ depends-member:
 - ["13PRMacControls15clisteControlesC", "setState"]
 - ["13PRMacControls15clisteControlesC", "verifControl"]
 - !private ["13PRMacControls10cmyControlC", "ctrl"]
-- !private ["13PRMacControls10cmyControlC", "deinit"]
 - !private ["13PRMacControls10cmyControlC", "identifier"]
 - !private ["13PRMacControls10cmyControlC", "init"]
 - !private ["13PRMacControls10cmyControlC", "input"]
@@ -769,11 +765,9 @@ depends-nominal:
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s8HashableP"
-- !private "SQ"
 - !private "s10DictionaryV4KeysV"
 - !private "s22LazyCollectionProtocolP"
 - !private "s20LazySequenceProtocolP"

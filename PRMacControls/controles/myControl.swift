@@ -307,11 +307,6 @@ open class cmyControl: NSObject {
             (ctrl as! cmyTable).setBoutonsAttaches()
         }
         
-        
-        if tableView != nil {
-            Swift.print("le controle \(identifier) appartient a une table")
-        }
-        
         var nomMethode: String = "load"
         var methode = Selector(nomMethode)
         if  ctrl.responds(to: methode) {
@@ -603,6 +598,20 @@ open class cmyControl: NSObject {
     }
     
     public func verifControl() ->Bool {
+        if tableView != nil && tableView is cmyTable && (tableView as! cmyTable).verifProc != nil {
+            let nomMethode =  "load"+(tableView as! cmyTable).verifProc!+"WithCtrl:"
+            let methode = Selector(nomMethode)
+            if controller.responds (to: methode) {
+                //controller.perform(methode)
+                let res = controller.perform(methode, with: ctrl as! NSControl)
+                if res == nil {
+                    return false
+                }
+                let bRes = Unmanaged<AnyObject>.fromOpaque(
+                    res!.toOpaque()).takeUnretainedValue()
+                return (bRes as! NSNumber).intValue == 1 ? true : false
+            }
+        }
         if ctrl is cmyTextfield  {
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
@@ -637,6 +646,21 @@ open class cmyControl: NSObject {
     }
     
     public func verifControl (completion: @escaping(Bool) -> Void) {
+        if tableView != nil && tableView is cmyTable && (tableView as! cmyTable).verifProc != nil {
+            let nomMethode =  "load"+(tableView as! cmyTable).verifProc!+"WithCtrl:"
+            let methode = Selector(nomMethode)
+            if controller.responds (to: methode) {
+                //controller.perform(methode)
+                let res = controller.perform(methode, with: ctrl as! NSControl)
+                if res == nil {
+                    completion(false)
+                }
+                let bRes = Unmanaged<AnyObject>.fromOpaque(
+                    res!.toOpaque()).takeUnretainedValue()
+                completion((bRes as! NSNumber).intValue == 1 ? true : false)
+            }
+            return
+        }
         if ctrl is cmyTextfield  {
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()

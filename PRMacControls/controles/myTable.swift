@@ -59,6 +59,7 @@ open class cmyTable: NSTableView {
     @IBInspectable var rawColor: String!
     @IBInspectable var afterReloadMethod: String!
     @IBInspectable var mouseupMethod: String!
+    @IBInspectable var verifProc: String!
     @IBInspectable var boutonsAttaches: Bool {
         get {
             return btsAttaches

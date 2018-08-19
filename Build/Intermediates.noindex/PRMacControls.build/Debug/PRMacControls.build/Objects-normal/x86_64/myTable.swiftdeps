@@ -29,6 +29,7 @@ provides-dynamic-lookup:
 - "rowView"
 - "sensDefaut"
 - "validateProposedFirstResponder"
+- "verifProc"
 depends-top-level:
 - !private "!"
 - !private "!="
@@ -1059,6 +1060,7 @@ depends-member:
 - !private ["So9NSControlC", "txtassocie"]
 - ["So9NSControlC", "validateProposedFirstResponder"]
 - ["So9NSControlC", "verifControls"]
+- ["So9NSControlC", "verifProc"]
 - !private ["So28NSControlTextEditingDelegateP", "boutonsToolbar"]
 - !private ["So28NSControlTextEditingDelegateP", "currentFocus"]
 - !private ["So28NSControlTextEditingDelegateP", "isBezeled"]
@@ -1288,6 +1290,7 @@ depends-member:
 - !private ["So8NSObjectC", "type"]
 - ["So8NSObjectC", "validateProposedFirstResponder"]
 - ["So8NSObjectC", "verifControls"]
+- ["So8NSObjectC", "verifProc"]
 - !private ["So8NSObjectC", "viderToolbar"]
 - !private ["So8NSObjectC", "view"]
 - !private ["So8NSObjectC", "window"]
@@ -1465,6 +1468,7 @@ depends-member:
 - !private ["So11NSResponderC", "txtassocie"]
 - ["So11NSResponderC", "validateProposedFirstResponder"]
 - ["So11NSResponderC", "verifControls"]
+- ["So11NSResponderC", "verifProc"]
 - !private ["So11NSResponderC", "viderToolbar"]
 - !private ["So11NSResponderC", "view"]
 - !private ["So14NSSecureCodingP", "init"]
@@ -1582,6 +1586,7 @@ depends-member:
 - ["So11NSTableViewC", "trierTable"]
 - ["So11NSTableViewC", "validateProposedFirstResponder"]
 - ["So11NSTableViewC", "verifControls"]
+- ["So11NSTableViewC", "verifProc"]
 - !private ["So21NSTableViewDataSourceP", "boutonsToolbar"]
 - !private ["So21NSTableViewDataSourceP", "currentFocus"]
 - !private ["So21NSTableViewDataSourceP", "setConfigs"]
@@ -1927,6 +1932,7 @@ depends-member:
 - !private ["So6NSViewC", "txtassocie"]
 - ["So6NSViewC", "validateProposedFirstResponder"]
 - ["So6NSViewC", "verifControls"]
+- ["So6NSViewC", "verifProc"]
 - !private ["So6NSViewC", "view"]
 - !private ["So16NSViewControllerC", "currentFocus"]
 - !private ["So8NSWindowC", "makeFirstResponder"]
@@ -2300,6 +2306,7 @@ depends-member:
 - ["13PRMacControls8cmyTableC", "trierTable"]
 - ["13PRMacControls8cmyTableC", "validateProposedFirstResponder"]
 - ["13PRMacControls8cmyTableC", "verifControls"]
+- ["13PRMacControls8cmyTableC", "verifProc"]
 - !private ["13PRMacControls12cmyTextfieldC", "isBezeled"]
 - !private ["13PRMacControls12cmyTextfieldC", "isHidden"]
 - !private ["13PRMacControls12cmyTextfieldC", "parent"]
@@ -2547,4 +2554,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "7e1bc3a639f09fa504c03ace72d63828"
+interface-hash: "584add0c9a05a14ae50e161ef272d9a0"
