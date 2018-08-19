@@ -307,6 +307,11 @@ open class cmyControl: NSObject {
             (ctrl as! cmyTable).setBoutonsAttaches()
         }
         
+        
+        if datasource != nil {
+            Swift.print("le controle \(identifier) appartient a une table")
+        }
+        
         var nomMethode: String = "load"
         var methode = Selector(nomMethode)
         if  ctrl.responds(to: methode) {
