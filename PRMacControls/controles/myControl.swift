@@ -308,7 +308,7 @@ open class cmyControl: NSObject {
         }
         
         
-        if datasource != nil {
+        if tableView != nil {
             Swift.print("le controle \(identifier) appartient a une table")
         }
         
