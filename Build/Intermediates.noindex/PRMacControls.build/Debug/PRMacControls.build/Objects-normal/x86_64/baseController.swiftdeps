@@ -62,6 +62,7 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableViewSelectionDidChange"
 - "tableViewSelectionIsChanging"
+- "verifproc"
 - "viderToolbar"
 - "windowDidLoad"
 - "windowDidMove"
@@ -3111,6 +3112,7 @@ depends-member:
 - !private ["So8NSObjectC", "typeBouton"]
 - ["So8NSObjectC", "typeserver"]
 - !private ["So8NSObjectC", "userInfo"]
+- ["So8NSObjectC", "verifproc"]
 - ["So8NSObjectC", "viderToolbar"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "window"]
@@ -3795,6 +3797,7 @@ depends-member:
 - !private ["So11NSResponderC", "triCourant"]
 - ["So11NSResponderC", "trierTable"]
 - ["So11NSResponderC", "typeserver"]
+- ["So11NSResponderC", "verifproc"]
 - ["So11NSResponderC", "viderToolbar"]
 - ["So11NSResponderC", "window"]
 - ["So11NSResponderC", "windowDidBecomeKey"]
@@ -5278,6 +5281,7 @@ depends-member:
 - !private ["So18NSWindowControllerC", "transformDonnees"]
 - ["So18NSWindowControllerC", "trierTable"]
 - ["So18NSWindowControllerC", "typeserver"]
+- ["So18NSWindowControllerC", "verifproc"]
 - ["So18NSWindowControllerC", "viderToolbar"]
 - ["So18NSWindowControllerC", "window"]
 - ["So18NSWindowControllerC", "windowDidBecomeKey"]
@@ -6091,6 +6095,7 @@ depends-member:
 - !private ["13PRMacControls15cbaseControllerC", "transformDonnees"]
 - ["13PRMacControls15cbaseControllerC", "trierTable"]
 - ["13PRMacControls15cbaseControllerC", "typeserver"]
+- ["13PRMacControls15cbaseControllerC", "verifproc"]
 - ["13PRMacControls15cbaseControllerC", "viderToolbar"]
 - ["13PRMacControls15cbaseControllerC", "window"]
 - ["13PRMacControls15cbaseControllerC", "windowDidBecomeKey"]
@@ -6727,4 +6732,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "7c499f87ab296215963622013f505aaf"
+interface-hash: "f8454192086157d27cf61395d22f4627"

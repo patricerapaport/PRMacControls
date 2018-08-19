@@ -198,6 +198,7 @@ SWIFT_CLASS("_TtC13PRMacControls8cOutline")
 
 SWIFT_CLASS("_TtC13PRMacControls15cbaseController")
 @interface cbaseController : NSWindowController
+@property (nonatomic, copy) NSString * _Null_unspecified verifproc;
 @property (nonatomic, readonly) NSNibName _Nullable windowNibName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithWindow:(NSWindow * _Null_unspecified)window OBJC_DESIGNATED_INITIALIZER;

@@ -31,7 +31,7 @@ protocol myBaseServiceTabview {
 }
 
 //MARK:  cbaseController
-open class cbaseController: NSWindowController, myBaseServiceProtocolOperations, myBaseServiceTabview {
+@IBDesignable open class cbaseController: NSWindowController, myBaseServiceProtocolOperations, myBaseServiceTabview {
     public var donnees: [String: String] = [:]
     public var currentFocus: cmyControl!
     public var ctrls: clisteControles!
@@ -51,6 +51,8 @@ open class cbaseController: NSWindowController, myBaseServiceProtocolOperations,
     var internalSetFrame: Bool = false // A activer si l'on redimensionne la fenêtre et que l'on ne veut pas recevoir une notification resize
     var tableCourante: cmyControl!  // contient le nom de la dernière table recherchée pour éviter d'appeler 36 fois getControl
     var stayInEdition: Bool = false; // si positionné à true, la grille reste en mode édition après un save
+    
+    @IBInspectable public var verifproc: String!
     
     override open var windowNibName: NSNib.Name? {
         let els = className.components(separatedBy: ".")
