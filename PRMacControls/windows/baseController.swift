@@ -52,7 +52,7 @@ protocol myBaseServiceTabview {
     var tableCourante: cmyControl!  // contient le nom de la dernière table recherchée pour éviter d'appeler 36 fois getControl
     var stayInEdition: Bool = false; // si positionné à true, la grille reste en mode édition après un save
     
-    @IBInspectable public var verifproc: String!
+    @IBInspectable public var verifproc: String = ""
     
     override open var windowNibName: NSNib.Name? {
         let els = className.components(separatedBy: ".")
@@ -136,6 +136,12 @@ protocol myBaseServiceTabview {
         setConfigs()
         //let info = ["numrequete": 0]
         //NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
+        let nomMethode = "verifControlesWithCtrl:"
+        let methode = Selector(nomMethode)
+        if self.responds(to: methode) {
+            verifproc = nomMethode
+        }
+        
         chargements (0)
     }
     

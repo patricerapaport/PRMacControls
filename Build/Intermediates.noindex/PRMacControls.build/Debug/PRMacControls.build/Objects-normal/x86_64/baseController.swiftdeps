@@ -142,7 +142,7 @@ depends-top-level:
 - "PreferenceManager"
 - !private "Selector"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - !private "Swift"
 - "TernaryPrecedence"
 - "Timer"
@@ -197,7 +197,7 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "count"]
 - !private ["s23BidirectionalCollectionP", "description"]
 - !private ["s23BidirectionalCollectionP", "index"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "insert"]
 - !private ["s23BidirectionalCollectionP", "insertInToolbar"]
 - !private ["s23BidirectionalCollectionP", "remove"]
@@ -312,7 +312,7 @@ depends-member:
 - !private ["s7CVarArgP", "index"]
 - !private ["s7CVarArgP", "indexOfItemWithStringValue"]
 - !private ["s7CVarArgP", "indicator"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "input"]
 - !private ["s7CVarArgP", "insertInToolbar"]
 - !private ["s7CVarArgP", "insertItem"]
@@ -473,7 +473,7 @@ depends-member:
 - !private ["s10CollectionP", "count"]
 - !private ["s10CollectionP", "description"]
 - !private ["s10CollectionP", "index"]
-- !private ["s10CollectionP", "init"]
+- ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "insert"]
 - !private ["s10CollectionP", "insertInToolbar"]
 - !private ["s10CollectionP", "keys"]
@@ -483,7 +483,7 @@ depends-member:
 - !private ["s10CollectionP", "substr"]
 - !private ["s10ComparableP", "capitalized"]
 - !private ["s10ComparableP", "components"]
-- !private ["s10ComparableP", "init"]
+- ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "substr"]
 - ["s28CustomDebugStringConvertibleP", "Ajouter"]
 - ["s28CustomDebugStringConvertibleP", "Annuler"]
@@ -583,7 +583,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "index"]
 - !private ["s28CustomDebugStringConvertibleP", "indexOfItemWithStringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "indicator"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "input"]
 - !private ["s28CustomDebugStringConvertibleP", "insert"]
 - !private ["s28CustomDebugStringConvertibleP", "insertInToolbar"]
@@ -747,7 +747,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "capitalized"]
 - !private ["s29CustomPlaygroundQuickLookableP", "components"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "origin"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "substr"]
@@ -763,7 +763,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "description"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "index"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "insert"]
 - !private ["s17CustomReflectableP", "insertInToolbar"]
 - !private ["s17CustomReflectableP", "keys"]
@@ -875,7 +875,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "index"]
 - !private ["s23CustomStringConvertibleP", "indexOfItemWithStringValue"]
 - !private ["s23CustomStringConvertibleP", "indicator"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "input"]
 - !private ["s23CustomStringConvertibleP", "insert"]
 - !private ["s23CustomStringConvertibleP", "insertInToolbar"]
@@ -1039,7 +1039,7 @@ depends-member:
 - !private ["s9DecodableP", "description"]
 - !private ["s9DecodableP", "height"]
 - !private ["s9DecodableP", "index"]
-- !private ["s9DecodableP", "init"]
+- ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "insert"]
 - !private ["s9DecodableP", "keys"]
 - !private ["s9DecodableP", "origin"]
@@ -1063,7 +1063,7 @@ depends-member:
 - !private ["s9EncodableP", "description"]
 - !private ["s9EncodableP", "height"]
 - !private ["s9EncodableP", "index"]
-- !private ["s9EncodableP", "init"]
+- ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "insert"]
 - !private ["s9EncodableP", "keys"]
 - !private ["s9EncodableP", "origin"]
@@ -1177,7 +1177,7 @@ depends-member:
 - !private ["s9EquatableP", "index"]
 - !private ["s9EquatableP", "indexOfItemWithStringValue"]
 - !private ["s9EquatableP", "indicator"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "input"]
 - !private ["s9EquatableP", "insert"]
 - !private ["s9EquatableP", "insertInToolbar"]
@@ -1363,15 +1363,15 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "capitalized"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "components"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "substr"]
 - !private ["s26ExpressibleByStringLiteralP", "capitalized"]
 - !private ["s26ExpressibleByStringLiteralP", "components"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "substr"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "capitalized"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "components"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "substr"]
 - ["s8HashableP", "Ajouter"]
 - ["s8HashableP", "Annuler"]
@@ -1470,7 +1470,7 @@ depends-member:
 - !private ["s8HashableP", "identifier"]
 - !private ["s8HashableP", "indexOfItemWithStringValue"]
 - !private ["s8HashableP", "indicator"]
-- !private ["s8HashableP", "init"]
+- ["s8HashableP", "init"]
 - !private ["s8HashableP", "input"]
 - !private ["s8HashableP", "insert"]
 - !private ["s8HashableP", "insertInToolbar"]
@@ -1633,11 +1633,11 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "capitalized"]
 - !private ["s25LosslessStringConvertibleP", "components"]
-- !private ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "substr"]
 - !private ["s10MirrorPathP", "capitalized"]
 - !private ["s10MirrorPathP", "components"]
-- !private ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "substr"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "contains"]
@@ -5517,7 +5517,7 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "count"]
 - !private ["s26RangeReplaceableCollectionP", "description"]
 - !private ["s26RangeReplaceableCollectionP", "index"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "insertInToolbar"]
 - !private ["s26RangeReplaceableCollectionP", "remove"]
 - !private ["s26RangeReplaceableCollectionP", "setEtat"]
@@ -5541,7 +5541,7 @@ depends-member:
 - !private ["s8SequenceP", "count"]
 - !private ["s8SequenceP", "description"]
 - !private ["s8SequenceP", "index"]
-- !private ["s8SequenceP", "init"]
+- ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "insert"]
 - !private ["s8SequenceP", "insertInToolbar"]
 - !private ["s8SequenceP", "keys"]
@@ -5555,26 +5555,26 @@ depends-member:
 - !private ["s10SetAlgebraP", "mouseEnteredAndExited"]
 - !private ["SS", "capitalized"]
 - !private ["SS", "components"]
-- !private ["SS", "init"]
+- ["SS", "init"]
 - !private ["SS", "substr"]
 - !private ["s14StringProtocolP", "capitalized"]
 - !private ["s14StringProtocolP", "components"]
-- !private ["s14StringProtocolP", "init"]
+- ["s14StringProtocolP", "init"]
 - !private ["s14StringProtocolP", "substr"]
 - !private ["So19NSProgressIndicatorC5StyleO", "spinning"]
 - !private ["s16TextOutputStreamP", "capitalized"]
 - !private ["s16TextOutputStreamP", "components"]
-- !private ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "substr"]
 - !private ["s20TextOutputStreamableP", "capitalized"]
 - !private ["s20TextOutputStreamableP", "components"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "substr"]
 - !private ["So5TimerC", "invalidate"]
 - !private ["So5TimerC", "scheduledTimer"]
 - !private ["9Alamofire14URLConvertibleP", "capitalized"]
 - !private ["9Alamofire14URLConvertibleP", "components"]
-- !private ["9Alamofire14URLConvertibleP", "init"]
+- ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "substr"]
 - !private ["s9UnmanagedV", "fromOpaque"]
 - !private ["s9UnmanagedV", "takeUnretainedValue"]
@@ -5657,23 +5657,23 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "capitalized"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "components"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "substr"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "capitalized"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "components"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "substr"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "capitalized"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "components"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "substr"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "capitalized"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "components"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "substr"]
 - !private ["s33_ExpressibleByStringInterpolationP", "capitalized"]
 - !private ["s33_ExpressibleByStringInterpolationP", "components"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "substr"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "capitalized"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
@@ -5931,7 +5931,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "description"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "index"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "insert"]
 - !private ["s21_ObjectiveCBridgeableP", "keys"]
 - !private ["s21_ObjectiveCBridgeableP", "object"]
@@ -5948,7 +5948,7 @@ depends-member:
 - !private ["s20_SwiftNewtypeWrapperP", "rawValue"]
 - !private ["s16_SwiftStringViewP", "capitalized"]
 - !private ["s16_SwiftStringViewP", "components"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "substr"]
 - ["13PRMacControls15cbaseControllerC", "Ajouter"]
 - ["13PRMacControls15cbaseControllerC", "Annuler"]
@@ -6565,35 +6565,35 @@ depends-nominal:
 - !private "Sa"
 - !private "s10ArraySliceV"
 - !private "So9NSPopoverC8BehaviorO"
-- !private "s23BidirectionalCollectionP"
+- "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So6BundleC"
 - !private "SC7CGPointV"
 - !private "SC6CGRectV"
 - !private "SC6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- "s10CollectionP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- "s9DecodableP"
 - !private "s10DictionaryV"
-- !private "s9EncodableP"
+- "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
 - !private "So13NSToolbarItemC10IdentifierV"
 - !private "10Foundation8IndexSetV"
 - !private "s10DictionaryV4KeysV"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
 - !private "s17MutableCollectionP"
 - !private "So15NSAccessibilityP"
 - !private "So21NSAccessibilityButtonP"
@@ -6671,34 +6671,34 @@ depends-nominal:
 - !private "So14NSTrackingAreaC7OptionsV"
 - "13PRMacControls17PreferenceManagerC"
 - !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- "s26RangeReplaceableCollectionP"
 - "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "10ObjectiveC8SelectorV"
-- !private "s8SequenceP"
+- "s8SequenceP"
 - !private "s10SetAlgebraP"
-- !private "SS"
-- !private "s14StringProtocolP"
+- "SS"
+- "s14StringProtocolP"
 - !private "So19NSProgressIndicatorC5StyleO"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So5TimerC"
-- !private "9Alamofire14URLConvertibleP"
+- "9Alamofire14URLConvertibleP"
 - !private "s9UnmanagedV"
 - !private "s14_ArrayProtocolP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
-- !private "s16_SwiftStringViewP"
+- "s16_SwiftStringViewP"
 - "13PRMacControls15cbaseControllerC"
 - !private "13PRMacControls11ceditWindowC"
 - !private "13PRMacControls15clisteControlesC"
@@ -6758,4 +6758,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e062ba2d68702d541575c73e8467da8a"
+interface-hash: "757000981e08890833de181fff7e3aee"
