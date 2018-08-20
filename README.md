@@ -36,5 +36,5 @@ Dans tous les cas, il faudra rajouter le constructeur:
 
 Lorsque le constructeur de la classe de base est appelé, il répertorie dans une liste (ctrls) tous les contrôles que vous avez déposé dans le fichier XIB, pour peu que vous les ayez sous-classés en cmyTextfield, cmyCheckbox, cmyCombo ou cmyTable.
 
-LA CLASSE ceditController.
+[LA CLASSE ceditController.](https://github.com/patricerapaport/PRMacControls/tree/master/howto_ceditController.md)
 
