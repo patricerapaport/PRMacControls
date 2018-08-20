@@ -44,11 +44,11 @@
 		A6E81A78210D95C400B9139E /* documentPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A76210D95C400B9139E /* documentPopoverController.swift */; };
 		A6E81A79210D95C400B9139E /* documentPopoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E81A77210D95C400B9139E /* documentPopoverController.xib */; };
 		A6E81A7B210D963000B9139E /* myWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A7A210D963000B9139E /* myWindow.swift */; };
-		A6E81A7D210D978500B9139E /* editWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A7C210D978500B9139E /* editWindow.swift */; };
+		A6E81A7D210D978500B9139E /* editController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A7C210D978500B9139E /* editController.swift */; };
 		A6E81A80210D980C00B9139E /* downloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A7F210D980C00B9139E /* downloadManager.swift */; };
 		A6E81A82210DAC5F00B9139E /* webService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A81210DAC5F00B9139E /* webService.swift */; };
 		A6E81A84210DACB100B9139E /* myView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A83210DACB100B9139E /* myView.swift */; };
-		A6E81AAD210DB08200B9139E /* listWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81AAC210DB08200B9139E /* listWindow.swift */; };
+		A6E81AAD210DB08200B9139E /* listController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81AAC210DB08200B9139E /* listController.swift */; };
 		FC9ACEF92BAC484A18A4FEFD /* Pods_PRMacControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E426652115665000FC00D9 /* Pods_PRMacControls.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,11 +108,11 @@
 		A6E81A76210D95C400B9139E /* documentPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = documentPopoverController.swift; sourceTree = "<group>"; };
 		A6E81A77210D95C400B9139E /* documentPopoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = documentPopoverController.xib; sourceTree = "<group>"; };
 		A6E81A7A210D963000B9139E /* myWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myWindow.swift; sourceTree = "<group>"; };
-		A6E81A7C210D978500B9139E /* editWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editWindow.swift; sourceTree = "<group>"; };
+		A6E81A7C210D978500B9139E /* editController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editController.swift; sourceTree = "<group>"; };
 		A6E81A7F210D980C00B9139E /* downloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = downloadManager.swift; sourceTree = "<group>"; };
 		A6E81A81210DAC5F00B9139E /* webService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webService.swift; sourceTree = "<group>"; };
 		A6E81A83210DACB100B9139E /* myView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myView.swift; sourceTree = "<group>"; };
-		A6E81AAC210DB08200B9139E /* listWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listWindow.swift; sourceTree = "<group>"; };
+		A6E81AAC210DB08200B9139E /* listController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +226,8 @@
 				A6E81A66210D92A700B9139E /* baseView.swift */,
 				A6E81A76210D95C400B9139E /* documentPopoverController.swift */,
 				A6E81A77210D95C400B9139E /* documentPopoverController.xib */,
-				A6E81A7C210D978500B9139E /* editWindow.swift */,
-				A6E81AAC210DB08200B9139E /* listWindow.swift */,
+				A6E81A7C210D978500B9139E /* editController.swift */,
+				A6E81AAC210DB08200B9139E /* listController.swift */,
 				A6E81A83210DACB100B9139E /* myView.swift */,
 				A6E81A7A210D963000B9139E /* myWindow.swift */,
 				A6E81A72210D955400B9139E /* popoverController.swift */,
@@ -376,11 +376,11 @@
 				A6E81A5E210D90AB00B9139E /* sourcetable.swift in Sources */,
 				A6E81A49210D811500B9139E /* mytoolbarItem.swift in Sources */,
 				A6E81A80210D980C00B9139E /* downloadManager.swift in Sources */,
-				A6E81AAD210DB08200B9139E /* listWindow.swift in Sources */,
+				A6E81AAD210DB08200B9139E /* listController.swift in Sources */,
 				A6E81A4F210D811500B9139E /* myCustomCheckbox.swift in Sources */,
 				A6E81A78210D95C400B9139E /* documentPopoverController.swift in Sources */,
 				A6E81A50210D811500B9139E /* myTable.swift in Sources */,
-				A6E81A7D210D978500B9139E /* editWindow.swift in Sources */,
+				A6E81A7D210D978500B9139E /* editController.swift in Sources */,
 				A6E81A4A210D811500B9139E /* myBox.swift in Sources */,
 				A6E81A82210DAC5F00B9139E /* webService.swift in Sources */,
 				A6E81A48210D811500B9139E /* myTextfieldNum.swift in Sources */,

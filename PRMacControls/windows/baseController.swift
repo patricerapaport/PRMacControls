@@ -746,8 +746,8 @@ extension cbaseController {
             res -> Void in
             if res {
                 self.output()
-                if self is ceditWindow {
-                    (self as! ceditWindow).transformDonnees()
+                if self is ceditController {
+                    (self as! ceditController).transformDonnees()
                 }
                 self.enregistrer(completion: {
                     res -> Void in

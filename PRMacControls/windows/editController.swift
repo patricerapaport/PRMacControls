@@ -7,7 +7,7 @@
 //
 
 
-open class ceditWindow: cbaseController {
+open class ceditController: cbaseController {
     public override init () {
         super.init()
     }
@@ -55,7 +55,7 @@ open class ceditWindow: cbaseController {
     }
 }
 
-extension ceditWindow: webServiceProtocolDelegate {
+extension ceditController: webServiceProtocolDelegate {
     @objc func afterSend(response: [String], reason: String, control: cmyControl?) {
     }
 }

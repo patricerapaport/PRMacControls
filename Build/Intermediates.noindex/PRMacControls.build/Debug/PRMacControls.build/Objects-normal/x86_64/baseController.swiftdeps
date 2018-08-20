@@ -152,7 +152,7 @@ depends-top-level:
 - "activesWindow"
 - "cUtilisateur"
 - "cbaseController"
-- !private "ceditWindow"
+- !private "ceditController"
 - "clisteControles"
 - !private "cmyCheckbox"
 - "cmyColumn"
@@ -2931,7 +2931,7 @@ depends-member:
 - ["So8NSObjectC", "boutonsToolbar"]
 - ["So8NSObjectC", "btToolbar"]
 - !private ["So8NSObjectC", "capitalized"]
-- !private ["So8NSObjectC", "ceditWindow"]
+- !private ["So8NSObjectC", "ceditController"]
 - ["So8NSObjectC", "chargements"]
 - !private ["So8NSObjectC", "className"]
 - !private ["So8NSObjectC", "cledoc"]
@@ -3647,7 +3647,7 @@ depends-member:
 - !private ["So11NSResponderC", "boutonsAttaches"]
 - ["So11NSResponderC", "boutonsToolbar"]
 - ["So11NSResponderC", "btToolbar"]
-- !private ["So11NSResponderC", "ceditWindow"]
+- !private ["So11NSResponderC", "ceditController"]
 - ["So11NSResponderC", "chargements"]
 - !private ["So11NSResponderC", "className"]
 - !private ["So11NSResponderC", "cledoc"]
@@ -5190,7 +5190,7 @@ depends-member:
 - ["So18NSWindowControllerC", "afterChargements"]
 - ["So18NSWindowControllerC", "boutonsToolbar"]
 - ["So18NSWindowControllerC", "btToolbar"]
-- !private ["So18NSWindowControllerC", "ceditWindow"]
+- !private ["So18NSWindowControllerC", "ceditController"]
 - ["So18NSWindowControllerC", "chargements"]
 - !private ["So18NSWindowControllerC", "className"]
 - ["So18NSWindowControllerC", "clickdoc"]
@@ -6006,7 +6006,7 @@ depends-member:
 - ["13PRMacControls15cbaseControllerC", "afterChargements"]
 - ["13PRMacControls15cbaseControllerC", "boutonsToolbar"]
 - ["13PRMacControls15cbaseControllerC", "btToolbar"]
-- !private ["13PRMacControls15cbaseControllerC", "ceditWindow"]
+- !private ["13PRMacControls15cbaseControllerC", "ceditController"]
 - ["13PRMacControls15cbaseControllerC", "chargements"]
 - !private ["13PRMacControls15cbaseControllerC", "className"]
 - ["13PRMacControls15cbaseControllerC", "clickdoc"]
@@ -6162,7 +6162,7 @@ depends-member:
 - ["13PRMacControls15cbaseControllerC", "windowWillReturnUndoManager"]
 - ["13PRMacControls15cbaseControllerC", "windowWillStartLiveResize"]
 - ["13PRMacControls15cbaseControllerC", "windowWillUseStandardFrame"]
-- !private ["13PRMacControls11ceditWindowC", "transformDonnees"]
+- !private ["13PRMacControls15ceditControllerC", "transformDonnees"]
 - !private ["13PRMacControls15clisteControlesC", "append"]
 - !private ["13PRMacControls15clisteControlesC", "controles"]
 - !private ["13PRMacControls15clisteControlesC", "getControl"]
@@ -6700,7 +6700,7 @@ depends-nominal:
 - !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
 - "13PRMacControls15cbaseControllerC"
-- !private "13PRMacControls11ceditWindowC"
+- !private "13PRMacControls15ceditControllerC"
 - !private "13PRMacControls15clisteControlesC"
 - !private "13PRMacControls9cmyColumnC"
 - !private "13PRMacControls8cmyComboC"
