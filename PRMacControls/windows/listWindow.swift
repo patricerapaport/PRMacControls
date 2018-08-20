@@ -6,7 +6,7 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-open class clistWindow: cbaseController{
+open class clistController: cbaseController{
     public override init () {
         super.init()
     }
@@ -130,12 +130,12 @@ open class clistWindow: cbaseController{
 }
 
 // MARK: Notifications
-extension clistWindow {
+extension clistController {
     
 }
 
 // MARK: opérations
-extension clistWindow {
+extension clistController {
     @objc override open func Annuler(_ sender: Any) {
         super.Annuler(sender)
     }
@@ -220,7 +220,7 @@ extension clistWindow {
     }
 }
 
-extension clistWindow: webServiceProtocolDelegate {
+extension clistController: webServiceProtocolDelegate {
     @objc func afterSend(response: [String], reason: String, control: cmyControl?) {
         let table = tableCourante
         if table?.ctrl is cmyTable {

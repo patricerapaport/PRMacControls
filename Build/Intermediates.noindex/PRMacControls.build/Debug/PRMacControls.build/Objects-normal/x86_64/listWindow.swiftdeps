@@ -1,15 +1,15 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "clistWindow"
+- "clistController"
 provides-nominal:
-- "13PRMacControls11clistWindowC"
+- "13PRMacControls15clistControllerC"
 provides-member:
-- ["13PRMacControls11clistWindowC", ""]
-- ["13PRMacControls11clistWindowC", "Annuler"]
-- ["13PRMacControls11clistWindowC", "Ajouter"]
-- ["13PRMacControls11clistWindowC", "Modifier"]
-- ["13PRMacControls11clistWindowC", "enregistrer"]
-- ["13PRMacControls11clistWindowC", "Save"]
+- ["13PRMacControls15clistControllerC", ""]
+- ["13PRMacControls15clistControllerC", "Annuler"]
+- ["13PRMacControls15clistControllerC", "Ajouter"]
+- ["13PRMacControls15clistControllerC", "Modifier"]
+- ["13PRMacControls15clistControllerC", "enregistrer"]
+- ["13PRMacControls15clistControllerC", "Save"]
 provides-dynamic-lookup:
 - "Ajouter"
 - "Annuler"
@@ -50,7 +50,7 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - "Void"
 - "cbaseController"
-- "clistWindow"
+- "clistController"
 - "cmyControl"
 - "cmyTable"
 - !private "cmyTextfield"
@@ -1396,55 +1396,55 @@ depends-member:
 - !private ["13PRMacControls15cbaseControllerC", "window"]
 - ["13PRMacControls15cbaseControllerC", "windowDidLoad"]
 - ["13PRMacControls15cbaseControllerC", "windowWillLoad"]
-- ["13PRMacControls11clistWindowC", "Ajouter"]
-- ["13PRMacControls11clistWindowC", "Annuler"]
-- ["13PRMacControls11clistWindowC", "Bool"]
-- ["13PRMacControls11clistWindowC", "Int"]
-- ["13PRMacControls11clistWindowC", "Modifier"]
-- !private ["13PRMacControls11clistWindowC", "NSClipView"]
-- ["13PRMacControls11clistWindowC", "NSCoder"]
-- ["13PRMacControls11clistWindowC", "NSNotification"]
-- !private ["13PRMacControls11clistWindowC", "NSScrollView"]
-- ["13PRMacControls11clistWindowC", "NSTableView"]
-- !private ["13PRMacControls11clistWindowC", "NSToolbar"]
-- ["13PRMacControls11clistWindowC", "NSView"]
-- ["13PRMacControls11clistWindowC", "NSWindow"]
-- ["13PRMacControls11clistWindowC", "Save"]
-- ["13PRMacControls11clistWindowC", "String"]
-- !private ["13PRMacControls11clistWindowC", "Supprimer"]
-- !private ["13PRMacControls11clistWindowC", "Swift"]
-- ["13PRMacControls11clistWindowC", "Void"]
-- ["13PRMacControls11clistWindowC", "afterSend"]
-- !private ["13PRMacControls11clistWindowC", "boutonsToolbar"]
-- ["13PRMacControls11clistWindowC", "chargements"]
-- ["13PRMacControls11clistWindowC", "closeWindow"]
-- ["13PRMacControls11clistWindowC", "cmyControl"]
-- ["13PRMacControls11clistWindowC", "cmyTable"]
-- !private ["13PRMacControls11clistWindowC", "cmyTextfield"]
-- !private ["13PRMacControls11clistWindowC", "crowsTable"]
-- !private ["13PRMacControls11clistWindowC", "csourceTable"]
-- !private ["13PRMacControls11clistWindowC", "ctrls"]
-- ["13PRMacControls11clistWindowC", "deinit"]
-- !private ["13PRMacControls11clistWindowC", "donnees"]
-- ["13PRMacControls11clistWindowC", "enregistrer"]
-- ["13PRMacControls11clistWindowC", "fermetureAnnexes"]
-- ["13PRMacControls11clistWindowC", "init"]
-- !private ["13PRMacControls11clistWindowC", "login"]
-- !private ["13PRMacControls11clistWindowC", "mustBeLogged"]
-- ["13PRMacControls11clistWindowC", "myList"]
-- !private ["13PRMacControls11clistWindowC", "myPopover"]
-- ["13PRMacControls11clistWindowC", "nouvelleRangee"]
-- !private ["13PRMacControls11clistWindowC", "output"]
-- ["13PRMacControls11clistWindowC", "refreshTable"]
-- ["13PRMacControls11clistWindowC", "register"]
-- ["13PRMacControls11clistWindowC", "selected"]
-- !private ["13PRMacControls11clistWindowC", "setState"]
-- !private ["13PRMacControls11clistWindowC", "tableCourante"]
-- !private ["13PRMacControls11clistWindowC", "user"]
-- !private ["13PRMacControls11clistWindowC", "viderToolbar"]
-- !private ["13PRMacControls11clistWindowC", "window"]
-- ["13PRMacControls11clistWindowC", "windowDidLoad"]
-- ["13PRMacControls11clistWindowC", "windowWillLoad"]
+- ["13PRMacControls15clistControllerC", "Ajouter"]
+- ["13PRMacControls15clistControllerC", "Annuler"]
+- ["13PRMacControls15clistControllerC", "Bool"]
+- ["13PRMacControls15clistControllerC", "Int"]
+- ["13PRMacControls15clistControllerC", "Modifier"]
+- !private ["13PRMacControls15clistControllerC", "NSClipView"]
+- ["13PRMacControls15clistControllerC", "NSCoder"]
+- ["13PRMacControls15clistControllerC", "NSNotification"]
+- !private ["13PRMacControls15clistControllerC", "NSScrollView"]
+- ["13PRMacControls15clistControllerC", "NSTableView"]
+- !private ["13PRMacControls15clistControllerC", "NSToolbar"]
+- ["13PRMacControls15clistControllerC", "NSView"]
+- ["13PRMacControls15clistControllerC", "NSWindow"]
+- ["13PRMacControls15clistControllerC", "Save"]
+- ["13PRMacControls15clistControllerC", "String"]
+- !private ["13PRMacControls15clistControllerC", "Supprimer"]
+- !private ["13PRMacControls15clistControllerC", "Swift"]
+- ["13PRMacControls15clistControllerC", "Void"]
+- ["13PRMacControls15clistControllerC", "afterSend"]
+- !private ["13PRMacControls15clistControllerC", "boutonsToolbar"]
+- ["13PRMacControls15clistControllerC", "chargements"]
+- ["13PRMacControls15clistControllerC", "closeWindow"]
+- ["13PRMacControls15clistControllerC", "cmyControl"]
+- ["13PRMacControls15clistControllerC", "cmyTable"]
+- !private ["13PRMacControls15clistControllerC", "cmyTextfield"]
+- !private ["13PRMacControls15clistControllerC", "crowsTable"]
+- !private ["13PRMacControls15clistControllerC", "csourceTable"]
+- !private ["13PRMacControls15clistControllerC", "ctrls"]
+- ["13PRMacControls15clistControllerC", "deinit"]
+- !private ["13PRMacControls15clistControllerC", "donnees"]
+- ["13PRMacControls15clistControllerC", "enregistrer"]
+- ["13PRMacControls15clistControllerC", "fermetureAnnexes"]
+- ["13PRMacControls15clistControllerC", "init"]
+- !private ["13PRMacControls15clistControllerC", "login"]
+- !private ["13PRMacControls15clistControllerC", "mustBeLogged"]
+- ["13PRMacControls15clistControllerC", "myList"]
+- !private ["13PRMacControls15clistControllerC", "myPopover"]
+- ["13PRMacControls15clistControllerC", "nouvelleRangee"]
+- !private ["13PRMacControls15clistControllerC", "output"]
+- ["13PRMacControls15clistControllerC", "refreshTable"]
+- ["13PRMacControls15clistControllerC", "register"]
+- ["13PRMacControls15clistControllerC", "selected"]
+- !private ["13PRMacControls15clistControllerC", "setState"]
+- !private ["13PRMacControls15clistControllerC", "tableCourante"]
+- !private ["13PRMacControls15clistControllerC", "user"]
+- !private ["13PRMacControls15clistControllerC", "viderToolbar"]
+- !private ["13PRMacControls15clistControllerC", "window"]
+- ["13PRMacControls15clistControllerC", "windowDidLoad"]
+- ["13PRMacControls15clistControllerC", "windowWillLoad"]
 - !private ["13PRMacControls15clisteControlesC", "verifControl"]
 - !private ["13PRMacControls10cmyControlC", "ctrl"]
 - !private ["13PRMacControls10cmyControlC", "datasource"]
@@ -1655,7 +1655,7 @@ depends-nominal:
 - !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
 - "13PRMacControls15cbaseControllerC"
-- "13PRMacControls11clistWindowC"
+- "13PRMacControls15clistControllerC"
 - !private "13PRMacControls15clisteControlesC"
 - !private "13PRMacControls10cmyControlC"
 - !private "13PRMacControls8cmyTableC"
@@ -1704,4 +1704,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "c66fb4a6d3350d8cf852900becccc42a"
+interface-hash: "b1c0a93621eabada61f510eddc5d448f"

@@ -198,7 +198,7 @@ SWIFT_CLASS("_TtC13PRMacControls8cOutline")
 
 SWIFT_CLASS("_TtC13PRMacControls15cbaseController")
 @interface cbaseController : NSWindowController
-@property (nonatomic, copy) NSString * _Nonnull verifproc;
+@property (nonatomic, copy) NSString * _Null_unspecified verifProc;
 @property (nonatomic, readonly) NSNibName _Nullable windowNibName;
 - (void)prepareForInterfaceBuilder;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -350,8 +350,8 @@ SWIFT_CLASS("_TtC13PRMacControls11ceditWindow")
 
 
 
-SWIFT_CLASS("_TtC13PRMacControls11clistWindow")
-@interface clistWindow : cbaseController
+SWIFT_CLASS("_TtC13PRMacControls15clistController")
+@interface clistController : cbaseController
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithWindow:(NSWindow * _Null_unspecified)window OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -365,7 +365,7 @@ SWIFT_CLASS("_TtC13PRMacControls11clistWindow")
 
 
 
-@interface clistWindow (SWIFT_EXTENSION(PRMacControls))
+@interface clistController (SWIFT_EXTENSION(PRMacControls))
 - (void)Annuler:(id _Nonnull)sender;
 - (void)Ajouter:(id _Nonnull)sender;
 - (void)Modifier:(id _Nonnull)sender;
