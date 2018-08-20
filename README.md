@@ -8,7 +8,7 @@ Les classes cListController et ceditController dérivent de la classe de base cb
 Les contrôles de saisie sous-classés sont:
 	NSTextField sous classé en cmyTextfield
 	NSButton sous-classé en cmyCheckbox(lorsque l'on veut utiliser une checkbox)
-	NSComboBox sous classé en cmyCheckBox
+	NSComboBox sous classé en cmyCombo
 	NSTableView sous classé en cmyTable
 
 Pour initialiser un contrôler décrivant de clistController ou bien ceditController, il faut:
@@ -33,3 +33,8 @@ Dans tous les cas, il faudra rajouter le constructeur:
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+
+Lorsque le constructeur de la classe de base est appelé, il répertorie dans une liste (ctrls) tous les contrôles que vous avez déposé dans le fichier XIB, pour peu que vous les ayez sous-classés en cmyTextfield, cmyCheckbox, cmyCombo ou cmyTable.
+
+LA CLASSE ceditController.
+
