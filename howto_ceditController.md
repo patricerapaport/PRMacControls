@@ -31,7 +31,15 @@ Celle-ci peut être une méthode générale de ceditController, sous la forme:
 
 cette méthode prend pour paramètre le contrôle à vérifier et renvoie true si la vérification est OK, false dans le cas contraire.
 
-Si la méthode editControles n'est pas implémentée dans votre classe contrôler, chaque contrôle peut invoquer sa propre procédure de vérification en implémentant dans la classe contrôler une procédure @objc verif<identifier du contrôle>(ctrl: NSControl) ->Bool.
-l'identifier se r'enseigne dans le fichier XIB correspondant à votre classe.
+Si la méthode editControles n'est pas implémentée dans votre classe contrôler, chaque contrôle peut invoquer sa propre procédure de vérification en implémentant dans la classe contrôler une procédure 
 
-Attention, quelle que soit la casse de l'identifier correspondant au contrôle à vérifier, dans le nom de la méthode il doit commencer par une majuscule et toutes les autres lettres doivent être en minuscule. EX: méthode pour vérifier le contrôle ayant pour identifier "tESt": @objc verifTest (ctrl: NSControl) -> Bool
+	@objc verif<identifier du contrôle>(ctrl: NSControl) ->Bool {
+	}
+
+l'identifier se renseigne dans le fichier XIB correspondant à votre classe.
+
+Attention, quelle que soit la casse de l'identifier correspondant au contrôle à vérifier, dans le nom de la méthode il doit commencer par une majuscule et toutes les autres lettres doivent être en minuscule. EX: méthode pour vérifier le contrôle ayant pour identifier "tESt": 
+
+	@objc verifTest (ctrl: NSControl) -> Bool {
+	}
+
