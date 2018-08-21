@@ -140,11 +140,6 @@ protocol myBaseServiceTabview {
         setConfigs()
         //let info = ["numrequete": 0]
         //NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
-        let nomMethode = "verifControlesWithCtrl:"
-        let methode = Selector(nomMethode)
-        if self.responds(to: methode) {
-            verifproc = nomMethode
-        }
         
         chargements (0)
     }
