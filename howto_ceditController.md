@@ -22,3 +22,7 @@ En état d'édition, lorsqu'un contrôle perd le focus pour passer au contrôle 
 
 Il est de votre responsabilité d'écrire cette procédure de vérification.
 Celle-ci peut être une méthode générale de ceditController, sous la forme:
+	@objc func <nom de la méthode>(ctrl: NSControl) ->Bool {
+	}
+cette méthode prend pour paramètre le contrôle à vérifier et renvoie true si la vérification est OK, false dans le cas contraire.
+

@@ -672,10 +672,11 @@ open class cmyControl: NSObject {
                 let res = controller.perform(methode, with: ctrl as! NSControl)
                 if res == nil {
                     completion(false)
+                } else {
+                    let bRes = Unmanaged<AnyObject>.fromOpaque(
+                        res!.toOpaque()).takeUnretainedValue()
+                    completion((bRes as! NSNumber).intValue == 1 ? true : false)
                 }
-                let bRes = Unmanaged<AnyObject>.fromOpaque(
-                    res!.toOpaque()).takeUnretainedValue()
-                completion((bRes as! NSNumber).intValue == 1 ? true : false)
             } else {
                 Swift.print("La méthode \(controller.className).\((controller as! cbaseController).verifProc!)withCtrl: n'est pas implémentée")
             }
