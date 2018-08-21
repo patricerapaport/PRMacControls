@@ -52,9 +52,9 @@ protocol myBaseServiceTabview {
     var tableCourante: cmyControl!  // contient le nom de la dernière table recherchée pour éviter d'appeler 36 fois getControl
     var stayInEdition: Bool = false; // si positionné à true, la grille reste en mode édition après un save
     
-    @IBInspectable public var verifProc: String! {
+    @IBInspectable public var verifproc: String! {
         didSet {
-            verifProc = ""
+            verifproc = ""
         }
     }
     
@@ -75,7 +75,7 @@ protocol myBaseServiceTabview {
         let nomMethode = "verifControlesWithCtrl:"
         let methode = Selector(nomMethode)
         if self.responds(to: methode) {
-            verifProc = nomMethode
+            verifproc = nomMethode
         }
         
     }
@@ -143,7 +143,7 @@ protocol myBaseServiceTabview {
         let nomMethode = "verifControlesWithCtrl:"
         let methode = Selector(nomMethode)
         if self.responds(to: methode) {
-            verifProc = nomMethode
+            verifproc = nomMethode
         }
         
         chargements (0)

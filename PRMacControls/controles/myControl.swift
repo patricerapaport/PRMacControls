@@ -664,8 +664,8 @@ open class cmyControl: NSObject {
                 return
             }
         }
-        if controller is cbaseController && (controller as! cbaseController).verifProc != nil{
-            let nomMethode =  (controller as! cbaseController).verifProc!+"WithCtrl:"
+        if controller is cbaseController && (controller as! cbaseController).verifproc != nil{
+            let nomMethode =  (controller as! cbaseController).verifproc!+"WithCtrl:"
             let methode = Selector(nomMethode)
             if controller.responds (to: methode) {
                 //controller.perform(methode)
@@ -678,7 +678,7 @@ open class cmyControl: NSObject {
                     completion((bRes as! NSNumber).intValue == 1 ? true : false)
                 }
             } else {
-                Swift.print("La méthode \(controller.className).\((controller as! cbaseController).verifProc!)withCtrl: n'est pas implémentée")
+                Swift.print("La méthode \(controller.className).\((controller as! cbaseController).verifproc!)withCtrl: n'est pas implémentée")
             }
             return
         }
