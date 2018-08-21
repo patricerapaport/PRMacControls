@@ -5,6 +5,11 @@ provides-nominal:
 - "13PRMacControls15clisteControlesC"
 provides-member:
 - ["13PRMacControls15clisteControlesC", ""]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
@@ -892,4 +897,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "c44d82ea3273aa1fb5ca65047b3766a1"
+interface-hash: "35fd4508d1eadf2e6affeb4950346481"

@@ -426,6 +426,8 @@ SWIFT_CLASS("_TtC13PRMacControls10cmyControl")
 
 
 
+
+
 SWIFT_CLASS("_TtC13PRMacControls13cmyControlDoc")
 @interface cmyControlDoc : NSButton
 @property (nonatomic, readonly) BOOL acceptsFirstResponder;

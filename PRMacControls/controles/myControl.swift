@@ -597,6 +597,37 @@ open class cmyControl: NSObject {
         }
     }
     
+    
+    
+    
+    func acceptKey (event: NSEvent) -> Bool {
+        if acceptKeyMethod != nil {
+            let res = controller.perform(acceptKeyMethod, with: ctrl as! NSControl, with: event)
+            if res == nil {
+                return false
+            }
+            let bRes = Unmanaged<AnyObject>.fromOpaque(
+                res!.toOpaque()).takeUnretainedValue()
+            return (bRes as! NSNumber).intValue == 1 ? true : false
+        } else if ctrl is cmyTextfield {
+            return (ctrl as! cmyTextfield).acceptKey(event: event)
+        } else if ctrl is cmyCombo {
+            if [ckeyboardKeys.downArrow, ckeyboardKeys.upArrow].contains(event.keyCode) {
+                return true
+            }
+            var S: String? = (ctrl as! cmyCombo).stringValue
+            S = (ctrl as! cmyCombo).completedString(S!)
+            if S != nil {
+                (ctrl as! cmyCombo).stringValue = S!
+            }
+            return true
+        } else {
+            return true
+        }
+    }
+}
+
+extension cmyControl {
     public func verifControl() ->Bool {
         if tableView != nil && tableView is cmyTable && (tableView as! cmyTable).verifProc != nil {
             let nomMethode =  (tableView as! cmyTable).verifProc!+"WithCtrl:"
@@ -624,13 +655,13 @@ open class cmyControl: NSObject {
             }
         }
         else
-        if ctrl is cmyCombo {
-            if !(ctrl as! cmyCombo).verifObligatoire() {
-                repositionneTabview()
-                popover("Zone obligatoire")
-                ctrl.becomeFirstResponder()
-                return false
-            }
+            if ctrl is cmyCombo {
+                if !(ctrl as! cmyCombo).verifObligatoire() {
+                    repositionneTabview()
+                    popover("Zone obligatoire")
+                    ctrl.becomeFirstResponder()
+                    return false
+                }
         }
         if verifControlMethod != nil {
             let res = controller.perform(verifControlMethod, with: ctrl as! NSControl)
@@ -646,6 +677,29 @@ open class cmyControl: NSObject {
     }
     
     public func verifControl (completion: @escaping(Bool) -> Void) {
+        if ctrl is cmyTextfield  {
+            if !(ctrl as! cmyTextfield).verifObligatoire() {
+                repositionneTabview()
+                popover("Zone obligatoire")
+                ctrl.becomeFirstResponder()
+                completion(false)
+                return
+            }
+            if (!(ctrl as! cmyTextfield).verifCoherence()) {
+                completion(false)
+                return
+            }
+        }
+        else if ctrl is cmyCombo {
+            if !(ctrl as! cmyCombo).verifObligatoire() {
+                repositionneTabview()
+                popover("Zone obligatoire")
+                ctrl.becomeFirstResponder()
+                completion(false)
+                return
+            }
+        }
+        
         let theTable: NSTableView? = tableView
         if theTable != nil {
             if theTable is cmyTable && (theTable as! cmyTable).verifProc != nil {
@@ -682,28 +736,7 @@ open class cmyControl: NSObject {
             }
             return
         }
-        if ctrl is cmyTextfield  {
-            if !(ctrl as! cmyTextfield).verifObligatoire() {
-                repositionneTabview()
-                popover("Zone obligatoire")
-                ctrl.becomeFirstResponder()
-                completion(false)
-                return
-            }
-            if (!(ctrl as! cmyTextfield).verifCoherence()) {
-                completion(false)
-                return
-            }
-        }
-        else if ctrl is cmyCombo {
-            if !(ctrl as! cmyCombo).verifObligatoire() {
-                repositionneTabview()
-                popover("Zone obligatoire")
-                ctrl.becomeFirstResponder()
-                completion(false)
-                return
-            }
-        }
+        
         if verifControlMethod != nil {
             let res = controller.perform(verifControlMethod, with: ctrl as! NSControl)
             if res == nil {
@@ -755,7 +788,7 @@ open class cmyControl: NSObject {
                                         completion(false)
                                     } else {
                                         let bRes = Unmanaged<AnyObject>.fromOpaque(
-                                        result!.toOpaque()).takeUnretainedValue()
+                                            result!.toOpaque()).takeUnretainedValue()
                                         completion((bRes as! NSNumber).intValue == 1 ? true : false)
                                     }
                                 } else {
@@ -768,33 +801,6 @@ open class cmyControl: NSObject {
             }
         } else {
             completion(true)
-        }
-    }
-    
-    
-    func acceptKey (event: NSEvent) -> Bool {
-        if acceptKeyMethod != nil {
-            let res = controller.perform(acceptKeyMethod, with: ctrl as! NSControl, with: event)
-            if res == nil {
-                return false
-            }
-            let bRes = Unmanaged<AnyObject>.fromOpaque(
-                res!.toOpaque()).takeUnretainedValue()
-            return (bRes as! NSNumber).intValue == 1 ? true : false
-        } else if ctrl is cmyTextfield {
-            return (ctrl as! cmyTextfield).acceptKey(event: event)
-        } else if ctrl is cmyCombo {
-            if [ckeyboardKeys.downArrow, ckeyboardKeys.upArrow].contains(event.keyCode) {
-                return true
-            }
-            var S: String? = (ctrl as! cmyCombo).stringValue
-            S = (ctrl as! cmyCombo).completedString(S!)
-            if S != nil {
-                (ctrl as! cmyCombo).stringValue = S!
-            }
-            return true
-        } else {
-            return true
         }
     }
 }

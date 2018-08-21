@@ -222,6 +222,10 @@ open class clisteControles {
         return nil
     }
     
+}
+
+//MARK: verification des controles
+extension clisteControles {
     public func verifControl() ->Bool {
         for control in controles {
             if !control.verifControl() {
@@ -260,20 +264,20 @@ open class clisteControles {
     public func verifControl(tabviewItem: cmyTabviewItem, completion: @escaping(Bool) -> Void) {
         verifControl(numcontrol: 0, tabviewItem: tabviewItem, completion: {
             res in
-                completion(res)
+            completion(res)
         })
     }
     
     public func verifControl (numcontrol: Int, tabviewItem: NSTabViewItem, completion: @escaping(Bool) -> Void) {
         if numcontrol < controles.count {
             if controles[numcontrol].tabviewItem != nil && controles[numcontrol].tabviewItem == tabviewItem {
-Swift.print("listecontroles.verifcontrol pour \(controles[numcontrol].identifier)")
+                Swift.print("listecontroles.verifcontrol pour \(controles[numcontrol].identifier)")
                 controles[numcontrol].verifControl(completion: {
                     res in
                     if res {
                         self.verifControl(numcontrol: numcontrol+1, tabviewItem: tabviewItem, completion: completion)
                     } else {
-Swift.print("listecontroles.verifcontrol se termine à false")
+                        Swift.print("listecontroles.verifcontrol se termine à false")
                         completion(false)
                     }
                 })
@@ -281,7 +285,7 @@ Swift.print("listecontroles.verifcontrol se termine à false")
                 verifControl(numcontrol: numcontrol+1, tabviewItem: tabviewItem, completion: completion)
             }
         } else {
-Swift.print("listecontroles.verifcontrol se termine à true")
+            Swift.print("listecontroles.verifcontrol se termine à true")
             completion(true)
         }
     }
