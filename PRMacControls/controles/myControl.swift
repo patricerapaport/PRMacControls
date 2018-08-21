@@ -646,22 +646,25 @@ open class cmyControl: NSObject {
     }
     
     public func verifControl (completion: @escaping(Bool) -> Void) {
-        let theTable: NSTableView? = tableView!
-        if theTable != nil && theTable is cmyTable && (theTable as! cmyTable).verifProc != nil {
-            let nomMethode =  (tableView as! cmyTable).verifProc!+"WithCtrl:"
-            let methode = Selector(nomMethode)
-            if controller.responds (to: methode) {
-                //controller.perform(methode)
-                let res = controller.perform(methode, with: ctrl as! NSControl)
-                if res == nil {
-                    completion(false)
+        let theTable: NSTableView? = tableView
+        if theTable != nil {
+            if theTable is cmyTable && (theTable as! cmyTable).verifProc != nil {
+                let nomMethode =  (tableView as! cmyTable).verifProc!+"WithCtrl:"
+                let methode = Selector(nomMethode)
+                if controller.responds (to: methode) {
+                    //controller.perform(methode)
+                    let res = controller.perform(methode, with: ctrl as! NSControl)
+                    if res == nil {
+                        completion(false)
+                    }
+                    let bRes = Unmanaged<AnyObject>.fromOpaque(
+                        res!.toOpaque()).takeUnretainedValue()
+                    completion((bRes as! NSNumber).intValue == 1 ? true : false)
                 }
-                let bRes = Unmanaged<AnyObject>.fromOpaque(
-                    res!.toOpaque()).takeUnretainedValue()
-                completion((bRes as! NSNumber).intValue == 1 ? true : false)
+                return
             }
-            return
-        } else if controller is cbaseController && (controller as! cbaseController).verifProc != nil{
+        }
+        if controller is cbaseController && (controller as! cbaseController).verifProc != nil{
             let nomMethode =  (controller as! cbaseController).verifProc!+"WithCtrl:"
             let methode = Selector(nomMethode)
             if controller.responds (to: methode) {
