@@ -52,9 +52,9 @@ protocol myBaseServiceTabview {
     var tableCourante: cmyControl!  // contient le nom de la dernière table recherchée pour éviter d'appeler 36 fois getControl
     var stayInEdition: Bool = false; // si positionné à true, la grille reste en mode édition après un save
     
-    @IBInspectable public var verifproc: String! {
+    public var verifproc: String! {
         didSet {
-            verifproc = ""
+            verifproc = "verifControles"
         }
     }
     
