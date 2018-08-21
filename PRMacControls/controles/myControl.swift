@@ -672,6 +672,8 @@ open class cmyControl: NSObject {
                 let bRes = Unmanaged<AnyObject>.fromOpaque(
                     res!.toOpaque()).takeUnretainedValue()
                 completion((bRes as! NSNumber).intValue == 1 ? true : false)
+            } else {
+                Swift.print("La méthode \(controller.className).\((controller as! cbaseController).verifProc!)withCtrl: n'est pas implémentée")
             }
             return
         }

@@ -14,4 +14,11 @@ Pour passer d'un état à l'autre, il faut appeler la méthode setState de cedit
 		   case ajout
 		}
 
-lorsque vous appelez setState(état: .nonedition) tous les contrôles de la grille sont en état désactivés (disabled) et ils refusent la prise de focus (à l'exception des contrôles dont la variable isFiltre est à ON).
+Lorsque vous appelez setState(état: .nonedition) tous les contrôles de la grille sont en état désactivés (disabled) et ils refusent la prise de focus (à l'exception des contrôles dont la variable isFiltre est à ON).
+
+Lorsque vous appelez setState(état: .edition) tous ls contrôles de la grille sont activés et le focus est placé sur le premier contrôle.
+
+En état d'édition, lorsqu'un contrôle perd le focus pour passer au contrôle suivant, soit en actionnant la touche TABULATION, soit en actionnant la touche ENTREE, soit en cliquant avec la souris sur un autre contrôle, une procédure de vérification du contrôle est enclenchée.
+
+Il est de votre responsabilité d'écrire cette procédure de vérification.
+Celle-ci peut être une méthode générale de ceditController, sous la forme:
