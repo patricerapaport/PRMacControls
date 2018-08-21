@@ -63,7 +63,6 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableViewSelectionDidChange"
 - "tableViewSelectionIsChanging"
-- "verifproc"
 - "viderToolbar"
 - "windowDidLoad"
 - "windowDidMove"
@@ -6758,4 +6757,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "a6f01f7bed8dd24f82922c24dd937719"
+interface-hash: "f565ccffa5a91cca7eb72efedec2be5e"

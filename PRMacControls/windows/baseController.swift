@@ -71,15 +71,6 @@ protocol myBaseServiceTabview {
         
     }
     
-    override open func prepareForInterfaceBuilder() {
-        let nomMethode = "verifControlesWithCtrl:"
-        let methode = Selector(nomMethode)
-        if self.responds(to: methode) {
-            verifproc = nomMethode
-        }
-        
-    }
-    
     public init() {
         self.ctrls = nil
         self.tabView = nil
@@ -142,6 +133,11 @@ protocol myBaseServiceTabview {
         //NotificationCenter.default.post(name: .chargement, object: self, userInfo: info)
         
         chargements (0)
+        let nommethode = "verifControlesWithCtrl:"
+        let method = Selector(nommethode)
+        if responds(to: method) {
+            verifproc = "verifControles"
+        }
     }
     
     required public init?(coder: NSCoder) {

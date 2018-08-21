@@ -55,7 +55,6 @@ provides-dynamic-lookup:
 - "mouseExited"
 - "numberOfItems"
 - "numberOfRows"
-- "prepareForInterfaceBuilder"
 - "setConfigs"
 - "shouldLeave"
 - "shouldSelect"
@@ -3056,7 +3055,6 @@ depends-member:
 - ["So8NSObjectC", "popoverWillClose"]
 - ["So8NSObjectC", "popoverWillShow"]
 - !private ["So8NSObjectC", "preferenceManager"]
-- ["So8NSObjectC", "prepareForInterfaceBuilder"]
 - !private ["So8NSObjectC", "rect"]
 - ["So8NSObjectC", "refreshDoc"]
 - ["So8NSObjectC", "register"]
@@ -3755,7 +3753,6 @@ depends-member:
 - ["So11NSResponderC", "popoverWillClose"]
 - ["So11NSResponderC", "popoverWillShow"]
 - !private ["So11NSResponderC", "preferenceManager"]
-- ["So11NSResponderC", "prepareForInterfaceBuilder"]
 - !private ["So11NSResponderC", "rect"]
 - ["So11NSResponderC", "refreshDoc"]
 - ["So11NSResponderC", "register"]
@@ -5268,7 +5265,6 @@ depends-member:
 - ["So18NSWindowControllerC", "popoverWillClose"]
 - ["So18NSWindowControllerC", "popoverWillShow"]
 - !private ["So18NSWindowControllerC", "preferenceManager"]
-- ["So18NSWindowControllerC", "prepareForInterfaceBuilder"]
 - ["So18NSWindowControllerC", "refreshDoc"]
 - ["So18NSWindowControllerC", "register"]
 - !private ["So18NSWindowControllerC", "responds"]
@@ -6085,7 +6081,6 @@ depends-member:
 - ["13PRMacControls15cbaseControllerC", "popoverWillClose"]
 - ["13PRMacControls15cbaseControllerC", "popoverWillShow"]
 - !private ["13PRMacControls15cbaseControllerC", "preferenceManager"]
-- ["13PRMacControls15cbaseControllerC", "prepareForInterfaceBuilder"]
 - ["13PRMacControls15cbaseControllerC", "refreshDoc"]
 - ["13PRMacControls15cbaseControllerC", "register"]
 - !private ["13PRMacControls15cbaseControllerC", "responds"]
@@ -6757,4 +6752,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "f565ccffa5a91cca7eb72efedec2be5e"
+interface-hash: "beba3b9a5812aaf36f3970186196e1ed"
