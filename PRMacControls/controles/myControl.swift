@@ -646,7 +646,8 @@ open class cmyControl: NSObject {
     }
     
     public func verifControl (completion: @escaping(Bool) -> Void) {
-        if tableView != nil && tableView is cmyTable && (tableView as! cmyTable).verifProc != nil {
+        let theTable: NSTableView? = tableView
+        if theTable != nil && theTable is cmyTable && (theTable as! cmyTable).verifProc != nil {
             let nomMethode =  (tableView as! cmyTable).verifProc!+"WithCtrl:"
             let methode = Selector(nomMethode)
             if controller.responds (to: methode) {
