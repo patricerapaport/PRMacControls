@@ -28,6 +28,7 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
+        Swift.print("becomeFrstresponder sur \(identifier)")
         if parent != nil {
             var currentFocus: cmyControl!
             if controller is cbaseController {
@@ -154,6 +155,7 @@
     override open func keyUp(with event: NSEvent) {
          if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains( event.keyCode) {
             closePopover()
+Swift.print("keyup détectée sur \(identifier)")
             if !event.modifierFlags.contains( .shift) {
                 parent.verifControl(completion: {
                     res in
