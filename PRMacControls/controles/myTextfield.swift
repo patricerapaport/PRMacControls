@@ -90,6 +90,7 @@
     }
     
     override open func resignFirstResponder() -> Bool {
+        Swift.print("resigneFirstResponder sur \(identifier)")
         if parent != nil && parent.resignMethod != nil {
             if controller is cbaseController {
                 let theController = controller as! cbaseController
