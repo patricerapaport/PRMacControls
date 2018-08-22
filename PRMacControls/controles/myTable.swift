@@ -264,7 +264,7 @@ open class cmyTable: NSTableView {
         return cids
     }
     
-    func sourceRow (_ row: Int) -> csourceTable {
+    open func sourceRow (_ row: Int) -> csourceTable {
         if row < self.parent.datasource.rows.count {
             return self.parent.datasource.rows[row]
         } else {

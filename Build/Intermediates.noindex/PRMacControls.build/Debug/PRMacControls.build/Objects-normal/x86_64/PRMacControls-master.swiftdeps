@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "38bbcb5442189469c6b1dfeec1a154b3"
-build_time: [1534914144, 80022000]
+build_time: [1534917348, 517228000]
 inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myOutline.swift": [1534051694, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDecimal.swift": [1534051720, 0]
@@ -25,13 +25,13 @@ inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/keyboardKeys.swift": [1532969979, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControlDoc.swift": [1534051683, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldTelephone.swift": [1534051737, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/sourcetable.swift": [1534052008, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/sourcetable.swift": [1534917347, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/mytoolbarItem.swift": [1534051744, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/web/downloadManager.swift": [1534082964, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/listController.swift": [1534755058, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myCustomCheckbox.swift": [1534051587, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/documentPopoverController.swift": [1534049919, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTable.swift": [1534665571, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTable.swift": [1534917064, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/editController.swift": [1534755512, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myBox.swift": [1534051524, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/web/webService.swift": [1533098635, 0]

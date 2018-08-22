@@ -14,6 +14,8 @@ provides-member:
 - ["13PRMacControls10cmyControlC", ""]
 - ["13PRMacControls15cmyTextfieldDocC", ""]
 - ["13PRMacControls17myNewCheckControlC", ""]
+- ["13PRMacControls10cmyControlC", "verifControl"]
+- ["13PRMacControls10cmyControlC", "verifControl"]
 provides-dynamic-lookup:
 - "frame"
 - "layout"
@@ -2844,4 +2846,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "aa7a6b1d80842ddb3b0bf51f75f2c7b1"
+interface-hash: "92e6e33504ddc08309ba2725d5979a8c"
