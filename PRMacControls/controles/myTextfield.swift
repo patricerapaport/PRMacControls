@@ -55,7 +55,10 @@
                             
                             //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
                         } else {
-                            currentFocus.ctrl.becomeFirstResponder()
+                            if self.window is NSWindow {
+                                (self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
+                            }
+                            //currentFocus.ctrl.becomeFirstResponder()
                         }
                     })
                 }
@@ -163,7 +166,10 @@ Swift.print("keyup détectée sur \(identifier)")
                     if res {
                         let next = self.parent.nextFocus()
                         if next != nil {
-                            next?.ctrl.becomeFirstResponder()
+                            if self.window is NSWindow {
+                                (self.window as! NSWindow).makeFirstResponder(next?.ctrl)
+                            }
+                            //next?.ctrl.becomeFirstResponder()
                         }
                     }
                 })
@@ -171,7 +177,10 @@ Swift.print("keyup détectée sur \(identifier)")
 Swift.print("controle arrière détecté valeur=\(stringValue)")
                 let prev = self.parent.previousFocus()
                 if prev != nil {
-                    prev?.ctrl.becomeFirstResponder()
+                    if self.window is NSWindow {
+                        (self.window as! NSWindow).makeFirstResponder(prev?.ctrl)
+                    }
+                    //prev?.ctrl.becomeFirstResponder()
                 }
             }
         }

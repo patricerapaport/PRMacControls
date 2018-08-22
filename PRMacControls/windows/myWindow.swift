@@ -75,7 +75,8 @@ open class cmyWindow: NSWindow {
             }
         }
         if next != nil {
-            next?.ctrl.becomeFirstResponder()
+            makeFirstResponder(next?.ctrl)
+            //next?.ctrl.becomeFirstResponder()
         }
         return focus
     }

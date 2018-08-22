@@ -1083,7 +1083,8 @@ Swift.print("tableview didClick \(tableColumn.description)")
             } else if (tableView as! cmyTable).state != .nonedition && columnCtrl is cmyTextfield {
                 if (columnCtrl as! cmyTextfield).isEnabled {
                     (tableView as! cmyTable).rowselected = row
-                    columnCtrl?.becomeFirstResponder()
+                    window?.makeFirstResponder(columnCtrl)
+                    //columnCtrl?.becomeFirstResponder()
                     return false
                 }
             }

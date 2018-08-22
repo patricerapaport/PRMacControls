@@ -647,7 +647,10 @@ extension cmyControl {
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
                 popover("Zone obligatoire")
-                ctrl.becomeFirstResponder()
+                if window is NSWindow {
+                    (window as! NSWindow).makeFirstResponder(ctrl)
+                }
+                //ctrl.becomeFirstResponder()
                 return false
             }
             if (!(ctrl as! cmyTextfield).verifCoherence()) {
@@ -659,7 +662,10 @@ extension cmyControl {
                 if !(ctrl as! cmyCombo).verifObligatoire() {
                     repositionneTabview()
                     popover("Zone obligatoire")
-                    ctrl.becomeFirstResponder()
+                    if window is NSWindow {
+                        (window as! NSWindow).makeFirstResponder(ctrl)
+                    }
+                    //ctrl.becomeFirstResponder()
                     return false
                 }
         }
@@ -681,7 +687,10 @@ extension cmyControl {
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
                 popover("Zone obligatoire")
-                ctrl.becomeFirstResponder()
+                if window is NSWindow {
+                    (window as! NSWindow).makeFirstResponder(ctrl)
+                }
+                //ctrl.becomeFirstResponder()
                 completion(false)
                 return
             }
@@ -694,7 +703,10 @@ extension cmyControl {
             if !(ctrl as! cmyCombo).verifObligatoire() {
                 repositionneTabview()
                 popover("Zone obligatoire")
-                ctrl.becomeFirstResponder()
+                if window is NSWindow {
+                    (window as! NSWindow).makeFirstResponder(ctrl)
+                }
+                //ctrl.becomeFirstResponder()
                 completion(false)
                 return
             }
@@ -764,7 +776,10 @@ extension cmyControl {
                     ws.send(ctrl: self, completion: {
                         res -> Void in
                         if !res {
-                            _ = self.ctrl.becomeFirstResponder()
+                            if self.window is NSWindow {
+                                (self.window as! NSWindow).makeFirstResponder(self.ctrl)
+                            }
+                            //_ = self.ctrl.becomeFirstResponder()
                             completion(false)
                         } else {
                             completion(true)
@@ -774,7 +789,10 @@ extension cmyControl {
                     ws.sendForDict(ctrl: self, completion: {
                         res, dict ->Void in
                         if !res {
-                            _ = self.ctrl.becomeFirstResponder()
+                            if self.window is NSWindow {
+                                (self.window as! NSWindow).makeFirstResponder(self.ctrl)
+                            }
+                            //_ = self.ctrl.becomeFirstResponder()
                             completion(false)
                         } else {
                             if self.verifSuiteMethode == nil {
