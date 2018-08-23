@@ -690,7 +690,7 @@ extension cmyControl {
                 if window is NSWindow {
                     (window as! NSWindow).makeFirstResponder(ctrl)
                 }
-                //ctrl.becomeFirstResponder()
+                ctrl.becomeFirstResponder()
                 completion(false)
                 return
             }
