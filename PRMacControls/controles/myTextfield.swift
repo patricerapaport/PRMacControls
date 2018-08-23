@@ -28,7 +28,7 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
-        Swift.print("becomeFrstresponder sur \(identifier)")
+        Swift.print("becomeFrstresponder sur \(String(describing: identifier))")
         if parent != nil {
             var currentFocus: cmyControl!
             if controller is cbaseController {
@@ -37,7 +37,7 @@
                 currentFocus = (controller as! cbaseView).currentFocus
             }
             if currentFocus != nil {
-                Swift.print("le currentFocus était \(currentFocus.ctrl.identifier)")
+                Swift.print("le currentFocus était \(String(describing: currentFocus.ctrl.identifier))")
             }
             if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
                 let currentFocusControles = currentFocus?.parent.controles
@@ -60,9 +60,10 @@ Swift.print("va vérifier currentFocus")
                             
                             //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
                         } else {
-                            if self.window is NSWindow {
-                                (self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
-                            }
+                            //if self.window is NSWindow {
+                                //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
+                            self.window?.makeFirstResponder(currentFocus.ctrl)
+                            //}
                             //currentFocus.ctrl.becomeFirstResponder()
                         }
                     })
@@ -101,7 +102,7 @@ Swift.print("poursuite de becomefirstresponder")
     }
     
     override open func resignFirstResponder() -> Bool {
-        Swift.print("resigneFirstResponder sur \(identifier)")
+        Swift.print("resigneFirstResponder sur \(String(describing: identifier))")
         if parent != nil && parent.resignMethod != nil {
             if controller is cbaseController {
                 let theController = controller as! cbaseController
@@ -111,8 +112,7 @@ Swift.print("poursuite de becomefirstresponder")
                 theController.perform(parent.resignMethod, with: self as NSControl)
             }
         }
-        return true
-        //return super.resignFirstResponder()
+        return super.resignFirstResponder()
     }
     
     func closePopover() {
@@ -168,16 +168,17 @@ Swift.print("poursuite de becomefirstresponder")
     override open func keyUp(with event: NSEvent) {
          if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains( event.keyCode) {
             closePopover()
-Swift.print("keyup détectée sur \(identifier)")
+            Swift.print("keyup détectée sur \(String(describing: identifier))")
             if !event.modifierFlags.contains( .shift) {
                 parent.verifControl(completion: {
                     res in
                     if res {
                         let next = self.parent.nextFocus()
                         if next != nil {
-                            if self.window is NSWindow {
-                                (self.window as! NSWindow).makeFirstResponder(next?.ctrl)
-                            }
+                            //if self.window is NSWindow {
+                                //(self.window as! NSWindow).makeFirstResponder(next?.ctrl)
+                            self.window?.makeFirstResponder(next?.ctrl)
+                            //}
                             //next?.ctrl.becomeFirstResponder()
                         }
                     }
@@ -186,9 +187,10 @@ Swift.print("keyup détectée sur \(identifier)")
 Swift.print("controle arrière détecté valeur=\(stringValue)")
                 let prev = self.parent.previousFocus()
                 if prev != nil {
-                    if self.window is NSWindow {
-                        (self.window as! NSWindow).makeFirstResponder(prev?.ctrl)
-                    }
+                    //if self.window is NSWindow {
+                     //   (self.window as! NSWindow).makeFirstResponder(prev?.ctrl)
+                    //}
+                    self.window?.makeFirstResponder(prev?.ctrl)
                     //prev?.ctrl.becomeFirstResponder()
                 }
             }
