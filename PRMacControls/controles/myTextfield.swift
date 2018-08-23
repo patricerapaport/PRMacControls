@@ -36,6 +36,9 @@
             } else if controller is cbaseView {
                 currentFocus = (controller as! cbaseView).currentFocus
             }
+            if currentFocus != nil {
+                Swift.print("le currentFocus était \(currentFocus.ctrl.identifier)")
+            }
             if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
                 let currentFocusControles = currentFocus?.parent.controles
                 let controles = parent.parent.controles

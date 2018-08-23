@@ -100,7 +100,7 @@
             }
         }
         bRes = super.becomeFirstResponder()
-        myWindow?.makeFirstResponder(self)
+        //myWindow?.makeFirstResponder(self)
         needsDisplay = true
         return bRes
     }
