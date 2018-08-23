@@ -76,8 +76,8 @@ Swift.print("poursuite de becomefirstresponder")
             }
         }
         
-        //let bRes = super.becomeFirstResponder()
-        let bRes = true
+        let bRes = super.becomeFirstResponder()
+        //let bRes = true
         
         parent.valeurAvant = stringValue
         if bRes {
