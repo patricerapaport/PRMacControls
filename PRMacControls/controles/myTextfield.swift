@@ -28,58 +28,55 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
+        // au chargement de cbaseController, le parent est nul
         if parent == nil {
             return true
         }
         Swift.print("becomeFrstresponder sur \(String(describing: identifier))")
-        if parent != nil {
-            var currentFocus: cmyControl!
-            if controller is cbaseController {
-                currentFocus = (controller as! cbaseController).currentFocus
-            } else if controller is cbaseView {
-                currentFocus = (controller as! cbaseView).currentFocus
-            }
-            if currentFocus != nil {
-                Swift.print("le currentFocus était \(String(describing: currentFocus.ctrl.identifier))")
-            }
-            if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
-                let currentFocusControles = currentFocus?.parent.controles
-                let controles = parent.parent.controles
-                if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
+    
+        var currentFocus: cmyControl!
+        if controller is cbaseController {
+            currentFocus = (controller as! cbaseController).currentFocus
+        } else if controller is cbaseView {
+            currentFocus = (controller as! cbaseView).currentFocus
+        }
+        if currentFocus != nil {
+            Swift.print("le currentFocus était \(String(describing: currentFocus.ctrl.identifier))")
+        }
+        if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
+            let currentFocusControles = currentFocus?.parent.controles
+            let controles = parent.parent.controles
+            if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
 Swift.print("va vérifier currentFocus")
-                    currentFocus?.verifControl(completion: {
-                        res  in
-                        Swift.print("currentFocus a été vérifié")
-                        if res {
-                            var myPopover: NSPopover!
-                            if self.controller is cbaseController {
-                                myPopover = (self.controller as! cbaseController).myPopover
-                            } else if self.controller is cbaseView {
-                                myPopover = (self.controller as! cbaseView).myPopover
-                            }
-                            if myPopover != nil &&  myPopover.isShown {
-                                myPopover.close()
-                            }
+                currentFocus?.verifControl(completion: {
+                    res  in
+                    Swift.print("currentFocus a été vérifié")
+                    if res {
+                        var myPopover: NSPopover!
+                        if self.controller is cbaseController {
+                            myPopover = (self.controller as! cbaseController).myPopover
+                        } else if self.controller is cbaseView {
+                            myPopover = (self.controller as! cbaseView).myPopover
+                        }
+                        if myPopover != nil &&  myPopover.isShown {
+                            myPopover.close()
+                        }
                             
                             //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
-                        } else {
+                    } else {
                             //if self.window is NSWindow {
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
-                            self.window?.makeFirstResponder(currentFocus.ctrl)
+                        self.window?.makeFirstResponder(currentFocus.ctrl)
                             //}
                             //currentFocus.ctrl.becomeFirstResponder()
-                        }
-                    })
+                    }
+                })
 Swift.print("poursuite de becomefirstresponder")
-                }
             }
         }
         
         //let bRes = super.becomeFirstResponder()
         let bRes = true
-        if parent == nil {
-            return true
-        }
         
         parent.valeurAvant = stringValue
         if bRes {
@@ -105,8 +102,12 @@ Swift.print("poursuite de becomefirstresponder")
     }
     
     override open func resignFirstResponder() -> Bool {
+        // au chargement de cbaseController, le parent est nul
+        if parent == nil {
+            return true
+        }
         Swift.print("resigneFirstResponder sur \(String(describing: identifier))")
-        if parent != nil && parent.resignMethod != nil {
+        if parent.resignMethod != nil {
             if controller is cbaseController {
                 let theController = controller as! cbaseController
                 theController.perform(parent.resignMethod, with: self as NSControl)
