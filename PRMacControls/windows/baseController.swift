@@ -94,6 +94,7 @@ protocol myBaseServiceTabview {
         
         //ctrls = myControles()
         
+Swift.print("Place les controles")
         setControls(view: content, tabviewItem: nil)
         
         
