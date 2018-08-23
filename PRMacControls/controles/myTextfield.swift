@@ -111,7 +111,8 @@ Swift.print("poursuite de becomefirstresponder")
                 theController.perform(parent.resignMethod, with: self as NSControl)
             }
         }
-        return super.resignFirstResponder()
+        return true
+        //return super.resignFirstResponder()
     }
     
     func closePopover() {
