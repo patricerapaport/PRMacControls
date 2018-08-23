@@ -8,6 +8,7 @@
 
 @IBDesignable open class cmyTextfield: NSTextField, NSTextFieldDelegate {
     public var parent: cmyControl!
+    var internalOperation: Bool = false
     @IBInspectable public var obligatoire: Bool = false
     @IBInspectable public var isFiltre: Bool = false
     @IBInspectable public var onsubmit: Bool = false
@@ -75,7 +76,8 @@ Swift.print("va vérifier currentFocus")
 Swift.print("poursuite de becomefirstresponder")
             }
         }
-        textShouldBeginEditing(currentEditor()!)
+        
+        performClick(nil)
         
         //let bRes = super.becomeFirstResponder()
         let bRes = true
