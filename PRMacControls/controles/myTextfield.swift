@@ -70,10 +70,11 @@ Swift.print("va vérifier currentFocus")
                             //if self.window is NSWindow {
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
                         self.window?.makeFirstResponder(currentFocus.ctrl)
-                        return
                             //}
                             //currentFocus.ctrl.becomeFirstResponder()
                     }
+                    Swift.print("retour de completion")
+                    return
                 })
 Swift.print("poursuite de becomefirstresponder")
             }
