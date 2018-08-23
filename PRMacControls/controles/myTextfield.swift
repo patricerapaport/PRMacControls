@@ -75,9 +75,10 @@ Swift.print("va vérifier currentFocus")
 Swift.print("poursuite de becomefirstresponder")
             }
         }
+        textShouldBeginEditing(currentEditor()!)
         
-        let bRes = super.becomeFirstResponder()
-        //let bRes = true
+        //let bRes = super.becomeFirstResponder()
+        let bRes = true
         
         parent.valeurAvant = stringValue
         if bRes {
