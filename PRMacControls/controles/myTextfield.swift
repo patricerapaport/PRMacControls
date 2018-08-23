@@ -71,7 +71,8 @@ Swift.print("poursuite de becomefirstresponder")
             }
         }
         
-        let bRes = super.becomeFirstResponder()
+        //let bRes = super.becomeFirstResponder()
+        let bRes = true
         if parent == nil {
             return true
         }
