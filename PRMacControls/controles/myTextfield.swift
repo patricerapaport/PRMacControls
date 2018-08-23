@@ -77,10 +77,9 @@ Swift.print("poursuite de becomefirstresponder")
             }
         }
         
-        performClick(nil)
-        
-        //let bRes = super.becomeFirstResponder()
-        let bRes = true
+        internalOperation = true
+        let bRes = super.becomeFirstResponder()
+        internalOperation = false
         
         parent.valeurAvant = stringValue
         if bRes {
@@ -107,7 +106,7 @@ Swift.print("poursuite de becomefirstresponder")
     
     override open func resignFirstResponder() -> Bool {
         // au chargement de cbaseController, le parent est nul
-        if parent == nil {
+        if parent == nil || internalOperation {
             return true
         }
         let ident: String = (identifier?.rawValue)!
