@@ -92,6 +92,7 @@
                 }
             }
         }
+        Swift.print("retour de becomeFirstResponder: \(bRes)")
         return bRes
     }
     
