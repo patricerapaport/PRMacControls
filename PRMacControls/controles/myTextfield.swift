@@ -32,7 +32,8 @@
         if parent == nil {
             return true
         }
-        Swift.print("becomeFrstresponder sur \(String(describing: identifier))")
+        let ident: String = (identifier?.rawValue)!
+        Swift.print("becomeFrstresponder sur \(ident)")
     
         var currentFocus: cmyControl!
         if controller is cbaseController {
@@ -106,7 +107,8 @@ Swift.print("poursuite de becomefirstresponder")
         if parent == nil {
             return true
         }
-        Swift.print("resigneFirstResponder sur \(String(describing: identifier))")
+        let ident: String = (identifier?.rawValue)!
+        Swift.print("resigneFirstResponder sur \(ident)")
         if parent.resignMethod != nil {
             if controller is cbaseController {
                 let theController = controller as! cbaseController
