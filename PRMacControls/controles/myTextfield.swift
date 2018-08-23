@@ -28,6 +28,9 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
+        if parent == nil {
+            return true
+        }
         Swift.print("becomeFrstresponder sur \(String(describing: identifier))")
         if parent != nil {
             var currentFocus: cmyControl!
