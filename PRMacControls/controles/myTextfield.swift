@@ -43,8 +43,10 @@
                 let currentFocusControles = currentFocus?.parent.controles
                 let controles = parent.parent.controles
                 if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
+Swift.print("va vérifier currentFocus")
                     currentFocus?.verifControl(completion: {
                         res  in
+                        Swift.print("currentFocus a été vérifié")
                         if res {
                             var myPopover: NSPopover!
                             if self.controller is cbaseController {
@@ -64,6 +66,7 @@
                             //currentFocus.ctrl.becomeFirstResponder()
                         }
                     })
+Swift.print("poursuite de becomefirstresponder")
                 }
             }
         }
