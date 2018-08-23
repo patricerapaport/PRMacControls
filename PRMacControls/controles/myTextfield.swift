@@ -43,7 +43,8 @@
             currentFocus = (controller as! cbaseView).currentFocus
         }
         if currentFocus != nil {
-            Swift.print("le currentFocus était \(String(describing: currentFocus.ctrl.identifier))")
+            let currentIdent: String = (currentFocus.ctrl.identifier?.rawValue)!
+            Swift.print("le currentFocus était \(currentIdent)")
         }
         if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
             let currentFocusControles = currentFocus?.parent.controles
@@ -176,8 +177,18 @@ Swift.print("poursuite de becomefirstresponder")
     override open func keyUp(with event: NSEvent) {
          if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains( event.keyCode) {
             closePopover()
-            Swift.print("keyup détectée sur \(String(describing: identifier))")
+            let ident: String = (identifier?.rawValue)!
+            Swift.print("keyup détectée sur \(ident)")
             if !event.modifierFlags.contains( .shift) {
+                let next = self.parent.nextFocus()
+                if next != nil {
+                    //if self.window is NSWindow {
+                    //(self.window as! NSWindow).makeFirstResponder(next?.ctrl)
+                    window?.makeFirstResponder(next?.ctrl)
+                    //}
+                    //next?.ctrl.becomeFirstResponder()
+                }
+                return
                 parent.verifControl(completion: {
                     res in
                     if res {
