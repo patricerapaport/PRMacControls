@@ -9,6 +9,7 @@
 @IBDesignable open class cmyTextfield: NSTextField, NSTextFieldDelegate {
     public var parent: cmyControl!
     var internalOperation: Bool = false
+    var focusTimer: Timer!
     @IBInspectable public var obligatoire: Bool = false
     @IBInspectable public var isFiltre: Bool = false
     @IBInspectable public var onsubmit: Bool = false
@@ -26,6 +27,13 @@
         get {
             return parent.controller
         }
+    }
+    
+    @objc func delayFocus(timer: Timer) {
+        Swift.print("delayFocus")
+        window?.makeFirstResponder(timer.userInfo as! NSControl)
+        timer.invalidate()
+        focusTimer = nil
     }
     
     override open func becomeFirstResponder() -> Bool {
@@ -66,13 +74,18 @@ Swift.print("va vérifier currentFocus")
                         if myPopover != nil &&  myPopover.isShown {
                             myPopover.close()
                         }
-                            
+                         Swift.print("Vérificaton OK")
                             //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
                     } else {
                             //if self.window is NSWindow {
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
                         bRes = false
-                        self.window?.makeFirstResponder(currentFocus.ctrl)
+                        Swift.print("Vérificaton mauvaise")
+                        if self.focusTimer == nil {
+                            let info = currentFocus.ctrl
+                            self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
+                        }
+                        
                             //}
                             //currentFocus.ctrl.becomeFirstResponder()
                     }
