@@ -46,6 +46,8 @@
             let currentIdent: String = (currentFocus.ctrl.identifier?.rawValue)!
             Swift.print("le currentFocus était \(currentIdent)")
         }
+        
+        var bRes = true // valeur provisoire de retour
         if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
             let currentFocusControles = currentFocus?.parent.controles
             let controles = parent.parent.controles
@@ -69,6 +71,7 @@ Swift.print("va vérifier currentFocus")
                     } else {
                             //if self.window is NSWindow {
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
+                        bRes = false
                         self.window?.makeFirstResponder(currentFocus.ctrl)
                             //}
                             //currentFocus.ctrl.becomeFirstResponder()
@@ -79,10 +82,13 @@ Swift.print("va vérifier currentFocus")
 Swift.print("poursuite de becomefirstresponder")
             }
         }
-        
-        internalOperation = true
-        let bRes = super.becomeFirstResponder()
-        internalOperation = false
+        if bRes == false {
+            return bRes
+        } else {
+            internalOperation = true
+            bRes = super.becomeFirstResponder()
+            internalOperation = false
+        }
         
         parent.valeurAvant = stringValue
         if bRes {
