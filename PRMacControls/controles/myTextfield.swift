@@ -57,7 +57,6 @@
             let currentIdent: String = (currentFocus.ctrl.identifier?.rawValue)!
             Swift.print("\(pass)  le currentFocus était \(currentIdent)")
             if currentFocus?.identifier == identifier?.rawValue {
-                Swift.print("\(currentEditor())")
                 return false
             }
         }
@@ -90,7 +89,8 @@ Swift.print("\(pass)  va vérifier currentFocus")
                         Swift.print("\(pass)  Vérificaton mauvaise")
                         if self.focusTimer == nil { // le focus sur le control en erreur est remis par timer. Sinon le curseur n'apparit pas dans le control en erreur
                             let info = currentFocus.ctrl
-                            self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
+                            //self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
+self.focusTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
                            self.focusTimer.fire()
                         }
                         
