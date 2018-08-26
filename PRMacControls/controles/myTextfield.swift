@@ -223,19 +223,19 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
                     //next?.ctrl.becomeFirstResponder()
                 }
                 return
-                parent.verifControl(completion: {
-                    res in
-                    if res {
-                        let next = self.parent.nextFocus()
-                        if next != nil {
-                            //if self.window is NSWindow {
-                                //(self.window as! NSWindow).makeFirstResponder(next?.ctrl)
-                            self.window?.makeFirstResponder(next?.ctrl)
-                            //}
-                            //next?.ctrl.becomeFirstResponder()
-                        }
-                    }
-                })
+                //parent.verifControl(completion: {
+                //    res in
+                //    if res {
+                //        let next = self.parent.nextFocus()
+                //        if next != nil {
+                //            //if self.window is NSWindow {
+                //                //(self.window as! NSWindow).makeFirstResponder(next?.ctrl)
+                //            self.window?.makeFirstResponder(next?.ctrl)
+                //            //}
+                //            //next?.ctrl.becomeFirstResponder()
+                //        }
+                //    }
+                //})
             } else {
 Swift.print("controle arrière détecté valeur=\(stringValue)")
                 let prev = self.parent.previousFocus()
