@@ -32,10 +32,12 @@
     
     @objc func delayFocus(timer: Timer) {
         Swift.print("delayFocus")
-        window?.makeFirstResponder(timer.userInfo as! NSControl)
+        //window?.makeFirstResponder(timer.userInfo as! NSControl)
         timer.invalidate()
         focusTimer = nil
+        internalOperation = true
         super.becomeFirstResponder()
+        internalOperation = false
     }
     
     override open func becomeFirstResponder() -> Bool {
