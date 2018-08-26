@@ -60,7 +60,7 @@
                 //internalOperation = true
                 //let bRes = super.becomeFirstResponder()
                 //internalOperation = false
-                return true
+                return false
             }
         }
         
