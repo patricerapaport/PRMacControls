@@ -57,7 +57,10 @@
             let currentIdent: String = (currentFocus.ctrl.identifier?.rawValue)!
             Swift.print("\(pass)  le currentFocus était \(currentIdent)")
             if currentFocus?.identifier == identifier?.rawValue {
-                return true
+                internalOperation = true
+                let bRes = super.becomeFirstResponder()
+                internalOperation = false
+                return bRes
             }
         }
         
