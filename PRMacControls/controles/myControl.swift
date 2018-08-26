@@ -575,14 +575,15 @@ open class cmyControl: NSObject {
     
     public func popover (_ msg: String) {
         let ident: String = identifier
-        Swift.print ("appel de popover pour \(ident)")
+        let pass = (ctrl as! cmyTextfield).passage
+        Swift.print ("\(pass) appel de popover pour \(ident)")
         if controller is cbaseController {
             (controller as! cbaseController).showPopover(aControl: ctrl as! NSControl, msg: msg)
         }
         else if controller is cbaseView {
             (controller as! cbaseView).showPopover(aControl: ctrl as! NSControl, msg: msg)
         }
-        Swift.print ("popover appelé  pour \(ident)")
+        Swift.print ("\(pass)  popover appelé  pour \(ident)")
     }
     
     public func popover (aController: NSViewController) {
