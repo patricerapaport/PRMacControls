@@ -10,6 +10,7 @@
     public var parent: cmyControl!
     var internalOperation: Bool = false
     var focusTimer: Timer!
+    var countFocusTimer: Int!
     var passage: Int = 0
     @IBInspectable public var obligatoire: Bool = false
     @IBInspectable public var isFiltre: Bool = false
@@ -32,9 +33,14 @@
     
     @objc func delayFocus(timer: Timer) {
         Swift.print("delayFocus")
+        if countFocusTimer! == 0 {
+            countFocusTimer = countFocusTimer! + 1
+            return
+        }
         //window?.makeFirstResponder(timer.userInfo as! NSControl)
         timer.invalidate()
         focusTimer = nil
+        countFocusTimer = 0
         internalOperation = true
         super.becomeFirstResponder()
         internalOperation = false
@@ -99,7 +105,8 @@ Swift.print("\(pass)  va vérifier currentFocus")
                             let dt = Date(timeIntervalSinceNow: 2)
                             //self.focusTimer = Timer(fireAt: dt, interval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
                             self.focusTimer = Timer.init(timeInterval: 1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
-                            //self.focusTimer.fire()
+                            self.countFocusTimer = 0
+                            self.focusTimer.fire()
                         }
                         
                             //}
