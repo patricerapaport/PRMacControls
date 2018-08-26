@@ -35,6 +35,7 @@
         window?.makeFirstResponder(timer.userInfo as! NSControl)
         timer.invalidate()
         focusTimer = nil
+        super.becomeFirstResponder()
     }
     
     override open func becomeFirstResponder() -> Bool {
