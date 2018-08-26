@@ -1156,7 +1156,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "startIndex"]
 - !private ["s20TextOutputStreamableP", "uppercased"]
 - !private ["So5TimerC", "fire"]
-- !private ["So5TimerC", "init"]
 - !private ["So5TimerC", "invalidate"]
 - !private ["So5TimerC", "scheduledTimer"]
 - !private ["So5TimerC", "userInfo"]

@@ -89,9 +89,9 @@ Swift.print("\(pass)  va vérifier currentFocus")
                         Swift.print("\(pass)  Vérificaton mauvaise")
                         if self.focusTimer == nil { // le focus sur le control en erreur est remis par timer. Sinon le curseur n'apparit pas dans le control en erreur
                             let info = currentFocus.ctrl
+                            let dt = Date(timeIntervalSinceNow: 2)
+                            self.focusTimer = Timer(fireAt: dt, interval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
                             //self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
-self.focusTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
-                           self.focusTimer.fire()
                         }
                         
                             //}
