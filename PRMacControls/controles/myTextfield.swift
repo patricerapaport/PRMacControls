@@ -82,6 +82,7 @@ Swift.print("\(pass)  va vérifier currentFocus")
                         }
                          Swift.print("\(pass)  Vérificaton OK")
                             //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
+                        bRes = true
                     } else {
                             //if self.window is NSWindow {
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
@@ -97,9 +98,9 @@ Swift.print("\(pass)  va vérifier currentFocus")
                         
                             //}
                             //currentFocus.ctrl.becomeFirstResponder()
+                        bRes = false
                     }
-                    Swift.print("\(pass)  retour de completion")
-                    return
+                    Swift.print("\(pass)  retour de completion \(bRes)")
                 })
 Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
             }
