@@ -84,14 +84,14 @@ Swift.print("\(pass)  va vérifier currentFocus")
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
                         bRes = false
                         Swift.print("\(pass)  Vérificaton mauvaise")
-                        if self.focusTimer == nil {
-                            let info = currentFocus.ctrl
-                            self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
-                            self.focusTimer.fire()
-                        }
+                        //if self.focusTimer == nil {
+                        //    let info = currentFocus.ctrl
+                        //    self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
+                            //self.focusTimer.fire()
+                        //}
                         
                             //}
-                            //currentFocus.ctrl.becomeFirstResponder()
+                            currentFocus.ctrl.becomeFirstResponder()
                     }
                     Swift.print("\(pass)  retour de completion")
                     return
