@@ -690,9 +690,9 @@ extension cmyControl {
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
                 popover("Zone obligatoire")
-                if window is NSWindow {
-                    (window as! NSWindow).makeFirstResponder(ctrl)
-                }
+                //if window is NSWindow {
+                //    (window as! NSWindow).makeFirstResponder(ctrl)
+                //}
                 //ctrl.becomeFirstResponder()
                 completion(false)
                 return
