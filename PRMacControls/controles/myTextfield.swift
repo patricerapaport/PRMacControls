@@ -38,12 +38,12 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
-passage += 1
-let pass = passage
         // au chargement de cbaseController, le parent est nul
         if parent == nil {
             return true
         }
+        passage += 1
+        let pass = passage
         let ident: String = (identifier?.rawValue)!
         Swift.print("\(pass) becomeFrstresponder sur \(ident)")
     
