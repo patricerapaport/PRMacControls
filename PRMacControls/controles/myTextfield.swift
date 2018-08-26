@@ -93,7 +93,7 @@ Swift.print("va vérifier currentFocus")
                     Swift.print("retour de completion")
                     return
                 })
-Swift.print("poursuite de becomefirstresponder")
+Swift.print("poursuite de becomefirstresponder sur \(ident)")
             }
         }
         if bRes == false {
@@ -123,7 +123,7 @@ Swift.print("poursuite de becomefirstresponder")
                 }
             }
         }
-        Swift.print("retour de becomeFirstResponder: \(bRes)")
+        Swift.print("retour de becomeFirstResponder sur \(ident): \(bRes)")
         return bRes
     }
     
