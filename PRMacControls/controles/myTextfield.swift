@@ -56,6 +56,9 @@ let pass = passage
         if currentFocus != nil {
             let currentIdent: String = (currentFocus.ctrl.identifier?.rawValue)!
             Swift.print("\(pass)  le currentFocus était \(currentIdent)")
+            if currentFocus?.identifier == identifier?.rawValue {
+                return false
+            }
         }
         
         var bRes = true // valeur provisoire de retour
