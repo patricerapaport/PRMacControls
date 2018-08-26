@@ -688,6 +688,9 @@ extension cmyControl {
     
     public func verifControl (completion: @escaping(Bool) -> Void) {
         if ctrl is cmyTextfield  {
+            let pass = (ctrl as! cmyTextfield).passage
+            let ident: String = identifier
+            Swift.print("\(pass) vertifcontrol de \(ident)")
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
                 popover("Zone obligatoire")
