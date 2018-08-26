@@ -10,6 +10,7 @@
     public var parent: cmyControl!
     var internalOperation: Bool = false
     var focusTimer: Timer!
+    var passage: Int = 0
     @IBInspectable public var obligatoire: Bool = false
     @IBInspectable public var isFiltre: Bool = false
     @IBInspectable public var onsubmit: Bool = false
@@ -37,12 +38,14 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
+passage += 1
+let pass = passage
         // au chargement de cbaseController, le parent est nul
         if parent == nil {
             return true
         }
         let ident: String = (identifier?.rawValue)!
-        Swift.print("becomeFrstresponder sur \(ident)")
+        Swift.print("\(pass) becomeFrstresponder sur \(ident)")
     
         var currentFocus: cmyControl!
         if controller is cbaseController {
@@ -52,7 +55,7 @@
         }
         if currentFocus != nil {
             let currentIdent: String = (currentFocus.ctrl.identifier?.rawValue)!
-            Swift.print("le currentFocus était \(currentIdent)")
+            Swift.print("\(pass)  le currentFocus était \(currentIdent)")
         }
         
         var bRes = true // valeur provisoire de retour
@@ -60,10 +63,10 @@
             let currentFocusControles = currentFocus?.parent.controles
             let controles = parent.parent.controles
             if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
-Swift.print("va vérifier currentFocus")
+Swift.print("\(pass)  va vérifier currentFocus")
                 currentFocus?.verifControl(completion: {
                     res  in
-                    Swift.print("currentFocus a été vérifié")
+                    Swift.print("\(pass)  currentFocus a été vérifié")
                     if res {
                         var myPopover: NSPopover!
                         if self.controller is cbaseController {
@@ -74,13 +77,13 @@ Swift.print("va vérifier currentFocus")
                         if myPopover != nil &&  myPopover.isShown {
                             myPopover.close()
                         }
-                         Swift.print("Vérificaton OK")
+                         Swift.print("\(pass)  Vérificaton OK")
                             //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
                     } else {
                             //if self.window is NSWindow {
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
                         bRes = false
-                        Swift.print("Vérificaton mauvaise")
+                        Swift.print("\(pass)  Vérificaton mauvaise")
                         if self.focusTimer == nil {
                             let info = currentFocus.ctrl
                             self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
@@ -90,10 +93,10 @@ Swift.print("va vérifier currentFocus")
                             //}
                             //currentFocus.ctrl.becomeFirstResponder()
                     }
-                    Swift.print("retour de completion")
+                    Swift.print("\(pass)  retour de completion")
                     return
                 })
-Swift.print("poursuite de becomefirstresponder sur \(ident)")
+Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
             }
         }
         if bRes == false {
@@ -123,7 +126,7 @@ Swift.print("poursuite de becomefirstresponder sur \(ident)")
                 }
             }
         }
-        Swift.print("retour de becomeFirstResponder sur \(ident): \(bRes)")
+        Swift.print("\(pass)  retour de becomeFirstResponder sur \(ident): \(bRes)")
         return bRes
     }
     
