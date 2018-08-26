@@ -84,6 +84,7 @@ Swift.print("va vérifier currentFocus")
                         if self.focusTimer == nil {
                             let info = currentFocus.ctrl
                             self.focusTimer = Timer.init(timeInterval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
+                            self.focusTimer.fire()
                         }
                         
                             //}
