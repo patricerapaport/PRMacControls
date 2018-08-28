@@ -108,7 +108,7 @@ Swift.print("\(pass)  va vérifier currentFocus")
                             //self.focusTimer = Timer.init(timeInterval: 1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: true)
                             //self.countFocusTimer = 0
                             //self.focusTimer.fire()
-                            self.perform(#selector(self.delayFocus), with: info, afterDelay: 1)
+                            self.perform(#selector(self.delayFocus), with: info, afterDelay: 0.3)
                         }
                         
                             //}
