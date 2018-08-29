@@ -604,7 +604,7 @@ open class cmyControl: NSObject {
     
     
     
-    func acceptKey (event: NSEvent) -> Bool {
+    open func acceptKey (event: NSEvent) -> Bool {
         if acceptKeyMethod != nil {
             let res = controller.perform(acceptKeyMethod, with: ctrl as! NSControl, with: event)
             if res == nil {

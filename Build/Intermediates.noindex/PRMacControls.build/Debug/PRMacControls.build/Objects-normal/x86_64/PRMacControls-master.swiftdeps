@@ -1,11 +1,11 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "38bbcb5442189469c6b1dfeec1a154b3"
-build_time: [1535517766, 866703000]
+build_time: [1535518963, 732003000]
 inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myOutline.swift": [1534051694, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDecimal.swift": [1534051720, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/enumerations.swift": [1533463391, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControl.swift": [1535264618, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControl.swift": [1535518960, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/alertes.swift": [1534659460, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/user.swift": [1534052014, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/listeControles.swift": [1534847665, 0]
