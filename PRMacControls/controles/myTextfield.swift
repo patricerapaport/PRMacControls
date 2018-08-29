@@ -9,8 +9,6 @@
 @IBDesignable open class cmyTextfield: NSTextField, NSTextFieldDelegate {
     public var parent: cmyControl!
     var internalOperation: Bool = false
-    var focusTimer: Timer!
-    var countFocusTimer: Int!
     var passage: Int = 0
     @IBInspectable public var obligatoire: Bool = false
     @IBInspectable public var isFiltre: Bool = false
@@ -33,15 +31,7 @@
     
     @objc func delayFocus(info: Any?) {
         Swift.print("delayFocus")
-       // if countFocusTimer! == 0 {
-       //     countFocusTimer = countFocusTimer! + 1
-       //     return
-       // }
-        //window?.makeFirstResponder(timer.userInfo as! NSControl)
-        //timer.invalidate()
         let ctrl = info as! cmyTextfield
-        focusTimer = nil
-        countFocusTimer = 0
         internalOperation = true
         ctrl.becomeFirstResponder()
         internalOperation = false
@@ -68,7 +58,7 @@
             Swift.print("\(pass)  le currentFocus était \(currentIdent)")
             if currentFocus?.identifier == identifier?.rawValue {
                 internalOperation = true
-                let bRes = super.becomeFirstResponder()
+                _ = super.becomeFirstResponder()
                 internalOperation = false
                 return false
             }
@@ -101,18 +91,11 @@ Swift.print("\(pass)  va vérifier currentFocus")
                                 //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
                         bRes = false
                         Swift.print("\(pass)  Vérificaton mauvaise")
-                        if self.focusTimer == nil { // le focus sur le control en erreur est remis par timer. Sinon le curseur n'apparit pas dans le control en erreur
-                            let info = currentFocus.ctrl
-                            let dt = Date(timeIntervalSinceNow: 2)
-                            //self.focusTimer = Timer(fireAt: dt, interval: 0.1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: false)
-                            //self.focusTimer = Timer.init(timeInterval: 1, target: self, selector: #selector(self.delayFocus), userInfo: info, repeats: true)
-                            //self.countFocusTimer = 0
-                            //self.focusTimer.fire()
-                            self.perform(#selector(self.delayFocus), with: info, afterDelay: 0.3)
-                        }
                         
-                            //}
-                            //currentFocus.ctrl.becomeFirstResponder()
+                        let info = currentFocus.ctrl
+                        self.perform(#selector(self.delayFocus), with: info, afterDelay: 0.3)
+                        
+                        
                         bRes = false
                     }
                     Swift.print("\(pass)  retour de completion \(bRes)")
@@ -234,20 +217,7 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
                     //}
                     //next?.ctrl.becomeFirstResponder()
                 }
-                return
-                //parent.verifControl(completion: {
-                //    res in
-                //    if res {
-                //        let next = self.parent.nextFocus()
-                //        if next != nil {
-                //            //if self.window is NSWindow {
-                //                //(self.window as! NSWindow).makeFirstResponder(next?.ctrl)
-                //            self.window?.makeFirstResponder(next?.ctrl)
-                //            //}
-                //            //next?.ctrl.becomeFirstResponder()
-                //        }
-                //    }
-                //})
+                
             } else {
 Swift.print("controle arrière détecté valeur=\(stringValue)")
                 let prev = self.parent.previousFocus()
@@ -259,6 +229,8 @@ Swift.print("controle arrière détecté valeur=\(stringValue)")
                     //prev?.ctrl.becomeFirstResponder()
                 }
             }
+         } else if !parent.acceptKey(event: event) {
+            return
         }
     }
 }
