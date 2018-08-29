@@ -169,7 +169,12 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
     
     //procédure appelée quand on reçoit keyup
     func acceptKey (event: NSEvent) -> Bool {
-        return true
+        if (event.characters! < "0" || event.characters! > "9")  {
+            flushBufferedKeyEvents()
+            return false
+        } else {
+            return true
+        }
     }
     
     func controlEnterRecu() {
