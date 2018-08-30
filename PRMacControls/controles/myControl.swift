@@ -574,8 +574,6 @@ open class cmyControl: NSObject {
     }
     
     public func popover (_ msg: String) {
-        let ident: String = identifier
-        let pass = (ctrl as! cmyTextfield).passage
         if controller is cbaseController {
             (controller as! cbaseController).showPopover(aControl: ctrl as! NSControl, msg: msg)
         }

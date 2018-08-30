@@ -445,6 +445,10 @@ protocol myBaseServiceTabview {
         if ctrls == nil {
             //setControls(view: (window?.contentView!)!, tabviewItem: nil)
         }
+        if etat == .nonedition && currentFocus != nil {
+            currentFocus = nil
+        }
+        
         if ctrls != nil {
             ctrls.setState(state: etat)
         }
