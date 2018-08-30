@@ -725,7 +725,7 @@ extension cbaseController {
         completion(true)
     }
     
-    @objc public func Annuler(_ sender: Any) {
+    @objc open func Annuler(_ sender: Any) {
         if myPopover != nil && myPopover.isShown {
             myPopover.close()
         }
