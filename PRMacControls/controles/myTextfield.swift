@@ -32,9 +32,17 @@
     @objc func delayFocus(info: Any?) {
         Swift.print("delayFocus")
         let ctrl = info as! cmyTextfield
-        internalOperation = true
-        ctrl.becomeFirstResponder()
-        internalOperation = false
+        var currentFocus: cmyControl!
+        if controller is cbaseController {
+            currentFocus = (controller as! cbaseController).currentFocus
+        } else if controller is cbaseView {
+            currentFocus = (controller as! cbaseView).currentFocus
+        }
+        if currentFocus.ctrl != ctrl {
+            internalOperation = true
+            ctrl.becomeFirstResponder()
+            internalOperation = false
+        }
     }
     
     override open func becomeFirstResponder() -> Bool {
@@ -104,6 +112,7 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
             }
         }
         if bRes == false {
+            Swift.print("Sortie en erreur de becomeFirstResponder sur \(ident)")
             return bRes
         } else {
             internalOperation = true
@@ -216,22 +225,15 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
             if !event.modifierFlags.contains( .shift) {
                 let next = self.parent.nextFocus()
                 if next != nil {
-                    //if self.window is NSWindow {
-                    //(self.window as! NSWindow).makeFirstResponder(next?.ctrl)
                     window?.makeFirstResponder(next?.ctrl)
-                    //}
-                    //next?.ctrl.becomeFirstResponder()
+
                 }
                 
             } else {
 Swift.print("controle arrière détecté valeur=\(stringValue)")
                 let prev = self.parent.previousFocus()
                 if prev != nil {
-                    //if self.window is NSWindow {
-                     //   (self.window as! NSWindow).makeFirstResponder(prev?.ctrl)
-                    //}
                     self.window?.makeFirstResponder(prev?.ctrl)
-                    //prev?.ctrl.becomeFirstResponder()
                 }
             }
          } else if !parent.acceptKey(event: event) {
