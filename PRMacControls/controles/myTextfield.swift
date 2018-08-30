@@ -209,6 +209,13 @@
                     self.window?.makeFirstResponder(prev?.ctrl)
                 }
             }
+        } else if event.keyCode ==  ckeyboardKeys.escape {
+            if parent.tableView != nil && parent.tableView is cmyTable && (parent.tableView as! cmyTable).hasSelector(.annulation) {
+                (parent.tableView as! cmyTable).performAction(.annulation)
+            }
+            else if controller is cbaseController {
+                (controller as! cbaseController).Annuler(self)
+            }
          } else if !parent.acceptKey(event: event) {
             return
         }

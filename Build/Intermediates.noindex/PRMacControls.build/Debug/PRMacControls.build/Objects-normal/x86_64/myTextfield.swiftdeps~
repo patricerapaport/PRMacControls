@@ -13,8 +13,6 @@ provides-dynamic-lookup:
 - "isLabel"
 - "keyUp"
 - "majuscules"
-- "mouseDown"
-- "mouseUp"
 - "obligatoire"
 - "onsubmit"
 - "resignFirstResponder"
@@ -608,8 +606,6 @@ depends-member:
 - ["So9NSControlC", "isLabel"]
 - ["So9NSControlC", "keyUp"]
 - ["So9NSControlC", "majuscules"]
-- ["So9NSControlC", "mouseDown"]
-- ["So9NSControlC", "mouseUp"]
 - ["So9NSControlC", "obligatoire"]
 - ["So9NSControlC", "onsubmit"]
 - ["So9NSControlC", "parent"]
@@ -742,8 +738,6 @@ depends-member:
 - ["So8NSObjectC", "majuscules"]
 - !private ["So8NSObjectC", "makeFirstResponder"]
 - !private ["So8NSObjectC", "modifierFlags"]
-- ["So8NSObjectC", "mouseDown"]
-- ["So8NSObjectC", "mouseUp"]
 - !private ["So8NSObjectC", "myPopover"]
 - !private ["So8NSObjectC", "nextFocus"]
 - ["So8NSObjectC", "obligatoire"]
@@ -860,8 +854,6 @@ depends-member:
 - ["So11NSResponderC", "keyUp"]
 - ["So11NSResponderC", "majuscules"]
 - !private ["So11NSResponderC", "makeFirstResponder"]
-- ["So11NSResponderC", "mouseDown"]
-- ["So11NSResponderC", "mouseUp"]
 - !private ["So11NSResponderC", "myPopover"]
 - ["So11NSResponderC", "obligatoire"]
 - ["So11NSResponderC", "onsubmit"]
@@ -932,8 +924,6 @@ depends-member:
 - ["So11NSTextFieldC", "isLabel"]
 - ["So11NSTextFieldC", "keyUp"]
 - ["So11NSTextFieldC", "majuscules"]
-- ["So11NSTextFieldC", "mouseDown"]
-- ["So11NSTextFieldC", "mouseUp"]
 - ["So11NSTextFieldC", "obligatoire"]
 - ["So11NSTextFieldC", "onsubmit"]
 - ["So11NSTextFieldC", "parent"]
@@ -1078,8 +1068,6 @@ depends-member:
 - ["So6NSViewC", "isLabel"]
 - ["So6NSViewC", "keyUp"]
 - ["So6NSViewC", "majuscules"]
-- ["So6NSViewC", "mouseDown"]
-- ["So6NSViewC", "mouseUp"]
 - ["So6NSViewC", "obligatoire"]
 - ["So6NSViewC", "onsubmit"]
 - ["So6NSViewC", "parent"]
@@ -1336,8 +1324,6 @@ depends-member:
 - ["13PRMacControls12cmyTextfieldC", "isLabel"]
 - ["13PRMacControls12cmyTextfieldC", "keyUp"]
 - ["13PRMacControls12cmyTextfieldC", "majuscules"]
-- ["13PRMacControls12cmyTextfieldC", "mouseDown"]
-- ["13PRMacControls12cmyTextfieldC", "mouseUp"]
 - ["13PRMacControls12cmyTextfieldC", "obligatoire"]
 - ["13PRMacControls12cmyTextfieldC", "onsubmit"]
 - ["13PRMacControls12cmyTextfieldC", "parent"]
@@ -1510,4 +1496,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e37d2727213c3081a7223abed4f2e96c"
+interface-hash: "ef0861dd17900a6fb15011e4e0624b36"
