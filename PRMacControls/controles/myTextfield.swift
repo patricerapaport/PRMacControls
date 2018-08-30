@@ -32,17 +32,9 @@
     @objc func delayFocus(info: Any?) {
         Swift.print("delayFocus")
         let ctrl = info as! cmyTextfield
-        var currentFocus: cmyControl!
-        if controller is cbaseController {
-            currentFocus = (controller as! cbaseController).currentFocus
-        } else if controller is cbaseView {
-            currentFocus = (controller as! cbaseView).currentFocus
-        }
-        //if currentFocus.ctrl != ctrl {
-            internalOperation = true
-            ctrl.becomeFirstResponder()
-            internalOperation = false
-        //}
+        internalOperation = true
+        _ = ctrl.becomeFirstResponder()
+        internalOperation = false
     }
     
     override open func becomeFirstResponder() -> Bool {
@@ -62,8 +54,6 @@
             currentFocus = (controller as! cbaseView).currentFocus
         }
         if currentFocus != nil {
-            let currentIdent: String = (currentFocus.ctrl.identifier?.rawValue)!
-            Swift.print("\(pass)  le currentFocus était \(currentIdent)")
             if currentFocus?.identifier == identifier?.rawValue {
                 internalOperation = true
                 _ = super.becomeFirstResponder()
@@ -77,10 +67,8 @@
             let currentFocusControles = currentFocus?.parent.controles
             let controles = parent.parent.controles
             if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
-Swift.print("\(pass)  va vérifier currentFocus")
                 currentFocus?.verifControl(completion: {
                     res  in
-                    Swift.print("\(pass)  currentFocus a été vérifié")
                     if res {
                         var myPopover: NSPopover!
                         if self.controller is cbaseController {
@@ -91,28 +79,19 @@ Swift.print("\(pass)  va vérifier currentFocus")
                         if myPopover != nil &&  myPopover.isShown {
                             myPopover.close()
                         }
-                         Swift.print("\(pass)  Vérificaton OK")
-                            //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
                         bRes = true
                     } else {
-                            //if self.window is NSWindow {
-                                //(self.window as! NSWindow).makeFirstResponder(currentFocus.ctrl)
                         bRes = false
-                        Swift.print("\(pass)  Vérificaton mauvaise")
-                        
                         let info = currentFocus.ctrl
                         self.perform(#selector(self.delayFocus), with: info, afterDelay: 0.3)
                         
                         
                         bRes = false
                     }
-                    Swift.print("\(pass)  retour de completion \(bRes)")
                 })
-Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
             }
         }
         if bRes == false {
-            Swift.print("Sortie en erreur de becomeFirstResponder sur \(ident)")
             return bRes
         } else {
             internalOperation = true
@@ -139,7 +118,6 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
                 }
             }
         }
-        Swift.print("\(pass)  retour de becomeFirstResponder sur \(ident): \(bRes)")
         return bRes
     }
     
@@ -148,8 +126,6 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
         if parent == nil || internalOperation {
             return true
         }
-        let ident: String = (identifier?.rawValue)!
-        Swift.print("resigneFirstResponder sur \(ident)")
         if parent.resignMethod != nil {
             if controller is cbaseController {
                 let theController = controller as! cbaseController
@@ -220,8 +196,6 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
     override open func keyUp(with event: NSEvent) {
          if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains( event.keyCode) {
             closePopover()
-            let ident: String = (identifier?.rawValue)!
-            Swift.print("keyup détectée sur \(ident)")
             if !event.modifierFlags.contains( .shift) {
                 let next = self.parent.nextFocus()
                 if next != nil {
@@ -230,7 +204,6 @@ Swift.print("\(pass)  poursuite de becomefirstresponder sur \(ident)")
                 }
                 
             } else {
-Swift.print("controle arrière détecté valeur=\(stringValue)")
                 let prev = self.parent.previousFocus()
                 if prev != nil {
                     self.window?.makeFirstResponder(prev?.ctrl)
@@ -239,14 +212,6 @@ Swift.print("controle arrière détecté valeur=\(stringValue)")
          } else if !parent.acceptKey(event: event) {
             return
         }
-    }
-    
-    override open func mouseDown(with event: NSEvent) {
-        Swift.print("mouse down \(identifier)")
-    }
-    
-    override open func mouseUp(with event: NSEvent) {
-        Swift.print("mouse up \(identifier)")
     }
 }
 
