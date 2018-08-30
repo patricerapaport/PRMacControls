@@ -38,11 +38,11 @@
         } else if controller is cbaseView {
             currentFocus = (controller as! cbaseView).currentFocus
         }
-        if currentFocus.ctrl != ctrl {
+        //if currentFocus.ctrl != ctrl {
             internalOperation = true
             ctrl.becomeFirstResponder()
             internalOperation = false
-        }
+        //}
     }
     
     override open func becomeFirstResponder() -> Bool {
