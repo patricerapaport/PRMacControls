@@ -248,7 +248,9 @@ SWIFT_CLASS("_TtC13PRMacControls15cbaseController")
 
 
 @interface cbaseController (SWIFT_EXTENSION(PRMacControls))
+- (void)Modifier:(id _Nonnull)sender;
 - (void)Ajouter:(id _Nonnull)sender;
+- (void)Supprimer:(id _Nonnull)sender;
 - (void)enregistrerWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)Annuler:(id _Nonnull)sender;
 - (BOOL)Save:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;

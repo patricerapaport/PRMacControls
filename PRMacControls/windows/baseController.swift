@@ -709,19 +709,19 @@ extension cbaseController {
 
 // MARK: opérations
 extension cbaseController {
-    @objc func Modifier(_ sender: Any) {
+    @objc open func Modifier(_ sender: Any) {
         setState(etat: .edition)
     }
     
-    @objc public func Ajouter(_ sender: Any) {
+    @objc open func Ajouter(_ sender: Any) {
         setState(etat: .ajout)
     }
     
-    @objc func Supprimer(_ sender: Any) {
+    @objc open func Supprimer(_ sender: Any) {
     }
     
     // A surcharger pour chaque grille
-    @objc public func enregistrer(completion: @escaping(Bool) -> Void) {
+    @objc open func enregistrer(completion: @escaping(Bool) -> Void) {
         completion(true)
     }
     
