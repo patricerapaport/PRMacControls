@@ -240,5 +240,13 @@ Swift.print("controle arrière détecté valeur=\(stringValue)")
             return
         }
     }
+    
+    override open func mouseDown(with event: NSEvent) {
+        Swift.print("mouse down \(identifier)")
+    }
+    
+    override open func mouseUp(with event: NSEvent) {
+        Swift.print("mouse up \(identifier)")
+    }
 }
 
