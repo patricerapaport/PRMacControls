@@ -737,7 +737,7 @@ extension cbaseController {
         setState(etat: .nonedition)
     }
     
-    @objc public func Save (_ sender: Any) -> Bool {
+    @objc open func Save (_ sender: Any) -> Bool {
         if myPopover != nil && myPopover.isShown {
             myPopover.close()
         }
