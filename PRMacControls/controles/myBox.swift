@@ -10,7 +10,8 @@
     var ctrls: [cmyControl]=[]
     @IBInspectable open var myFillColor: NSColor  = .white {
         didSet {
-            sharedInit()
+            layer?.backgroundColor = myFillColor.cgColor
+            setNeedsDisplay(frame)
         }
     }
     
