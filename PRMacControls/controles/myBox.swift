@@ -30,7 +30,7 @@
     }
     
     func sharedInit() {
-        super.fillColor = myFillColor
+        layer?.backgroundColor = myFillColor.cgColor
     }
     
     override open var isHidden: Bool {
