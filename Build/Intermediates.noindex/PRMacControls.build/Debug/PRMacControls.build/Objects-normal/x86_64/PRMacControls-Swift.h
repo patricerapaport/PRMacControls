@@ -381,7 +381,6 @@ SWIFT_CLASS("_TtC13PRMacControls6cmyBox")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;
-- (void)drawRect:(NSRect)dirtyRect;
 @property (nonatomic, getter=isHidden) BOOL hidden;
 @end
 
