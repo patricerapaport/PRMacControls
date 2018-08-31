@@ -239,4 +239,13 @@ open class cmyTextFieldNum: cmyTextfield {
         }
         return bRes
     }
+    
+    override func acceptKey (event: NSEvent) -> Bool {
+        if (event.characters! < "0" || event.characters! > "9")  {
+            flushBufferedKeyEvents()
+            return false
+        } else {
+            return true
+        }
+    }
 }
