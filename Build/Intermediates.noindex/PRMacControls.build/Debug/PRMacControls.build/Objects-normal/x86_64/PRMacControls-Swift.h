@@ -377,7 +377,7 @@ SWIFT_CLASS("_TtC13PRMacControls15clistController")
 
 SWIFT_CLASS("_TtC13PRMacControls6cmyBox")
 @interface cmyBox : NSBox
-@property (nonatomic, strong) NSColor * _Nonnull backgroundColor;
+@property (nonatomic, strong) NSColor * _Nonnull fillColor;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;

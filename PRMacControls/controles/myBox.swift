@@ -8,9 +8,10 @@
 
 @IBDesignable open class cmyBox: NSBox {
     var ctrls: [cmyControl]=[]
-    @IBInspectable open var backgroundColor: NSColor  = .white {
+    @IBInspectable override open var fillColor: NSColor  {
         didSet {
-            layer?.backgroundColor = backgroundColor.cgColor
+            fillColor = .white
+            layer?.backgroundColor = fillColor.cgColor
         }
     }
     
@@ -25,7 +26,7 @@
     }
     
     override open func prepareForInterfaceBuilder() {
-        layer?.backgroundColor = backgroundColor.cgColor
+        layer?.backgroundColor = fillColor.cgColor
     }
     
     override open func draw(_ dirtyRect: NSRect) {
