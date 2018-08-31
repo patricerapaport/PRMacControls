@@ -6,6 +6,7 @@ provides-nominal:
 provides-member:
 - ["13PRMacControls6cmyBoxC", ""]
 provides-dynamic-lookup:
+- "fillColor"
 - "isHidden"
 - "prepareForInterfaceBuilder"
 depends-top-level:
@@ -17,6 +18,7 @@ depends-top-level:
 - "CGRect"
 - "NSBox"
 - "NSCoder"
+- "NSColor"
 - "cmyBox"
 - "cmyControl"
 depends-member:
@@ -29,14 +31,19 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "ctrl"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So7CALayerC", "backgroundColor"]
+- !private ["So13CAMediaTimingP", "backgroundColor"]
+- !private ["So7CGColorC", "white"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "ctrl"]
 - !private ["s7CVarArgP", "ctrls"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isHidden"]
+- !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "sharedInit"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s10CollectionP", "append"]
@@ -45,59 +52,74 @@ depends-member:
 - !private ["s10CollectionP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "ctrl"]
 - !private ["s28CustomDebugStringConvertibleP", "ctrls"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "sharedInit"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "ctrl"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "white"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "ctrl"]
 - !private ["s23CustomStringConvertibleP", "ctrls"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
+- !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "sharedInit"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
 - !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "white"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "append"]
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "white"]
 - ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "ctrl"]
 - !private ["s9EquatableP", "ctrls"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isHidden"]
+- !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "sharedInit"]
 - !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "ctrl"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
 - ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "ctrl"]
 - !private ["s8HashableP", "ctrls"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "isHidden"]
+- !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "sharedInit"]
+- !private ["s8HashableP", "white"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "count"]
@@ -107,90 +129,116 @@ depends-member:
 - !private ["So15NSAccessibilityP", "ctrls"]
 - !private ["So15NSAccessibilityP", "init"]
 - !private ["So15NSAccessibilityP", "isHidden"]
+- !private ["So15NSAccessibilityP", "layer"]
 - !private ["So15NSAccessibilityP", "sharedInit"]
 - ["So30NSAccessibilityElementProtocolP", ""]
 - !private ["So30NSAccessibilityElementProtocolP", "ctrls"]
 - !private ["So30NSAccessibilityElementProtocolP", "init"]
 - !private ["So30NSAccessibilityElementProtocolP", "isHidden"]
+- !private ["So30NSAccessibilityElementProtocolP", "layer"]
 - !private ["So30NSAccessibilityElementProtocolP", "sharedInit"]
 - ["So29NSAnimatablePropertyContainerP", ""]
 - !private ["So29NSAnimatablePropertyContainerP", "ctrls"]
 - !private ["So29NSAnimatablePropertyContainerP", "init"]
 - !private ["So29NSAnimatablePropertyContainerP", "isHidden"]
+- !private ["So29NSAnimatablePropertyContainerP", "layer"]
 - !private ["So29NSAnimatablePropertyContainerP", "sharedInit"]
 - ["So25NSAppearanceCustomizationP", ""]
 - !private ["So25NSAppearanceCustomizationP", "ctrls"]
 - !private ["So25NSAppearanceCustomizationP", "init"]
 - !private ["So25NSAppearanceCustomizationP", "isHidden"]
+- !private ["So25NSAppearanceCustomizationP", "layer"]
 - !private ["So25NSAppearanceCustomizationP", "sharedInit"]
 - ["So5NSBoxC", "Bool"]
 - ["So5NSBoxC", "CGRect"]
 - ["So5NSBoxC", "NSCoder"]
+- ["So5NSBoxC", "NSColor"]
 - ["So5NSBoxC", ""]
 - ["So5NSBoxC", "addControl"]
 - ["So5NSBoxC", "cmyControl"]
 - ["So5NSBoxC", "ctrls"]
+- ["So5NSBoxC", "fillColor"]
 - ["So5NSBoxC", "init"]
 - ["So5NSBoxC", "isHidden"]
+- !private ["So5NSBoxC", "layer"]
 - ["So5NSBoxC", "prepareForInterfaceBuilder"]
 - ["So5NSBoxC", "sharedInit"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "ctrls"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "sharedInit"]
 - ["So21NSDraggingDestinationP", ""]
 - !private ["So21NSDraggingDestinationP", "ctrls"]
 - !private ["So21NSDraggingDestinationP", "init"]
 - !private ["So21NSDraggingDestinationP", "isHidden"]
+- !private ["So21NSDraggingDestinationP", "layer"]
 - !private ["So21NSDraggingDestinationP", "sharedInit"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "NSColor"]
 - ["So8NSObjectC", "addControl"]
+- !private ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "cmyControl"]
 - !private ["So8NSObjectC", "ctrl"]
 - ["So8NSObjectC", "ctrls"]
+- ["So8NSObjectC", "fillColor"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "isHidden"]
+- !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "prepareForInterfaceBuilder"]
 - ["So8NSObjectC", "sharedInit"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "ctrl"]
 - !private ["So16NSObjectProtocolP", "ctrls"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isHidden"]
+- !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "sharedInit"]
 - ["So11NSResponderC", "Bool"]
 - ["So11NSResponderC", "CGRect"]
 - ["So11NSResponderC", "NSCoder"]
+- ["So11NSResponderC", "NSColor"]
 - ["So11NSResponderC", "addControl"]
 - ["So11NSResponderC", "cmyControl"]
 - ["So11NSResponderC", "ctrls"]
+- ["So11NSResponderC", "fillColor"]
 - ["So11NSResponderC", "init"]
 - ["So11NSResponderC", "isHidden"]
+- !private ["So11NSResponderC", "layer"]
 - ["So11NSResponderC", "prepareForInterfaceBuilder"]
 - ["So11NSResponderC", "sharedInit"]
+- !private ["So14NSSecureCodingP", "backgroundColor"]
 - ["So18NSTouchBarProviderP", ""]
 - !private ["So18NSTouchBarProviderP", "ctrls"]
 - !private ["So18NSTouchBarProviderP", "init"]
 - !private ["So18NSTouchBarProviderP", "isHidden"]
+- !private ["So18NSTouchBarProviderP", "layer"]
 - !private ["So18NSTouchBarProviderP", "sharedInit"]
 - ["So33NSUserInterfaceItemIdentificationP", ""]
 - !private ["So33NSUserInterfaceItemIdentificationP", "ctrls"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "init"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "isHidden"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "layer"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "sharedInit"]
 - ["So6NSViewC", "Bool"]
 - ["So6NSViewC", "CGRect"]
 - ["So6NSViewC", "NSCoder"]
+- ["So6NSViewC", "NSColor"]
 - ["So6NSViewC", "addControl"]
 - ["So6NSViewC", "cmyControl"]
 - ["So6NSViewC", "ctrls"]
+- ["So6NSViewC", "fillColor"]
 - ["So6NSViewC", "init"]
 - ["So6NSViewC", "isHidden"]
+- !private ["So6NSViewC", "layer"]
 - ["So6NSViewC", "prepareForInterfaceBuilder"]
 - ["So6NSViewC", "sharedInit"]
+- !private ["Sq", "white"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s22RandomAccessCollectionP", "ctrl"]
@@ -207,35 +255,45 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "ctrl"]
 - !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["14CoreFoundation9_CFObjectP", "white"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "white"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "ctrls"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sharedInit"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "ctrl"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ctrl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ctrls"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInit"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "white"]
 - ["13PRMacControls6cmyBoxC", "Bool"]
 - ["13PRMacControls6cmyBoxC", "CGRect"]
 - ["13PRMacControls6cmyBoxC", "NSCoder"]
+- ["13PRMacControls6cmyBoxC", "NSColor"]
 - ["13PRMacControls6cmyBoxC", "addControl"]
 - ["13PRMacControls6cmyBoxC", "cmyControl"]
 - ["13PRMacControls6cmyBoxC", "ctrls"]
 - ["13PRMacControls6cmyBoxC", "deinit"]
+- ["13PRMacControls6cmyBoxC", "fillColor"]
 - ["13PRMacControls6cmyBoxC", "init"]
 - ["13PRMacControls6cmyBoxC", "isHidden"]
+- !private ["13PRMacControls6cmyBoxC", "layer"]
 - ["13PRMacControls6cmyBoxC", "prepareForInterfaceBuilder"]
 - ["13PRMacControls6cmyBoxC", "sharedInit"]
 - !private ["13PRMacControls10cmyControlC", "ctrl"]
@@ -245,6 +303,9 @@ depends-nominal:
 - !private "s10ArraySliceV"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
+- !private "So7CALayerC"
+- !private "So13CAMediaTimingP"
+- !private "So7CGColorC"
 - "s7CVarArgP"
 - !private "s10CollectionP"
 - "s28CustomDebugStringConvertibleP"
@@ -256,6 +317,7 @@ depends-nominal:
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s17MutableCollectionP"
@@ -269,16 +331,21 @@ depends-nominal:
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - "So11NSResponderC"
+- !private "So14NSSecureCodingP"
 - "So18NSTouchBarProviderP"
 - "So33NSUserInterfaceItemIdentificationP"
 - "So6NSViewC"
+- !private "Sq"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s8SequenceP"
 - !private "s14_ArrayProtocolP"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "12CoreGraphics22_CGColorInitTrampolineP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "13PRMacControls6cmyBoxC"
@@ -319,4 +386,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "57c8923b23f32d2ac3a9d1d96cf14473"
+interface-hash: "221c44a36d1decb352d507b37468407b"

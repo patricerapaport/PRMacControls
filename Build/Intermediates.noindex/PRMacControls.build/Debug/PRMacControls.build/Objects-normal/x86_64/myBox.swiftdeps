@@ -6,6 +6,7 @@ provides-nominal:
 provides-member:
 - ["13PRMacControls6cmyBoxC", ""]
 provides-dynamic-lookup:
+- "fillColor"
 - "isHidden"
 - "prepareForInterfaceBuilder"
 depends-top-level:
@@ -17,6 +18,7 @@ depends-top-level:
 - "CGRect"
 - "NSBox"
 - "NSCoder"
+- "NSColor"
 - "cmyBox"
 - "cmyControl"
 depends-member:
@@ -150,10 +152,12 @@ depends-member:
 - ["So5NSBoxC", "Bool"]
 - ["So5NSBoxC", "CGRect"]
 - ["So5NSBoxC", "NSCoder"]
+- ["So5NSBoxC", "NSColor"]
 - ["So5NSBoxC", ""]
 - ["So5NSBoxC", "addControl"]
 - ["So5NSBoxC", "cmyControl"]
 - ["So5NSBoxC", "ctrls"]
+- ["So5NSBoxC", "fillColor"]
 - ["So5NSBoxC", "init"]
 - ["So5NSBoxC", "isHidden"]
 - !private ["So5NSBoxC", "layer"]
@@ -175,11 +179,13 @@ depends-member:
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "NSColor"]
 - ["So8NSObjectC", "addControl"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "cmyControl"]
 - !private ["So8NSObjectC", "ctrl"]
 - ["So8NSObjectC", "ctrls"]
+- ["So8NSObjectC", "fillColor"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "isHidden"]
 - !private ["So8NSObjectC", "layer"]
@@ -196,9 +202,11 @@ depends-member:
 - ["So11NSResponderC", "Bool"]
 - ["So11NSResponderC", "CGRect"]
 - ["So11NSResponderC", "NSCoder"]
+- ["So11NSResponderC", "NSColor"]
 - ["So11NSResponderC", "addControl"]
 - ["So11NSResponderC", "cmyControl"]
 - ["So11NSResponderC", "ctrls"]
+- ["So11NSResponderC", "fillColor"]
 - ["So11NSResponderC", "init"]
 - ["So11NSResponderC", "isHidden"]
 - !private ["So11NSResponderC", "layer"]
@@ -220,9 +228,11 @@ depends-member:
 - ["So6NSViewC", "Bool"]
 - ["So6NSViewC", "CGRect"]
 - ["So6NSViewC", "NSCoder"]
+- ["So6NSViewC", "NSColor"]
 - ["So6NSViewC", "addControl"]
 - ["So6NSViewC", "cmyControl"]
 - ["So6NSViewC", "ctrls"]
+- ["So6NSViewC", "fillColor"]
 - ["So6NSViewC", "init"]
 - ["So6NSViewC", "isHidden"]
 - !private ["So6NSViewC", "layer"]
@@ -275,10 +285,12 @@ depends-member:
 - ["13PRMacControls6cmyBoxC", "Bool"]
 - ["13PRMacControls6cmyBoxC", "CGRect"]
 - ["13PRMacControls6cmyBoxC", "NSCoder"]
+- ["13PRMacControls6cmyBoxC", "NSColor"]
 - ["13PRMacControls6cmyBoxC", "addControl"]
 - ["13PRMacControls6cmyBoxC", "cmyControl"]
 - ["13PRMacControls6cmyBoxC", "ctrls"]
 - ["13PRMacControls6cmyBoxC", "deinit"]
+- ["13PRMacControls6cmyBoxC", "fillColor"]
 - ["13PRMacControls6cmyBoxC", "init"]
 - ["13PRMacControls6cmyBoxC", "isHidden"]
 - !private ["13PRMacControls6cmyBoxC", "layer"]
@@ -374,4 +386,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "57c8923b23f32d2ac3a9d1d96cf14473"
+interface-hash: "797d5f59c3515fca824ac8c60e04de3f"

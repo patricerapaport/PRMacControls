@@ -373,9 +373,11 @@ SWIFT_CLASS("_TtC13PRMacControls15clistController")
 - (BOOL)Save:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class NSColor;
 
 SWIFT_CLASS("_TtC13PRMacControls6cmyBox")
 @interface cmyBox : NSBox
+@property (nonatomic, strong) NSColor * _Nonnull fillColor;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;

@@ -8,6 +8,11 @@
 
 @IBDesignable open class cmyBox: NSBox {
     var ctrls: [cmyControl]=[]
+    @IBInspectable override open var fillColor: NSColor {
+        didSet {
+            sharedInit()
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
