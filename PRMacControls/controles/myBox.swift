@@ -6,8 +6,26 @@
 //  Copyright © 2017 Patrice Rapaport. All rights reserved.
 //
 
-open class cmyBox: NSBox {
+@IBDesignable open class cmyBox: NSBox {
     var ctrls: [cmyControl]=[]
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        sharedInit()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        sharedInit()
+    }
+    
+    override open func prepareForInterfaceBuilder() {
+        sharedInit()
+    }
+    
+    func sharedInit() {
+        layer?.backgroundColor = .white
+    }
     
     override open var isHidden: Bool {
         get {

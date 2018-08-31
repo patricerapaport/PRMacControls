@@ -376,9 +376,10 @@ SWIFT_CLASS("_TtC13PRMacControls15clistController")
 
 SWIFT_CLASS("_TtC13PRMacControls6cmyBox")
 @interface cmyBox : NSBox
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
 @property (nonatomic, getter=isHidden) BOOL hidden;
-- (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
