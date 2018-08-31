@@ -25,10 +25,12 @@
     }
     
     override open func prepareForInterfaceBuilder() {
+        sharedInit()
         layer?.backgroundColor = .white
     }
     
     func sharedInit() {
+        super.fillColor = .white
     }
     
     override open var isHidden: Bool {
