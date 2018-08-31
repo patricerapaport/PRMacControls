@@ -8,7 +8,7 @@
 
 @IBDesignable open class cmyBox: NSBox {
     var ctrls: [cmyControl]=[]
-    @IBInspectable override open var fillColor: NSColor {
+    @IBInspectable open var myFillColor: NSColor  = .white {
         didSet {
             sharedInit()
         }
@@ -26,11 +26,11 @@
     
     override open func prepareForInterfaceBuilder() {
         sharedInit()
-        layer?.backgroundColor = .white
+        layer?.backgroundColor = myFillColor.cgColor
     }
     
     func sharedInit() {
-        super.fillColor = .white
+        super.fillColor = myFillColor
     }
     
     override open var isHidden: Bool {
