@@ -75,6 +75,7 @@ depends-top-level:
 - !private "ckeyboardKeys"
 - "clisteControles"
 - !private "cmyBox"
+- !private "cmyButton"
 - !private "cmyCheckbox"
 - !private "cmyCombo"
 - "cmyControl"
@@ -1478,6 +1479,7 @@ depends-member:
 - !private ["So8NSObjectC", "clickMethod"]
 - ["So8NSObjectC", "clisteControles"]
 - !private ["So8NSObjectC", "cmyBox"]
+- !private ["So8NSObjectC", "cmyButton"]
 - !private ["So8NSObjectC", "cmyCheckbox"]
 - !private ["So8NSObjectC", "cmyCombo"]
 - ["So8NSObjectC", "cmyControl"]
@@ -2503,6 +2505,7 @@ depends-member:
 - !private ["13PRMacControls15clisteControlesC", "nextFocus"]
 - !private ["13PRMacControls15clisteControlesC", "previousFocus"]
 - !private ["13PRMacControls6cmyBoxC", "addControl"]
+- !private ["13PRMacControls9cmyButtonC", "parent"]
 - !private ["13PRMacControls11cmyCheckboxC", "parent"]
 - !private ["13PRMacControls11cmyCheckboxC", "stringValue"]
 - !private ["13PRMacControls8cmyComboC", "completedString"]
@@ -2550,6 +2553,7 @@ depends-member:
 - !private ["13PRMacControls10cmyControlC", "ckeyboardKeys"]
 - ["13PRMacControls10cmyControlC", "clisteControles"]
 - !private ["13PRMacControls10cmyControlC", "cmyBox"]
+- !private ["13PRMacControls10cmyControlC", "cmyButton"]
 - !private ["13PRMacControls10cmyControlC", "cmyCheckbox"]
 - !private ["13PRMacControls10cmyControlC", "cmyCombo"]
 - ["13PRMacControls10cmyControlC", "cmyControl"]
@@ -2919,6 +2923,7 @@ depends-nominal:
 - !private "13PRMacControls13ckeyboardKeysC"
 - !private "13PRMacControls15clisteControlesC"
 - !private "13PRMacControls6cmyBoxC"
+- !private "13PRMacControls9cmyButtonC"
 - !private "13PRMacControls11cmyCheckboxC"
 - !private "13PRMacControls8cmyComboC"
 - "13PRMacControls10cmyControlC"

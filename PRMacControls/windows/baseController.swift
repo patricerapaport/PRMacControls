@@ -224,6 +224,7 @@ protocol myBaseServiceTabview {
     }
     
     open func afterChargements() {
+        input()
         setState(etat: .nonedition)
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A642F1E6213AA77500A6C5D4 /* cmyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642F1E5213AA77500A6C5D4 /* cmyButton.swift */; };
 		A67394C92111766600339E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67394C82111766600339E80 /* Assets.xcassets */; };
 		A68EE22A212942E700896592 /* alertes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68EE229212942E700896592 /* alertes.swift */; };
 		A6E81A2D210D80D400B9139E /* PRMacControls.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E81A2B210D80D400B9139E /* PRMacControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		59F4FD50EB06BF834B6062E4 /* Pods-PRMacControls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRMacControls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRMacControls/Pods-PRMacControls.debug.xcconfig"; sourceTree = "<group>"; };
 		7AADA83157A37A29708041CA /* Pods-PRMacControls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRMacControls.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRMacControls/Pods-PRMacControls.release.xcconfig"; sourceTree = "<group>"; };
+		A642F1E5213AA77500A6C5D4 /* cmyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cmyButton.swift; sourceTree = "<group>"; };
 		A67394C82111766600339E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68EE229212942E700896592 /* alertes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertes.swift; sourceTree = "<group>"; };
 		A6DB8B07212012CC00A0EAF3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -182,6 +184,7 @@
 			children = (
 				A6E81A3F210D811500B9139E /* listeControles.swift */,
 				A6E81A38210D811500B9139E /* myBox.swift */,
+				A642F1E5213AA77500A6C5D4 /* cmyButton.swift */,
 				A6E81A42210D811500B9139E /* myCheckbox.swift */,
 				A6E81A3C210D811500B9139E /* myCombo.swift */,
 				A6E81A34210D811500B9139E /* myControl.swift */,
@@ -360,6 +363,7 @@
 				A6E81A54210D811500B9139E /* myCheckbox.swift in Sources */,
 				A6E81A7B210D963000B9139E /* myWindow.swift in Sources */,
 				A6E81A4B210D811500B9139E /* myTabviewitem.swift in Sources */,
+				A642F1E6213AA77500A6C5D4 /* cmyButton.swift in Sources */,
 				A6E81A52210D811500B9139E /* myTextfieldAdresse.swift in Sources */,
 				A6E81A4E210D811500B9139E /* myCombo.swift in Sources */,
 				A6E81A47210D811500B9139E /* myTextfieldDate.swift in Sources */,

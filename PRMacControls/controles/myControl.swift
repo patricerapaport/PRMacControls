@@ -294,8 +294,9 @@ open class cmyControl: NSObject {
             (ctrl as! cmyCheckbox).parent = self
         }else if ctrl is cmyCustomCheckbox {
             (ctrl as! cmyCustomCheckbox).parent = self
-        }
-        else if ctrl is NSTabView {
+        } else if ctrl is cmyButton {
+            (ctrl as! cmyButton).parent = self
+        } else if ctrl is NSTabView {
             for i in 0...(ctrl as! NSTabView).tabViewItems.count-1 {
                 let item = (ctrl as! NSTabView).tabViewItems[i]
                 if item is cmyTabviewItem {
@@ -635,9 +636,6 @@ open class cmyControl: NSObject {
             tabviewItem.tabView?.selectTabViewItem(tabviewItem)
         }
     }
-    
-    
-    
     
     open func acceptKey (event: NSEvent) -> Bool {
         if acceptKeyMethod != nil {

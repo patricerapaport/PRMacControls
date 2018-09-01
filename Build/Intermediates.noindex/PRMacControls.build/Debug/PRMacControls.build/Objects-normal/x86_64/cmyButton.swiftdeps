@@ -1,0 +1,222 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "cmyButton"
+provides-nominal:
+- "13PRMacControls9cmyButtonC"
+provides-member:
+- ["13PRMacControls9cmyButtonC", ""]
+provides-dynamic-lookup:
+- "draw"
+depends-top-level:
+- "NSButton"
+- "NSRect"
+- "NSResponder"
+- "cmyButton"
+- "cmyControl"
+- "cmyTypesBoutons"
+depends-member:
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "controller"]
+- !private ["s7CVarArgP", "draw"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "parent"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "controller"]
+- !private ["s28CustomDebugStringConvertibleP", "draw"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "parent"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "controller"]
+- !private ["s23CustomStringConvertibleP", "draw"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "parent"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "controller"]
+- !private ["s9EquatableP", "draw"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "parent"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "controller"]
+- !private ["s8HashableP", "draw"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "parent"]
+- ["So15NSAccessibilityP", ""]
+- !private ["So15NSAccessibilityP", "draw"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "parent"]
+- ["So21NSAccessibilityButtonP", ""]
+- !private ["So21NSAccessibilityButtonP", "draw"]
+- !private ["So21NSAccessibilityButtonP", "init"]
+- !private ["So21NSAccessibilityButtonP", "parent"]
+- ["So30NSAccessibilityElementProtocolP", ""]
+- !private ["So30NSAccessibilityElementProtocolP", "draw"]
+- !private ["So30NSAccessibilityElementProtocolP", "init"]
+- !private ["So30NSAccessibilityElementProtocolP", "parent"]
+- ["So29NSAnimatablePropertyContainerP", ""]
+- !private ["So29NSAnimatablePropertyContainerP", "draw"]
+- !private ["So29NSAnimatablePropertyContainerP", "init"]
+- !private ["So29NSAnimatablePropertyContainerP", "parent"]
+- ["So25NSAppearanceCustomizationP", ""]
+- !private ["So25NSAppearanceCustomizationP", "draw"]
+- !private ["So25NSAppearanceCustomizationP", "init"]
+- !private ["So25NSAppearanceCustomizationP", "parent"]
+- ["So8NSButtonC", "NSRect"]
+- ["So8NSButtonC", "NSResponder"]
+- ["So8NSButtonC", ""]
+- ["So8NSButtonC", "cmyControl"]
+- ["So8NSButtonC", "cmyTypesBoutons"]
+- ["So8NSButtonC", "controller"]
+- ["So8NSButtonC", "draw"]
+- ["So8NSButtonC", "init"]
+- ["So8NSButtonC", "parent"]
+- ["So8NSButtonC", "tipe"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "draw"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "parent"]
+- ["So9NSControlC", "NSRect"]
+- ["So9NSControlC", "NSResponder"]
+- ["So9NSControlC", "cmyControl"]
+- ["So9NSControlC", "cmyTypesBoutons"]
+- ["So9NSControlC", "controller"]
+- ["So9NSControlC", "draw"]
+- ["So9NSControlC", "init"]
+- ["So9NSControlC", "parent"]
+- ["So9NSControlC", "tipe"]
+- ["So21NSDraggingDestinationP", ""]
+- !private ["So21NSDraggingDestinationP", "draw"]
+- !private ["So21NSDraggingDestinationP", "init"]
+- !private ["So21NSDraggingDestinationP", "parent"]
+- ["So8NSObjectC", "NSRect"]
+- ["So8NSObjectC", "NSResponder"]
+- ["So8NSObjectC", "cmyControl"]
+- ["So8NSObjectC", "cmyTypesBoutons"]
+- ["So8NSObjectC", "controller"]
+- ["So8NSObjectC", "draw"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "parent"]
+- ["So8NSObjectC", "tipe"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "controller"]
+- !private ["So16NSObjectProtocolP", "draw"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "parent"]
+- ["So11NSResponderC", "NSRect"]
+- ["So11NSResponderC", "NSResponder"]
+- ["So11NSResponderC", "cmyControl"]
+- ["So11NSResponderC", "cmyTypesBoutons"]
+- ["So11NSResponderC", "controller"]
+- ["So11NSResponderC", "draw"]
+- ["So11NSResponderC", "init"]
+- ["So11NSResponderC", "parent"]
+- ["So11NSResponderC", "tipe"]
+- ["So18NSTouchBarProviderP", ""]
+- !private ["So18NSTouchBarProviderP", "draw"]
+- !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "parent"]
+- ["So26NSUserInterfaceCompressionP", ""]
+- !private ["So26NSUserInterfaceCompressionP", "draw"]
+- !private ["So26NSUserInterfaceCompressionP", "init"]
+- !private ["So26NSUserInterfaceCompressionP", "parent"]
+- ["So33NSUserInterfaceItemIdentificationP", ""]
+- !private ["So33NSUserInterfaceItemIdentificationP", "draw"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "init"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "parent"]
+- ["So26NSUserInterfaceValidationsP", ""]
+- !private ["So26NSUserInterfaceValidationsP", "draw"]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
+- !private ["So26NSUserInterfaceValidationsP", "parent"]
+- ["So6NSViewC", "NSRect"]
+- ["So6NSViewC", "NSResponder"]
+- ["So6NSViewC", "cmyControl"]
+- ["So6NSViewC", "cmyTypesBoutons"]
+- ["So6NSViewC", "controller"]
+- ["So6NSViewC", "draw"]
+- ["So6NSViewC", "init"]
+- ["So6NSViewC", "parent"]
+- ["So6NSViewC", "tipe"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "draw"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "parent"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "controller"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "draw"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parent"]
+- ["13PRMacControls9cmyButtonC", "NSRect"]
+- ["13PRMacControls9cmyButtonC", "NSResponder"]
+- ["13PRMacControls9cmyButtonC", "cmyControl"]
+- ["13PRMacControls9cmyButtonC", "cmyTypesBoutons"]
+- ["13PRMacControls9cmyButtonC", "controller"]
+- ["13PRMacControls9cmyButtonC", "deinit"]
+- ["13PRMacControls9cmyButtonC", "draw"]
+- ["13PRMacControls9cmyButtonC", "init"]
+- ["13PRMacControls9cmyButtonC", "parent"]
+- ["13PRMacControls9cmyButtonC", "tipe"]
+- !private ["13PRMacControls10cmyControlC", "controller"]
+- !private ["13PRMacControls18mySelectorProtocolP", "controller"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So15NSAccessibilityP"
+- "So21NSAccessibilityButtonP"
+- "So30NSAccessibilityElementProtocolP"
+- "So29NSAnimatablePropertyContainerP"
+- "So25NSAppearanceCustomizationP"
+- "So8NSButtonC"
+- "So8NSCodingP"
+- "So9NSControlC"
+- "So21NSDraggingDestinationP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So11NSResponderC"
+- "So18NSTouchBarProviderP"
+- "So26NSUserInterfaceCompressionP"
+- "So33NSUserInterfaceItemIdentificationP"
+- "So26NSUserInterfaceValidationsP"
+- "So6NSViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "13PRMacControls9cmyButtonC"
+- !private "13PRMacControls10cmyControlC"
+- !private "13PRMacControls18mySelectorProtocolP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/PRMacControls.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "15c5a249b8def3af6b150447d3ae45a9"

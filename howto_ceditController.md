@@ -51,6 +51,8 @@ La méthode de  vérification peut faire appel à des vérifications distantes (
 Cette méthode renvoie un dictionnaire qui sera utilisé par Alamlofire pour interroger un service web. (voir https://github.com/patricerapaport/PRMacControls/tree/master/howto_webservice.md)
 
 # Chargement des données dans la grille
+cbaseController, la classe parente de ceditController a une variable données (public var donnees: [String: String] = [:]). La méthode input() permet de charger les valeurs de chaque contrôle de la manière suivante: si l'identifier d'un contrôle d'édition correspond à une clé du dictionnaire données, alors la valeur associée à cette clé sera affichée dans ce contrôle.
+
 Si vous désirez charger des données dans vos contrôles, vous devez écrire une procédure de chargement des données sous la forme:
 
 	override func chargements (_ numrequete: Int) {
@@ -76,5 +78,3 @@ Une fois les chargements effectués, la méthode afterChargements est automatiqu
 	open func afterChargements() {
         	setState(etat: .nonedition)
     	}
-
-Vous pouvez surclasser cette méthode pour effectuer des actions supplémentaires.

@@ -385,6 +385,14 @@ SWIFT_CLASS("_TtC13PRMacControls6cmyBox")
 @end
 
 
+SWIFT_CLASS("_TtC13PRMacControls9cmyButton")
+@interface cmyButton : NSButton
+- (void)drawRect:(NSRect)dirtyRect;
+- (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13PRMacControls11cmyCheckbox")
 @interface cmyCheckbox : NSButton
 @property (nonatomic) BOOL isFiltre;
