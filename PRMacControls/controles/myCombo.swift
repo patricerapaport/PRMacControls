@@ -8,6 +8,7 @@
 
 @IBDesignable open class cmyCombo: NSComboBox {
     public var parent: cmyControl!
+    var internalOperation: Bool = false
     var valeurInitiale: String!
     var txtassocie: cmyTextfield! // utilisé dans une cellule de table
     var chgtInterne: Bool = false // si positionné à true, la méthode chgt ne sera pas appelée dans selectionddchange
@@ -16,12 +17,31 @@
     @IBInspectable public var isLabel: Bool = false
     @IBInspectable public var isBloque: Bool = false
     
+    open var lstOptions: [String]! {
+        get {
+            return self.lstOptions
+        }
+        
+        set(liste) {
+            self.lstOptions = liste
+            if self.lstOptions != nil {
+                parent.setDatasource(self.lstOptions)
+            }
+        }
+    }
+    
     var controller: NSResponder {
         get {
             return parent.controller
         }
     }
     
+    @objc func delayFocus(info: Any?) {
+        let ctrl = info as! cmyTextfield
+        internalOperation = true
+        _ = ctrl.becomeFirstResponder()
+        internalOperation = false
+    }
     
     override open var acceptsFirstResponder: Bool {
         get {
@@ -30,51 +50,82 @@
     }
     
     override open func becomeFirstResponder() -> Bool {
-        if parent != nil {
-            var currentFocus: cmyControl!
-            if controller is cbaseController {
-                currentFocus = (controller as! cbaseController).currentFocus
-            } else if controller is cbaseView {
-                currentFocus = (controller as! cbaseView).currentFocus
-            }
-            if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
-                let currentFocusControles = currentFocus?.parent.controles
-                let controles = parent.parent.controles
-                if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
-                    currentFocus?.verifControl(completion: {
-                        res  in
-                        if res {
-                            var myPopover: NSPopover!
-                            if self.controller is cbaseController {
-                                myPopover = (self.controller as! cbaseController).myPopover
-                            } else if self.controller is cbaseView {
-                                myPopover = (self.controller as! cbaseView).myPopover
-                            }
-                            if myPopover != nil &&  myPopover.isShown {
-                                myPopover.close()
-                            }
-                            
-                            //currentFocus = self.afterVerif(currentFocus: currentFocus!, event: event)
-                        }
-                    })
-                }
-            }
-        }
         if parent == nil {
             return true
         }
+        
+        var currentFocus: cmyControl!
+        if controller is cbaseController {
+            currentFocus = (controller as! cbaseController).currentFocus
+        } else if controller is cbaseView {
+            currentFocus = (controller as! cbaseView).currentFocus
+        }
+        if currentFocus != nil {
+            if currentFocus?.identifier == identifier?.rawValue {
+                internalOperation = true
+                _ = super.becomeFirstResponder()
+                internalOperation = false
+                return false
+            }
+        }
+        
+        var bRes = true // valeur provisoire de retour
+        if currentFocus != nil && currentFocus?.identifier != identifier?.rawValue {
+            let currentFocusControles = currentFocus?.parent.controles
+            let controles = parent.parent.controles
+            if (currentFocusControles! as NSArray).index(of: currentFocus!) < (controles as NSArray).index(of:self.parent) {
+                currentFocus?.verifControl(completion: {
+                    res  in
+                    if res {
+                        var myPopover: NSPopover!
+                        if self.controller is cbaseController {
+                            myPopover = (self.controller as! cbaseController).myPopover
+                        } else if self.controller is cbaseView {
+                            myPopover = (self.controller as! cbaseView).myPopover
+                        }
+                        if myPopover != nil &&  myPopover.isShown {
+                            myPopover.close()
+                        }
+                        bRes = true
+                    } else {
+                        bRes = false
+                        let info = currentFocus.ctrl
+                        self.perform(#selector(self.delayFocus), with: info, afterDelay: 0.3)
+                        
+                        
+                        bRes = false
+                    }
+                })
+            }
+        }
+        if bRes == false {
+            return bRes
+        } else {
+            internalOperation = true
+            bRes = super.becomeFirstResponder()
+            internalOperation = false
+        }
+        
         if (parent.tableView != nil && parent.tableView is cmyTable && (parent.tableView as! cmyTable).state == .nonedition) || (parent.tableView == nil && parent.controllerState == .nonedition) && !isFiltre {
             return false
         }
-        let bRes = super.becomeFirstResponder()
+        
+        parent.valeurAvant = stringValue
         if bRes {
             if parent != nil {
                 if controller is cbaseController {
-                    (controller as! cbaseController).currentFocus = parent
+                    let theController = controller as! cbaseController
+                    theController.currentFocus = parent
+                    if parent.getfocusMethod != nil {
+                        theController.perform(parent.getfocusMethod, with: self as NSControl)
+                    }
                 }
-                else
-                if controller is cbaseView {
-                    (controller as! cbaseView).currentFocus = parent
+                else if controller is cbaseView {
+                    let theController = controller as! cbaseView
+                    theController.currentFocus = parent
+                    if parent.getfocusMethod != nil {
+                        theController.perform(parent.getfocusMethod, with: self as NSControl)
+                    }
                 }
             }
         }
@@ -82,7 +133,20 @@
     }
     
     override open func resignFirstResponder() -> Bool {
-        return true
+        // au chargement de cbaseController, le parent est nul
+        if parent == nil || internalOperation {
+            return true
+        }
+        if parent.resignMethod != nil {
+            if controller is cbaseController {
+                let theController = controller as! cbaseController
+                theController.perform(parent.resignMethod, with: self as NSControl)
+            } else if controller is cbaseView {
+                let theController = controller as! cbaseView
+                theController.perform(parent.resignMethod, with: self as NSControl)
+            }
+        }
+        return super.resignFirstResponder()
     }
     
     override open var stringValue: String {
@@ -290,8 +354,7 @@
         if (event.keyCode == ckeyboardKeys.enter || event.keyCode == ckeyboardKeys.enterNum || event.keyCode == ckeyboardKeys.tab) {
             parent.enterReceived (event)
         }
-        else
-            if event.keyCode ==  ckeyboardKeys.escape {
+        else if event.keyCode ==  ckeyboardKeys.escape {
                 parent.escapeReceived(event)
         }
     }

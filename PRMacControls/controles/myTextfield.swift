@@ -9,7 +9,6 @@
 @IBDesignable open class cmyTextfield: NSTextField, NSTextFieldDelegate {
     public var parent: cmyControl!
     var internalOperation: Bool = false
-    var passage: Int = 0
     @IBInspectable public var obligatoire: Bool = false
     @IBInspectable public var isFiltre: Bool = false
     @IBInspectable public var onsubmit: Bool = false
@@ -30,7 +29,6 @@
     }
     
     @objc func delayFocus(info: Any?) {
-        Swift.print("delayFocus")
         let ctrl = info as! cmyTextfield
         internalOperation = true
         _ = ctrl.becomeFirstResponder()
@@ -42,10 +40,6 @@
         if parent == nil {
             return true
         }
-        passage += 1
-        let pass = passage
-        let ident: String = (identifier?.rawValue)!
-        Swift.print("\(pass) becomeFrstresponder sur \(ident)")
     
         var currentFocus: cmyControl!
         if controller is cbaseController {
@@ -189,50 +183,12 @@
     }
     
     override open func keyUp(with event: NSEvent) {
-         if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains( event.keyCode) {
-            closePopover()
-            if !event.modifierFlags.contains( .shift) {
-                if parent.onSubmit && !event.modifierFlags.contains(.shift) {
-                    if parent.submitMethod != nil {
-                        controller.perform(parent.submitMethod, with: self)
-                        return
-                    } else if parent.hasSelector(.save) {
-                        parent.performAction(.save)
-                        return
-                    } else if parent.tableView != nil && (parent.tableView as! cmyTable).hasSelector(.save) {
-                        (parent.tableView as! cmyTable).performAction(.save)
-                        return
-                    } else if parent.outlineView != nil && (parent.outlineView as! cOutline).hasSelector(.save) {
-                        (parent.outlineView as! cOutline).performAction(.save)
-                        return
-                    }
-                    
-                    // Après un save, le currentFocus peut changer
-                    //focus = controller.currentFocus
-                }
-                if parent.nextFocusControl != nil && !event.modifierFlags.contains(.shift) {
-                    _ = controller.perform(parent.nextFocusControl, with: self)
-                } else {
-                    let next = self.parent.nextFocus()
-                    if next != nil {
-                        window?.makeFirstResponder(next?.ctrl)
-                    }
-                }
-                
-            } else {
-                let prev = self.parent.previousFocus()
-                if prev != nil {
-                    self.window?.makeFirstResponder(prev?.ctrl)
-                }
-            }
-        } else if event.keyCode ==  ckeyboardKeys.escape {
-            if parent.tableView != nil && parent.tableView is cmyTable && (parent.tableView as! cmyTable).hasSelector(.annulation) {
-                (parent.tableView as! cmyTable).performAction(.annulation)
-            }
-            else if controller is cbaseController {
-                (controller as! cbaseController).Annuler(self)
-            }
-         } else if !parent.acceptKey(event: event) {
+        if [ckeyboardKeys.enter, ckeyboardKeys.enterNum, ckeyboardKeys.tab].contains( event.keyCode) {
+            parent.enterReceived (event)
+        }
+        else if event.keyCode ==  ckeyboardKeys.escape {
+            parent.escapeReceived(event)
+        } else if !parent.acceptKey(event: event) {
             return
         }
     }

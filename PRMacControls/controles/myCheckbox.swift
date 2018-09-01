@@ -11,19 +11,6 @@
     open var parent: cmyControl!
     @IBInspectable public var isFiltre: Bool = false
     
-    open var lstOptions: [String]! {
-        get {
-            return self.lstOptions
-        }
-        
-        set(liste) {
-            self.lstOptions = liste
-            if self.lstOptions != nil {
-                parent.setDatasource(self.lstOptions)
-            }
-        }
-    }
-    
     var controller: NSResponder? {
         get {
             return parent != nil ? parent.controller : nil
@@ -178,10 +165,5 @@
             ovalPath.stroke()
         }
     }
-    
-    open func load() {
-        if lstOptions != nil {
-            parent.setDatasource(lstOptions)
-        }
-    }
+
 }

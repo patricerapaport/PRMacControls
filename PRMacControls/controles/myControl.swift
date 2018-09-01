@@ -561,10 +561,49 @@ open class cmyControl: NSObject {
     }
     
     func enterReceived (_ event: NSEvent) {
+        if !event.modifierFlags.contains( .shift) {
+            if onSubmit && !event.modifierFlags.contains(.shift) {
+                if submitMethod != nil {
+                    controller.perform(submitMethod, with: ctrl)
+                    return
+                } else if hasSelector(.save) {
+                    performAction(.save)
+                    return
+                } else if tableView != nil && (tableView as! cmyTable).hasSelector(.save) {
+                    (tableView as! cmyTable).performAction(.save)
+                    return
+                } else if outlineView != nil && (outlineView as! cOutline).hasSelector(.save) {
+                    (outlineView as! cOutline).performAction(.save)
+                    return
+                }
+                
+                // Après un save, le currentFocus peut changer
+                //focus = controller.currentFocus
+            }
+            if nextFocusControl != nil && !event.modifierFlags.contains(.shift) {
+                _ = controller.perform(nextFocusControl, with: ctrl)
+            } else {
+                let next = nextFocus()
+                if next != nil {
+                    ctrl.window?.makeFirstResponder(next?.ctrl)
+                }
+            }
+            
+        } else {
+            let prev = previousFocus()
+            if prev != nil {
+                ctrl.window?.makeFirstResponder(prev?.ctrl)
+            }
+        }
     }
     
     func escapeReceived (_ event: NSEvent) {
-
+        if tableView != nil && tableView is cmyTable && (tableView as! cmyTable).hasSelector(.annulation) {
+            (tableView as! cmyTable).performAction(.annulation)
+        }
+        else if controller is cbaseController {
+            (controller as! cbaseController).Annuler(self)
+        }
     }
     
     func controlEnterRecu() {
@@ -684,9 +723,6 @@ extension cmyControl {
     
     public func verifControl (completion: @escaping(Bool) -> Void) {
         if ctrl is cmyTextfield  {
-            let pass = (ctrl as! cmyTextfield).passage
-            let ident: String = identifier
-            Swift.print("\(pass) vertifcontrol de \(ident)")
             if !(ctrl as! cmyTextfield).verifObligatoire() {
                 repositionneTabview()
                 popover("Zone obligatoire")
