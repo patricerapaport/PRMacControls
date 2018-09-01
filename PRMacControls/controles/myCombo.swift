@@ -8,6 +8,7 @@
 
 @IBDesignable open class cmyCombo: NSComboBox {
     public var parent: cmyControl!
+    var _options: [String]!
     var internalOperation: Bool = false
     var valeurInitiale: String!
     var txtassocie: cmyTextfield! // utilisé dans une cellule de table
@@ -19,13 +20,13 @@
     
     open var lstOptions: [String]! {
         get {
-            return self.lstOptions
+            return _options
         }
         
         set(liste) {
-            self.lstOptions = liste
-            if self.lstOptions != nil {
-                parent.setDatasource(self.lstOptions)
+            _options = liste
+            if _options != nil {
+                parent.setDatasource(_options)
             }
         }
     }
