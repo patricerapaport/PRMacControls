@@ -77,7 +77,7 @@ open class cmyTextFieldDecimal : cmyTextFieldNum {
                                                                      " ", "(", ")"].contains((event.characters)!)  {
             return false
         } else if event.characters == "," {
-            super.stringValue = super.stringValue + "/"
+            super.stringValue = super.stringValue + "."
             return false
         } else {
             return true

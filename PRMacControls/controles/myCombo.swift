@@ -38,7 +38,7 @@
     }
     
     @objc func delayFocus(info: Any?) {
-        let ctrl = info as! cmyTextfield
+        let ctrl = info as! NSControl
         internalOperation = true
         _ = ctrl.becomeFirstResponder()
         internalOperation = false
