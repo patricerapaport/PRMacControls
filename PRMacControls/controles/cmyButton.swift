@@ -10,7 +10,7 @@ import Cocoa
 
 @IBDesignable open class cmyButton: NSButton {
     public var parent: cmyControl!
-    open var tipe: cmyTypesBoutons!
+    public var tipe: cmyTypesBoutons!
     
     var controller: NSResponder {
         get {

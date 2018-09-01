@@ -181,6 +181,20 @@ protocol myBaseServiceTabview {
             activesWindow.append(self)
         }
         addNotifyChargements()
+        NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
+            if self.myKeyDown(with: $0) {
+                return nil
+            } else {
+                return $0
+            }
+        }
+        NSEvent.addLocalMonitorForEvents(matching: .leftMouseDown) {
+            if self.myMousedown(with: $0) {
+                return nil
+            } else {
+                return $0
+            }
+        }
     }
     
     // Cette fonction doit être surchargée pour effectuer un nettoyage personnalisé de la fenêtre. Elle est appelée par shouldClose de NSWindowDelegate
@@ -238,6 +252,22 @@ protocol myBaseServiceTabview {
         } else {
             afterChargements()
         }
+    }
+    
+    // monitoring de keyDown
+    @objc func myKeyDown(with event: NSEvent) -> Bool {
+        if event.modifierFlags.contains(.command) {
+            return false
+        }
+        if currentFocus != nil && currentFocus.ctrl is cmyTextfield {
+            return !currentFocus.acceptKey(event: event)
+        }
+        return false
+    }
+    
+    //monitoring de mouseDown
+    @objc func myMousedown(with event: NSEvent) -> Bool {
+        return false
     }
     
     func refreshDoc (iddocument: Int) { // A surcharger pour rafraichir le document
