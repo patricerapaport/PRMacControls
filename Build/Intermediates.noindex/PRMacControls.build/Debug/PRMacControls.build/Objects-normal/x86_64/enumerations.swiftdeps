@@ -16,10 +16,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- "AssignmentPrecedence"
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
 - "Notification"
+- "String"
 - "StringLiteralType"
 - "cmyTypesBoutons"
 - "etatWindow"
@@ -27,83 +29,152 @@ depends-top-level:
 - !private "~="
 depends-member:
 - ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "lowercased"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "lowercased"]
 - ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "lowercased"]
 - ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "lowercased"]
 - ["s28CustomDebugStringConvertibleP", "Name"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "lowercased"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "lowercased"]
 - ["s17CustomReflectableP", "Name"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "lowercased"]
 - ["s23CustomStringConvertibleP", "Name"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "lowercased"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "lowercased"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "lowercased"]
 - ["s9EquatableP", "Name"]
 - ["s9EquatableP", "Notification"]
 - ["s9EquatableP", "RawValue"]
 - ["s9EquatableP", ""]
 - ["s9EquatableP", "_Default_RawValue"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "ajouter"]
+- !private ["s9EquatableP", "annuler"]
+- !private ["s9EquatableP", "autre"]
+- !private ["s9EquatableP", "enregistrer"]
 - ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "imprimer"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "lowercased"]
+- !private ["s9EquatableP", "modifier"]
 - ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "reglement"]
+- !private ["s9EquatableP", "supprimer"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
 - ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "lowercased"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
 - ["s8HashableP", "Name"]
 - ["s8HashableP", "Notification"]
 - ["s8HashableP", "RawValue"]
 - ["s8HashableP", ""]
 - ["s8HashableP", "_Default_RawValue"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "ajouter"]
+- !private ["s8HashableP", "annuler"]
+- !private ["s8HashableP", "autre"]
+- !private ["s8HashableP", "enregistrer"]
 - ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "imprimer"]
 - ["s8HashableP", "init"]
+- !private ["s8HashableP", "lowercased"]
+- !private ["s8HashableP", "modifier"]
 - ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "reglement"]
+- !private ["s8HashableP", "supprimer"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "lowercased"]
 - ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "lowercased"]
+- !private ["So8NSCodingP", "lowercased"]
+- !private ["So9NSCopyingP", "lowercased"]
+- !private ["So21NSItemProviderReadingP", "lowercased"]
+- !private ["So21NSItemProviderWritingP", "lowercased"]
+- !private ["So16NSMutableCopyingP", "lowercased"]
+- !private ["So8NSObjectC", "lowercased"]
+- !private ["So16NSObjectProtocolP", "lowercased"]
+- !private ["So19NSPasteboardReadingP", "lowercased"]
+- !private ["So19NSPasteboardWritingP", "lowercased"]
+- !private ["So14NSSecureCodingP", "lowercased"]
+- !private ["So8NSStringC", "lowercased"]
 - ["So14NSNotificationC4NameV", "Notification"]
 - ["So14NSNotificationC4NameV", "chargement"]
 - ["So14NSNotificationC4NameV", "init"]
 - ["10Foundation12NotificationV", "Name"]
 - ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "lowercased"]
 - ["s16RawRepresentableP", "Notification"]
 - ["s16RawRepresentableP", "RawValue"]
 - ["s16RawRepresentableP", ""]
 - ["s16RawRepresentableP", "_Default_RawValue"]
+- !private ["s16RawRepresentableP", "ajouter"]
+- !private ["s16RawRepresentableP", "annuler"]
+- !private ["s16RawRepresentableP", "autre"]
+- !private ["s16RawRepresentableP", "enregistrer"]
 - ["s16RawRepresentableP", "hashValue"]
+- !private ["s16RawRepresentableP", "imprimer"]
 - ["s16RawRepresentableP", "init"]
+- !private ["s16RawRepresentableP", "modifier"]
 - ["s16RawRepresentableP", "rawValue"]
+- !private ["s16RawRepresentableP", "reglement"]
+- !private ["s16RawRepresentableP", "supprimer"]
 - ["10Foundation20ReferenceConvertibleP", "Name"]
 - ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "lowercased"]
 - ["SS", "init"]
+- !private ["SS", "lowercased"]
 - ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "lowercased"]
 - ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "lowercased"]
 - ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "lowercased"]
 - ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "lowercased"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowercased"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "lowercased"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
 - ["s21_ObjectiveCBridgeableP", "Name"]
 - ["s21_ObjectiveCBridgeableP", "Notification"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "lowercased"]
 - ["s20_SwiftNewtypeWrapperP", "Notification"]
 - ["s20_SwiftNewtypeWrapperP", "init"]
 - ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "lowercased"]
 - ["13PRMacControls15cmyTypesBoutonsO", "RawValue"]
+- ["13PRMacControls15cmyTypesBoutonsO", "String"]
 - ["13PRMacControls15cmyTypesBoutonsO", "_Default_RawValue"]
 - ["13PRMacControls15cmyTypesBoutonsO", "ajouter"]
 - ["13PRMacControls15cmyTypesBoutonsO", "annuler"]
@@ -148,6 +219,17 @@ depends-nominal:
 - "s8HashableP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "So14NSNotificationC4NameV"
 - "10Foundation12NotificationV"
 - "s26RangeReplaceableCollectionP"
@@ -165,6 +247,8 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s20_SwiftNewtypeWrapperP"
 - "s16_SwiftStringViewP"
@@ -206,4 +290,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "6d91bdfa7e3f6a93fa3dadebfb2e1ee3"
+interface-hash: "792e03672ba88b417e10e5f340c09478"

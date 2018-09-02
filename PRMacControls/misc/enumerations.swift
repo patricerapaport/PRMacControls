@@ -23,6 +23,20 @@ public enum etatWindow {
     case reglement      = 5
     case autre          = 6
     case imprimer       = 7
+    
+    init(named typeName: String) {
+        switch typeName.lowercased() {
+        case "modifier": self = .modifier
+        case "ajouter": self = .ajouter
+        case "supprimer": self = .supprimer
+        case "annuler": self = .annuler
+        case "enregistrer": self = .enregistrer
+        case "reglement": self = .reglement
+        case "autre": self = .autre
+        case "imprimer": self = .imprimer
+        default: self = .autre
+        }
+    }
 }
 
 public enum mytypesBoutons {

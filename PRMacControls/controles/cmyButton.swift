@@ -10,7 +10,14 @@ import Cocoa
 
 @IBDesignable open class cmyButton: NSButton {
     public var parent: cmyControl!
-    @IBInspectable public var tipe: cmyTypesBoutons = cmyTypesBoutons(rawValue: cmyTypesBoutons.autre.rawValue)!
+    public var _type: cmyTypesBoutons!
+    @IBInspectable public var tipeName: String? {
+        willSet {
+            if let newType: cmyTypesBoutons = cmyTypesBoutons(named: newValue?.lowercased() ?? "") {
+                _type = newType
+            }
+        }
+    }
     
     var controller: NSResponder {
         get {
