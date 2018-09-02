@@ -37,6 +37,14 @@ public enum etatWindow {
         default: self = .autre
         }
     }
+    
+    func toString() -> String {
+        switch self {
+        case .modifier: return "modifier"
+        case .ajouter: return "ajouter"
+        default: return "autre"
+        }
+    }
 }
 
 public enum mytypesBoutons {
