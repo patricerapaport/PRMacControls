@@ -6,128 +6,302 @@ provides-nominal:
 provides-member:
 - ["13PRMacControls9cmyButtonC", ""]
 provides-dynamic-lookup:
+- "draw"
 - "tipeName"
 depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
 - "NSButton"
+- "NSRect"
+- "NSResponder"
 - "String"
+- !private "StringLiteralType"
 - "cmyButton"
 - "cmyControl"
 - "cmyTypesBoutons"
-- !private "willSet"
 depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "lowercased"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_type"]
+- !private ["s7CVarArgP", "cmyTypesBoutons"]
+- !private ["s7CVarArgP", "controller"]
+- !private ["s7CVarArgP", "draw"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "willSet"]
+- !private ["s7CVarArgP", "lowercased"]
+- !private ["s7CVarArgP", "parent"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "lowercased"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "lowercased"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "_type"]
+- !private ["s28CustomDebugStringConvertibleP", "cmyTypesBoutons"]
+- !private ["s28CustomDebugStringConvertibleP", "controller"]
+- !private ["s28CustomDebugStringConvertibleP", "draw"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "willSet"]
+- !private ["s28CustomDebugStringConvertibleP", "lowercased"]
+- !private ["s28CustomDebugStringConvertibleP", "parent"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "lowercased"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "lowercased"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_type"]
+- !private ["s23CustomStringConvertibleP", "cmyTypesBoutons"]
+- !private ["s23CustomStringConvertibleP", "controller"]
+- !private ["s23CustomStringConvertibleP", "draw"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "willSet"]
+- !private ["s23CustomStringConvertibleP", "lowercased"]
+- !private ["s23CustomStringConvertibleP", "parent"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "lowercased"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "lowercased"]
 - ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_type"]
+- !private ["s9EquatableP", "cmyTypesBoutons"]
+- !private ["s9EquatableP", "controller"]
+- !private ["s9EquatableP", "draw"]
 - !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "willSet"]
+- !private ["s9EquatableP", "lowercased"]
+- !private ["s9EquatableP", "parent"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "lowercased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
 - ["s8HashableP", ""]
+- !private ["s8HashableP", "_type"]
+- !private ["s8HashableP", "cmyTypesBoutons"]
+- !private ["s8HashableP", "controller"]
+- !private ["s8HashableP", "draw"]
 - !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "willSet"]
+- !private ["s8HashableP", "lowercased"]
+- !private ["s8HashableP", "parent"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "lowercased"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "lowercased"]
 - ["So15NSAccessibilityP", ""]
+- !private ["So15NSAccessibilityP", "_type"]
+- !private ["So15NSAccessibilityP", "cmyTypesBoutons"]
+- !private ["So15NSAccessibilityP", "draw"]
 - !private ["So15NSAccessibilityP", "init"]
-- !private ["So15NSAccessibilityP", "willSet"]
+- !private ["So15NSAccessibilityP", "parent"]
 - ["So21NSAccessibilityButtonP", ""]
+- !private ["So21NSAccessibilityButtonP", "_type"]
+- !private ["So21NSAccessibilityButtonP", "cmyTypesBoutons"]
+- !private ["So21NSAccessibilityButtonP", "draw"]
 - !private ["So21NSAccessibilityButtonP", "init"]
-- !private ["So21NSAccessibilityButtonP", "willSet"]
+- !private ["So21NSAccessibilityButtonP", "parent"]
 - ["So30NSAccessibilityElementProtocolP", ""]
+- !private ["So30NSAccessibilityElementProtocolP", "_type"]
+- !private ["So30NSAccessibilityElementProtocolP", "cmyTypesBoutons"]
+- !private ["So30NSAccessibilityElementProtocolP", "draw"]
 - !private ["So30NSAccessibilityElementProtocolP", "init"]
-- !private ["So30NSAccessibilityElementProtocolP", "willSet"]
+- !private ["So30NSAccessibilityElementProtocolP", "parent"]
 - ["So29NSAnimatablePropertyContainerP", ""]
+- !private ["So29NSAnimatablePropertyContainerP", "_type"]
+- !private ["So29NSAnimatablePropertyContainerP", "cmyTypesBoutons"]
+- !private ["So29NSAnimatablePropertyContainerP", "draw"]
 - !private ["So29NSAnimatablePropertyContainerP", "init"]
-- !private ["So29NSAnimatablePropertyContainerP", "willSet"]
+- !private ["So29NSAnimatablePropertyContainerP", "parent"]
 - ["So25NSAppearanceCustomizationP", ""]
+- !private ["So25NSAppearanceCustomizationP", "_type"]
+- !private ["So25NSAppearanceCustomizationP", "cmyTypesBoutons"]
+- !private ["So25NSAppearanceCustomizationP", "draw"]
 - !private ["So25NSAppearanceCustomizationP", "init"]
-- !private ["So25NSAppearanceCustomizationP", "willSet"]
+- !private ["So25NSAppearanceCustomizationP", "parent"]
+- ["So8NSButtonC", "NSRect"]
+- ["So8NSButtonC", "NSResponder"]
 - ["So8NSButtonC", "String"]
 - ["So8NSButtonC", ""]
 - ["So8NSButtonC", "_type"]
 - ["So8NSButtonC", "cmyControl"]
 - ["So8NSButtonC", "cmyTypesBoutons"]
+- ["So8NSButtonC", "controller"]
+- ["So8NSButtonC", "draw"]
 - ["So8NSButtonC", "init"]
 - ["So8NSButtonC", "parent"]
 - ["So8NSButtonC", "tipeName"]
-- !private ["So8NSButtonC", "willSet"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "_type"]
+- !private ["So8NSCodingP", "cmyTypesBoutons"]
+- !private ["So8NSCodingP", "draw"]
 - !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "willSet"]
+- !private ["So8NSCodingP", "lowercased"]
+- !private ["So8NSCodingP", "parent"]
+- ["So9NSControlC", "NSRect"]
+- ["So9NSControlC", "NSResponder"]
 - ["So9NSControlC", "String"]
 - ["So9NSControlC", "_type"]
 - ["So9NSControlC", "cmyControl"]
 - ["So9NSControlC", "cmyTypesBoutons"]
+- ["So9NSControlC", "controller"]
+- ["So9NSControlC", "draw"]
 - ["So9NSControlC", "init"]
 - ["So9NSControlC", "parent"]
 - ["So9NSControlC", "tipeName"]
-- !private ["So9NSControlC", "willSet"]
+- !private ["So9NSCopyingP", "lowercased"]
 - ["So21NSDraggingDestinationP", ""]
+- !private ["So21NSDraggingDestinationP", "_type"]
+- !private ["So21NSDraggingDestinationP", "cmyTypesBoutons"]
+- !private ["So21NSDraggingDestinationP", "draw"]
 - !private ["So21NSDraggingDestinationP", "init"]
-- !private ["So21NSDraggingDestinationP", "willSet"]
+- !private ["So21NSDraggingDestinationP", "parent"]
+- !private ["So21NSItemProviderReadingP", "lowercased"]
+- !private ["So21NSItemProviderWritingP", "lowercased"]
+- !private ["So16NSMutableCopyingP", "lowercased"]
+- ["So8NSObjectC", "NSRect"]
+- ["So8NSObjectC", "NSResponder"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "_type"]
 - ["So8NSObjectC", "cmyControl"]
 - ["So8NSObjectC", "cmyTypesBoutons"]
+- ["So8NSObjectC", "controller"]
+- ["So8NSObjectC", "draw"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "lowercased"]
 - ["So8NSObjectC", "parent"]
 - ["So8NSObjectC", "tipeName"]
-- !private ["So8NSObjectC", "willSet"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "_type"]
+- !private ["So16NSObjectProtocolP", "cmyTypesBoutons"]
+- !private ["So16NSObjectProtocolP", "controller"]
+- !private ["So16NSObjectProtocolP", "draw"]
 - !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "willSet"]
+- !private ["So16NSObjectProtocolP", "lowercased"]
+- !private ["So16NSObjectProtocolP", "parent"]
+- !private ["So19NSPasteboardReadingP", "lowercased"]
+- !private ["So19NSPasteboardWritingP", "lowercased"]
+- ["So11NSResponderC", "NSRect"]
+- ["So11NSResponderC", "NSResponder"]
 - ["So11NSResponderC", "String"]
 - ["So11NSResponderC", "_type"]
 - ["So11NSResponderC", "cmyControl"]
 - ["So11NSResponderC", "cmyTypesBoutons"]
+- ["So11NSResponderC", "controller"]
+- ["So11NSResponderC", "draw"]
 - ["So11NSResponderC", "init"]
 - ["So11NSResponderC", "parent"]
 - ["So11NSResponderC", "tipeName"]
-- !private ["So11NSResponderC", "willSet"]
+- !private ["So14NSSecureCodingP", "lowercased"]
+- !private ["So8NSStringC", "lowercased"]
 - ["So18NSTouchBarProviderP", ""]
+- !private ["So18NSTouchBarProviderP", "_type"]
+- !private ["So18NSTouchBarProviderP", "cmyTypesBoutons"]
+- !private ["So18NSTouchBarProviderP", "draw"]
 - !private ["So18NSTouchBarProviderP", "init"]
-- !private ["So18NSTouchBarProviderP", "willSet"]
+- !private ["So18NSTouchBarProviderP", "parent"]
 - ["So26NSUserInterfaceCompressionP", ""]
+- !private ["So26NSUserInterfaceCompressionP", "_type"]
+- !private ["So26NSUserInterfaceCompressionP", "cmyTypesBoutons"]
+- !private ["So26NSUserInterfaceCompressionP", "draw"]
 - !private ["So26NSUserInterfaceCompressionP", "init"]
-- !private ["So26NSUserInterfaceCompressionP", "willSet"]
+- !private ["So26NSUserInterfaceCompressionP", "parent"]
 - ["So33NSUserInterfaceItemIdentificationP", ""]
+- !private ["So33NSUserInterfaceItemIdentificationP", "_type"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "cmyTypesBoutons"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "draw"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "init"]
-- !private ["So33NSUserInterfaceItemIdentificationP", "willSet"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "parent"]
 - ["So26NSUserInterfaceValidationsP", ""]
+- !private ["So26NSUserInterfaceValidationsP", "_type"]
+- !private ["So26NSUserInterfaceValidationsP", "cmyTypesBoutons"]
+- !private ["So26NSUserInterfaceValidationsP", "draw"]
 - !private ["So26NSUserInterfaceValidationsP", "init"]
-- !private ["So26NSUserInterfaceValidationsP", "willSet"]
+- !private ["So26NSUserInterfaceValidationsP", "parent"]
+- ["So6NSViewC", "NSRect"]
+- ["So6NSViewC", "NSResponder"]
 - ["So6NSViewC", "String"]
 - ["So6NSViewC", "_type"]
 - ["So6NSViewC", "cmyControl"]
 - ["So6NSViewC", "cmyTypesBoutons"]
+- ["So6NSViewC", "controller"]
+- ["So6NSViewC", "draw"]
 - ["So6NSViewC", "init"]
 - ["So6NSViewC", "parent"]
 - ["So6NSViewC", "tipeName"]
-- !private ["So6NSViewC", "willSet"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "lowercased"]
+- !private ["s16RawRepresentableP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "lowercased"]
+- !private ["SS", "init"]
+- !private ["SS", "lowercased"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "lowercased"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "lowercased"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "lowercased"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "lowercased"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "_type"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cmyTypesBoutons"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "draw"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "willSet"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "parent"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowercased"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "lowercased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "_type"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cmyTypesBoutons"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "controller"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "draw"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "willSet"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parent"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "lowercased"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "lowercased"]
+- ["13PRMacControls9cmyButtonC", "NSRect"]
+- ["13PRMacControls9cmyButtonC", "NSResponder"]
 - ["13PRMacControls9cmyButtonC", "String"]
 - ["13PRMacControls9cmyButtonC", "_type"]
 - ["13PRMacControls9cmyButtonC", "cmyControl"]
 - ["13PRMacControls9cmyButtonC", "cmyTypesBoutons"]
+- ["13PRMacControls9cmyButtonC", "controller"]
 - ["13PRMacControls9cmyButtonC", "deinit"]
+- ["13PRMacControls9cmyButtonC", "draw"]
 - ["13PRMacControls9cmyButtonC", "init"]
 - ["13PRMacControls9cmyButtonC", "parent"]
 - ["13PRMacControls9cmyButtonC", "tipeName"]
-- !private ["13PRMacControls9cmyButtonC", "willSet"]
+- !private ["13PRMacControls10cmyControlC", "controller"]
+- !private ["13PRMacControls15cmyTypesBoutonsO", "deinit"]
+- !private ["13PRMacControls15cmyTypesBoutonsO", "init"]
+- !private ["13PRMacControls18mySelectorProtocolP", "controller"]
 depends-nominal:
+- !private "s23BidirectionalCollectionP"
 - "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
 - "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "So15NSAccessibilityP"
 - "So21NSAccessibilityButtonP"
 - "So30NSAccessibilityElementProtocolP"
@@ -136,18 +310,45 @@ depends-nominal:
 - "So8NSButtonC"
 - "So8NSCodingP"
 - "So9NSControlC"
+- !private "So9NSCopyingP"
 - "So21NSDraggingDestinationP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
 - "So11NSResponderC"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "So18NSTouchBarProviderP"
 - "So26NSUserInterfaceCompressionP"
 - "So33NSUserInterfaceItemIdentificationP"
 - "So26NSUserInterfaceValidationsP"
 - "So6NSViewC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
 - "13PRMacControls9cmyButtonC"
+- !private "13PRMacControls10cmyControlC"
+- !private "13PRMacControls15cmyTypesBoutonsO"
+- !private "13PRMacControls18mySelectorProtocolP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -155,7 +356,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
@@ -184,4 +384,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "7158ea04205f8cd8e1394fb5ca6cee7e"
+interface-hash: "e29ac1979c8bc1f2926090bc639d1fc5"

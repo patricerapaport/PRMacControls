@@ -1,11 +1,11 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "38bbcb5442189469c6b1dfeec1a154b3"
-build_time: [1535881961, 34395000]
+build_time: [1535882457, 926628000]
 inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myOutline.swift": [1534051694, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDecimal.swift": [1535801562, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/enumerations.swift": [1535881678, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControl.swift": [1535877629, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControl.swift": [1535882334, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/alertes.swift": [1534659460, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/user.swift": [1534052014, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/listeControles.swift": [1535876659, 0]
@@ -34,7 +34,7 @@ inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/documentPopoverController.swift": [1534049919, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTable.swift": [1534917064, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/editController.swift": [1534755512, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myBox.swift": [1535750376, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myBox.swift": [1535882454, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/web/webService.swift": [1533098635, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldNum.swift": [1535707540, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/strings.swift": [1532964378, 0]

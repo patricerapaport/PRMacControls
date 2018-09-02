@@ -45,6 +45,7 @@ open class cmyTable: NSTableView {
     public var rowselected: Int = -1
     public var columnSelected: Int!
     public var rowAjoutee: Int = -1
+    public var start: Int = 0
     
     //private vars
     var lastState: etatWindow = .nonedition
@@ -60,6 +61,7 @@ open class cmyTable: NSTableView {
     @IBInspectable var afterReloadMethod: String!
     @IBInspectable var mouseupMethod: String!
     @IBInspectable var verifProc: String!
+    @IBInspectable var limit: Int = 0
     @IBInspectable var boutonsAttaches: Bool {
         get {
             return btsAttaches

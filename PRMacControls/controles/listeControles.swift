@@ -242,7 +242,6 @@ extension clisteControles {
                 if res {
                     self.verifControl(numcontrol: numcontrol+1, completion: completion)
                 } else {
-                    self.controles[numcontrol].ctrl.becomeFirstResponder()
                     completion(false)
                 }
             })

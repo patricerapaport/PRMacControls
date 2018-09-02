@@ -78,6 +78,9 @@ open class clistController: cbaseController{
     }
     
     override open  func selected(_ tbl: cmyTable) {
+        if window?.toolbar == nil {
+            return
+        }
         if !tbl.btsAttaches {
             let toolbar: NSToolbar? = (window?.toolbar)!
             if toolbar != nil && toolbar?.items.count != 0 {

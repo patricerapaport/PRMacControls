@@ -918,7 +918,12 @@ extension cbaseController : NSTableViewDataSource {
 extension cbaseController: NSTableViewDelegate {
     // Pemet de charger une table
     open func loadTable(table: cmyTable, Cmd: String, params: [String: String]) {
-        let ws = cwebService(cmd: Cmd, params)
+        var wParams = params
+        if table.limit != 0 {
+            wParams["limit"] = table.limit.toString()
+            wParams["start"] = table.start.toString()
+        }
+        let ws = cwebService(cmd: Cmd, wParams)
         ws.send(table: table, completion:  {
             res -> Void in
             if res {

@@ -21,6 +21,7 @@ provides-dynamic-lookup:
 - "boutonsAttaches"
 - "isEditable"
 - "isSortable"
+- "limit"
 - "mouseUp"
 - "mouseupMethod"
 - "rawColor"
@@ -1023,6 +1024,7 @@ depends-member:
 - !private ["So9NSControlC", "isHidden"]
 - !private ["So9NSControlC", "isRowSelected"]
 - ["So9NSControlC", "lastState"]
+- ["So9NSControlC", "limit"]
 - ["So9NSControlC", "mouseDown"]
 - ["So9NSControlC", "mouseUp"]
 - ["So9NSControlC", "mouseupMethod"]
@@ -1052,6 +1054,7 @@ depends-member:
 - ["So9NSControlC", "setControls"]
 - ["So9NSControlC", "setState"]
 - ["So9NSControlC", "sourceRow"]
+- ["So9NSControlC", "start"]
 - ["So9NSControlC", "state"]
 - !private ["So9NSControlC", "stringValue"]
 - !private ["So9NSControlC", "tableColumns"]
@@ -1241,6 +1244,7 @@ depends-member:
 - !private ["So8NSObjectC", "isRowSelected"]
 - ["So8NSObjectC", "isSortable"]
 - ["So8NSObjectC", "lastState"]
+- ["So8NSObjectC", "limit"]
 - !private ["So8NSObjectC", "makeFirstResponder"]
 - ["So8NSObjectC", "mouseDown"]
 - ["So8NSObjectC", "mouseUp"]
@@ -1278,6 +1282,7 @@ depends-member:
 - ["So8NSObjectC", "setControls"]
 - ["So8NSObjectC", "setState"]
 - ["So8NSObjectC", "sourceRow"]
+- ["So8NSObjectC", "start"]
 - ["So8NSObjectC", "state"]
 - !private ["So8NSObjectC", "stringValue"]
 - !private ["So8NSObjectC", "subviews"]
@@ -1426,6 +1431,7 @@ depends-member:
 - !private ["So11NSResponderC", "isHidden"]
 - !private ["So11NSResponderC", "isRowSelected"]
 - ["So11NSResponderC", "lastState"]
+- ["So11NSResponderC", "limit"]
 - !private ["So11NSResponderC", "makeFirstResponder"]
 - ["So11NSResponderC", "mouseDown"]
 - ["So11NSResponderC", "mouseUp"]
@@ -1459,6 +1465,7 @@ depends-member:
 - ["So11NSResponderC", "setControls"]
 - ["So11NSResponderC", "setState"]
 - ["So11NSResponderC", "sourceRow"]
+- ["So11NSResponderC", "start"]
 - ["So11NSResponderC", "state"]
 - !private ["So11NSResponderC", "stringValue"]
 - !private ["So11NSResponderC", "subviews"]
@@ -1551,6 +1558,7 @@ depends-member:
 - ["So11NSTableViewC", "isEditable"]
 - !private ["So11NSTableViewC", "isRowSelected"]
 - ["So11NSTableViewC", "lastState"]
+- ["So11NSTableViewC", "limit"]
 - ["So11NSTableViewC", "mouseDown"]
 - ["So11NSTableViewC", "mouseUp"]
 - ["So11NSTableViewC", "mouseupMethod"]
@@ -1580,6 +1588,7 @@ depends-member:
 - ["So11NSTableViewC", "setControls"]
 - ["So11NSTableViewC", "setState"]
 - ["So11NSTableViewC", "sourceRow"]
+- ["So11NSTableViewC", "start"]
 - ["So11NSTableViewC", "state"]
 - !private ["So11NSTableViewC", "tableColumns"]
 - ["So11NSTableViewC", "triCourant"]
@@ -1894,6 +1903,7 @@ depends-member:
 - !private ["So6NSViewC", "isHidden"]
 - !private ["So6NSViewC", "isRowSelected"]
 - ["So6NSViewC", "lastState"]
+- ["So6NSViewC", "limit"]
 - ["So6NSViewC", "mouseDown"]
 - ["So6NSViewC", "mouseUp"]
 - ["So6NSViewC", "mouseupMethod"]
@@ -1923,6 +1933,7 @@ depends-member:
 - ["So6NSViewC", "setControls"]
 - ["So6NSViewC", "setState"]
 - ["So6NSViewC", "sourceRow"]
+- ["So6NSViewC", "start"]
 - ["So6NSViewC", "state"]
 - !private ["So6NSViewC", "stringValue"]
 - !private ["So6NSViewC", "subviews"]
@@ -2271,6 +2282,7 @@ depends-member:
 - ["13PRMacControls8cmyTableC", "isEditable"]
 - !private ["13PRMacControls8cmyTableC", "isRowSelected"]
 - ["13PRMacControls8cmyTableC", "lastState"]
+- ["13PRMacControls8cmyTableC", "limit"]
 - ["13PRMacControls8cmyTableC", "mouseDown"]
 - ["13PRMacControls8cmyTableC", "mouseUp"]
 - ["13PRMacControls8cmyTableC", "mouseupMethod"]
@@ -2300,6 +2312,7 @@ depends-member:
 - ["13PRMacControls8cmyTableC", "setControls"]
 - ["13PRMacControls8cmyTableC", "setState"]
 - ["13PRMacControls8cmyTableC", "sourceRow"]
+- ["13PRMacControls8cmyTableC", "start"]
 - ["13PRMacControls8cmyTableC", "state"]
 - !private ["13PRMacControls8cmyTableC", "tableColumns"]
 - ["13PRMacControls8cmyTableC", "triCourant"]
@@ -2554,4 +2567,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "8b33306237d296a00bb5180a3a2937f6"
+interface-hash: "02f9ea66837dbf0b19ed6af04d6d7629"

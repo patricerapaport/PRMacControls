@@ -60,12 +60,20 @@ depends-member:
 - !private ["s9EncodableP", "lowercased"]
 - ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_type"]
+- ["s9EquatableP", "ajouter"]
+- ["s9EquatableP", "annuler"]
+- ["s9EquatableP", "autre"]
 - !private ["s9EquatableP", "cmyTypesBoutons"]
 - !private ["s9EquatableP", "controller"]
 - !private ["s9EquatableP", "draw"]
+- ["s9EquatableP", "enregistrer"]
+- ["s9EquatableP", "imprimer"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "lowercased"]
+- ["s9EquatableP", "modifier"]
 - !private ["s9EquatableP", "parent"]
+- ["s9EquatableP", "reglement"]
+- ["s9EquatableP", "supprimer"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -74,12 +82,20 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
 - ["s8HashableP", ""]
 - !private ["s8HashableP", "_type"]
+- ["s8HashableP", "ajouter"]
+- ["s8HashableP", "annuler"]
+- ["s8HashableP", "autre"]
 - !private ["s8HashableP", "cmyTypesBoutons"]
 - !private ["s8HashableP", "controller"]
 - !private ["s8HashableP", "draw"]
+- ["s8HashableP", "enregistrer"]
+- ["s8HashableP", "imprimer"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "lowercased"]
+- ["s8HashableP", "modifier"]
 - !private ["s8HashableP", "parent"]
+- ["s8HashableP", "reglement"]
+- ["s8HashableP", "supprimer"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "lowercased"]
 - !private ["s10MirrorPathP", "init"]
@@ -226,7 +242,15 @@ depends-member:
 - ["So6NSViewC", "tipeName"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "lowercased"]
+- ["s16RawRepresentableP", "ajouter"]
+- ["s16RawRepresentableP", "annuler"]
+- ["s16RawRepresentableP", "autre"]
+- ["s16RawRepresentableP", "enregistrer"]
+- ["s16RawRepresentableP", "imprimer"]
 - !private ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "modifier"]
+- ["s16RawRepresentableP", "reglement"]
+- ["s16RawRepresentableP", "supprimer"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "lowercased"]
 - !private ["SS", "init"]
@@ -281,8 +305,16 @@ depends-member:
 - ["13PRMacControls9cmyButtonC", "parent"]
 - ["13PRMacControls9cmyButtonC", "tipeName"]
 - !private ["13PRMacControls10cmyControlC", "controller"]
+- ["13PRMacControls15cmyTypesBoutonsO", "ajouter"]
+- ["13PRMacControls15cmyTypesBoutonsO", "annuler"]
+- ["13PRMacControls15cmyTypesBoutonsO", "autre"]
 - !private ["13PRMacControls15cmyTypesBoutonsO", "deinit"]
+- ["13PRMacControls15cmyTypesBoutonsO", "enregistrer"]
+- ["13PRMacControls15cmyTypesBoutonsO", "imprimer"]
 - !private ["13PRMacControls15cmyTypesBoutonsO", "init"]
+- ["13PRMacControls15cmyTypesBoutonsO", "modifier"]
+- ["13PRMacControls15cmyTypesBoutonsO", "reglement"]
+- ["13PRMacControls15cmyTypesBoutonsO", "supprimer"]
 - !private ["13PRMacControls18mySelectorProtocolP", "controller"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -328,7 +360,7 @@ depends-nominal:
 - "So26NSUserInterfaceValidationsP"
 - "So6NSViewC"
 - !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
+- "s16RawRepresentableP"
 - !private "s8SequenceP"
 - !private "SS"
 - !private "s14StringProtocolP"
@@ -347,7 +379,7 @@ depends-nominal:
 - !private "s16_SwiftStringViewP"
 - "13PRMacControls9cmyButtonC"
 - !private "13PRMacControls10cmyControlC"
-- !private "13PRMacControls15cmyTypesBoutonsO"
+- "13PRMacControls15cmyTypesBoutonsO"
 - !private "13PRMacControls18mySelectorProtocolP"
 depends-dynamic-lookup:
 depends-external:
@@ -384,4 +416,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e29ac1979c8bc1f2926090bc639d1fc5"
+interface-hash: "c635f4af94166324b1dd90cb558f4368"
