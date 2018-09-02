@@ -41,13 +41,13 @@ import Cocoa
     @IBInspectable public var tipeName: String? {
         willSet {
             if let newType: cmyTypesBoutons = cmyTypesBoutons(named: newValue?.lowercased() ?? "") {
-                self.tipeName = newType.toString()
+                value = newType.toString()
             } else {
-                self.tipeName = "autre"
+                value = "autre"
             }
         }
         didSet {
-            self.tipeName = "autre"
+            value = "autre"
         }
     }
     #endif
