@@ -42,6 +42,8 @@ import Cocoa
         willSet {
             if let newType: cmyTypesBoutons = cmyTypesBoutons(named: newValue?.lowercased() ?? "") {
                 self.tipeName = newType.toString()
+            } else {
+                self.tipeName = "autre"
             }
         }
     }
