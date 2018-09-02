@@ -11,12 +11,14 @@ import Cocoa
 @IBDesignable open class cmyButton: NSButton {
     public var parent: cmyControl!
     public var _type: cmyTypesBoutons = .autre
+    #if !TARGET_INTERFACE_BUILDER
     @IBInspectable public var tipeName: String? {
         //willSet {
         //    if let newType: cmyTypesBoutons = cmyTypesBoutons(named: newValue?.lowercased() ?? "") {
         //        _type = newType
         //    }
         //}
+        
         get {
             switch _type {
             case .modifier : return "modifier"
@@ -35,6 +37,16 @@ import Cocoa
             }
         }
     }
+    #else
+    @IBInspectable public var tipeName: String? {
+        willSet {
+            if let newType: cmyTypesBoutons = cmyTypesBoutons(named: newValue?.lowercased() ?? "") {
+                self.tipeName = newType
+            }
+        }
+    }
+    #endif
+    
     
     var controller: NSResponder {
         get {
