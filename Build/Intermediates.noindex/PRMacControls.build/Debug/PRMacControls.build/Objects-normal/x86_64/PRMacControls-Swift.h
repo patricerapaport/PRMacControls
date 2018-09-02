@@ -384,9 +384,11 @@ SWIFT_CLASS("_TtC13PRMacControls6cmyBox")
 @property (nonatomic, getter=isHidden) BOOL hidden;
 @end
 
+enum cmyTypesBoutons : NSInteger;
 
 SWIFT_CLASS("_TtC13PRMacControls9cmyButton")
 @interface cmyButton : NSButton
+@property (nonatomic) enum cmyTypesBoutons tipe;
 - (void)drawRect:(NSRect)dirtyRect;
 - (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -590,6 +592,17 @@ SWIFT_CLASS("_TtC13PRMacControls14cmyToolbarItem")
 @interface cmyToolbarItem : NSToolbarItem
 - (nonnull instancetype)initWithItemIdentifier:(NSToolbarItemIdentifier _Nonnull)itemIdentifier OBJC_DESIGNATED_INITIALIZER;
 @end
+
+typedef SWIFT_ENUM(NSInteger, cmyTypesBoutons) {
+  cmyTypesBoutonsModifier = 0,
+  cmyTypesBoutonsAjouter = 1,
+  cmyTypesBoutonsSupprimer = 2,
+  cmyTypesBoutonsAnnuler = 3,
+  cmyTypesBoutonsEnregistrer = 4,
+  cmyTypesBoutonsReglement = 5,
+  cmyTypesBoutonsAutre = 6,
+  cmyTypesBoutonsImprimer = 7,
+};
 
 
 SWIFT_CLASS("_TtC13PRMacControls7cmyView")

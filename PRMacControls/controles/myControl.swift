@@ -587,6 +587,11 @@ open class cmyControl: NSObject {
                 let next = nextFocus()
                 if next != nil {
                     ctrl.window?.makeFirstResponder(next?.ctrl)
+                } else {
+                    // le controle est le dernier control de la grille, il faut le vérifier manuellement
+                    if !verifControl() {
+                        ctrl.becomeFirstResponder()
+                    }
                 }
             }
             

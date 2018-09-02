@@ -7,6 +7,7 @@ provides-member:
 - ["13PRMacControls9cmyButtonC", ""]
 provides-dynamic-lookup:
 - "draw"
+- "tipe"
 depends-top-level:
 - "NSButton"
 - "NSRect"
@@ -16,47 +17,61 @@ depends-top-level:
 - "cmyTypesBoutons"
 depends-member:
 - ["s7CVarArgP", ""]
+- ["s7CVarArgP", "cmyTypesBoutons"]
 - !private ["s7CVarArgP", "controller"]
 - !private ["s7CVarArgP", "draw"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "parent"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "cmyTypesBoutons"]
 - !private ["s28CustomDebugStringConvertibleP", "controller"]
 - !private ["s28CustomDebugStringConvertibleP", "draw"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "parent"]
 - ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "cmyTypesBoutons"]
 - !private ["s23CustomStringConvertibleP", "controller"]
 - !private ["s23CustomStringConvertibleP", "draw"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "parent"]
 - ["s9EquatableP", ""]
+- ["s9EquatableP", "autre"]
+- ["s9EquatableP", "cmyTypesBoutons"]
 - !private ["s9EquatableP", "controller"]
 - !private ["s9EquatableP", "draw"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "parent"]
+- ["s9EquatableP", "rawValue"]
 - ["s8HashableP", ""]
+- ["s8HashableP", "autre"]
+- ["s8HashableP", "cmyTypesBoutons"]
 - !private ["s8HashableP", "controller"]
 - !private ["s8HashableP", "draw"]
-- !private ["s8HashableP", "init"]
+- ["s8HashableP", "init"]
 - !private ["s8HashableP", "parent"]
+- ["s8HashableP", "rawValue"]
 - ["So15NSAccessibilityP", ""]
+- ["So15NSAccessibilityP", "cmyTypesBoutons"]
 - !private ["So15NSAccessibilityP", "draw"]
 - !private ["So15NSAccessibilityP", "init"]
 - !private ["So15NSAccessibilityP", "parent"]
 - ["So21NSAccessibilityButtonP", ""]
+- ["So21NSAccessibilityButtonP", "cmyTypesBoutons"]
 - !private ["So21NSAccessibilityButtonP", "draw"]
 - !private ["So21NSAccessibilityButtonP", "init"]
 - !private ["So21NSAccessibilityButtonP", "parent"]
 - ["So30NSAccessibilityElementProtocolP", ""]
+- ["So30NSAccessibilityElementProtocolP", "cmyTypesBoutons"]
 - !private ["So30NSAccessibilityElementProtocolP", "draw"]
 - !private ["So30NSAccessibilityElementProtocolP", "init"]
 - !private ["So30NSAccessibilityElementProtocolP", "parent"]
 - ["So29NSAnimatablePropertyContainerP", ""]
+- ["So29NSAnimatablePropertyContainerP", "cmyTypesBoutons"]
 - !private ["So29NSAnimatablePropertyContainerP", "draw"]
 - !private ["So29NSAnimatablePropertyContainerP", "init"]
 - !private ["So29NSAnimatablePropertyContainerP", "parent"]
 - ["So25NSAppearanceCustomizationP", ""]
+- ["So25NSAppearanceCustomizationP", "cmyTypesBoutons"]
 - !private ["So25NSAppearanceCustomizationP", "draw"]
 - !private ["So25NSAppearanceCustomizationP", "init"]
 - !private ["So25NSAppearanceCustomizationP", "parent"]
@@ -71,6 +86,7 @@ depends-member:
 - ["So8NSButtonC", "parent"]
 - ["So8NSButtonC", "tipe"]
 - ["So8NSCodingP", ""]
+- ["So8NSCodingP", "cmyTypesBoutons"]
 - !private ["So8NSCodingP", "draw"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "parent"]
@@ -84,6 +100,7 @@ depends-member:
 - ["So9NSControlC", "parent"]
 - ["So9NSControlC", "tipe"]
 - ["So21NSDraggingDestinationP", ""]
+- ["So21NSDraggingDestinationP", "cmyTypesBoutons"]
 - !private ["So21NSDraggingDestinationP", "draw"]
 - !private ["So21NSDraggingDestinationP", "init"]
 - !private ["So21NSDraggingDestinationP", "parent"]
@@ -97,6 +114,7 @@ depends-member:
 - ["So8NSObjectC", "parent"]
 - ["So8NSObjectC", "tipe"]
 - ["So16NSObjectProtocolP", ""]
+- ["So16NSObjectProtocolP", "cmyTypesBoutons"]
 - !private ["So16NSObjectProtocolP", "controller"]
 - !private ["So16NSObjectProtocolP", "draw"]
 - !private ["So16NSObjectProtocolP", "init"]
@@ -111,18 +129,22 @@ depends-member:
 - ["So11NSResponderC", "parent"]
 - ["So11NSResponderC", "tipe"]
 - ["So18NSTouchBarProviderP", ""]
+- ["So18NSTouchBarProviderP", "cmyTypesBoutons"]
 - !private ["So18NSTouchBarProviderP", "draw"]
 - !private ["So18NSTouchBarProviderP", "init"]
 - !private ["So18NSTouchBarProviderP", "parent"]
 - ["So26NSUserInterfaceCompressionP", ""]
+- ["So26NSUserInterfaceCompressionP", "cmyTypesBoutons"]
 - !private ["So26NSUserInterfaceCompressionP", "draw"]
 - !private ["So26NSUserInterfaceCompressionP", "init"]
 - !private ["So26NSUserInterfaceCompressionP", "parent"]
 - ["So33NSUserInterfaceItemIdentificationP", ""]
+- ["So33NSUserInterfaceItemIdentificationP", "cmyTypesBoutons"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "draw"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "init"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "parent"]
 - ["So26NSUserInterfaceValidationsP", ""]
+- ["So26NSUserInterfaceValidationsP", "cmyTypesBoutons"]
 - !private ["So26NSUserInterfaceValidationsP", "draw"]
 - !private ["So26NSUserInterfaceValidationsP", "init"]
 - !private ["So26NSUserInterfaceValidationsP", "parent"]
@@ -135,11 +157,16 @@ depends-member:
 - ["So6NSViewC", "init"]
 - ["So6NSViewC", "parent"]
 - ["So6NSViewC", "tipe"]
+- ["s16RawRepresentableP", "autre"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "rawValue"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "cmyTypesBoutons"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "draw"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "parent"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "cmyTypesBoutons"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "controller"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "draw"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -155,6 +182,10 @@ depends-member:
 - ["13PRMacControls9cmyButtonC", "parent"]
 - ["13PRMacControls9cmyButtonC", "tipe"]
 - !private ["13PRMacControls10cmyControlC", "controller"]
+- ["13PRMacControls15cmyTypesBoutonsO", "autre"]
+- ["13PRMacControls15cmyTypesBoutonsO", "deinit"]
+- ["13PRMacControls15cmyTypesBoutonsO", "init"]
+- ["13PRMacControls15cmyTypesBoutonsO", "rawValue"]
 - !private ["13PRMacControls18mySelectorProtocolP", "controller"]
 depends-nominal:
 - "s7CVarArgP"
@@ -179,10 +210,12 @@ depends-nominal:
 - "So33NSUserInterfaceItemIdentificationP"
 - "So26NSUserInterfaceValidationsP"
 - "So6NSViewC"
+- "s16RawRepresentableP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "13PRMacControls9cmyButtonC"
 - !private "13PRMacControls10cmyControlC"
+- "13PRMacControls15cmyTypesBoutonsO"
 - !private "13PRMacControls18mySelectorProtocolP"
 depends-dynamic-lookup:
 depends-external:
@@ -219,4 +252,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "72c80b8d539d39223cfb898cd8c9ce4b"
+interface-hash: "4b8e275c8c84bef86205a0074ab4818a"

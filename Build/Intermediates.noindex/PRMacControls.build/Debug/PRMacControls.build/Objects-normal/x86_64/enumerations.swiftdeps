@@ -2,22 +2,28 @@
 provides-top-level:
 - "etatWindow"
 - "cmyTypesBoutons"
+- "mytypesBoutons"
 provides-nominal:
 - "13PRMacControls10etatWindowO"
 - "13PRMacControls15cmyTypesBoutonsO"
+- "13PRMacControls14mytypesBoutonsO"
 provides-member:
 - ["13PRMacControls10etatWindowO", ""]
 - ["13PRMacControls15cmyTypesBoutonsO", ""]
+- ["13PRMacControls14mytypesBoutonsO", ""]
 - ["So14NSNotificationC4NameV", ""]
 - ["So14NSNotificationC4NameV", "chargement"]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "Notification"
 - "StringLiteralType"
 - "cmyTypesBoutons"
 - "etatWindow"
+- "mytypesBoutons"
 - !private "~="
 depends-member:
 - ["s23BidirectionalCollectionP", "init"]
@@ -117,6 +123,11 @@ depends-member:
 - ["13PRMacControls10etatWindowO", "edition"]
 - ["13PRMacControls10etatWindowO", "hashValue"]
 - ["13PRMacControls10etatWindowO", "nonedition"]
+- ["13PRMacControls14mytypesBoutonsO", "__derived_enum_equals"]
+- ["13PRMacControls14mytypesBoutonsO", "ajouter"]
+- ["13PRMacControls14mytypesBoutonsO", "deinit"]
+- ["13PRMacControls14mytypesBoutonsO", "hashValue"]
+- ["13PRMacControls14mytypesBoutonsO", "modifier"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
 - !private "Sb"
@@ -159,6 +170,7 @@ depends-nominal:
 - "s16_SwiftStringViewP"
 - "13PRMacControls15cmyTypesBoutonsO"
 - "13PRMacControls10etatWindowO"
+- "13PRMacControls14mytypesBoutonsO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -194,4 +206,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "578ab4a626784287f8a38f419689561f"
+interface-hash: "6d91bdfa7e3f6a93fa3dadebfb2e1ee3"

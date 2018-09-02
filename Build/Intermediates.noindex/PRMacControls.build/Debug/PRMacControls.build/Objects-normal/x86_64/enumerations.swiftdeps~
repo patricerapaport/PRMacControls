@@ -13,43 +13,33 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
-- "Int"
 - "Notification"
+- "String"
 - "StringLiteralType"
 - "cmyTypesBoutons"
 - "etatWindow"
-- !private "~="
 depends-member:
 - ["s23BidirectionalCollectionP", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "init"]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - ["s28CustomDebugStringConvertibleP", "Name"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s17CustomReflectableP", "Name"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "Name"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "init"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - ["s9DecodableP", "init"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
 - ["s9EquatableP", "Name"]
 - ["s9EquatableP", "Notification"]
 - ["s9EquatableP", "RawValue"]
 - ["s9EquatableP", ""]
 - ["s9EquatableP", "_Default_RawValue"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "hashValue"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "rawValue"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -58,11 +48,9 @@ depends-member:
 - ["s8HashableP", "RawValue"]
 - ["s8HashableP", ""]
 - ["s8HashableP", "_Default_RawValue"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - ["s8HashableP", "hashValue"]
 - ["s8HashableP", "init"]
 - ["s8HashableP", "rawValue"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["So14NSNotificationC4NameV", "Notification"]
@@ -84,7 +72,6 @@ depends-member:
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - ["9Alamofire14URLConvertibleP", "init"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -92,13 +79,13 @@ depends-member:
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s21_ObjectiveCBridgeableP", "Name"]
 - ["s21_ObjectiveCBridgeableP", "Notification"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s20_SwiftNewtypeWrapperP", "Notification"]
 - ["s20_SwiftNewtypeWrapperP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 - ["13PRMacControls15cmyTypesBoutonsO", "RawValue"]
 - ["13PRMacControls15cmyTypesBoutonsO", "_Default_RawValue"]
+- ["13PRMacControls15cmyTypesBoutonsO", "__derived_enum_equals"]
 - ["13PRMacControls15cmyTypesBoutonsO", "ajouter"]
 - ["13PRMacControls15cmyTypesBoutonsO", "annuler"]
 - ["13PRMacControls15cmyTypesBoutonsO", "autre"]
@@ -119,7 +106,6 @@ depends-member:
 - ["13PRMacControls10etatWindowO", "nonedition"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
-- !private "Sb"
 - "s7CVarArgP"
 - "s10CollectionP"
 - "s10ComparableP"
@@ -130,7 +116,6 @@ depends-nominal:
 - "s9DecodableP"
 - "s9EncodableP"
 - "s9EquatableP"
-- !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
@@ -148,7 +133,6 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "9Alamofire14URLConvertibleP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -194,4 +178,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "578ab4a626784287f8a38f419689561f"
+interface-hash: "d862349bea4c89af4b4716a7c589da08"

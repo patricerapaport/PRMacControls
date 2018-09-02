@@ -65,6 +65,7 @@ depends-member:
 - !private ["s7CVarArgP", "stringValue"]
 - !private ["s7CVarArgP", "toFloat"]
 - !private ["s7CVarArgP", "toMonetaire"]
+- !private ["s7CVarArgP", "type"]
 - !private ["s10CollectionP", "contains"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "toFloat"]
@@ -93,6 +94,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "toFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "toMonetaire"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "toFloat"]
@@ -125,6 +127,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "toFloat"]
 - !private ["s23CustomStringConvertibleP", "toMonetaire"]
+- !private ["s23CustomStringConvertibleP", "type"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "contains"]
 - !private ["s9DecodableP", "init"]
@@ -150,6 +153,7 @@ depends-member:
 - !private ["s9EquatableP", "format"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "keyCode"]
+- !private ["s9EquatableP", "keyUp"]
 - !private ["s9EquatableP", "monetaire"]
 - !private ["s9EquatableP", "myFormat"]
 - !private ["s9EquatableP", "number"]
@@ -158,6 +162,8 @@ depends-member:
 - !private ["s9EquatableP", "stringValue"]
 - !private ["s9EquatableP", "toFloat"]
 - !private ["s9EquatableP", "toMonetaire"]
+- !private ["s9EquatableP", "type"]
+- !private ["So7NSEventC9EventTypeO", "keyUp"]
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -193,6 +199,7 @@ depends-member:
 - !private ["s8HashableP", "format"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "keyCode"]
+- !private ["s8HashableP", "keyUp"]
 - !private ["s8HashableP", "monetaire"]
 - !private ["s8HashableP", "myFormat"]
 - !private ["s8HashableP", "number"]
@@ -201,6 +208,7 @@ depends-member:
 - !private ["s8HashableP", "stringValue"]
 - !private ["s8HashableP", "toFloat"]
 - !private ["s8HashableP", "toMonetaire"]
+- !private ["s8HashableP", "type"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "toFloat"]
@@ -306,6 +314,7 @@ depends-member:
 - !private ["So8NSCodingP", "string"]
 - !private ["So8NSCodingP", "stringValue"]
 - !private ["So8NSCodingP", "toFloat"]
+- !private ["So8NSCodingP", "type"]
 - ["So9NSControlC", "Bool"]
 - ["So9NSControlC", "Float"]
 - ["So9NSControlC", "Int"]
@@ -344,6 +353,7 @@ depends-member:
 - !private ["So9NSCopyingP", "number"]
 - !private ["So9NSCopyingP", "string"]
 - !private ["So9NSCopyingP", "toFloat"]
+- !private ["So9NSCopyingP", "type"]
 - !private ["So21NSDraggingDestinationP", "Float"]
 - !private ["So21NSDraggingDestinationP", "NumberFormatter"]
 - !private ["So21NSDraggingDestinationP", "String"]
@@ -359,6 +369,7 @@ depends-member:
 - !private ["So21NSDraggingDestinationP", "stringValue"]
 - !private ["So7NSEventC", "characters"]
 - !private ["So7NSEventC", "keyCode"]
+- !private ["So7NSEventC", "type"]
 - !private ["So21NSItemProviderReadingP", "toFloat"]
 - !private ["So21NSItemProviderWritingP", "toFloat"]
 - !private ["So16NSMutableCopyingP", "toFloat"]
@@ -386,6 +397,7 @@ depends-member:
 - !private ["So8NSObjectC", "string"]
 - ["So8NSObjectC", "stringValue"]
 - !private ["So8NSObjectC", "toFloat"]
+- !private ["So8NSObjectC", "type"]
 - !private ["So16NSObjectProtocolP", "Float"]
 - !private ["So16NSObjectProtocolP", "NumberFormatter"]
 - !private ["So16NSObjectProtocolP", "String"]
@@ -406,6 +418,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "string"]
 - !private ["So16NSObjectProtocolP", "stringValue"]
 - !private ["So16NSObjectProtocolP", "toFloat"]
+- !private ["So16NSObjectProtocolP", "type"]
 - !private ["So19NSPasteboardReadingP", "toFloat"]
 - !private ["So19NSPasteboardWritingP", "toFloat"]
 - ["So11NSResponderC", "Bool"]
@@ -524,6 +537,7 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "contains"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "toFloat"]
+- !private ["s16RawRepresentableP", "keyUp"]
 - !private ["s8SequenceP", "contains"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "toFloat"]
@@ -596,6 +610,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stringValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -674,6 +689,7 @@ depends-nominal:
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
+- !private "So7NSEventC9EventTypeO"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -720,6 +736,7 @@ depends-nominal:
 - !private "s7NumericP"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
 - !private "s8SequenceP"
 - !private "s13SignedNumericP"
 - !private "s10StrideableP"
