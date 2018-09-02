@@ -46,6 +46,9 @@ import Cocoa
                 self.tipeName = "autre"
             }
         }
+        didSet {
+            self.tipeName = "autre"
+        }
     }
     #endif
     
