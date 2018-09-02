@@ -563,6 +563,15 @@ open class cmyControl: NSObject {
     
     func enterReceived (_ event: NSEvent) {
         if !event.modifierFlags.contains( .shift) {
+            var myPopover: NSPopover!
+            if controller is cbaseController {
+                myPopover = (controller as! cbaseController).myPopover
+            } else if controller is cbaseView {
+                myPopover = (controller as! cbaseView).myPopover
+            }
+            if myPopover != nil &&  myPopover.isShown {
+                myPopover.close()
+            }
             if onSubmit && !event.modifierFlags.contains(.shift) {
                 if submitMethod != nil {
                     controller.perform(submitMethod, with: ctrl)

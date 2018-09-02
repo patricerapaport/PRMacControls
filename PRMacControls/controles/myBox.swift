@@ -8,9 +8,9 @@
 
 @IBDesignable open class cmyBox: NSBox {
     var ctrls: [cmyControl]=[]
-    @IBInspectable open override var fillColor: NSColor  {
+    @IBInspectable public var backgroundColor: NSColor = .white {
         didSet {
-            self.fillColor = .white
+            self.fillColor = backgroundColor
             layer?.backgroundColor = fillColor.cgColor
             wantsLayer = true
         }
