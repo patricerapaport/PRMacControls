@@ -38,7 +38,7 @@ import Cocoa
         }
     }
     #else
-    @IBInspectable public var tipeName: String? {
+    @IBInspectable public var tipeName: String = "autre" {
         willSet {
             if let newType: cmyTypesBoutons = cmyTypesBoutons(named: newValue?.lowercased() ?? "") {
                 value = newType.toString()
