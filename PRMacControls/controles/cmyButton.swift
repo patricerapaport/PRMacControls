@@ -69,7 +69,18 @@ import Cocoa
         if action != nil {
             super.mouseDown(with: event)
         } else {
-            Swift.print("bouton \(_type)")
+            var nomMethode: String!
+            switch _type {
+                case .annuler:
+                    nomMethode = "Annuler:"
+                default: break
+            }
+            if nomMethode != nil {
+                let method = Selector(nomMethode)
+                if controller.responds(to: method) {
+                    controller.perform(method, with: self)
+                }
+            }
         }
     }
     
