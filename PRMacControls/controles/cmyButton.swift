@@ -76,7 +76,7 @@ import Cocoa
                 case .modifier:
                     nomMethode = "Modifier:"
                 case .enregistrer:
-                    nomMethode = "Save"
+                    nomMethode = "Save:"
                 default: break
             }
             if nomMethode != nil {
