@@ -430,7 +430,8 @@ protocol myBaseServiceTabview {
                     if !(control is cmyTable) &&
                         !(control is cmyCheckbox) &&
                         !(control is cmyTextfieldAdresse) &&
-                        (!(control is cmyTextfield) || !(control as! cmyTextfield).isFiltre){
+                        (!(control is cmyTextfield) || !(control as! cmyTextfield).isFiltre) &&
+                        (!(control is cmyButton)){
                         continue
                     }
                 }
