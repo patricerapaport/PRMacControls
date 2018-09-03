@@ -73,6 +73,10 @@ import Cocoa
             switch _type {
                 case .annuler:
                     nomMethode = "Annuler:"
+                case .modifier:
+                    nomMethode = "Modifier:"
+                case .enregistrer:
+                    nomMethode = "Save"
                 default: break
             }
             if nomMethode != nil {

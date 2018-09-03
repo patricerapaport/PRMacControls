@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "38bbcb5442189469c6b1dfeec1a154b3"
-build_time: [1536015658, 660634000]
+build_time: [1536016191, 146534000]
 inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myOutline.swift": [1534051694, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDecimal.swift": [1535801562, 0]
@@ -22,7 +22,7 @@ inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfield.swift": [1535801301, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/myView.swift": [1534051841, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/nums.swift": [1523090136, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift": [1536014849, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift": [1536016179, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/keyboardKeys.swift": [1532969979, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myControlDoc.swift": [1534051683, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldTelephone.swift": [1534051737, 0]
