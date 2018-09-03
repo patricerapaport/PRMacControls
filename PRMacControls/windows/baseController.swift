@@ -440,7 +440,8 @@ protocol myBaseServiceTabview {
                 if control.identifier?.rawValue.substr(from: 0, to: 4) == "_NS:" {
                     if !(control is cmyTable) &&
                     !(control is cmyCheckbox) &&
-                    !(control is cmyTextfieldAdresse) {
+                    !(control is cmyTextfieldAdresse) &&
+                    !(control is cmyButton) {
                         continue
                     }
                 }

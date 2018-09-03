@@ -389,6 +389,7 @@ SWIFT_CLASS("_TtC13PRMacControls9cmyButton")
 @interface cmyButton : NSButton
 @property (nonatomic, copy) NSString * _Nullable tipeName;
 - (void)drawRect:(NSRect)dirtyRect;
+- (void)mouseDown:(NSEvent * _Nonnull)event;
 - (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

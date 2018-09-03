@@ -19,7 +19,7 @@ créer un nouveau NSWindowController dans Xcode, le déclarer en clistController
         super.init(window: window)
     }
 
-Il est bien entendu possible de créer un autre constructeur sous la forme:
+Il est bien entendu possible d'avoir un constructeur supplémentaire sous la forme:
 
     override init() {
         <initialisations de variables personnalisées>
@@ -37,4 +37,6 @@ Dans tous les cas, il faudra rajouter le constructeur:
 Lorsque le constructeur de la classe de base est appelé, il répertorie dans une liste (ctrls) tous les contrôles que vous avez déposé dans le fichier XIB, pour peu que vous les ayez sous-classés en cmyTextfield, cmyCheckbox, cmyCombo ou cmyTable.
 
 [LA CLASSE ceditController.](https://github.com/patricerapaport/PRMacControls/tree/master/howto_ceditController.md)
+
+[LA CLASSE clistController.](https://github.com/patricerapaport/PRMacControls/tree/master/howto_clistController.md)
 

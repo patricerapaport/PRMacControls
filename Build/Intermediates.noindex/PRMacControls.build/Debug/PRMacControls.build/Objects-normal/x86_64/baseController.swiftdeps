@@ -154,6 +154,7 @@ depends-top-level:
 - "cbaseController"
 - !private "ceditController"
 - "clisteControles"
+- !private "cmyButton"
 - !private "cmyCheckbox"
 - "cmyColumn"
 - !private "cmyCombo"
@@ -3033,6 +3034,7 @@ depends-member:
 - !private ["So8NSObjectC", "close"]
 - ["So8NSObjectC", "closeDocumentPopover"]
 - ["So8NSObjectC", "closeWindow"]
+- !private ["So8NSObjectC", "cmyButton"]
 - !private ["So8NSObjectC", "cmyCheckbox"]
 - ["So8NSObjectC", "cmyColumn"]
 - !private ["So8NSObjectC", "cmyCombo"]
@@ -3762,6 +3764,7 @@ depends-member:
 - !private ["So11NSResponderC", "close"]
 - ["So11NSResponderC", "closeDocumentPopover"]
 - ["So11NSResponderC", "closeWindow"]
+- !private ["So11NSResponderC", "cmyButton"]
 - !private ["So11NSResponderC", "cmyCheckbox"]
 - ["So11NSResponderC", "cmyColumn"]
 - !private ["So11NSResponderC", "cmyCombo"]
@@ -5334,6 +5337,7 @@ depends-member:
 - ["So18NSWindowControllerC", "clisteControles"]
 - ["So18NSWindowControllerC", "closeDocumentPopover"]
 - ["So18NSWindowControllerC", "closeWindow"]
+- !private ["So18NSWindowControllerC", "cmyButton"]
 - !private ["So18NSWindowControllerC", "cmyCheckbox"]
 - ["So18NSWindowControllerC", "cmyColumn"]
 - !private ["So18NSWindowControllerC", "cmyCombo"]
@@ -6181,6 +6185,7 @@ depends-member:
 - ["13PRMacControls15cbaseControllerC", "clisteControles"]
 - ["13PRMacControls15cbaseControllerC", "closeDocumentPopover"]
 - ["13PRMacControls15cbaseControllerC", "closeWindow"]
+- !private ["13PRMacControls15cbaseControllerC", "cmyButton"]
 - !private ["13PRMacControls15cbaseControllerC", "cmyCheckbox"]
 - ["13PRMacControls15cbaseControllerC", "cmyColumn"]
 - !private ["13PRMacControls15cbaseControllerC", "cmyCombo"]

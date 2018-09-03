@@ -26,12 +26,12 @@ Dans ce cas sa valeur devra obligatoirement être renseignée.
 Il est de votre responsabilité d'écrire la procédure de vérification.
 Celle-ci peut être une méthode générale de ceditController, sous la forme:
 
-	@objc func editControles(ctrl: NSControl) ->Bool {
+	@objc func verifControles(ctrl: NSControl) ->Bool {
 	}
 
 cette méthode prend pour paramètre le contrôle à vérifier et renvoie true si la vérification est OK, false dans le cas contraire.
 
-Si la méthode editControles n'est pas implémentée dans votre classe contrôler, chaque contrôle peut invoquer sa propre procédure de vérification en implémentant dans la classe contrôler une procédure 
+Si la méthode verifControles n'est pas implémentée dans votre classe contrôler, chaque contrôle peut invoquer sa propre procédure de vérification en implémentant dans la classe contrôler une procédure 
 
 	@objc verif<identifier du contrôle>(ctrl: NSControl) ->Bool {
 	}

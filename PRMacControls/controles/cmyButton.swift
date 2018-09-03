@@ -65,4 +65,12 @@ import Cocoa
         // Drawing code here.
     }
     
+    override open func mouseDown(with event: NSEvent) {
+        if action != nil {
+            super.mouseDown(with: event)
+        } else {
+            Swift.print("bouton \(_type)")
+        }
+    }
+    
 }
