@@ -18,6 +18,9 @@
     
     override open var acceptsFirstResponder: Bool {
         get {
+            if parent != nil && parent.tableView != nil && parent.tableView is cmyTable {
+                return (parent.tableView as! cmyTable).state != .nonedition
+            }
             return true
         }
     }
