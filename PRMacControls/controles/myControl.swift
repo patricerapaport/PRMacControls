@@ -482,6 +482,8 @@ open class cmyControl: NSObject {
                         (ctrl as! cmyCustomCheckbox).txtassocie.isHidden = true
                         (ctrl as! cmyCustomCheckbox).isHidden = false
                         (ctrl as! cmyCustomCheckbox).stringValue = (ctrl as! cmyCustomCheckbox).txtassocie.stringValue
+                    } else if ctrl is cmyButton {
+                        (ctrl as! cmyButton).setState(state: state)
                     } else {
                         isSelectable = ctrl is cmyTable ? false : true
                         isBezeled = true
