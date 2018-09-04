@@ -466,6 +466,8 @@ open class cmyControl: NSObject {
                     } else if tableView != nil && ctrl is cmyCustomCheckbox && (ctrl as! cmyCustomCheckbox).txtassocie != nil {
                         (ctrl as! cmyCustomCheckbox).isHidden = true
                         (ctrl as! cmyCustomCheckbox).txtassocie.isHidden = false
+                    } else if ctrl is cmyButton {
+                        (ctrl as! cmyButton).setState(state: state)
                     } else {
                         isSelectable = ctrl is cmyTable ? true : false
                         isBezeled = false

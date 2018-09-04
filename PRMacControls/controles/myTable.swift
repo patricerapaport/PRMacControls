@@ -27,6 +27,16 @@ class tblControles {
 
 open class cmyColumn: NSTableColumn {
     @IBInspectable var isSortable: Bool = false
+    @IBInspectable var modifiable: Int {
+        get {
+            return isEditable ? 1 : 0
+        }
+        set (valeur) {
+            isEditable = valeur == 1
+            let cell = dataCell
+            Swift.print(cell)
+        }
+    }
     var sens: sensTri = .asc
     @IBInspectable var sensDefaut :String {
         get {

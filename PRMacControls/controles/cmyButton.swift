@@ -65,6 +65,18 @@ import Cocoa
         // Drawing code here.
     }
     
+    public func setState (state: etatWindow) {
+        switch _type {
+        case .annuler:
+            isEnabled = state == .nonedition
+        case .modifier:
+            isEnabled = state != .nonedition
+        case .enregistrer:
+            isEnabled = state != .nonedition
+        default: break
+        }
+    }
+    
     override open func mouseDown(with event: NSEvent) {
         if action != nil {
             super.mouseDown(with: event)
