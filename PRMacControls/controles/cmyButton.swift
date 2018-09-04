@@ -68,9 +68,9 @@ import Cocoa
     public func setState (state: etatWindow) {
         switch _type {
         case .annuler:
-            isEnabled = state == .nonedition
-        case .modifier:
             isEnabled = state != .nonedition
+        case .modifier:
+            isEnabled = state == .nonedition
         case .enregistrer:
             isEnabled = state != .nonedition
         default: break
