@@ -46,6 +46,7 @@ depends-top-level:
 - !private "cbaseView"
 - !private "ckeyboardKeys"
 - "cmyControl"
+- !private "cmyTable"
 - "cmyTextfield"
 - !private "||"
 depends-member:
@@ -91,7 +92,9 @@ depends-member:
 - !private ["s7CVarArgP", "resignMethod"]
 - !private ["s7CVarArgP", "selectedRange"]
 - !private ["s7CVarArgP", "startIndex"]
+- !private ["s7CVarArgP", "state"]
 - !private ["s7CVarArgP", "stringValue"]
+- !private ["s7CVarArgP", "tableView"]
 - ["s7CVarArgP", "textField"]
 - !private ["s7CVarArgP", "uppercased"]
 - !private ["s7CVarArgP", "valeurAvant"]
@@ -143,7 +146,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "resignMethod"]
 - !private ["s28CustomDebugStringConvertibleP", "selectedRange"]
 - !private ["s28CustomDebugStringConvertibleP", "startIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "state"]
 - !private ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "tableView"]
 - ["s28CustomDebugStringConvertibleP", "textField"]
 - !private ["s28CustomDebugStringConvertibleP", "uppercased"]
 - !private ["s28CustomDebugStringConvertibleP", "valeurAvant"]
@@ -199,7 +204,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "resignMethod"]
 - !private ["s23CustomStringConvertibleP", "selectedRange"]
 - !private ["s23CustomStringConvertibleP", "startIndex"]
+- !private ["s23CustomStringConvertibleP", "state"]
 - !private ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "tableView"]
 - ["s23CustomStringConvertibleP", "textField"]
 - !private ["s23CustomStringConvertibleP", "uppercased"]
 - !private ["s23CustomStringConvertibleP", "valeurAvant"]
@@ -249,6 +256,7 @@ depends-member:
 - !private ["s9EquatableP", "location"]
 - !private ["s9EquatableP", "majuscules"]
 - !private ["s9EquatableP", "myPopover"]
+- !private ["s9EquatableP", "nonedition"]
 - !private ["s9EquatableP", "obligatoire"]
 - !private ["s9EquatableP", "parent"]
 - !private ["s9EquatableP", "perform"]
@@ -257,7 +265,9 @@ depends-member:
 - !private ["s9EquatableP", "resignMethod"]
 - !private ["s9EquatableP", "selectedRange"]
 - !private ["s9EquatableP", "startIndex"]
+- !private ["s9EquatableP", "state"]
 - !private ["s9EquatableP", "stringValue"]
+- !private ["s9EquatableP", "tableView"]
 - ["s9EquatableP", "textField"]
 - !private ["s9EquatableP", "uppercased"]
 - !private ["s9EquatableP", "valeurAvant"]
@@ -309,6 +319,7 @@ depends-member:
 - !private ["s8HashableP", "location"]
 - !private ["s8HashableP", "majuscules"]
 - !private ["s8HashableP", "myPopover"]
+- !private ["s8HashableP", "nonedition"]
 - !private ["s8HashableP", "obligatoire"]
 - !private ["s8HashableP", "parent"]
 - !private ["s8HashableP", "perform"]
@@ -317,7 +328,9 @@ depends-member:
 - !private ["s8HashableP", "resignMethod"]
 - !private ["s8HashableP", "selectedRange"]
 - !private ["s8HashableP", "startIndex"]
+- !private ["s8HashableP", "state"]
 - !private ["s8HashableP", "stringValue"]
+- !private ["s8HashableP", "tableView"]
 - ["s8HashableP", "textField"]
 - !private ["s8HashableP", "uppercased"]
 - !private ["s8HashableP", "valeurAvant"]
@@ -354,6 +367,7 @@ depends-member:
 - !private ["So15NSAccessibilityP", "perform"]
 - !private ["So15NSAccessibilityP", "resignFirstResponder"]
 - !private ["So15NSAccessibilityP", "selectedRange"]
+- !private ["So15NSAccessibilityP", "state"]
 - !private ["So15NSAccessibilityP", "stringValue"]
 - ["So15NSAccessibilityP", "textField"]
 - ["So30NSAccessibilityElementProtocolP", ""]
@@ -374,8 +388,10 @@ depends-member:
 - !private ["So30NSAccessibilityElementProtocolP", "perform"]
 - !private ["So30NSAccessibilityElementProtocolP", "resignFirstResponder"]
 - !private ["So30NSAccessibilityElementProtocolP", "selectedRange"]
+- !private ["So30NSAccessibilityElementProtocolP", "state"]
 - !private ["So30NSAccessibilityElementProtocolP", "stringValue"]
 - ["So30NSAccessibilityElementProtocolP", "textField"]
+- !private ["So20NSAccessibilityGroupP", "state"]
 - ["So34NSAccessibilityNavigableStaticTextP", ""]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "becomeFirstResponder"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "ckeyboardKeys"]
@@ -410,6 +426,7 @@ depends-member:
 - !private ["So25NSAccessibilityStaticTextP", "resignFirstResponder"]
 - !private ["So25NSAccessibilityStaticTextP", "stringValue"]
 - ["So25NSAccessibilityStaticTextP", "textField"]
+- !private ["So20NSAccessibilityTableP", "state"]
 - ["So29NSAnimatablePropertyContainerP", ""]
 - !private ["So29NSAnimatablePropertyContainerP", "becomeFirstResponder"]
 - !private ["So29NSAnimatablePropertyContainerP", "ckeyboardKeys"]
@@ -426,6 +443,7 @@ depends-member:
 - !private ["So29NSAnimatablePropertyContainerP", "perform"]
 - !private ["So29NSAnimatablePropertyContainerP", "resignFirstResponder"]
 - !private ["So29NSAnimatablePropertyContainerP", "selectedRange"]
+- !private ["So29NSAnimatablePropertyContainerP", "state"]
 - !private ["So29NSAnimatablePropertyContainerP", "stringValue"]
 - ["So29NSAnimatablePropertyContainerP", "textField"]
 - ["So25NSAppearanceCustomizationP", ""]
@@ -446,6 +464,7 @@ depends-member:
 - !private ["So25NSAppearanceCustomizationP", "perform"]
 - !private ["So25NSAppearanceCustomizationP", "resignFirstResponder"]
 - !private ["So25NSAppearanceCustomizationP", "selectedRange"]
+- !private ["So25NSAppearanceCustomizationP", "state"]
 - !private ["So25NSAppearanceCustomizationP", "stringValue"]
 - ["So25NSAppearanceCustomizationP", "textField"]
 - !private ["So7NSArrayC", "index"]
@@ -475,6 +494,7 @@ depends-member:
 - !private ["So8NSCodingP", "resignFirstResponder"]
 - !private ["So8NSCodingP", "selectedRange"]
 - !private ["So8NSCodingP", "startIndex"]
+- !private ["So8NSCodingP", "state"]
 - !private ["So8NSCodingP", "stringValue"]
 - ["So8NSCodingP", "textField"]
 - !private ["So8NSCodingP", "uppercased"]
@@ -500,6 +520,7 @@ depends-member:
 - !private ["So9NSControlC", "ckeyboardKeys"]
 - ["So9NSControlC", "closePopover"]
 - ["So9NSControlC", "cmyControl"]
+- !private ["So9NSControlC", "cmyTable"]
 - ["So9NSControlC", "control"]
 - ["So9NSControlC", "controlEnterRecu"]
 - ["So9NSControlC", "controller"]
@@ -517,6 +538,7 @@ depends-member:
 - ["So9NSControlC", "parent"]
 - !private ["So9NSControlC", "perform"]
 - ["So9NSControlC", "resignFirstResponder"]
+- !private ["So9NSControlC", "state"]
 - !private ["So9NSControlC", "stringValue"]
 - ["So9NSControlC", "submitMethod"]
 - ["So9NSControlC", "textField"]
@@ -560,8 +582,10 @@ depends-member:
 - !private ["So21NSDraggingDestinationP", "perform"]
 - !private ["So21NSDraggingDestinationP", "resignFirstResponder"]
 - !private ["So21NSDraggingDestinationP", "selectedRange"]
+- !private ["So21NSDraggingDestinationP", "state"]
 - !private ["So21NSDraggingDestinationP", "stringValue"]
 - ["So21NSDraggingDestinationP", "textField"]
+- !private ["So16NSDraggingSourceP", "state"]
 - !private ["So7NSEventC", "keyCode"]
 - !private ["So26NSExtensionRequestHandlingP", "currentFocus"]
 - !private ["So26NSExtensionRequestHandlingP", "myPopover"]
@@ -600,6 +624,7 @@ depends-member:
 - !private ["So8NSObjectC", "close"]
 - ["So8NSObjectC", "closePopover"]
 - ["So8NSObjectC", "cmyControl"]
+- !private ["So8NSObjectC", "cmyTable"]
 - ["So8NSObjectC", "control"]
 - ["So8NSObjectC", "controlEnterRecu"]
 - ["So8NSObjectC", "controller"]
@@ -631,8 +656,10 @@ depends-member:
 - !private ["So8NSObjectC", "resignMethod"]
 - !private ["So8NSObjectC", "selectedRange"]
 - !private ["So8NSObjectC", "startIndex"]
+- !private ["So8NSObjectC", "state"]
 - !private ["So8NSObjectC", "stringValue"]
 - ["So8NSObjectC", "submitMethod"]
+- !private ["So8NSObjectC", "tableView"]
 - ["So8NSObjectC", "textField"]
 - !private ["So8NSObjectC", "uppercased"]
 - !private ["So8NSObjectC", "valeurAvant"]
@@ -670,7 +697,9 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "resignMethod"]
 - !private ["So16NSObjectProtocolP", "selectedRange"]
 - !private ["So16NSObjectProtocolP", "startIndex"]
+- !private ["So16NSObjectProtocolP", "state"]
 - !private ["So16NSObjectProtocolP", "stringValue"]
+- !private ["So16NSObjectProtocolP", "tableView"]
 - ["So16NSObjectProtocolP", "textField"]
 - !private ["So16NSObjectProtocolP", "uppercased"]
 - !private ["So16NSObjectProtocolP", "valeurAvant"]
@@ -707,6 +736,7 @@ depends-member:
 - !private ["So11NSResponderC", "close"]
 - ["So11NSResponderC", "closePopover"]
 - ["So11NSResponderC", "cmyControl"]
+- !private ["So11NSResponderC", "cmyTable"]
 - ["So11NSResponderC", "control"]
 - ["So11NSResponderC", "controlEnterRecu"]
 - ["So11NSResponderC", "controller"]
@@ -728,6 +758,7 @@ depends-member:
 - !private ["So11NSResponderC", "perform"]
 - ["So11NSResponderC", "resignFirstResponder"]
 - !private ["So11NSResponderC", "selectedRange"]
+- !private ["So11NSResponderC", "state"]
 - !private ["So11NSResponderC", "stringValue"]
 - ["So11NSResponderC", "submitMethod"]
 - ["So11NSResponderC", "textField"]
@@ -749,6 +780,7 @@ depends-member:
 - !private ["So17NSTabViewDelegateP", "currentFocus"]
 - !private ["So17NSTabViewDelegateP", "myPopover"]
 - !private ["So17NSTabViewDelegateP", "perform"]
+- !private ["So11NSTableViewC", "state"]
 - !private ["So21NSTableViewDataSourceP", "currentFocus"]
 - !private ["So21NSTableViewDataSourceP", "myPopover"]
 - !private ["So21NSTableViewDataSourceP", "perform"]
@@ -756,6 +788,7 @@ depends-member:
 - !private ["So19NSTableViewDelegateP", "myPopover"]
 - !private ["So19NSTableViewDelegateP", "perform"]
 - !private ["So6NSTextC", "selectedRange"]
+- !private ["So14NSTextDelegateP", "state"]
 - ["So11NSTextFieldC", "Bool"]
 - !private ["So11NSTextFieldC", "NSArray"]
 - !private ["So11NSTextFieldC", "NSControl"]
@@ -773,6 +806,7 @@ depends-member:
 - !private ["So11NSTextFieldC", "ckeyboardKeys"]
 - ["So11NSTextFieldC", "closePopover"]
 - ["So11NSTextFieldC", "cmyControl"]
+- !private ["So11NSTextFieldC", "cmyTable"]
 - ["So11NSTextFieldC", "control"]
 - ["So11NSTextFieldC", "controlEnterRecu"]
 - ["So11NSTextFieldC", "controller"]
@@ -811,6 +845,7 @@ depends-member:
 - !private ["So19NSTextFieldDelegateP", "perform"]
 - !private ["So19NSTextFieldDelegateP", "stringValue"]
 - ["So19NSTextFieldDelegateP", "textField"]
+- !private ["So18NSTextViewDelegateP", "state"]
 - ["So18NSTouchBarProviderP", ""]
 - !private ["So18NSTouchBarProviderP", "becomeFirstResponder"]
 - !private ["So18NSTouchBarProviderP", "ckeyboardKeys"]
@@ -831,6 +866,7 @@ depends-member:
 - !private ["So18NSTouchBarProviderP", "perform"]
 - !private ["So18NSTouchBarProviderP", "resignFirstResponder"]
 - !private ["So18NSTouchBarProviderP", "selectedRange"]
+- !private ["So18NSTouchBarProviderP", "state"]
 - !private ["So18NSTouchBarProviderP", "stringValue"]
 - ["So18NSTouchBarProviderP", "textField"]
 - ["So33NSUserInterfaceItemIdentificationP", ""]
@@ -851,6 +887,7 @@ depends-member:
 - !private ["So33NSUserInterfaceItemIdentificationP", "perform"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "resignFirstResponder"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "selectedRange"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "state"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "stringValue"]
 - ["So33NSUserInterfaceItemIdentificationP", "textField"]
 - !private ["SC29NSUserInterfaceItemIdentifierV", "rawValue"]
@@ -869,6 +906,7 @@ depends-member:
 - !private ["So26NSUserInterfaceValidationsP", "parent"]
 - !private ["So26NSUserInterfaceValidationsP", "perform"]
 - !private ["So26NSUserInterfaceValidationsP", "resignFirstResponder"]
+- !private ["So26NSUserInterfaceValidationsP", "state"]
 - !private ["So26NSUserInterfaceValidationsP", "stringValue"]
 - ["So26NSUserInterfaceValidationsP", "textField"]
 - ["So6NSViewC", "Bool"]
@@ -887,6 +925,7 @@ depends-member:
 - !private ["So6NSViewC", "ckeyboardKeys"]
 - ["So6NSViewC", "closePopover"]
 - ["So6NSViewC", "cmyControl"]
+- !private ["So6NSViewC", "cmyTable"]
 - ["So6NSViewC", "control"]
 - ["So6NSViewC", "controlEnterRecu"]
 - ["So6NSViewC", "controller"]
@@ -905,6 +944,7 @@ depends-member:
 - !private ["So6NSViewC", "perform"]
 - ["So6NSViewC", "resignFirstResponder"]
 - !private ["So6NSViewC", "selectedRange"]
+- !private ["So6NSViewC", "state"]
 - !private ["So6NSViewC", "stringValue"]
 - ["So6NSViewC", "submitMethod"]
 - ["So6NSViewC", "textField"]
@@ -982,6 +1022,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "perform"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "selectedRange"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "state"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "stringValue"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "textField"]
 - !private ["s24_DestructorSafeContainerP", "contains"]
@@ -1053,7 +1094,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignMethod"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedRange"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startIndex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "state"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stringValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uppercased"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "valeurAvant"]
@@ -1099,8 +1142,10 @@ depends-member:
 - !private ["13PRMacControls10cmyControlC", "identifier"]
 - !private ["13PRMacControls10cmyControlC", "parent"]
 - !private ["13PRMacControls10cmyControlC", "resignMethod"]
+- !private ["13PRMacControls10cmyControlC", "tableView"]
 - !private ["13PRMacControls10cmyControlC", "valeurAvant"]
 - !private ["13PRMacControls10cmyControlC", "verifControl"]
+- !private ["13PRMacControls8cmyTableC", "state"]
 - ["13PRMacControls12cmyTextfieldC", "Bool"]
 - !private ["13PRMacControls12cmyTextfieldC", "NSArray"]
 - !private ["13PRMacControls12cmyTextfieldC", "NSControl"]
@@ -1117,6 +1162,7 @@ depends-member:
 - !private ["13PRMacControls12cmyTextfieldC", "ckeyboardKeys"]
 - ["13PRMacControls12cmyTextfieldC", "closePopover"]
 - ["13PRMacControls12cmyTextfieldC", "cmyControl"]
+- !private ["13PRMacControls12cmyTextfieldC", "cmyTable"]
 - ["13PRMacControls12cmyTextfieldC", "control"]
 - ["13PRMacControls12cmyTextfieldC", "controlEnterRecu"]
 - ["13PRMacControls12cmyTextfieldC", "controller"]
@@ -1140,6 +1186,8 @@ depends-member:
 - ["13PRMacControls12cmyTextfieldC", "textField"]
 - ["13PRMacControls12cmyTextfieldC", "verifCoherence"]
 - ["13PRMacControls12cmyTextfieldC", "verifObligatoire"]
+- !private ["13PRMacControls10etatWindowO", "deinit"]
+- !private ["13PRMacControls10etatWindowO", "nonedition"]
 - !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "currentFocus"]
 - !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "myPopover"]
 - !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "perform"]
@@ -1155,6 +1203,8 @@ depends-member:
 - !private ["13PRMacControls18mySelectorProtocolP", "identifier"]
 - !private ["13PRMacControls18mySelectorProtocolP", "parent"]
 - !private ["13PRMacControls18mySelectorProtocolP", "resignMethod"]
+- !private ["13PRMacControls18mySelectorProtocolP", "state"]
+- !private ["13PRMacControls18mySelectorProtocolP", "tableView"]
 - !private ["13PRMacControls18mySelectorProtocolP", "valeurAvant"]
 - !private ["13PRMacControls18mySelectorProtocolP", "verifControl"]
 depends-nominal:
@@ -1183,8 +1233,10 @@ depends-nominal:
 - !private "s17MutableCollectionP"
 - "So15NSAccessibilityP"
 - "So30NSAccessibilityElementProtocolP"
+- !private "So20NSAccessibilityGroupP"
 - "So34NSAccessibilityNavigableStaticTextP"
 - "So25NSAccessibilityStaticTextP"
+- !private "So20NSAccessibilityTableP"
 - "So29NSAnimatablePropertyContainerP"
 - "So25NSAppearanceCustomizationP"
 - !private "So7NSArrayC"
@@ -1196,6 +1248,7 @@ depends-nominal:
 - "So28NSControlTextEditingDelegateP"
 - !private "So9NSCopyingP"
 - "So21NSDraggingDestinationP"
+- !private "So16NSDraggingSourceP"
 - !private "So7NSEventC"
 - !private "So26NSExtensionRequestHandlingP"
 - !private "So17NSFastEnumerationP"
@@ -1214,11 +1267,14 @@ depends-nominal:
 - !private "So17NSSeguePerformingP"
 - !private "So8NSStringC"
 - !private "So17NSTabViewDelegateP"
+- !private "So11NSTableViewC"
 - !private "So21NSTableViewDataSourceP"
 - !private "So19NSTableViewDelegateP"
 - !private "So6NSTextC"
+- !private "So14NSTextDelegateP"
 - "So11NSTextFieldC"
 - "So19NSTextFieldDelegateP"
+- !private "So18NSTextViewDelegateP"
 - "So18NSTouchBarProviderP"
 - "So33NSUserInterfaceItemIdentificationP"
 - !private "SC29NSUserInterfaceItemIdentifierV"
@@ -1257,7 +1313,9 @@ depends-nominal:
 - !private "13PRMacControls13ckeyboardKeysC"
 - !private "13PRMacControls15clisteControlesC"
 - !private "13PRMacControls10cmyControlC"
+- !private "13PRMacControls8cmyTableC"
 - "13PRMacControls12cmyTextfieldC"
+- !private "13PRMacControls10etatWindowO"
 - !private "13PRMacControls31myBaseServiceProtocolOperationsP"
 - !private "13PRMacControls20myBaseServiceTabviewP"
 - !private "13PRMacControls18mySelectorProtocolP"

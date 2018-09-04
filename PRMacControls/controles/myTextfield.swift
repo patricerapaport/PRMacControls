@@ -18,9 +18,6 @@
     
     override open var acceptsFirstResponder: Bool {
         get {
-            if parent != nil && parent.tableView != nil && parent.tableView is cmyTable {
-                return (parent.tableView as! cmyTable).state != .nonedition
-            }
             return true
         }
     }
@@ -42,6 +39,12 @@
         // au chargement de cbaseController, le parent est nul
         if parent == nil {
             return true
+        }
+        
+        if parent != nil && parent.tableView != nil && parent.tableView is cmyTable {
+            if (parent.tableView as! cmyTable).state == .nonedition {
+                return false
+            }
         }
     
         var currentFocus: cmyControl!
