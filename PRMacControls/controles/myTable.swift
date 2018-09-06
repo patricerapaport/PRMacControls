@@ -32,10 +32,9 @@ open class cmyColumn: NSTableColumn {
             return isEditable
         }
         set (valeur) {
-            self.modifiable = valeur
-            isEditable = modifiable
-            let cell = dataCell
-            Swift.print(cell)
+            isEditable = valeur
+            //let cell = dataCell
+            //Swift.print(cell)
         }
     }
     var sens: sensTri = .asc
@@ -74,7 +73,7 @@ open class cmyTable: NSTableView {
         set (value) {
             for colonne in tableColumns {
                 if colonne is cmyColumn {
-                    (colonne as! cmyColumn).modifiable = value 
+                    (colonne as! cmyColumn).modifiable = value
                 }
             }
         }
