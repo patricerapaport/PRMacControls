@@ -539,7 +539,7 @@ open class cmyTable: NSTableView {
             parent.makeFirstResponder()
             //let index = NSIndexSet(index: rowselected)
             //selectRowIndexes(index as IndexSet, byExtendingSelection: false)
-        } else {
+        } else if isEditable{
             if rowselected != -1 && isEditable {
                 selectionHighlightStyle = .none
             }
