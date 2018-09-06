@@ -22,6 +22,7 @@ provides-dynamic-lookup:
 - "isEditable"
 - "isSortable"
 - "limit"
+- "modifiable"
 - "mouseUp"
 - "mouseupMethod"
 - "rawColor"
@@ -133,6 +134,7 @@ depends-member:
 - !private ["s7CVarArgP", "csourceTable"]
 - !private ["s7CVarArgP", "ctrl"]
 - !private ["s7CVarArgP", "currentFocus"]
+- !private ["s7CVarArgP", "dataCell"]
 - !private ["s7CVarArgP", "datasource"]
 - !private ["s7CVarArgP", "description"]
 - !private ["s7CVarArgP", "etat"]
@@ -225,6 +227,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "csourceTable"]
 - !private ["s28CustomDebugStringConvertibleP", "ctrl"]
 - !private ["s28CustomDebugStringConvertibleP", "currentFocus"]
+- !private ["s28CustomDebugStringConvertibleP", "dataCell"]
 - !private ["s28CustomDebugStringConvertibleP", "datasource"]
 - !private ["s28CustomDebugStringConvertibleP", "description"]
 - !private ["s28CustomDebugStringConvertibleP", "etat"]
@@ -319,6 +322,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "csourceTable"]
 - !private ["s23CustomStringConvertibleP", "ctrl"]
 - !private ["s23CustomStringConvertibleP", "currentFocus"]
+- !private ["s23CustomStringConvertibleP", "dataCell"]
 - !private ["s23CustomStringConvertibleP", "datasource"]
 - !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "etat"]
@@ -428,6 +432,7 @@ depends-member:
 - !private ["s9EquatableP", "ctrl"]
 - !private ["s9EquatableP", "currentFocus"]
 - ["s9EquatableP", "cursorUpdate"]
+- !private ["s9EquatableP", "dataCell"]
 - !private ["s9EquatableP", "datasource"]
 - !private ["s9EquatableP", "desc"]
 - !private ["s9EquatableP", "description"]
@@ -547,6 +552,7 @@ depends-member:
 - !private ["s8HashableP", "ctrl"]
 - !private ["s8HashableP", "currentFocus"]
 - ["s8HashableP", "cursorUpdate"]
+- !private ["s8HashableP", "dataCell"]
 - !private ["s8HashableP", "datasource"]
 - !private ["s8HashableP", "desc"]
 - !private ["s8HashableP", "description"]
@@ -914,6 +920,7 @@ depends-member:
 - !private ["So8NSCodingP", "clisteControles"]
 - !private ["So8NSCodingP", "csourceTable"]
 - !private ["So8NSCodingP", "currentFocus"]
+- !private ["So8NSCodingP", "dataCell"]
 - !private ["So8NSCodingP", "description"]
 - ["So8NSCodingP", "hasSelector"]
 - !private ["So8NSCodingP", "identifier"]
@@ -1224,6 +1231,7 @@ depends-member:
 - ["So8NSObjectC", "csourceTable"]
 - !private ["So8NSObjectC", "ctrl"]
 - !private ["So8NSObjectC", "currentFocus"]
+- !private ["So8NSObjectC", "dataCell"]
 - !private ["So8NSObjectC", "datasource"]
 - !private ["So8NSObjectC", "description"]
 - ["So8NSObjectC", "draggedRow"]
@@ -1246,6 +1254,7 @@ depends-member:
 - ["So8NSObjectC", "lastState"]
 - ["So8NSObjectC", "limit"]
 - !private ["So8NSObjectC", "makeFirstResponder"]
+- ["So8NSObjectC", "modifiable"]
 - ["So8NSObjectC", "mouseDown"]
 - ["So8NSObjectC", "mouseUp"]
 - ["So8NSObjectC", "mouseupMethod"]
@@ -1317,6 +1326,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "csourceTable"]
 - !private ["So16NSObjectProtocolP", "ctrl"]
 - !private ["So16NSObjectProtocolP", "currentFocus"]
+- !private ["So16NSObjectProtocolP", "dataCell"]
 - !private ["So16NSObjectProtocolP", "datasource"]
 - !private ["So16NSObjectProtocolP", "description"]
 - !private ["So16NSObjectProtocolP", "etat"]
@@ -1493,12 +1503,16 @@ depends-member:
 - !private ["So17NSTabViewDelegateP", "viderToolbar"]
 - !private ["So15NSTableCellViewC", "subviews"]
 - ["So13NSTableColumnC", "Bool"]
+- ["So13NSTableColumnC", "Int"]
 - ["So13NSTableColumnC", "String"]
+- !private ["So13NSTableColumnC", "Swift"]
 - ["So13NSTableColumnC", ""]
+- !private ["So13NSTableColumnC", "dataCell"]
 - !private ["So13NSTableColumnC", "identifier"]
 - ["So13NSTableColumnC", "init"]
 - !private ["So13NSTableColumnC", "isEditable"]
 - ["So13NSTableColumnC", "isSortable"]
+- ["So13NSTableColumnC", "modifiable"]
 - ["So13NSTableColumnC", "sens"]
 - ["So13NSTableColumnC", "sensDefaut"]
 - ["So13NSTableColumnC", "sensTri"]
@@ -1764,6 +1778,7 @@ depends-member:
 - !private ["So33NSUserInterfaceItemIdentificationP", "clisteControles"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "csourceTable"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "currentFocus"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "dataCell"]
 - ["So33NSUserInterfaceItemIdentificationP", "hasSelector"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "identifier"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "init"]
@@ -2125,6 +2140,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "csourceTable"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ctrl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentFocus"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "datasource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "description"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "etat"]
@@ -2203,11 +2219,16 @@ depends-member:
 - !private ["13PRMacControls15clisteControlesC", "setState"]
 - !private ["13PRMacControls15clisteControlesC", "verifControl"]
 - ["13PRMacControls9cmyColumnC", "Bool"]
+- ["13PRMacControls9cmyColumnC", "Int"]
 - ["13PRMacControls9cmyColumnC", "String"]
+- !private ["13PRMacControls9cmyColumnC", "Swift"]
+- !private ["13PRMacControls9cmyColumnC", "dataCell"]
 - ["13PRMacControls9cmyColumnC", "deinit"]
 - !private ["13PRMacControls9cmyColumnC", "identifier"]
 - ["13PRMacControls9cmyColumnC", "init"]
+- !private ["13PRMacControls9cmyColumnC", "isEditable"]
 - ["13PRMacControls9cmyColumnC", "isSortable"]
+- ["13PRMacControls9cmyColumnC", "modifiable"]
 - ["13PRMacControls9cmyColumnC", "sens"]
 - ["13PRMacControls9cmyColumnC", "sensDefaut"]
 - ["13PRMacControls9cmyColumnC", "sensTri"]
@@ -2567,4 +2588,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "02f9ea66837dbf0b19ed6af04d6d7629"
+interface-hash: "4ec8d964a6f83d6436a9952b7a7c0e46"

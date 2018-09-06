@@ -27,12 +27,13 @@ class tblControles {
 
 open class cmyColumn: NSTableColumn {
     @IBInspectable var isSortable: Bool = false
-    @IBInspectable var modifiable: Int {
+    @IBInspectable var modifiable: Bool {
         get {
-            return isEditable ? 1 : 0
+            return isEditable
         }
         set (valeur) {
-            isEditable = valeur == 1
+            self.modifiable = valeur
+            isEditable = modifiable
             let cell = dataCell
             Swift.print(cell)
         }
@@ -66,7 +67,18 @@ open class cmyTable: NSTableView {
     var triCourant: String = ""
     var btsAttaches: Bool = false
     var ascending: Bool = true
-    @IBInspectable var isEditable: Bool = false
+    @IBInspectable var isEditable: Bool {
+        get {
+            return self.isEditable
+        }
+        set (value) {
+            for colonne in tableColumns {
+                if colonne is cmyColumn {
+                    (colonne as! cmyColumn).modifiable = value 
+                }
+            }
+        }
+    }
     @IBInspectable var rawColor: String!
     @IBInspectable var afterReloadMethod: String!
     @IBInspectable var mouseupMethod: String!
@@ -80,6 +92,7 @@ open class cmyTable: NSTableView {
             btsAttaches = b
         }
     }
+    
     
     func setBoutonsAttaches() { // Cette fonction est appelée par le constructeur du parent (cmyControl)
         if (btsAttaches) {
