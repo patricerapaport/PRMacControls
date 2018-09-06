@@ -66,11 +66,13 @@ open class cmyTable: NSTableView {
     var triCourant: String = ""
     var btsAttaches: Bool = false
     var ascending: Bool = true
+    var _modifiable: Bool!
     @IBInspectable var isEditable: Bool {
         get {
-            return self.isEditable
+            return _modifiable
         }
         set (value) {
+            _modifiable = value
             for colonne in tableColumns {
                 if colonne is cmyColumn {
                     (colonne as! cmyColumn).modifiable = value
