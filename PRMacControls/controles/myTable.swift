@@ -74,8 +74,8 @@ open class cmyTable: NSTableView {
         set (value) {
             _modifiable = value
             for colonne in tableColumns {
-                if colonne is cmyColumn {
-                    (colonne as! cmyColumn).modifiable = value
+                if colonne is cmyColumn && (colonne as! cmyColumn).modifiable {
+                    (colonne as! cmyColumn).isEditable = value
                 }
             }
         }
@@ -529,6 +529,15 @@ open class cmyTable: NSTableView {
         if parent != nil && parent.etat != etat {
             parent.etat = etat
         }
+        
+        if _modifiable {
+            for colonne in tableColumns {
+                if colonne is cmyColumn && (colonne as! cmyColumn).modifiable {
+                    colonne.isEditable = etat != .nonedition
+                }
+            }
+        }
+        
         if (etat == .nonedition) {
             let responder = parent.window
             if responder is NSWindow {
