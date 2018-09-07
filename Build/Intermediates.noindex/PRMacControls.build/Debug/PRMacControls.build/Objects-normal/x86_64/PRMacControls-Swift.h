@@ -488,6 +488,7 @@ SWIFT_CLASS("_TtC13PRMacControls11cmySelector")
 
 SWIFT_CLASS("_TtC13PRMacControls8cmyTable")
 @interface cmyTable : NSTableView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)reloadData;
 @property (nonatomic, readonly) BOOL acceptsFirstResponder;
 - (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
@@ -495,8 +496,7 @@ SWIFT_CLASS("_TtC13PRMacControls8cmyTable")
 - (BOOL)validateProposedFirstResponder:(NSResponder * _Nonnull)responder forEvent:(NSEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (void)mouseUp:(NSEvent * _Nonnull)event;
 - (NSTableRowView * _Nullable)rowViewAtRow:(NSInteger)row makeIfNecessary:(BOOL)makeIfNecessary SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(NSRect)frameRect SWIFT_UNAVAILABLE;
 @end
 
 

@@ -106,6 +106,15 @@ open class cmyTable: NSTableView {
         }
     }
     
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self._modifiable = false
+        _init()
+    }
+    
+    func _init() {
+        
+    }
     
     func setBoutonsAttaches() { // Cette fonction est appelée par le constructeur du parent (cmyControl)
         if (btsAttaches) {
