@@ -49,6 +49,7 @@ open class cmyColumn: NSTableColumn {
     
     public required init(coder: NSCoder) {
         super.init(coder: coder)
+        self.modifiable = false
         _init()
     }
     
