@@ -81,7 +81,7 @@ open class cmyTable: NSTableView {
     var _modifiable: Bool!
     @IBInspectable var isEditable: Bool {
         get {
-            return _modifiable
+            return _modifiable == nil ? false : _modifiable
         }
         set (value) {
             _modifiable = value
