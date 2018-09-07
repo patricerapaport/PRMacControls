@@ -669,16 +669,18 @@ extension cbaseController {
     }
     
     @objc func viderToolbar() {
+        if window?.toolbar == nil {
+            return
+        }
         let toolbar: NSToolbar? = (window?.toolbar)!
-        if toolbar != nil {
-            var index: Int = toolbar!.items.count-1
-            while (index > -1) {
-                if toolbar?.items[index] is cmyToolbarItem {
-                   (toolbar?.items[index] as! cmyToolbarItem).removeFromToolbar()
-                }
-                toolbar?.removeItem(at: index)
-                index -= 1
+        
+        var index: Int = toolbar!.items.count-1
+        while (index > -1) {
+            if toolbar?.items[index] is cmyToolbarItem {
+                (toolbar?.items[index] as! cmyToolbarItem).removeFromToolbar()
             }
+            toolbar?.removeItem(at: index)
+            index -= 1
         }
     }
     

@@ -411,8 +411,8 @@ SWIFT_CLASS("_TtC13PRMacControls11cmyCheckbox")
 
 SWIFT_CLASS("_TtC13PRMacControls9cmyColumn")
 @interface cmyColumn : NSTableColumn
-- (nonnull instancetype)initWithIdentifier:(NSUserInterfaceItemIdentifier _Nonnull)identifier OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithIdentifier:(NSUserInterfaceItemIdentifier _Nonnull)identifier SWIFT_UNAVAILABLE;
 @end
 
 

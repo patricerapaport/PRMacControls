@@ -46,6 +46,17 @@ open class cmyColumn: NSTableColumn {
             self.sens = sensTri(rawValue: sens) ?? .asc
         }
     }
+    
+    public required init(coder: NSCoder) {
+        super.init(coder: coder)
+        _init()
+    }
+    
+    func _init() {
+        if tableView is cmyTable {
+            modifiable = (tableView as! cmyTable).isEditable
+        }
+    }
 }
 
 open class cmyTable: NSTableView {
