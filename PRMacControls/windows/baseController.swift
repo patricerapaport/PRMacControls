@@ -1140,6 +1140,14 @@ Swift.print("tableview didClick \(tableColumn.description)")
     public func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
          Swift.print("sortDescriptorDidChange sur \(oldDescriptors.description)")
     }
+    
+    public func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTableColumn?, row: Int) -> Bool {
+        if tableview is cmyTable && (tableView as! cmyTable).state == .nonedition {
+            return false
+        } else {
+            return true
+        }
+    }
 }
 
 // MARK: NSWindowDelegate
