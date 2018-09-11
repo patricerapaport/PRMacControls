@@ -286,6 +286,7 @@ SWIFT_CLASS("_TtC13PRMacControls15cbaseController")
 - (void)tableViewSelectionIsChanging:(NSNotification * _Nonnull)notification;
 - (BOOL)tableView:(NSTableView * _Nonnull)tableView shouldSelectRow:(NSInteger)row SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(NSTableView * _Nonnull)tableView sortDescriptorsDidChange:(NSArray<NSSortDescriptor *> * _Nonnull)oldDescriptors;
+- (BOOL)tableView:(NSTableView * _Nonnull)tableView shouldEditTableColumn:(NSTableColumn * _Nullable)tableColumn row:(NSInteger)row SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSBundle;

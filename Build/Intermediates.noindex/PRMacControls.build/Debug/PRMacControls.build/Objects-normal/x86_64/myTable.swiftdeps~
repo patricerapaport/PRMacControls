@@ -19,7 +19,6 @@ provides-dynamic-lookup:
 - "afterReloadMethod"
 - "becomeFirstResponder"
 - "boutonsAttaches"
-- "hitTest"
 - "isEditable"
 - "isSortable"
 - "limit"
@@ -61,13 +60,11 @@ depends-top-level:
 - "NSEvent"
 - !private "NSIndexSet"
 - !private "NSNull"
-- "NSPoint"
 - "NSResponder"
 - !private "NSTableCellView"
 - "NSTableColumn"
 - "NSTableRowView"
 - "NSTableView"
-- "NSView"
 - !private "NSWindow"
 - !private "Selector"
 - "String"
@@ -1020,12 +1017,10 @@ depends-member:
 - ["So9NSControlC", "NSEvent"]
 - !private ["So9NSControlC", "NSIndexSet"]
 - !private ["So9NSControlC", "NSNull"]
-- ["So9NSControlC", "NSPoint"]
 - ["So9NSControlC", "NSResponder"]
 - !private ["So9NSControlC", "NSTableCellView"]
 - ["So9NSControlC", "NSTableColumn"]
 - ["So9NSControlC", "NSTableRowView"]
-- ["So9NSControlC", "NSView"]
 - !private ["So9NSControlC", "NSWindow"]
 - !private ["So9NSControlC", "Selector"]
 - ["So9NSControlC", "String"]
@@ -1063,7 +1058,6 @@ depends-member:
 - ["So9NSControlC", "getColumn"]
 - ["So9NSControlC", "getControl"]
 - ["So9NSControlC", "hasSelector"]
-- ["So9NSControlC", "hitTest"]
 - ["So9NSControlC", "init"]
 - ["So9NSControlC", "input"]
 - !private ["So9NSControlC", "isBezeled"]
@@ -1240,12 +1234,10 @@ depends-member:
 - ["So8NSObjectC", "NSEvent"]
 - !private ["So8NSObjectC", "NSIndexSet"]
 - !private ["So8NSObjectC", "NSNull"]
-- ["So8NSObjectC", "NSPoint"]
 - ["So8NSObjectC", "NSResponder"]
 - !private ["So8NSObjectC", "NSTableCellView"]
 - ["So8NSObjectC", "NSTableColumn"]
 - ["So8NSObjectC", "NSTableRowView"]
-- ["So8NSObjectC", "NSView"]
 - !private ["So8NSObjectC", "NSWindow"]
 - !private ["So8NSObjectC", "Selector"]
 - ["So8NSObjectC", "String"]
@@ -1291,7 +1283,6 @@ depends-member:
 - ["So8NSObjectC", "getColumn"]
 - ["So8NSObjectC", "getControl"]
 - ["So8NSObjectC", "hasSelector"]
-- ["So8NSObjectC", "hitTest"]
 - !private ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "input"]
@@ -1449,12 +1440,10 @@ depends-member:
 - ["So11NSResponderC", "NSEvent"]
 - !private ["So11NSResponderC", "NSIndexSet"]
 - !private ["So11NSResponderC", "NSNull"]
-- ["So11NSResponderC", "NSPoint"]
 - ["So11NSResponderC", "NSResponder"]
 - !private ["So11NSResponderC", "NSTableCellView"]
 - ["So11NSResponderC", "NSTableColumn"]
 - ["So11NSResponderC", "NSTableRowView"]
-- ["So11NSResponderC", "NSView"]
 - !private ["So11NSResponderC", "NSWindow"]
 - !private ["So11NSResponderC", "Selector"]
 - ["So11NSResponderC", "String"]
@@ -1493,7 +1482,6 @@ depends-member:
 - ["So11NSResponderC", "getColumn"]
 - ["So11NSResponderC", "getControl"]
 - ["So11NSResponderC", "hasSelector"]
-- ["So11NSResponderC", "hitTest"]
 - ["So11NSResponderC", "init"]
 - ["So11NSResponderC", "input"]
 - !private ["So11NSResponderC", "isBezeled"]
@@ -1589,12 +1577,10 @@ depends-member:
 - ["So11NSTableViewC", "NSEvent"]
 - !private ["So11NSTableViewC", "NSIndexSet"]
 - !private ["So11NSTableViewC", "NSNull"]
-- ["So11NSTableViewC", "NSPoint"]
 - ["So11NSTableViewC", "NSResponder"]
 - !private ["So11NSTableViewC", "NSTableCellView"]
 - ["So11NSTableViewC", "NSTableColumn"]
 - ["So11NSTableViewC", "NSTableRowView"]
-- ["So11NSTableViewC", "NSView"]
 - !private ["So11NSTableViewC", "NSWindow"]
 - !private ["So11NSTableViewC", "Selector"]
 - ["So11NSTableViewC", "String"]
@@ -1633,7 +1619,6 @@ depends-member:
 - ["So11NSTableViewC", "getColumn"]
 - ["So11NSTableViewC", "getControl"]
 - ["So11NSTableViewC", "hasSelector"]
-- ["So11NSTableViewC", "hitTest"]
 - ["So11NSTableViewC", "init"]
 - ["So11NSTableViewC", "input"]
 - ["So11NSTableViewC", "isEditable"]
@@ -1951,12 +1936,10 @@ depends-member:
 - ["So6NSViewC", "NSEvent"]
 - !private ["So6NSViewC", "NSIndexSet"]
 - !private ["So6NSViewC", "NSNull"]
-- ["So6NSViewC", "NSPoint"]
 - ["So6NSViewC", "NSResponder"]
 - !private ["So6NSViewC", "NSTableCellView"]
 - ["So6NSViewC", "NSTableColumn"]
 - ["So6NSViewC", "NSTableRowView"]
-- ["So6NSViewC", "NSView"]
 - !private ["So6NSViewC", "NSWindow"]
 - !private ["So6NSViewC", "Selector"]
 - ["So6NSViewC", "String"]
@@ -1994,7 +1977,6 @@ depends-member:
 - ["So6NSViewC", "getColumn"]
 - ["So6NSViewC", "getControl"]
 - ["So6NSViewC", "hasSelector"]
-- ["So6NSViewC", "hitTest"]
 - ["So6NSViewC", "init"]
 - ["So6NSViewC", "input"]
 - !private ["So6NSViewC", "isBezeled"]
@@ -2349,12 +2331,10 @@ depends-member:
 - ["13PRMacControls8cmyTableC", "NSEvent"]
 - !private ["13PRMacControls8cmyTableC", "NSIndexSet"]
 - !private ["13PRMacControls8cmyTableC", "NSNull"]
-- ["13PRMacControls8cmyTableC", "NSPoint"]
 - ["13PRMacControls8cmyTableC", "NSResponder"]
 - !private ["13PRMacControls8cmyTableC", "NSTableCellView"]
 - ["13PRMacControls8cmyTableC", "NSTableColumn"]
 - ["13PRMacControls8cmyTableC", "NSTableRowView"]
-- ["13PRMacControls8cmyTableC", "NSView"]
 - !private ["13PRMacControls8cmyTableC", "NSWindow"]
 - !private ["13PRMacControls8cmyTableC", "Selector"]
 - ["13PRMacControls8cmyTableC", "String"]
@@ -2393,7 +2373,6 @@ depends-member:
 - ["13PRMacControls8cmyTableC", "getColumn"]
 - ["13PRMacControls8cmyTableC", "getControl"]
 - ["13PRMacControls8cmyTableC", "hasSelector"]
-- ["13PRMacControls8cmyTableC", "hitTest"]
 - ["13PRMacControls8cmyTableC", "init"]
 - ["13PRMacControls8cmyTableC", "input"]
 - ["13PRMacControls8cmyTableC", "isEditable"]
@@ -2686,4 +2665,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "a93b69854938d1dcace7c43a56c950b5"
+interface-hash: "f54d4e21b26fb7f8fe60da6175d94bb3"

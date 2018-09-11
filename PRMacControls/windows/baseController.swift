@@ -1142,7 +1142,7 @@ Swift.print("tableview didClick \(tableColumn.description)")
     }
     
     public func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTableColumn?, row: Int) -> Bool {
-        if tableview is cmyTable && (tableView as! cmyTable).state == .nonedition {
+        if tableView is cmyTable && (tableView as! cmyTable).state == .nonedition {
             return false
         } else {
             return true
