@@ -561,8 +561,10 @@ open class cmyTable: NSTableView {
             for colonne in tableColumns {
                 Swift.print(colonne.description)
                 let cell = makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: colonne.identifier.rawValue), owner: nil) as? NSTableCellView
-                (cell as! cmyTextfield).isEditable = false
-                Swift.print(cell?.description)
+                if (cell?.subviews.count)! > 0 {
+                (cell?.subviews[0] as! cmyTextfield).isEditable = false
+                }
+                Swift.print(cell?.subviews[0].description)
             }
         }
         
