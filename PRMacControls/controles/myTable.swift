@@ -557,6 +557,10 @@ open class cmyTable: NSTableView {
                     colonne.isEditable = etat != .nonedition
                 }
             }
+        } else {
+            for colonne in tableColumns {
+                Swift.print(colonne.description)
+            }
         }
         
         if (etat == .nonedition) {
