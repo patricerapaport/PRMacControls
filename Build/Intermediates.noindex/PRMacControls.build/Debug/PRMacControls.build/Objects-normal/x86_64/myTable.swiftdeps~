@@ -1595,7 +1595,6 @@ depends-member:
 - !private ["So17NSTabViewDelegateP", "currentFocus"]
 - !private ["So17NSTabViewDelegateP", "setConfigs"]
 - !private ["So17NSTabViewDelegateP", "viderToolbar"]
-- !private ["So15NSTableCellViewC", "description"]
 - !private ["So15NSTableCellViewC", "subviews"]
 - ["So13NSTableColumnC", "Bool"]
 - ["So13NSTableColumnC", "NSCoder"]
