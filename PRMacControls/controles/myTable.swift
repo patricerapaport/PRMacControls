@@ -686,6 +686,12 @@ open class cmyTable: NSTableView {
         }
         return aRow
     }
+    
+    override open func editColumn(_ column: Int, row: Int, with event: NSEvent?, select: Bool) {
+        if state != .nonedition {
+            super.editColumn(column, row: row, with: event, select: select)
+        }
+    }
 }
 
 //MARK: mySelectorProtocol

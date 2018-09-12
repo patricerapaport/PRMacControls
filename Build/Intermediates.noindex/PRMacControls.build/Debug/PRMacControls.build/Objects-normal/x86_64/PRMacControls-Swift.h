@@ -497,6 +497,7 @@ SWIFT_CLASS("_TtC13PRMacControls8cmyTable")
 - (BOOL)validateProposedFirstResponder:(NSResponder * _Nonnull)responder forEvent:(NSEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (void)mouseUp:(NSEvent * _Nonnull)event;
 - (NSTableRowView * _Nullable)rowViewAtRow:(NSInteger)row makeIfNecessary:(BOOL)makeIfNecessary SWIFT_WARN_UNUSED_RESULT;
+- (void)editColumn:(NSInteger)column row:(NSInteger)row withEvent:(NSEvent * _Nullable)event select:(BOOL)select;
 - (nonnull instancetype)initWithFrame:(NSRect)frameRect SWIFT_UNAVAILABLE;
 @end
 
