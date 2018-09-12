@@ -560,6 +560,8 @@ open class cmyTable: NSTableView {
         } else {
             for colonne in tableColumns {
                 Swift.print(colonne.description)
+                let cell = makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: colonne.identifier.rawValue), owner: nil) as? NSTableCellView
+                Swift.print(cell?.description)
             }
         }
         
