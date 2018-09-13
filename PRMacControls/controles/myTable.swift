@@ -558,6 +558,7 @@ open class cmyTable: NSTableView {
                 }
             }
         } else {
+return
             for colonne in tableColumns {
                 colonne.isEditable = false
                 Swift.print(colonne.description)
@@ -618,9 +619,9 @@ open class cmyTable: NSTableView {
                     if view is NSControl {
                         if view is cmyTextfield {
                             (view as! cmyTextfield).delegate = self.parent.controller as! cbaseController
-                            (view as! cmyTextfield).isEnabled = state != .nonedition
+                            (view as! cmyTextfield).isEditable = state != .nonedition
                         } else if view is cmyCombo {
-                            (view as! cmyCombo).isEnabled = state != .nonedition
+                            (view as! cmyCombo).isEditable = state != .nonedition
                             if state != .nonedition && (aView?.subviews.count)! > 1 && aView?.subviews[1] is cmyTextfield {
                                 (view as! cmyCombo).stringValue = (aView?.subviews[1] as! cmyTextfield).stringValue
                             }
@@ -680,7 +681,6 @@ open class cmyTable: NSTableView {
     
     // les controles n'existent que quand il y a saisie
     open override func rowView(atRow row: Int, makeIfNecessary: Bool) -> NSTableRowView? {
-        Swift.print("cmyTable.rowview va être demandé pour la rangée \(row), makeIfNecesary \(makeIfNecessary)")
         let aRow = super.rowView (atRow: row, makeIfNecessary: makeIfNecessary)
         if aRow == nil {
             return nil
@@ -688,7 +688,7 @@ open class cmyTable: NSTableView {
         
         // si la liste des controles pour cette rangée n'existe pas dans la cource de données, on la construit
         let aSourceRow = sourceRow(row)
-        
+Swift.print("cmyTable.rowview va être demandé pour la rangée \(row), makeIfNecesary \(makeIfNecessary)")
         if aSourceRow.ctrls == nil {
             setControls(aRow: aRow!, source: aSourceRow)
         }

@@ -79,6 +79,7 @@ depends-top-level:
 - !private "cbaseController"
 - !private "cbaseView"
 - "clisteControles"
+- !private "cmyCheckbox"
 - "cmyColumn"
 - !private "cmyCombo"
 - "cmyControl"
@@ -727,6 +728,7 @@ depends-member:
 - !private ["So15NSAccessibilityP", "txtassocie"]
 - !private ["So15NSAccessibilityP", "validateProposedFirstResponder"]
 - !private ["So15NSAccessibilityP", "view"]
+- !private ["So21NSAccessibilityButtonP", "isEnabled"]
 - !private ["So30NSAccessibilityElementProtocolP", "NSIndexSet"]
 - !private ["So30NSAccessibilityElementProtocolP", "NSUserInterfaceItemIdentifier"]
 - !private ["So30NSAccessibilityElementProtocolP", "Selector"]
@@ -829,6 +831,7 @@ depends-member:
 - !private ["So34NSAccessibilityNavigableStaticTextP", "delegate"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "isBezeled"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "isEditable"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "isEnabled"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "isHidden"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "parent"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "stringValue"]
@@ -837,6 +840,7 @@ depends-member:
 - !private ["So25NSAccessibilityStaticTextP", "delegate"]
 - !private ["So25NSAccessibilityStaticTextP", "isBezeled"]
 - !private ["So25NSAccessibilityStaticTextP", "isEditable"]
+- !private ["So25NSAccessibilityStaticTextP", "isEnabled"]
 - !private ["So25NSAccessibilityStaticTextP", "isHidden"]
 - !private ["So25NSAccessibilityStaticTextP", "parent"]
 - !private ["So25NSAccessibilityStaticTextP", "stringValue"]
@@ -993,6 +997,7 @@ depends-member:
 - !private ["So25NSAppearanceCustomizationP", "txtassocie"]
 - !private ["So25NSAppearanceCustomizationP", "validateProposedFirstResponder"]
 - !private ["So25NSAppearanceCustomizationP", "view"]
+- !private ["So8NSButtonC", "isEnabled"]
 - !private ["So8NSCodingP", "EventType"]
 - !private ["So8NSCodingP", "NSIndexSet"]
 - !private ["So8NSCodingP", "NSUserInterfaceItemIdentifier"]
@@ -1061,6 +1066,7 @@ depends-member:
 - !private ["So8NSCodingP", "validateProposedFirstResponder"]
 - !private ["So8NSCodingP", "viderToolbar"]
 - !private ["So8NSCodingP", "view"]
+- !private ["So10NSComboBoxC", "isEnabled"]
 - !private ["So10NSComboBoxC", "isHidden"]
 - !private ["So10NSComboBoxC", "stringValue"]
 - !private ["So10NSComboBoxC", "txtassocie"]
@@ -1109,6 +1115,7 @@ depends-member:
 - !private ["So9NSControlC", "cbaseController"]
 - !private ["So9NSControlC", "cbaseView"]
 - !private ["So9NSControlC", "clisteControles"]
+- !private ["So9NSControlC", "cmyCheckbox"]
 - ["So9NSControlC", "cmyColumn"]
 - !private ["So9NSControlC", "cmyCombo"]
 - ["So9NSControlC", "cmyControl"]
@@ -1181,6 +1188,7 @@ depends-member:
 - !private ["So28NSControlTextEditingDelegateP", "delegate"]
 - !private ["So28NSControlTextEditingDelegateP", "isBezeled"]
 - !private ["So28NSControlTextEditingDelegateP", "isEditable"]
+- !private ["So28NSControlTextEditingDelegateP", "isEnabled"]
 - !private ["So28NSControlTextEditingDelegateP", "isHidden"]
 - !private ["So28NSControlTextEditingDelegateP", "parent"]
 - !private ["So28NSControlTextEditingDelegateP", "setConfigs"]
@@ -1342,6 +1350,7 @@ depends-member:
 - !private ["So8NSObjectC", "cbaseController"]
 - !private ["So8NSObjectC", "cbaseView"]
 - !private ["So8NSObjectC", "clisteControles"]
+- !private ["So8NSObjectC", "cmyCheckbox"]
 - ["So8NSObjectC", "cmyColumn"]
 - !private ["So8NSObjectC", "cmyCombo"]
 - ["So8NSObjectC", "cmyControl"]
@@ -1558,6 +1567,7 @@ depends-member:
 - !private ["So11NSResponderC", "cbaseController"]
 - !private ["So11NSResponderC", "cbaseView"]
 - !private ["So11NSResponderC", "clisteControles"]
+- !private ["So11NSResponderC", "cmyCheckbox"]
 - ["So11NSResponderC", "cmyColumn"]
 - !private ["So11NSResponderC", "cmyCombo"]
 - ["So11NSResponderC", "cmyControl"]
@@ -1703,6 +1713,7 @@ depends-member:
 - !private ["So11NSTableViewC", "cbaseController"]
 - !private ["So11NSTableViewC", "cbaseView"]
 - !private ["So11NSTableViewC", "clisteControles"]
+- !private ["So11NSTableViewC", "cmyCheckbox"]
 - ["So11NSTableViewC", "cmyColumn"]
 - !private ["So11NSTableViewC", "cmyCombo"]
 - ["So11NSTableViewC", "cmyControl"]
@@ -1819,6 +1830,7 @@ depends-member:
 - !private ["So11NSTextFieldC", "delegate"]
 - !private ["So11NSTextFieldC", "isBezeled"]
 - !private ["So11NSTextFieldC", "isEditable"]
+- !private ["So11NSTextFieldC", "isEnabled"]
 - !private ["So11NSTextFieldC", "isHidden"]
 - !private ["So11NSTextFieldC", "parent"]
 - !private ["So11NSTextFieldC", "stringValue"]
@@ -1828,6 +1840,7 @@ depends-member:
 - !private ["So19NSTextFieldDelegateP", "delegate"]
 - !private ["So19NSTextFieldDelegateP", "isBezeled"]
 - !private ["So19NSTextFieldDelegateP", "isEditable"]
+- !private ["So19NSTextFieldDelegateP", "isEnabled"]
 - !private ["So19NSTextFieldDelegateP", "isHidden"]
 - !private ["So19NSTextFieldDelegateP", "parent"]
 - !private ["So19NSTextFieldDelegateP", "setConfigs"]
@@ -1939,6 +1952,7 @@ depends-member:
 - !private ["So18NSTouchBarProviderP", "validateProposedFirstResponder"]
 - !private ["So18NSTouchBarProviderP", "viderToolbar"]
 - !private ["So18NSTouchBarProviderP", "view"]
+- !private ["So26NSUserInterfaceCompressionP", "isEnabled"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "NSIndexSet"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "NSUserInterfaceItemIdentifier"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "Selector"]
@@ -2025,6 +2039,7 @@ depends-member:
 - !private ["So26NSUserInterfaceValidationsP", "input"]
 - !private ["So26NSUserInterfaceValidationsP", "isBezeled"]
 - !private ["So26NSUserInterfaceValidationsP", "isEditable"]
+- !private ["So26NSUserInterfaceValidationsP", "isEnabled"]
 - !private ["So26NSUserInterfaceValidationsP", "isHidden"]
 - !private ["So26NSUserInterfaceValidationsP", "isRowSelected"]
 - !private ["So26NSUserInterfaceValidationsP", "lastState"]
@@ -2091,6 +2106,7 @@ depends-member:
 - !private ["So6NSViewC", "cbaseController"]
 - !private ["So6NSViewC", "cbaseView"]
 - !private ["So6NSViewC", "clisteControles"]
+- !private ["So6NSViewC", "cmyCheckbox"]
 - ["So6NSViewC", "cmyColumn"]
 - !private ["So6NSViewC", "cmyCombo"]
 - ["So6NSViewC", "cmyControl"]
@@ -2436,6 +2452,7 @@ depends-member:
 - !private ["13PRMacControls15clisteControlesC", "init"]
 - !private ["13PRMacControls15clisteControlesC", "setState"]
 - !private ["13PRMacControls15clisteControlesC", "verifControl"]
+- !private ["13PRMacControls11cmyCheckboxC", "isEnabled"]
 - ["13PRMacControls9cmyColumnC", "Bool"]
 - ["13PRMacControls9cmyColumnC", "NSCoder"]
 - ["13PRMacControls9cmyColumnC", "String"]
@@ -2451,6 +2468,7 @@ depends-member:
 - ["13PRMacControls9cmyColumnC", "sensDefaut"]
 - ["13PRMacControls9cmyColumnC", "sensTri"]
 - !private ["13PRMacControls9cmyColumnC", "tableView"]
+- !private ["13PRMacControls8cmyComboC", "isEnabled"]
 - !private ["13PRMacControls8cmyComboC", "isHidden"]
 - !private ["13PRMacControls8cmyComboC", "stringValue"]
 - !private ["13PRMacControls8cmyComboC", "txtassocie"]
@@ -2504,6 +2522,7 @@ depends-member:
 - !private ["13PRMacControls8cmyTableC", "cbaseController"]
 - !private ["13PRMacControls8cmyTableC", "cbaseView"]
 - !private ["13PRMacControls8cmyTableC", "clisteControles"]
+- !private ["13PRMacControls8cmyTableC", "cmyCheckbox"]
 - ["13PRMacControls8cmyTableC", "cmyColumn"]
 - !private ["13PRMacControls8cmyTableC", "cmyCombo"]
 - ["13PRMacControls8cmyTableC", "cmyControl"]
@@ -2569,6 +2588,7 @@ depends-member:
 - !private ["13PRMacControls12cmyTextfieldC", "delegate"]
 - !private ["13PRMacControls12cmyTextfieldC", "isBezeled"]
 - !private ["13PRMacControls12cmyTextfieldC", "isEditable"]
+- !private ["13PRMacControls12cmyTextfieldC", "isEnabled"]
 - !private ["13PRMacControls12cmyTextfieldC", "isHidden"]
 - !private ["13PRMacControls12cmyTextfieldC", "parent"]
 - !private ["13PRMacControls12cmyTextfieldC", "stringValue"]
@@ -2684,6 +2704,7 @@ depends-nominal:
 - "s10MirrorPathP"
 - !private "s17MutableCollectionP"
 - "So15NSAccessibilityP"
+- !private "So21NSAccessibilityButtonP"
 - "So30NSAccessibilityElementProtocolP"
 - "So20NSAccessibilityGroupP"
 - !private "So34NSAccessibilityNavigableStaticTextP"
@@ -2692,6 +2713,7 @@ depends-nominal:
 - "So20NSAccessibilityTableP"
 - "So29NSAnimatablePropertyContainerP"
 - "So25NSAppearanceCustomizationP"
+- !private "So8NSButtonC"
 - "So8NSCodingP"
 - !private "So10NSComboBoxC"
 - !private "So20NSComboBoxDataSourceP"
@@ -2729,6 +2751,7 @@ depends-nominal:
 - "So18NSTextViewDelegateP"
 - !private "So13NSToolbarItemC"
 - "So18NSTouchBarProviderP"
+- !private "So26NSUserInterfaceCompressionP"
 - "So33NSUserInterfaceItemIdentificationP"
 - !private "SC29NSUserInterfaceItemIdentifierV"
 - "So26NSUserInterfaceValidationsP"
@@ -2768,6 +2791,7 @@ depends-nominal:
 - !private "13PRMacControls15cbaseControllerC"
 - !private "13PRMacControls9cbaseViewC"
 - !private "13PRMacControls15clisteControlesC"
+- !private "13PRMacControls11cmyCheckboxC"
 - "13PRMacControls9cmyColumnC"
 - !private "13PRMacControls8cmyComboC"
 - !private "13PRMacControls10cmyControlC"
