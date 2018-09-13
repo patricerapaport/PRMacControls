@@ -679,6 +679,7 @@ open class cmyTable: NSTableView {
     
     // les controles n'existent que quand il y a saisie
     open override func rowView(atRow row: Int, makeIfNecessary: Bool) -> NSTableRowView? {
+        Swift.print("cmyTable.rowview va être demandé pour la rangée \(row)")
         let aRow = super.rowView (atRow: row, makeIfNecessary: makeIfNecessary)
         if aRow == nil {
             return nil

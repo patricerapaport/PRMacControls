@@ -1111,7 +1111,6 @@ Swift.print("tableview didClick \(tableColumn.description)")
         if tableCourante == nil || tableCourante.identifier != tableView.identifier?.rawValue {
             tableCourante = getControl(tableView.identifier!.rawValue)
         }
-        Swift.print("rowview va être demandé pour la rangée \(row)")
         let aRow =  tableView.rowView (atRow: row, makeIfNecessary: false)
         return aRow == nil ? nil : aRow
     }
