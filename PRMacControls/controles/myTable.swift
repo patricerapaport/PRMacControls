@@ -689,6 +689,9 @@ return
         // si la liste des controles pour cette rangée n'existe pas dans la cource de données, on la construit
         let aSourceRow = sourceRow(row)
 Swift.print("cmyTable.rowview va être demandé pour la rangée \(row), makeIfNecesary \(makeIfNecessary)")
+        if aSourceRow.ctrls != nil {
+            resetControls(aRow: aRow!, source: aSourceRow)
+        }
         if aSourceRow.ctrls == nil {
             setControls(aRow: aRow!, source: aSourceRow)
         }
