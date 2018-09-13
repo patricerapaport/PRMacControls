@@ -591,9 +591,9 @@ open class cmyTable: NSTableView {
         if source.ctrls == nil {
             source.ctrls = clisteControles(aController: parent.controller)
             for i in 0...tableColumns.count-1 {
-                if !tableColumns[i].isEditable {
-                    continue
-                }
+                //if !tableColumns[i].isEditable {
+                //    continue
+                //}
                 let aView: NSTableCellView? = aRow.view(atColumn: i) as? NSTableCellView
                 if aView != nil {
                     if (aView?.subviews.count)! > 1 { // plusieurs controles dans la cellule
@@ -615,6 +615,12 @@ open class cmyTable: NSTableView {
                     
                     // ajout des controles à souce.ctrls
                     if aView?.subviews[0] is NSControl {
+                        if aView?.subviews[0] is cmyTextfield {
+                            (aView?.subviews[0] as! cmyTextfield).delegate = self.parent.controller as! cbaseController
+                        }
+                        if state == .nonedition {
+                            (aView?.subviews[0] as! NSControl).isEnabled = false
+                        }
                         source.ctrls.append(ctrl: aView?.subviews[0] as! NSControl, table: self)
                         if aView?.subviews[0] is cmyTextfield && state != .nonedition{
                             (aView?.subviews[0] as! cmyTextfield).isBezeled = true
