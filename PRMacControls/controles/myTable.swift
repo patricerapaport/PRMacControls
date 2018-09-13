@@ -614,27 +614,28 @@ open class cmyTable: NSTableView {
                     }
                     
                     // ajout des controles à souce.ctrls
-                    if aView?.subviews[0] is NSControl {
-                        if aView?.subviews[0] is cmyTextfield {
-                            (aView?.subviews[0] as! cmyTextfield).delegate = self.parent.controller as! cbaseController
+                    let view = aView?.subviews[0]
+                    if view is NSControl {
+                        if view is cmyTextfield {
+                            (view as! cmyTextfield).delegate = self.parent.controller as! cbaseController
+                            (view as! cmyTextfield).isEnabled = state != .nonedition
+                        } else if view is cmyCombo {
+                            (view as! cmyCombo).isEnabled = state != .nonedition
+                            if state != .nonedition && (aView?.subviews.count)! > 1 && aView?.subviews[1] is cmyTextfield {
+                                (view as! cmyCombo).stringValue = (aView?.subviews[1] as! cmyTextfield).stringValue
+                            }
+                        } else if view is cmyCheckbox {
+                            (view as! cmyCheckbox).isEnabled = state != .nonedition
+                        } else {
+                            (view as! NSControl).isEnabled = state != .nonedition
                         }
-                        if state == .nonedition {
-                            (aView?.subviews[0] as! NSControl).isEnabled = false
+                        source.ctrls.append(ctrl: view as! NSControl, table: self)
+                    }
+                    else if view is cmyCustomCheckbox {
+                        source.ctrls.append(aView: view!, table: self)
+                        if state != .nonedition && (aView?.subviews.count)! > 1 && aView?.subviews[1] is cmyTextfield {
+                            (view as! cmyCustomCheckbox).stringValue = (aView?.subviews[1] as! cmyTextfield).stringValue
                         }
-                        source.ctrls.append(ctrl: aView?.subviews[0] as! NSControl, table: self)
-                        if aView?.subviews[0] is cmyTextfield && state != .nonedition{
-                            (aView?.subviews[0] as! cmyTextfield).isBezeled = true
-                        }
-                    }
-                    else if aView?.subviews[0] is cmyCustomCheckbox {
-                        source.ctrls.append(aView: (aView?.subviews[0])!, table: self)
-                    }
-                    
-                    if state != .nonedition && aView?.subviews[0] is cmyCombo && aView?.subviews[1] is cmyTextfield {
-                        (aView?.subviews[0] as! cmyCombo).stringValue = (aView?.subviews[1] as! cmyTextfield).stringValue
-                    }
-                    else if state != .nonedition && aView?.subviews[0] is cmyCustomCheckbox && aView?.subviews[1] is cmyTextfield {
-                        (aView?.subviews[0] as! cmyCustomCheckbox).stringValue = (aView?.subviews[1] as! cmyTextfield).stringValue
                     }
                 }
             }
