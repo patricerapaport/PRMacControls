@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "38bbcb5442189469c6b1dfeec1a154b3"
-build_time: [1536839911, 981769000]
+build_time: [1536840270, 287502000]
 inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myOutline.swift": [1534051694, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTextfieldDecimal.swift": [1535801562, 0]
@@ -29,7 +29,7 @@ inputs:
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/misc/sourcetable.swift": [1534917347, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/mytoolbarItem.swift": [1534051744, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/web/downloadManager.swift": [1534082964, 0]
-  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/listController.swift": [1535884963, 0]
+  "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/listController.swift": [1536840216, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myCustomCheckbox.swift": [1534051587, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/documentPopoverController.swift": [1534049919, 0]
   "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/controles/myTable.swift": [1536839905, 0]

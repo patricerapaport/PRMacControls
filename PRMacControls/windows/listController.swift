@@ -176,12 +176,14 @@ extension clistController {
                 ixColumn = ixColumn + 1
             }
             (ctrlTable as! cmyTable).setState(etat: .edition)
-        } 
-        var index = 0
-        for i in 0...boutonsToolbar.count-1 {
-            let bt = boutonsToolbar[i]
-            if bt.insertInToolbar(controller: self, etat: .edition, index: index) {
-                index = index + 1
+        }
+        if boutonsToolbar != nil {
+            var index = 0
+            for i in 0...boutonsToolbar.count-1 {
+                let bt = boutonsToolbar[i]
+                if bt.insertInToolbar(controller: self, etat: .edition, index: index) {
+                    index = index + 1
+                }
             }
         }
        
