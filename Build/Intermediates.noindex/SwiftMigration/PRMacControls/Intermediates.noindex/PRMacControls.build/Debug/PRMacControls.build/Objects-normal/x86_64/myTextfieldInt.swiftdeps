@@ -1,0 +1,596 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "cmyTextFieldInt"
+provides-nominal:
+- "13PRMacControls15cmyTextFieldIntC"
+provides-member:
+- ["13PRMacControls15cmyTextFieldIntC", ""]
+provides-dynamic-lookup:
+- "bz"
+- "stringValue"
+depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "<"
+- !private "=="
+- !private ">"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "NSEvent"
+- "String"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- !private "ckeyboardKeys"
+- "cmyTextFieldInt"
+- "cmyTextFieldNum"
+- !private "||"
+depends-member:
+- !private ["Sa", "contains"]
+- !private ["s13ArrayProtocolP", "contains"]
+- !private ["SK", "contains"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "toInt"]
+- !private ["Sz", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "bz"]
+- !private ["s7CVarArgP", "characters"]
+- !private ["s7CVarArgP", "ckeyboardKeys"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "keyCode"]
+- !private ["s7CVarArgP", "stringValue"]
+- !private ["s7CVarArgP", "toInt"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "toInt"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "toInt"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "bz"]
+- !private ["s28CustomDebugStringConvertibleP", "characters"]
+- !private ["s28CustomDebugStringConvertibleP", "ckeyboardKeys"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "keyCode"]
+- !private ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "toInt"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "toInt"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "toInt"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "bz"]
+- !private ["s23CustomStringConvertibleP", "characters"]
+- !private ["s23CustomStringConvertibleP", "ckeyboardKeys"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "keyCode"]
+- !private ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "toInt"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "contains"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "toInt"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "contains"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "toInt"]
+- !private ["SQ", "Int"]
+- !private ["SQ", "String"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "bz"]
+- !private ["SQ", "characters"]
+- !private ["SQ", "ckeyboardKeys"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "keyCode"]
+- !private ["SQ", "stringValue"]
+- !private ["SQ", "toInt"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "toInt"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "toInt"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "toInt"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "Int"]
+- !private ["SH", "String"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "bz"]
+- !private ["SH", "characters"]
+- !private ["SH", "ckeyboardKeys"]
+- !private ["SH", "contains"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "keyCode"]
+- !private ["SH", "stringValue"]
+- !private ["SH", "toInt"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "toInt"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "toInt"]
+- !private ["SM", "contains"]
+- !private ["So22NSAccessibilityElementP", "Int"]
+- !private ["So22NSAccessibilityElementP", "String"]
+- ["So22NSAccessibilityElementP", ""]
+- !private ["So22NSAccessibilityElementP", "bz"]
+- !private ["So22NSAccessibilityElementP", "ckeyboardKeys"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "stringValue"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "Int"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "String"]
+- ["So34NSAccessibilityNavigableStaticTextP", ""]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "bz"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "ckeyboardKeys"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "init"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "init"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "stringValue"]
+- !private ["So15NSAccessibilityP", "Int"]
+- !private ["So15NSAccessibilityP", "String"]
+- ["So15NSAccessibilityP", ""]
+- !private ["So15NSAccessibilityP", "bz"]
+- !private ["So15NSAccessibilityP", "ckeyboardKeys"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "stringValue"]
+- !private ["So25NSAccessibilityStaticTextP", "Int"]
+- !private ["So25NSAccessibilityStaticTextP", "String"]
+- ["So25NSAccessibilityStaticTextP", ""]
+- !private ["So25NSAccessibilityStaticTextP", "bz"]
+- !private ["So25NSAccessibilityStaticTextP", "ckeyboardKeys"]
+- !private ["So25NSAccessibilityStaticTextP", "init"]
+- !private ["So25NSAccessibilityStaticTextP", "init"]
+- !private ["So25NSAccessibilityStaticTextP", "stringValue"]
+- !private ["So29NSAnimatablePropertyContainerP", "Int"]
+- !private ["So29NSAnimatablePropertyContainerP", "String"]
+- ["So29NSAnimatablePropertyContainerP", ""]
+- !private ["So29NSAnimatablePropertyContainerP", "bz"]
+- !private ["So29NSAnimatablePropertyContainerP", "ckeyboardKeys"]
+- !private ["So29NSAnimatablePropertyContainerP", "init"]
+- !private ["So29NSAnimatablePropertyContainerP", "init"]
+- !private ["So29NSAnimatablePropertyContainerP", "stringValue"]
+- !private ["So25NSAppearanceCustomizationP", "Int"]
+- !private ["So25NSAppearanceCustomizationP", "String"]
+- ["So25NSAppearanceCustomizationP", ""]
+- !private ["So25NSAppearanceCustomizationP", "bz"]
+- !private ["So25NSAppearanceCustomizationP", "ckeyboardKeys"]
+- !private ["So25NSAppearanceCustomizationP", "init"]
+- !private ["So25NSAppearanceCustomizationP", "init"]
+- !private ["So25NSAppearanceCustomizationP", "stringValue"]
+- !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "String"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "bz"]
+- !private ["So8NSCodingP", "characters"]
+- !private ["So8NSCodingP", "ckeyboardKeys"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "keyCode"]
+- !private ["So8NSCodingP", "stringValue"]
+- !private ["So8NSCodingP", "toInt"]
+- ["So9NSControlC", "Bool"]
+- ["So9NSControlC", "Int"]
+- ["So9NSControlC", "NSEvent"]
+- ["So9NSControlC", "String"]
+- ["So9NSControlC", "acceptKey"]
+- ["So9NSControlC", "bz"]
+- !private ["So9NSControlC", "ckeyboardKeys"]
+- ["So9NSControlC", "init"]
+- !private ["So9NSControlC", "init"]
+- ["So9NSControlC", "intVal"]
+- ["So9NSControlC", "stringValue"]
+- !private ["So28NSControlTextEditingDelegateP", "Int"]
+- !private ["So28NSControlTextEditingDelegateP", "String"]
+- ["So28NSControlTextEditingDelegateP", ""]
+- !private ["So28NSControlTextEditingDelegateP", "bz"]
+- !private ["So28NSControlTextEditingDelegateP", "ckeyboardKeys"]
+- !private ["So28NSControlTextEditingDelegateP", "init"]
+- !private ["So28NSControlTextEditingDelegateP", "init"]
+- !private ["So28NSControlTextEditingDelegateP", "stringValue"]
+- !private ["So9NSCopyingP", "characters"]
+- !private ["So9NSCopyingP", "keyCode"]
+- !private ["So9NSCopyingP", "toInt"]
+- !private ["So21NSDraggingDestinationP", "Int"]
+- !private ["So21NSDraggingDestinationP", "String"]
+- ["So21NSDraggingDestinationP", ""]
+- !private ["So21NSDraggingDestinationP", "bz"]
+- !private ["So21NSDraggingDestinationP", "ckeyboardKeys"]
+- !private ["So21NSDraggingDestinationP", "init"]
+- !private ["So21NSDraggingDestinationP", "init"]
+- !private ["So21NSDraggingDestinationP", "stringValue"]
+- !private ["So7NSEventC", "characters"]
+- !private ["So7NSEventC", "keyCode"]
+- !private ["So21NSItemProviderReadingP", "toInt"]
+- !private ["So21NSItemProviderWritingP", "toInt"]
+- !private ["So16NSMutableCopyingP", "toInt"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NSEvent"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "acceptKey"]
+- ["So8NSObjectC", "bz"]
+- !private ["So8NSObjectC", "characters"]
+- !private ["So8NSObjectC", "ckeyboardKeys"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "intVal"]
+- !private ["So8NSObjectC", "keyCode"]
+- ["So8NSObjectC", "stringValue"]
+- !private ["So8NSObjectC", "toInt"]
+- !private ["So8NSObjectP", "Int"]
+- !private ["So8NSObjectP", "String"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bz"]
+- !private ["So8NSObjectP", "characters"]
+- !private ["So8NSObjectP", "ckeyboardKeys"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "keyCode"]
+- !private ["So8NSObjectP", "stringValue"]
+- !private ["So8NSObjectP", "toInt"]
+- !private ["So19NSPasteboardReadingP", "toInt"]
+- !private ["So19NSPasteboardWritingP", "toInt"]
+- ["So11NSResponderC", "Bool"]
+- ["So11NSResponderC", "Int"]
+- ["So11NSResponderC", "NSEvent"]
+- ["So11NSResponderC", "String"]
+- ["So11NSResponderC", "acceptKey"]
+- ["So11NSResponderC", "bz"]
+- !private ["So11NSResponderC", "ckeyboardKeys"]
+- ["So11NSResponderC", "init"]
+- !private ["So11NSResponderC", "init"]
+- ["So11NSResponderC", "intVal"]
+- ["So11NSResponderC", "stringValue"]
+- !private ["So14NSSecureCodingP", "toInt"]
+- !private ["So30NSStandardKeyBindingRespondingP", "Int"]
+- !private ["So30NSStandardKeyBindingRespondingP", "String"]
+- ["So30NSStandardKeyBindingRespondingP", ""]
+- !private ["So30NSStandardKeyBindingRespondingP", "bz"]
+- !private ["So30NSStandardKeyBindingRespondingP", "ckeyboardKeys"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "stringValue"]
+- !private ["So8NSStringC", "toInt"]
+- ["So11NSTextFieldC", "Bool"]
+- ["So11NSTextFieldC", "Int"]
+- ["So11NSTextFieldC", "NSEvent"]
+- ["So11NSTextFieldC", "String"]
+- ["So11NSTextFieldC", "acceptKey"]
+- ["So11NSTextFieldC", "bz"]
+- !private ["So11NSTextFieldC", "ckeyboardKeys"]
+- ["So11NSTextFieldC", "init"]
+- !private ["So11NSTextFieldC", "init"]
+- ["So11NSTextFieldC", "intVal"]
+- ["So11NSTextFieldC", "stringValue"]
+- !private ["So19NSTextFieldDelegateP", "Int"]
+- !private ["So19NSTextFieldDelegateP", "String"]
+- ["So19NSTextFieldDelegateP", ""]
+- !private ["So19NSTextFieldDelegateP", "bz"]
+- !private ["So19NSTextFieldDelegateP", "ckeyboardKeys"]
+- !private ["So19NSTextFieldDelegateP", "init"]
+- !private ["So19NSTextFieldDelegateP", "init"]
+- !private ["So19NSTextFieldDelegateP", "stringValue"]
+- !private ["So18NSTouchBarProviderP", "Int"]
+- !private ["So18NSTouchBarProviderP", "String"]
+- ["So18NSTouchBarProviderP", ""]
+- !private ["So18NSTouchBarProviderP", "bz"]
+- !private ["So18NSTouchBarProviderP", "ckeyboardKeys"]
+- !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "stringValue"]
+- !private ["So23NSUserActivityRestoringP", "Int"]
+- !private ["So23NSUserActivityRestoringP", "String"]
+- ["So23NSUserActivityRestoringP", ""]
+- !private ["So23NSUserActivityRestoringP", "bz"]
+- !private ["So23NSUserActivityRestoringP", "ckeyboardKeys"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "stringValue"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "Int"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "String"]
+- ["So33NSUserInterfaceItemIdentificationP", ""]
+- !private ["So33NSUserInterfaceItemIdentificationP", "bz"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "ckeyboardKeys"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "init"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "init"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "stringValue"]
+- !private ["So26NSUserInterfaceValidationsP", "Int"]
+- !private ["So26NSUserInterfaceValidationsP", "String"]
+- ["So26NSUserInterfaceValidationsP", ""]
+- !private ["So26NSUserInterfaceValidationsP", "bz"]
+- !private ["So26NSUserInterfaceValidationsP", "ckeyboardKeys"]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
+- !private ["So26NSUserInterfaceValidationsP", "stringValue"]
+- ["So6NSViewC", "Bool"]
+- ["So6NSViewC", "Int"]
+- ["So6NSViewC", "NSEvent"]
+- ["So6NSViewC", "String"]
+- ["So6NSViewC", "acceptKey"]
+- ["So6NSViewC", "bz"]
+- !private ["So6NSViewC", "ckeyboardKeys"]
+- ["So6NSViewC", "init"]
+- !private ["So6NSViewC", "init"]
+- ["So6NSViewC", "intVal"]
+- ["So6NSViewC", "stringValue"]
+- !private ["Sj", "init"]
+- !private ["Sk", "contains"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "toInt"]
+- !private ["ST", "contains"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "toInt"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "toInt"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "toInt"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "toInt"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "toInt"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "toInt"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Int"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "String"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bz"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "ckeyboardKeys"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "stringValue"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "toInt"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "toInt"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "toInt"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "toInt"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "toInt"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "toInt"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bz"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ckeyboardKeys"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "keyCode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stringValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "toInt"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "toInt"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "toInt"]
+- !private ["13PRMacControls13ckeyboardKeysC", "delete"]
+- !private ["13PRMacControls13ckeyboardKeysC", "leftArrow"]
+- !private ["13PRMacControls13ckeyboardKeysC", "rightArrow"]
+- ["13PRMacControls15cmyTextFieldIntC", "Bool"]
+- ["13PRMacControls15cmyTextFieldIntC", "Int"]
+- ["13PRMacControls15cmyTextFieldIntC", "NSEvent"]
+- ["13PRMacControls15cmyTextFieldIntC", "String"]
+- ["13PRMacControls15cmyTextFieldIntC", "acceptKey"]
+- ["13PRMacControls15cmyTextFieldIntC", "bz"]
+- !private ["13PRMacControls15cmyTextFieldIntC", "ckeyboardKeys"]
+- ["13PRMacControls15cmyTextFieldIntC", "init"]
+- ["13PRMacControls15cmyTextFieldIntC", "intVal"]
+- ["13PRMacControls15cmyTextFieldIntC", "stringValue"]
+- ["13PRMacControls15cmyTextFieldNumC", "Bool"]
+- ["13PRMacControls15cmyTextFieldNumC", "Int"]
+- ["13PRMacControls15cmyTextFieldNumC", "NSEvent"]
+- ["13PRMacControls15cmyTextFieldNumC", "String"]
+- ["13PRMacControls15cmyTextFieldNumC", ""]
+- ["13PRMacControls15cmyTextFieldNumC", "acceptKey"]
+- ["13PRMacControls15cmyTextFieldNumC", "bz"]
+- !private ["13PRMacControls15cmyTextFieldNumC", "ckeyboardKeys"]
+- !private ["13PRMacControls15cmyTextFieldNumC", "deinit"]
+- ["13PRMacControls15cmyTextFieldNumC", "init"]
+- !private ["13PRMacControls15cmyTextFieldNumC", "init"]
+- ["13PRMacControls15cmyTextFieldNumC", "intVal"]
+- ["13PRMacControls15cmyTextFieldNumC", "stringValue"]
+- ["13PRMacControls12cmyTextfieldC", "Bool"]
+- ["13PRMacControls12cmyTextfieldC", "Int"]
+- ["13PRMacControls12cmyTextfieldC", "NSEvent"]
+- ["13PRMacControls12cmyTextfieldC", "String"]
+- ["13PRMacControls12cmyTextfieldC", "acceptKey"]
+- ["13PRMacControls12cmyTextfieldC", "bz"]
+- !private ["13PRMacControls12cmyTextfieldC", "ckeyboardKeys"]
+- ["13PRMacControls12cmyTextfieldC", "init"]
+- !private ["13PRMacControls12cmyTextfieldC", "init"]
+- ["13PRMacControls12cmyTextfieldC", "intVal"]
+- ["13PRMacControls12cmyTextfieldC", "stringValue"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "Sz"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- "So22NSAccessibilityElementP"
+- "So34NSAccessibilityNavigableStaticTextP"
+- "So15NSAccessibilityP"
+- "So25NSAccessibilityStaticTextP"
+- "So29NSAnimatablePropertyContainerP"
+- "So25NSAppearanceCustomizationP"
+- "So8NSCodingP"
+- "So9NSControlC"
+- "So28NSControlTextEditingDelegateP"
+- !private "So9NSCopyingP"
+- "So21NSDraggingDestinationP"
+- !private "So7NSEventC"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- "So11NSResponderC"
+- !private "So14NSSecureCodingP"
+- "So30NSStandardKeyBindingRespondingP"
+- !private "So8NSStringC"
+- "So11NSTextFieldC"
+- "So19NSTextFieldDelegateP"
+- "So18NSTouchBarProviderP"
+- "So23NSUserActivityRestoringP"
+- "So33NSUserInterfaceItemIdentificationP"
+- "So26NSUserInterfaceValidationsP"
+- "So6NSViewC"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s18_BitwiseOperationsP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+- !private "13PRMacControls13ckeyboardKeysC"
+- "13PRMacControls15cmyTextFieldIntC"
+- "13PRMacControls15cmyTextFieldNumC"
+- "13PRMacControls12cmyTextfieldC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/PRMacControls.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1bab52e64253c10b1258c15598cd1d99"

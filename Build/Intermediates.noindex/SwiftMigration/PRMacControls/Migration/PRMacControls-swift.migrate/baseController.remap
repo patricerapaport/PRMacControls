@@ -1,0 +1,38 @@
+[
+  {
+    "file": "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift",
+    "offset": 2482,
+    "remove": 12,
+    "text": " "
+  },
+  {
+    "file": "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift",
+    "offset": 2499,
+    "remove": 2,
+    "text": "]"
+  },
+  {
+    "file": "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift",
+    "offset": 2537,
+    "remove": 12,
+    "text": " "
+  },
+  {
+    "file": "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift",
+    "offset": 2554,
+    "remove": 2,
+    "text": "]"
+  },
+  {
+    "file": "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift",
+    "offset": 4911,
+    "remove": 11,
+    "text": "!"
+  },
+  {
+    "file": "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/windows/baseController.swift",
+    "offset": 29612,
+    "remove": 10,
+    "text": " "
+  }
+]

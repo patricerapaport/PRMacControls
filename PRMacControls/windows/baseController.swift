@@ -61,9 +61,9 @@ protocol myBaseServiceTabview {
     override open var windowNibName: NSNib.Name? {
         let els = className.components(separatedBy: ".")
         if els.count > 1 {
-            return NSNib.Name(els[1])
+            return els[1]
         } else {
-            return NSNib.Name(els[0])
+            return els[0]
         }
     }
     
@@ -147,7 +147,7 @@ protocol myBaseServiceTabview {
     override open func windowDidLoad() {
         super.windowDidLoad()
         
-        windowFrameAutosaveName = (windowNibName!.rawValue as NSString) as NSWindow.FrameAutosaveName
+        windowFrameAutosaveName = (windowNibName!as NSString) as NSWindow.FrameAutosaveName
         window?.setFrameUsingName(windowFrameAutosaveName)
         
         if (window is cmyWindow) {
@@ -804,7 +804,7 @@ extension cbaseController: NSPopoverDelegate {
 }
 
 extension cbaseController : NSTextFieldDelegate {
-    override open func controlTextDidBeginEditing(_ obj: Notification) {
+    open func controlTextDidBeginEditing(_ obj: Notification) {
         Swift.print("didbeginediting")
     }
 }

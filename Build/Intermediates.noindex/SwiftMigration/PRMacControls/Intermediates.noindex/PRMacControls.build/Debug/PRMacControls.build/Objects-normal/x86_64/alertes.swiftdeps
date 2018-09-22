@@ -1,0 +1,286 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "messageBox"
+provides-nominal:
+- "13PRMacControls10messageBoxC"
+provides-member:
+- ["13PRMacControls10messageBoxC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "NSAlert"
+- !private "NSApplication"
+- "String"
+- !private "StringLiteralType"
+- "messageBox"
+depends-member:
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "ModalResponse"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "addButton"]
+- !private ["s7CVarArgP", "informativeText"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "messageText"]
+- !private ["s7CVarArgP", "runModal"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "ModalResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "addButton"]
+- !private ["s28CustomDebugStringConvertibleP", "informativeText"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "messageText"]
+- !private ["s28CustomDebugStringConvertibleP", "runModal"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "addButton"]
+- !private ["s17CustomReflectableP", "informativeText"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "messageText"]
+- !private ["s17CustomReflectableP", "runModal"]
+- !private ["s23CustomStringConvertibleP", "ModalResponse"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addButton"]
+- !private ["s23CustomStringConvertibleP", "informativeText"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "messageText"]
+- !private ["s23CustomStringConvertibleP", "runModal"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "addButton"]
+- !private ["Se", "informativeText"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "messageText"]
+- !private ["Se", "runModal"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "addButton"]
+- !private ["SE", "informativeText"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "messageText"]
+- !private ["SE", "runModal"]
+- !private ["SQ", "ModalResponse"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addButton"]
+- !private ["SQ", "alertSecondButtonReturn"]
+- !private ["SQ", "informativeText"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "messageText"]
+- !private ["SQ", "runModal"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "addButton"]
+- !private ["s23ExpressibleByNilLiteralP", "informativeText"]
+- !private ["s23ExpressibleByNilLiteralP", "messageText"]
+- !private ["s23ExpressibleByNilLiteralP", "runModal"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "ModalResponse"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addButton"]
+- !private ["SH", "alertSecondButtonReturn"]
+- !private ["SH", "informativeText"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "messageText"]
+- !private ["SH", "runModal"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So15NSModalResponsea", "alertSecondButtonReturn"]
+- !private ["So22NSAccessibilityElementP", "ModalResponse"]
+- !private ["So15NSAccessibilityP", "ModalResponse"]
+- !private ["So7NSAlertC", "addButton"]
+- !private ["So7NSAlertC", "informativeText"]
+- !private ["So7NSAlertC", "init"]
+- !private ["So7NSAlertC", "messageText"]
+- !private ["So7NSAlertC", "runModal"]
+- !private ["So25NSAppearanceCustomizationP", "ModalResponse"]
+- !private ["So13NSApplicationC", "ModalResponse"]
+- !private ["So8NSCodingP", "ModalResponse"]
+- !private ["So20NSMenuItemValidationP", "ModalResponse"]
+- !private ["So8NSObjectC", "ModalResponse"]
+- !private ["So8NSObjectC", "addButton"]
+- !private ["So8NSObjectC", "informativeText"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "messageText"]
+- !private ["So8NSObjectC", "runModal"]
+- !private ["So8NSObjectP", "ModalResponse"]
+- !private ["So8NSObjectP", "addButton"]
+- !private ["So8NSObjectP", "informativeText"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "messageText"]
+- !private ["So8NSObjectP", "runModal"]
+- !private ["So11NSResponderC", "ModalResponse"]
+- !private ["So30NSStandardKeyBindingRespondingP", "ModalResponse"]
+- !private ["So18NSTouchBarProviderP", "ModalResponse"]
+- !private ["So23NSUserActivityRestoringP", "ModalResponse"]
+- !private ["So26NSUserInterfaceValidationsP", "ModalResponse"]
+- !private ["Sq", "addButton"]
+- !private ["Sq", "informativeText"]
+- !private ["Sq", "messageText"]
+- !private ["Sq", "runModal"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "alertSecondButtonReturn"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "alertSecondButtonReturn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ModalResponse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "informativeText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "messageText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "runModal"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "addButton"]
+- !private ["s21_ObjectiveCBridgeableP", "alertSecondButtonReturn"]
+- !private ["s21_ObjectiveCBridgeableP", "informativeText"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "messageText"]
+- !private ["s21_ObjectiveCBridgeableP", "runModal"]
+- !private ["s20_SwiftNewtypeWrapperP", "alertSecondButtonReturn"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- ["13PRMacControls10messageBoxC", "Bool"]
+- ["13PRMacControls10messageBoxC", "NSAlert"]
+- !private ["13PRMacControls10messageBoxC", "NSApplication"]
+- ["13PRMacControls10messageBoxC", "String"]
+- ["13PRMacControls10messageBoxC", "alert"]
+- ["13PRMacControls10messageBoxC", "init"]
+- ["13PRMacControls10messageBoxC", "runModal"]
+depends-nominal:
+- !private "SK"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So15NSModalResponsea"
+- !private "So22NSAccessibilityElementP"
+- !private "So15NSAccessibilityP"
+- !private "So7NSAlertC"
+- !private "So25NSAppearanceCustomizationP"
+- !private "So13NSApplicationC"
+- !private "So8NSCodingP"
+- !private "So20NSMenuItemValidationP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So11NSResponderC"
+- !private "So30NSStandardKeyBindingRespondingP"
+- !private "So18NSTouchBarProviderP"
+- !private "So23NSUserActivityRestoringP"
+- !private "So26NSUserInterfaceValidationsP"
+- !private "Sq"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+- "13PRMacControls10messageBoxC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/PRMacControls.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1209fbc29a64f29b12b64dabd441779e"

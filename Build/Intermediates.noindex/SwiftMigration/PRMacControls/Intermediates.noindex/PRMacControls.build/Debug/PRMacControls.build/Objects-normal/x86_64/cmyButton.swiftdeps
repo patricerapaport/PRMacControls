@@ -1,0 +1,689 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "cmyButton"
+provides-nominal:
+- "13PRMacControls9cmyButtonC"
+provides-member:
+- ["13PRMacControls9cmyButtonC", ""]
+provides-dynamic-lookup:
+- "draw"
+- "mouseDown"
+- "tipeName"
+depends-top-level:
+- !private "!="
+- !private "=="
+- !private "??"
+- "AssignmentPrecedence"
+- "NSButton"
+- "NSEvent"
+- "NSRect"
+- "NSResponder"
+- !private "Selector"
+- "String"
+- !private "StringLiteralType"
+- "cmyButton"
+- "cmyControl"
+- "cmyTypesBoutons"
+- "etatWindow"
+depends-member:
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "lowercased"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Selector"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_type"]
+- !private ["s7CVarArgP", "action"]
+- !private ["s7CVarArgP", "cmyTypesBoutons"]
+- !private ["s7CVarArgP", "controller"]
+- !private ["s7CVarArgP", "draw"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEnabled"]
+- !private ["s7CVarArgP", "lowercased"]
+- !private ["s7CVarArgP", "mouseDown"]
+- !private ["s7CVarArgP", "parent"]
+- !private ["s7CVarArgP", "perform"]
+- !private ["s7CVarArgP", "responds"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "lowercased"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "lowercased"]
+- !private ["s28CustomDebugStringConvertibleP", "Selector"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "_type"]
+- !private ["s28CustomDebugStringConvertibleP", "action"]
+- !private ["s28CustomDebugStringConvertibleP", "cmyTypesBoutons"]
+- !private ["s28CustomDebugStringConvertibleP", "controller"]
+- !private ["s28CustomDebugStringConvertibleP", "draw"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "lowercased"]
+- !private ["s28CustomDebugStringConvertibleP", "mouseDown"]
+- !private ["s28CustomDebugStringConvertibleP", "parent"]
+- !private ["s28CustomDebugStringConvertibleP", "perform"]
+- !private ["s28CustomDebugStringConvertibleP", "responds"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "lowercased"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "controller"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "lowercased"]
+- !private ["s23CustomStringConvertibleP", "Selector"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "_type"]
+- !private ["s23CustomStringConvertibleP", "action"]
+- !private ["s23CustomStringConvertibleP", "cmyTypesBoutons"]
+- !private ["s23CustomStringConvertibleP", "controller"]
+- !private ["s23CustomStringConvertibleP", "draw"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEnabled"]
+- !private ["s23CustomStringConvertibleP", "lowercased"]
+- !private ["s23CustomStringConvertibleP", "mouseDown"]
+- !private ["s23CustomStringConvertibleP", "parent"]
+- !private ["s23CustomStringConvertibleP", "perform"]
+- !private ["s23CustomStringConvertibleP", "responds"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "controller"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "lowercased"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "controller"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "lowercased"]
+- !private ["SQ", "Selector"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "_type"]
+- !private ["SQ", "action"]
+- ["SQ", "ajouter"]
+- ["SQ", "annuler"]
+- ["SQ", "autre"]
+- !private ["SQ", "cmyTypesBoutons"]
+- !private ["SQ", "controller"]
+- !private ["SQ", "draw"]
+- ["SQ", "enregistrer"]
+- ["SQ", "imprimer"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEnabled"]
+- !private ["SQ", "lowercased"]
+- ["SQ", "modifier"]
+- !private ["SQ", "mouseDown"]
+- !private ["SQ", "nonedition"]
+- !private ["SQ", "parent"]
+- !private ["SQ", "perform"]
+- ["SQ", "reglement"]
+- !private ["SQ", "responds"]
+- ["SQ", "supprimer"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s23ExpressibleByNilLiteralP", "controller"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "lowercased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
+- !private ["SH", "Selector"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "_type"]
+- !private ["SH", "action"]
+- ["SH", "ajouter"]
+- ["SH", "annuler"]
+- ["SH", "autre"]
+- !private ["SH", "cmyTypesBoutons"]
+- !private ["SH", "controller"]
+- !private ["SH", "draw"]
+- ["SH", "enregistrer"]
+- ["SH", "imprimer"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isEnabled"]
+- !private ["SH", "lowercased"]
+- ["SH", "modifier"]
+- !private ["SH", "mouseDown"]
+- !private ["SH", "nonedition"]
+- !private ["SH", "parent"]
+- !private ["SH", "perform"]
+- ["SH", "reglement"]
+- !private ["SH", "responds"]
+- ["SH", "supprimer"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "lowercased"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "lowercased"]
+- !private ["So21NSAccessibilityButtonP", "Selector"]
+- ["So21NSAccessibilityButtonP", ""]
+- !private ["So21NSAccessibilityButtonP", "_type"]
+- !private ["So21NSAccessibilityButtonP", "action"]
+- !private ["So21NSAccessibilityButtonP", "cmyTypesBoutons"]
+- !private ["So21NSAccessibilityButtonP", "controller"]
+- !private ["So21NSAccessibilityButtonP", "draw"]
+- !private ["So21NSAccessibilityButtonP", "init"]
+- !private ["So21NSAccessibilityButtonP", "init"]
+- !private ["So21NSAccessibilityButtonP", "isEnabled"]
+- !private ["So21NSAccessibilityButtonP", "mouseDown"]
+- !private ["So21NSAccessibilityButtonP", "parent"]
+- !private ["So22NSAccessibilityElementP", "Selector"]
+- ["So22NSAccessibilityElementP", ""]
+- !private ["So22NSAccessibilityElementP", "_type"]
+- !private ["So22NSAccessibilityElementP", "action"]
+- !private ["So22NSAccessibilityElementP", "cmyTypesBoutons"]
+- !private ["So22NSAccessibilityElementP", "controller"]
+- !private ["So22NSAccessibilityElementP", "draw"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "isEnabled"]
+- !private ["So22NSAccessibilityElementP", "mouseDown"]
+- !private ["So22NSAccessibilityElementP", "parent"]
+- !private ["So15NSAccessibilityP", "Selector"]
+- ["So15NSAccessibilityP", ""]
+- !private ["So15NSAccessibilityP", "_type"]
+- !private ["So15NSAccessibilityP", "action"]
+- !private ["So15NSAccessibilityP", "cmyTypesBoutons"]
+- !private ["So15NSAccessibilityP", "controller"]
+- !private ["So15NSAccessibilityP", "draw"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "isEnabled"]
+- !private ["So15NSAccessibilityP", "mouseDown"]
+- !private ["So15NSAccessibilityP", "parent"]
+- !private ["So29NSAnimatablePropertyContainerP", "Selector"]
+- ["So29NSAnimatablePropertyContainerP", ""]
+- !private ["So29NSAnimatablePropertyContainerP", "_type"]
+- !private ["So29NSAnimatablePropertyContainerP", "action"]
+- !private ["So29NSAnimatablePropertyContainerP", "cmyTypesBoutons"]
+- !private ["So29NSAnimatablePropertyContainerP", "controller"]
+- !private ["So29NSAnimatablePropertyContainerP", "draw"]
+- !private ["So29NSAnimatablePropertyContainerP", "init"]
+- !private ["So29NSAnimatablePropertyContainerP", "init"]
+- !private ["So29NSAnimatablePropertyContainerP", "isEnabled"]
+- !private ["So29NSAnimatablePropertyContainerP", "mouseDown"]
+- !private ["So29NSAnimatablePropertyContainerP", "parent"]
+- !private ["So25NSAppearanceCustomizationP", "Selector"]
+- ["So25NSAppearanceCustomizationP", ""]
+- !private ["So25NSAppearanceCustomizationP", "_type"]
+- !private ["So25NSAppearanceCustomizationP", "action"]
+- !private ["So25NSAppearanceCustomizationP", "cmyTypesBoutons"]
+- !private ["So25NSAppearanceCustomizationP", "controller"]
+- !private ["So25NSAppearanceCustomizationP", "draw"]
+- !private ["So25NSAppearanceCustomizationP", "init"]
+- !private ["So25NSAppearanceCustomizationP", "init"]
+- !private ["So25NSAppearanceCustomizationP", "isEnabled"]
+- !private ["So25NSAppearanceCustomizationP", "mouseDown"]
+- !private ["So25NSAppearanceCustomizationP", "parent"]
+- ["So8NSButtonC", "NSEvent"]
+- ["So8NSButtonC", "NSRect"]
+- ["So8NSButtonC", "NSResponder"]
+- !private ["So8NSButtonC", "Selector"]
+- ["So8NSButtonC", "String"]
+- ["So8NSButtonC", ""]
+- ["So8NSButtonC", "_type"]
+- !private ["So8NSButtonC", "action"]
+- ["So8NSButtonC", "cmyControl"]
+- ["So8NSButtonC", "cmyTypesBoutons"]
+- ["So8NSButtonC", "controller"]
+- ["So8NSButtonC", "draw"]
+- ["So8NSButtonC", "etatWindow"]
+- ["So8NSButtonC", "init"]
+- !private ["So8NSButtonC", "init"]
+- !private ["So8NSButtonC", "isEnabled"]
+- ["So8NSButtonC", "mouseDown"]
+- ["So8NSButtonC", "parent"]
+- ["So8NSButtonC", "setState"]
+- ["So8NSButtonC", "tipeName"]
+- !private ["So8NSCodingP", "Selector"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "_type"]
+- !private ["So8NSCodingP", "action"]
+- !private ["So8NSCodingP", "cmyTypesBoutons"]
+- !private ["So8NSCodingP", "controller"]
+- !private ["So8NSCodingP", "draw"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isEnabled"]
+- !private ["So8NSCodingP", "lowercased"]
+- !private ["So8NSCodingP", "mouseDown"]
+- !private ["So8NSCodingP", "parent"]
+- !private ["So8NSCodingP", "perform"]
+- !private ["So8NSCodingP", "responds"]
+- ["So9NSControlC", "NSEvent"]
+- ["So9NSControlC", "NSRect"]
+- ["So9NSControlC", "NSResponder"]
+- !private ["So9NSControlC", "Selector"]
+- ["So9NSControlC", "String"]
+- ["So9NSControlC", "_type"]
+- !private ["So9NSControlC", "action"]
+- ["So9NSControlC", "cmyControl"]
+- ["So9NSControlC", "cmyTypesBoutons"]
+- ["So9NSControlC", "controller"]
+- ["So9NSControlC", "draw"]
+- ["So9NSControlC", "etatWindow"]
+- ["So9NSControlC", "init"]
+- !private ["So9NSControlC", "init"]
+- !private ["So9NSControlC", "isEnabled"]
+- ["So9NSControlC", "mouseDown"]
+- ["So9NSControlC", "parent"]
+- ["So9NSControlC", "setState"]
+- ["So9NSControlC", "tipeName"]
+- !private ["So9NSCopyingP", "lowercased"]
+- !private ["So21NSDraggingDestinationP", "Selector"]
+- ["So21NSDraggingDestinationP", ""]
+- !private ["So21NSDraggingDestinationP", "_type"]
+- !private ["So21NSDraggingDestinationP", "action"]
+- !private ["So21NSDraggingDestinationP", "cmyTypesBoutons"]
+- !private ["So21NSDraggingDestinationP", "controller"]
+- !private ["So21NSDraggingDestinationP", "draw"]
+- !private ["So21NSDraggingDestinationP", "init"]
+- !private ["So21NSDraggingDestinationP", "init"]
+- !private ["So21NSDraggingDestinationP", "isEnabled"]
+- !private ["So21NSDraggingDestinationP", "mouseDown"]
+- !private ["So21NSDraggingDestinationP", "parent"]
+- !private ["So21NSItemProviderReadingP", "lowercased"]
+- !private ["So21NSItemProviderWritingP", "lowercased"]
+- !private ["So16NSMutableCopyingP", "lowercased"]
+- ["So8NSObjectC", "NSEvent"]
+- ["So8NSObjectC", "NSRect"]
+- ["So8NSObjectC", "NSResponder"]
+- !private ["So8NSObjectC", "Selector"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "_type"]
+- !private ["So8NSObjectC", "action"]
+- ["So8NSObjectC", "cmyControl"]
+- ["So8NSObjectC", "cmyTypesBoutons"]
+- ["So8NSObjectC", "controller"]
+- ["So8NSObjectC", "draw"]
+- ["So8NSObjectC", "etatWindow"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEnabled"]
+- !private ["So8NSObjectC", "lowercased"]
+- ["So8NSObjectC", "mouseDown"]
+- ["So8NSObjectC", "parent"]
+- !private ["So8NSObjectC", "perform"]
+- !private ["So8NSObjectC", "responds"]
+- ["So8NSObjectC", "setState"]
+- ["So8NSObjectC", "tipeName"]
+- !private ["So8NSObjectP", "Selector"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "_type"]
+- !private ["So8NSObjectP", "action"]
+- !private ["So8NSObjectP", "cmyTypesBoutons"]
+- !private ["So8NSObjectP", "controller"]
+- !private ["So8NSObjectP", "draw"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEnabled"]
+- !private ["So8NSObjectP", "lowercased"]
+- !private ["So8NSObjectP", "mouseDown"]
+- !private ["So8NSObjectP", "parent"]
+- !private ["So8NSObjectP", "perform"]
+- !private ["So8NSObjectP", "responds"]
+- !private ["So19NSPasteboardReadingP", "lowercased"]
+- !private ["So19NSPasteboardWritingP", "lowercased"]
+- ["So11NSResponderC", "NSEvent"]
+- ["So11NSResponderC", "NSRect"]
+- ["So11NSResponderC", "NSResponder"]
+- !private ["So11NSResponderC", "Selector"]
+- ["So11NSResponderC", "String"]
+- ["So11NSResponderC", "_type"]
+- !private ["So11NSResponderC", "action"]
+- ["So11NSResponderC", "cmyControl"]
+- ["So11NSResponderC", "cmyTypesBoutons"]
+- ["So11NSResponderC", "controller"]
+- ["So11NSResponderC", "draw"]
+- ["So11NSResponderC", "etatWindow"]
+- ["So11NSResponderC", "init"]
+- !private ["So11NSResponderC", "init"]
+- !private ["So11NSResponderC", "isEnabled"]
+- ["So11NSResponderC", "mouseDown"]
+- ["So11NSResponderC", "parent"]
+- !private ["So11NSResponderC", "perform"]
+- !private ["So11NSResponderC", "responds"]
+- ["So11NSResponderC", "setState"]
+- ["So11NSResponderC", "tipeName"]
+- !private ["So14NSSecureCodingP", "lowercased"]
+- !private ["So30NSStandardKeyBindingRespondingP", "Selector"]
+- ["So30NSStandardKeyBindingRespondingP", ""]
+- !private ["So30NSStandardKeyBindingRespondingP", "_type"]
+- !private ["So30NSStandardKeyBindingRespondingP", "action"]
+- !private ["So30NSStandardKeyBindingRespondingP", "cmyTypesBoutons"]
+- !private ["So30NSStandardKeyBindingRespondingP", "controller"]
+- !private ["So30NSStandardKeyBindingRespondingP", "draw"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "isEnabled"]
+- !private ["So30NSStandardKeyBindingRespondingP", "mouseDown"]
+- !private ["So30NSStandardKeyBindingRespondingP", "parent"]
+- !private ["So30NSStandardKeyBindingRespondingP", "perform"]
+- !private ["So30NSStandardKeyBindingRespondingP", "responds"]
+- !private ["So8NSStringC", "lowercased"]
+- !private ["So18NSTouchBarProviderP", "Selector"]
+- ["So18NSTouchBarProviderP", ""]
+- !private ["So18NSTouchBarProviderP", "_type"]
+- !private ["So18NSTouchBarProviderP", "action"]
+- !private ["So18NSTouchBarProviderP", "cmyTypesBoutons"]
+- !private ["So18NSTouchBarProviderP", "controller"]
+- !private ["So18NSTouchBarProviderP", "draw"]
+- !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "isEnabled"]
+- !private ["So18NSTouchBarProviderP", "mouseDown"]
+- !private ["So18NSTouchBarProviderP", "parent"]
+- !private ["So18NSTouchBarProviderP", "perform"]
+- !private ["So18NSTouchBarProviderP", "responds"]
+- !private ["So23NSUserActivityRestoringP", "Selector"]
+- ["So23NSUserActivityRestoringP", ""]
+- !private ["So23NSUserActivityRestoringP", "_type"]
+- !private ["So23NSUserActivityRestoringP", "action"]
+- !private ["So23NSUserActivityRestoringP", "cmyTypesBoutons"]
+- !private ["So23NSUserActivityRestoringP", "controller"]
+- !private ["So23NSUserActivityRestoringP", "draw"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "isEnabled"]
+- !private ["So23NSUserActivityRestoringP", "mouseDown"]
+- !private ["So23NSUserActivityRestoringP", "parent"]
+- !private ["So23NSUserActivityRestoringP", "perform"]
+- !private ["So23NSUserActivityRestoringP", "responds"]
+- !private ["So26NSUserInterfaceCompressionP", "Selector"]
+- ["So26NSUserInterfaceCompressionP", ""]
+- !private ["So26NSUserInterfaceCompressionP", "_type"]
+- !private ["So26NSUserInterfaceCompressionP", "action"]
+- !private ["So26NSUserInterfaceCompressionP", "cmyTypesBoutons"]
+- !private ["So26NSUserInterfaceCompressionP", "controller"]
+- !private ["So26NSUserInterfaceCompressionP", "draw"]
+- !private ["So26NSUserInterfaceCompressionP", "init"]
+- !private ["So26NSUserInterfaceCompressionP", "init"]
+- !private ["So26NSUserInterfaceCompressionP", "isEnabled"]
+- !private ["So26NSUserInterfaceCompressionP", "mouseDown"]
+- !private ["So26NSUserInterfaceCompressionP", "parent"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "Selector"]
+- ["So33NSUserInterfaceItemIdentificationP", ""]
+- !private ["So33NSUserInterfaceItemIdentificationP", "_type"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "action"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "cmyTypesBoutons"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "controller"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "draw"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "init"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "init"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "isEnabled"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "mouseDown"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "parent"]
+- !private ["So26NSUserInterfaceValidationsP", "Selector"]
+- ["So26NSUserInterfaceValidationsP", ""]
+- !private ["So26NSUserInterfaceValidationsP", "_type"]
+- !private ["So26NSUserInterfaceValidationsP", "action"]
+- !private ["So26NSUserInterfaceValidationsP", "cmyTypesBoutons"]
+- !private ["So26NSUserInterfaceValidationsP", "controller"]
+- !private ["So26NSUserInterfaceValidationsP", "draw"]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
+- !private ["So26NSUserInterfaceValidationsP", "isEnabled"]
+- !private ["So26NSUserInterfaceValidationsP", "mouseDown"]
+- !private ["So26NSUserInterfaceValidationsP", "parent"]
+- ["So6NSViewC", "NSEvent"]
+- ["So6NSViewC", "NSRect"]
+- ["So6NSViewC", "NSResponder"]
+- !private ["So6NSViewC", "Selector"]
+- ["So6NSViewC", "String"]
+- ["So6NSViewC", "_type"]
+- !private ["So6NSViewC", "action"]
+- ["So6NSViewC", "cmyControl"]
+- ["So6NSViewC", "cmyTypesBoutons"]
+- ["So6NSViewC", "controller"]
+- ["So6NSViewC", "draw"]
+- ["So6NSViewC", "etatWindow"]
+- ["So6NSViewC", "init"]
+- !private ["So6NSViewC", "init"]
+- !private ["So6NSViewC", "isEnabled"]
+- ["So6NSViewC", "mouseDown"]
+- ["So6NSViewC", "parent"]
+- ["So6NSViewC", "setState"]
+- ["So6NSViewC", "tipeName"]
+- !private ["Sq", "controller"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "lowercased"]
+- ["SY", "ajouter"]
+- ["SY", "annuler"]
+- ["SY", "autre"]
+- ["SY", "enregistrer"]
+- ["SY", "imprimer"]
+- !private ["SY", "init"]
+- ["SY", "modifier"]
+- ["SY", "reglement"]
+- ["SY", "supprimer"]
+- !private ["10ObjectiveC8SelectorV", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "lowercased"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "lowercased"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "lowercased"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "lowercased"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "lowercased"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "lowercased"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Selector"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "_type"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "action"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cmyTypesBoutons"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "controller"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "draw"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isEnabled"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "mouseDown"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "parent"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowercased"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "lowercased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Selector"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "_type"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "action"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cmyTypesBoutons"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "controller"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "draw"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mouseDown"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "responds"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "controller"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "lowercased"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "lowercased"]
+- ["13PRMacControls9cmyButtonC", "NSEvent"]
+- ["13PRMacControls9cmyButtonC", "NSRect"]
+- ["13PRMacControls9cmyButtonC", "NSResponder"]
+- !private ["13PRMacControls9cmyButtonC", "Selector"]
+- ["13PRMacControls9cmyButtonC", "String"]
+- ["13PRMacControls9cmyButtonC", "_type"]
+- !private ["13PRMacControls9cmyButtonC", "action"]
+- ["13PRMacControls9cmyButtonC", "cmyControl"]
+- ["13PRMacControls9cmyButtonC", "cmyTypesBoutons"]
+- ["13PRMacControls9cmyButtonC", "controller"]
+- ["13PRMacControls9cmyButtonC", "draw"]
+- ["13PRMacControls9cmyButtonC", "etatWindow"]
+- ["13PRMacControls9cmyButtonC", "init"]
+- !private ["13PRMacControls9cmyButtonC", "isEnabled"]
+- ["13PRMacControls9cmyButtonC", "mouseDown"]
+- ["13PRMacControls9cmyButtonC", "parent"]
+- ["13PRMacControls9cmyButtonC", "setState"]
+- ["13PRMacControls9cmyButtonC", "tipeName"]
+- !private ["13PRMacControls10cmyControlC", "controller"]
+- ["13PRMacControls15cmyTypesBoutonsO", "ajouter"]
+- ["13PRMacControls15cmyTypesBoutonsO", "annuler"]
+- ["13PRMacControls15cmyTypesBoutonsO", "autre"]
+- !private ["13PRMacControls15cmyTypesBoutonsO", "deinit"]
+- ["13PRMacControls15cmyTypesBoutonsO", "enregistrer"]
+- ["13PRMacControls15cmyTypesBoutonsO", "imprimer"]
+- !private ["13PRMacControls15cmyTypesBoutonsO", "init"]
+- ["13PRMacControls15cmyTypesBoutonsO", "modifier"]
+- ["13PRMacControls15cmyTypesBoutonsO", "reglement"]
+- ["13PRMacControls15cmyTypesBoutonsO", "supprimer"]
+- !private ["13PRMacControls10etatWindowO", "deinit"]
+- !private ["13PRMacControls10etatWindowO", "nonedition"]
+- !private ["13PRMacControls18mySelectorProtocolP", "controller"]
+depends-nominal:
+- !private "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So21NSAccessibilityButtonP"
+- "So22NSAccessibilityElementP"
+- "So15NSAccessibilityP"
+- "So29NSAnimatablePropertyContainerP"
+- "So25NSAppearanceCustomizationP"
+- "So8NSButtonC"
+- "So8NSCodingP"
+- "So9NSControlC"
+- !private "So9NSCopyingP"
+- "So21NSDraggingDestinationP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- "So11NSResponderC"
+- !private "So14NSSecureCodingP"
+- "So30NSStandardKeyBindingRespondingP"
+- !private "So8NSStringC"
+- "So18NSTouchBarProviderP"
+- "So23NSUserActivityRestoringP"
+- "So26NSUserInterfaceCompressionP"
+- "So33NSUserInterfaceItemIdentificationP"
+- "So26NSUserInterfaceValidationsP"
+- "So6NSViewC"
+- !private "Sq"
+- !private "Sm"
+- "SY"
+- !private "10ObjectiveC8SelectorV"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+- "13PRMacControls9cmyButtonC"
+- !private "13PRMacControls10cmyControlC"
+- "13PRMacControls15cmyTypesBoutonsO"
+- !private "13PRMacControls10etatWindowO"
+- !private "13PRMacControls18mySelectorProtocolP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/PRMacControls.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "7009353e90fe8d99972ddac9bf96f78a"

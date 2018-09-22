@@ -11,7 +11,7 @@ class popoverController: NSViewController {
     
     override public init(nibName: NSNib.Name?, bundle: Bundle?) {
         //super.init(nibName: nibName, bundle: bundle)
-        let nibname = NSNib.Name("popoverController")
+        let nibname = "popoverController"
         let selfBundle = Bundle(for: popoverController.self)
         super.init(nibName: nibname, bundle: selfBundle)
         //let bundleURL = selfBundle.url(forResource: "PRMacControls", withExtension: "bundle")

@@ -118,8 +118,8 @@ open class cmyCustomCheckbox: NSView {
         //]
         if checked {
             let textAttributes = [
-                NSAttributedStringKey.font: NSFont.boldSystemFont(ofSize: NSFont.systemFontSize),
-                NSAttributedStringKey.foregroundColor: NSColor.black
+                NSAttributedString.Key.font: NSFont.boldSystemFont(ofSize: NSFont.systemFontSize),
+                NSAttributedString.Key.foregroundColor: NSColor.black
             ]
             let x = bounds.origin.x + 1
             var y = bounds.origin.y

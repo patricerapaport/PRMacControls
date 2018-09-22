@@ -199,7 +199,7 @@
         }
     }
     
-    override open func controlTextDidBeginEditing(_ obj: Notification) {
+    open func controlTextDidBeginEditing(_ obj: Notification) {
         Swift.print("cmyTextfield didbeginediting")
     }
 }

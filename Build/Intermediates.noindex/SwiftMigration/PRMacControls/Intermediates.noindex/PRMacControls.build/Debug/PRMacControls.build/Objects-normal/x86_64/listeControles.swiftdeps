@@ -1,0 +1,1005 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "clisteControles"
+provides-nominal:
+- "13PRMacControls15clisteControlesC"
+provides-member:
+- ["13PRMacControls15clisteControlesC", ""]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "-"
+- !private "..."
+- !private "<"
+- !private "=="
+- !private ">"
+- !private "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "NSColor"
+- "NSControl"
+- "NSResponder"
+- "NSTabView"
+- "NSTabViewItem"
+- "NSTableView"
+- "NSView"
+- !private "Selector"
+- "String"
+- !private "StringLiteralType"
+- !private "Swift"
+- !private "Unmanaged"
+- "Void"
+- !private "cbaseController"
+- !private "cbaseView"
+- "clisteControles"
+- "cmyControl"
+- !private "cmyTable"
+- "cmyTabviewItem"
+- !private "cmyTextfield"
+- !private "cmyTextfieldAdresse"
+- "etatWindow"
+- !private "||"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "removeAll"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "ctrl"]
+- !private ["s13ArrayProtocolP", "identifier"]
+- !private ["s13ArrayProtocolP", "isEnabled"]
+- !private ["s13ArrayProtocolP", "isLabel"]
+- !private ["s13ArrayProtocolP", "removeAll"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s13ArrayProtocolP", "tabviewItem"]
+- !private ["s13ArrayProtocolP", "verifControl"]
+- !private ["s10ArraySliceV", "ctrl"]
+- !private ["s10ArraySliceV", "identifier"]
+- !private ["s10ArraySliceV", "isEnabled"]
+- !private ["s10ArraySliceV", "isLabel"]
+- !private ["s10ArraySliceV", "tabviewItem"]
+- !private ["s10ArraySliceV", "verifControl"]
+- !private ["SK", "append"]
+- !private ["SK", "capitalized"]
+- !private ["SK", "count"]
+- !private ["SK", "ctrl"]
+- !private ["SK", "identifier"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "isEnabled"]
+- !private ["SK", "isLabel"]
+- !private ["SK", "removeAll"]
+- !private ["SK", "subscript"]
+- !private ["SK", "tabviewItem"]
+- !private ["SK", "verifControl"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "capitalized"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "ctrl"]
+- !private ["s7CVarArgP", "donnees"]
+- !private ["s7CVarArgP", "editionOnlyWhenSelected"]
+- !private ["s7CVarArgP", "identifier"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "input"]
+- !private ["s7CVarArgP", "isEditable"]
+- !private ["s7CVarArgP", "isEnabled"]
+- !private ["s7CVarArgP", "isLabel"]
+- !private ["s7CVarArgP", "keys"]
+- !private ["s7CVarArgP", "nextFocusControl"]
+- !private ["s7CVarArgP", "output"]
+- !private ["s7CVarArgP", "perform"]
+- !private ["s7CVarArgP", "previousFocusControl"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "responds"]
+- !private ["s7CVarArgP", "rowselected"]
+- !private ["s7CVarArgP", "selectedTabViewItem"]
+- !private ["s7CVarArgP", "setState"]
+- !private ["s7CVarArgP", "sourceRow"]
+- !private ["s7CVarArgP", "state"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "suffixe"]
+- !private ["s7CVarArgP", "tabView"]
+- !private ["s7CVarArgP", "tabviewItem"]
+- !private ["s7CVarArgP", "textColor"]
+- !private ["s7CVarArgP", "textColorMethod"]
+- !private ["s7CVarArgP", "verifControl"]
+- !private ["Sl", "append"]
+- !private ["Sl", "capitalized"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "count"]
+- !private ["Sl", "ctrl"]
+- !private ["Sl", "identifier"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "isEnabled"]
+- !private ["Sl", "isLabel"]
+- !private ["Sl", "keys"]
+- !private ["Sl", "removeAll"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "tabviewItem"]
+- !private ["Sl", "verifControl"]
+- !private ["SL", "capitalized"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "capitalized"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "controles"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "ctrl"]
+- !private ["s28CustomDebugStringConvertibleP", "donnees"]
+- !private ["s28CustomDebugStringConvertibleP", "editionOnlyWhenSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "input"]
+- !private ["s28CustomDebugStringConvertibleP", "isEditable"]
+- !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "isLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "keys"]
+- !private ["s28CustomDebugStringConvertibleP", "nextFocusControl"]
+- !private ["s28CustomDebugStringConvertibleP", "output"]
+- !private ["s28CustomDebugStringConvertibleP", "perform"]
+- !private ["s28CustomDebugStringConvertibleP", "previousFocusControl"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "responds"]
+- !private ["s28CustomDebugStringConvertibleP", "rowselected"]
+- !private ["s28CustomDebugStringConvertibleP", "selectedTabViewItem"]
+- !private ["s28CustomDebugStringConvertibleP", "setState"]
+- !private ["s28CustomDebugStringConvertibleP", "sourceRow"]
+- !private ["s28CustomDebugStringConvertibleP", "state"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "suffixe"]
+- !private ["s28CustomDebugStringConvertibleP", "tabView"]
+- !private ["s28CustomDebugStringConvertibleP", "tabviewItem"]
+- !private ["s28CustomDebugStringConvertibleP", "textColor"]
+- !private ["s28CustomDebugStringConvertibleP", "textColorMethod"]
+- !private ["s28CustomDebugStringConvertibleP", "verifControl"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "capitalized"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "capitalized"]
+- !private ["s17CustomReflectableP", "controles"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "ctrl"]
+- !private ["s17CustomReflectableP", "identifier"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEnabled"]
+- !private ["s17CustomReflectableP", "isLabel"]
+- !private ["s17CustomReflectableP", "keys"]
+- !private ["s17CustomReflectableP", "perform"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s17CustomReflectableP", "responds"]
+- !private ["s17CustomReflectableP", "selectedTabViewItem"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "tabView"]
+- !private ["s17CustomReflectableP", "tabviewItem"]
+- !private ["s17CustomReflectableP", "verifControl"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "capitalized"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "ctrl"]
+- !private ["s23CustomStringConvertibleP", "donnees"]
+- !private ["s23CustomStringConvertibleP", "editionOnlyWhenSelected"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "input"]
+- !private ["s23CustomStringConvertibleP", "isEditable"]
+- !private ["s23CustomStringConvertibleP", "isEnabled"]
+- !private ["s23CustomStringConvertibleP", "isLabel"]
+- !private ["s23CustomStringConvertibleP", "keys"]
+- !private ["s23CustomStringConvertibleP", "nextFocusControl"]
+- !private ["s23CustomStringConvertibleP", "output"]
+- !private ["s23CustomStringConvertibleP", "perform"]
+- !private ["s23CustomStringConvertibleP", "previousFocusControl"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "responds"]
+- !private ["s23CustomStringConvertibleP", "rowselected"]
+- !private ["s23CustomStringConvertibleP", "selectedTabViewItem"]
+- !private ["s23CustomStringConvertibleP", "setState"]
+- !private ["s23CustomStringConvertibleP", "sourceRow"]
+- !private ["s23CustomStringConvertibleP", "state"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "suffixe"]
+- !private ["s23CustomStringConvertibleP", "tabView"]
+- !private ["s23CustomStringConvertibleP", "tabviewItem"]
+- !private ["s23CustomStringConvertibleP", "textColor"]
+- !private ["s23CustomStringConvertibleP", "textColorMethod"]
+- !private ["s23CustomStringConvertibleP", "verifControl"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "capitalized"]
+- !private ["Se", "controles"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "keys"]
+- !private ["Se", "perform"]
+- !private ["Se", "removeAll"]
+- !private ["Se", "responds"]
+- !private ["Se", "selectedTabViewItem"]
+- !private ["Se", "subscript"]
+- !private ["Se", "tabView"]
+- !private ["SD", "keys"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "capitalized"]
+- !private ["SE", "controles"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "keys"]
+- !private ["SE", "perform"]
+- !private ["SE", "removeAll"]
+- !private ["SE", "responds"]
+- !private ["SE", "selectedTabViewItem"]
+- !private ["SE", "subscript"]
+- !private ["SE", "tabView"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "capitalized"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "controles"]
+- !private ["SQ", "count"]
+- !private ["SQ", "ctrl"]
+- !private ["SQ", "donnees"]
+- !private ["SQ", "edition"]
+- !private ["SQ", "editionOnlyWhenSelected"]
+- !private ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "input"]
+- !private ["SQ", "isEditable"]
+- !private ["SQ", "isEnabled"]
+- !private ["SQ", "isLabel"]
+- !private ["SQ", "keys"]
+- !private ["SQ", "nextFocusControl"]
+- !private ["SQ", "nonedition"]
+- !private ["SQ", "output"]
+- !private ["SQ", "perform"]
+- !private ["SQ", "previousFocusControl"]
+- !private ["SQ", "removeAll"]
+- !private ["SQ", "responds"]
+- !private ["SQ", "rowselected"]
+- !private ["SQ", "selectedTabViewItem"]
+- !private ["SQ", "setState"]
+- !private ["SQ", "sourceRow"]
+- !private ["SQ", "state"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "suffixe"]
+- !private ["SQ", "tabView"]
+- !private ["SQ", "tabviewItem"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "textColorMethod"]
+- !private ["SQ", "verifControl"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "ctrl"]
+- !private ["s25ExpressibleByArrayLiteralP", "identifier"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEnabled"]
+- !private ["s25ExpressibleByArrayLiteralP", "isLabel"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "tabviewItem"]
+- !private ["s25ExpressibleByArrayLiteralP", "verifControl"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "keys"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "capitalized"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "controles"]
+- !private ["s23ExpressibleByNilLiteralP", "perform"]
+- !private ["s23ExpressibleByNilLiteralP", "responds"]
+- !private ["s23ExpressibleByNilLiteralP", "selectedTabViewItem"]
+- !private ["s23ExpressibleByNilLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "tabView"]
+- !private ["s26ExpressibleByStringLiteralP", "capitalized"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "capitalized"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "append"]
+- !private ["SH", "capitalized"]
+- !private ["SH", "controles"]
+- !private ["SH", "count"]
+- !private ["SH", "ctrl"]
+- !private ["SH", "donnees"]
+- !private ["SH", "edition"]
+- !private ["SH", "editionOnlyWhenSelected"]
+- !private ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "input"]
+- !private ["SH", "isEditable"]
+- !private ["SH", "isEnabled"]
+- !private ["SH", "isLabel"]
+- !private ["SH", "keys"]
+- !private ["SH", "nextFocusControl"]
+- !private ["SH", "nonedition"]
+- !private ["SH", "output"]
+- !private ["SH", "perform"]
+- !private ["SH", "previousFocusControl"]
+- !private ["SH", "removeAll"]
+- !private ["SH", "responds"]
+- !private ["SH", "rowselected"]
+- !private ["SH", "selectedTabViewItem"]
+- !private ["SH", "setState"]
+- !private ["SH", "sourceRow"]
+- !private ["SH", "state"]
+- !private ["SH", "subscript"]
+- !private ["SH", "suffixe"]
+- !private ["SH", "tabView"]
+- !private ["SH", "tabviewItem"]
+- !private ["SH", "textColor"]
+- !private ["SH", "textColorMethod"]
+- !private ["SH", "verifControl"]
+- !private ["SD4KeysV", "contains"]
+- !private ["s22LazyCollectionProtocolP", "ctrl"]
+- !private ["s22LazyCollectionProtocolP", "isEnabled"]
+- !private ["s22LazyCollectionProtocolP", "isLabel"]
+- !private ["s22LazyCollectionProtocolP", "tabviewItem"]
+- !private ["s20LazySequenceProtocolP", "ctrl"]
+- !private ["s20LazySequenceProtocolP", "isEnabled"]
+- !private ["s20LazySequenceProtocolP", "isLabel"]
+- !private ["s20LazySequenceProtocolP", "tabviewItem"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "capitalized"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "capitalized"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "ctrl"]
+- !private ["SM", "identifier"]
+- !private ["SM", "isEnabled"]
+- !private ["SM", "isLabel"]
+- !private ["SM", "removeAll"]
+- !private ["SM", "subscript"]
+- !private ["SM", "tabviewItem"]
+- !private ["SM", "verifControl"]
+- !private ["So22NSAccessibilityElementP", "rowselected"]
+- !private ["So22NSAccessibilityElementP", "selectedTabViewItem"]
+- !private ["So22NSAccessibilityElementP", "sourceRow"]
+- !private ["So22NSAccessibilityElementP", "state"]
+- !private ["So22NSAccessibilityElementP", "suffixe"]
+- !private ["So22NSAccessibilityElementP", "textColor"]
+- !private ["So20NSAccessibilityGroupP", "rowselected"]
+- !private ["So20NSAccessibilityGroupP", "sourceRow"]
+- !private ["So20NSAccessibilityGroupP", "state"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "suffixe"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "textColor"]
+- !private ["So15NSAccessibilityP", "rowselected"]
+- !private ["So15NSAccessibilityP", "selectedTabViewItem"]
+- !private ["So15NSAccessibilityP", "sourceRow"]
+- !private ["So15NSAccessibilityP", "state"]
+- !private ["So15NSAccessibilityP", "suffixe"]
+- !private ["So15NSAccessibilityP", "textColor"]
+- !private ["So25NSAccessibilityStaticTextP", "suffixe"]
+- !private ["So25NSAccessibilityStaticTextP", "textColor"]
+- !private ["So20NSAccessibilityTableP", "rowselected"]
+- !private ["So20NSAccessibilityTableP", "sourceRow"]
+- !private ["So20NSAccessibilityTableP", "state"]
+- !private ["So29NSAnimatablePropertyContainerP", "rowselected"]
+- !private ["So29NSAnimatablePropertyContainerP", "selectedTabViewItem"]
+- !private ["So29NSAnimatablePropertyContainerP", "sourceRow"]
+- !private ["So29NSAnimatablePropertyContainerP", "state"]
+- !private ["So29NSAnimatablePropertyContainerP", "suffixe"]
+- !private ["So29NSAnimatablePropertyContainerP", "textColor"]
+- !private ["So25NSAppearanceCustomizationP", "rowselected"]
+- !private ["So25NSAppearanceCustomizationP", "selectedTabViewItem"]
+- !private ["So25NSAppearanceCustomizationP", "sourceRow"]
+- !private ["So25NSAppearanceCustomizationP", "state"]
+- !private ["So25NSAppearanceCustomizationP", "suffixe"]
+- !private ["So25NSAppearanceCustomizationP", "textColor"]
+- !private ["So8NSCodingP", "capitalized"]
+- !private ["So8NSCodingP", "donnees"]
+- !private ["So8NSCodingP", "editionOnlyWhenSelected"]
+- !private ["So8NSCodingP", "perform"]
+- !private ["So8NSCodingP", "responds"]
+- !private ["So8NSCodingP", "rowselected"]
+- !private ["So8NSCodingP", "selectedTabViewItem"]
+- !private ["So8NSCodingP", "sourceRow"]
+- !private ["So8NSCodingP", "state"]
+- !private ["So8NSCodingP", "suffixe"]
+- !private ["So8NSCodingP", "tabView"]
+- !private ["So8NSCodingP", "textColor"]
+- !private ["So20NSComboBoxDataSourceP", "donnees"]
+- !private ["So20NSComboBoxDataSourceP", "tabView"]
+- !private ["So18NSComboBoxDelegateP", "donnees"]
+- !private ["So18NSComboBoxDelegateP", "tabView"]
+- !private ["So9NSControlC", "rowselected"]
+- !private ["So9NSControlC", "sourceRow"]
+- !private ["So9NSControlC", "state"]
+- !private ["So9NSControlC", "suffixe"]
+- !private ["So9NSControlC", "textColor"]
+- !private ["So28NSControlTextEditingDelegateP", "donnees"]
+- !private ["So28NSControlTextEditingDelegateP", "suffixe"]
+- !private ["So28NSControlTextEditingDelegateP", "tabView"]
+- !private ["So28NSControlTextEditingDelegateP", "textColor"]
+- !private ["So9NSCopyingP", "capitalized"]
+- !private ["So21NSDraggingDestinationP", "rowselected"]
+- !private ["So21NSDraggingDestinationP", "selectedTabViewItem"]
+- !private ["So21NSDraggingDestinationP", "sourceRow"]
+- !private ["So21NSDraggingDestinationP", "state"]
+- !private ["So21NSDraggingDestinationP", "suffixe"]
+- !private ["So21NSDraggingDestinationP", "textColor"]
+- !private ["So16NSDraggingSourceP", "rowselected"]
+- !private ["So16NSDraggingSourceP", "sourceRow"]
+- !private ["So16NSDraggingSourceP", "state"]
+- !private ["So8NSEditorP", "donnees"]
+- !private ["So8NSEditorP", "tabView"]
+- !private ["So26NSExtensionRequestHandlingP", "donnees"]
+- !private ["So26NSExtensionRequestHandlingP", "tabView"]
+- !private ["So21NSItemProviderReadingP", "capitalized"]
+- !private ["So21NSItemProviderWritingP", "capitalized"]
+- !private ["So16NSMutableCopyingP", "capitalized"]
+- !private ["So8NSObjectC", "capitalized"]
+- !private ["So8NSObjectC", "ctrl"]
+- !private ["So8NSObjectC", "donnees"]
+- !private ["So8NSObjectC", "editionOnlyWhenSelected"]
+- !private ["So8NSObjectC", "identifier"]
+- !private ["So8NSObjectC", "input"]
+- !private ["So8NSObjectC", "isEditable"]
+- !private ["So8NSObjectC", "isEnabled"]
+- !private ["So8NSObjectC", "isLabel"]
+- !private ["So8NSObjectC", "nextFocusControl"]
+- !private ["So8NSObjectC", "output"]
+- !private ["So8NSObjectC", "perform"]
+- !private ["So8NSObjectC", "previousFocusControl"]
+- !private ["So8NSObjectC", "responds"]
+- !private ["So8NSObjectC", "rowselected"]
+- !private ["So8NSObjectC", "selectedTabViewItem"]
+- !private ["So8NSObjectC", "setState"]
+- !private ["So8NSObjectC", "sourceRow"]
+- !private ["So8NSObjectC", "state"]
+- !private ["So8NSObjectC", "suffixe"]
+- !private ["So8NSObjectC", "tabView"]
+- !private ["So8NSObjectC", "tabviewItem"]
+- !private ["So8NSObjectC", "textColor"]
+- !private ["So8NSObjectC", "textColorMethod"]
+- !private ["So8NSObjectC", "verifControl"]
+- !private ["So8NSObjectP", "capitalized"]
+- !private ["So8NSObjectP", "ctrl"]
+- !private ["So8NSObjectP", "donnees"]
+- !private ["So8NSObjectP", "editionOnlyWhenSelected"]
+- !private ["So8NSObjectP", "identifier"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "input"]
+- !private ["So8NSObjectP", "isEditable"]
+- !private ["So8NSObjectP", "isEnabled"]
+- !private ["So8NSObjectP", "isLabel"]
+- !private ["So8NSObjectP", "nextFocusControl"]
+- !private ["So8NSObjectP", "output"]
+- !private ["So8NSObjectP", "perform"]
+- !private ["So8NSObjectP", "previousFocusControl"]
+- !private ["So8NSObjectP", "responds"]
+- !private ["So8NSObjectP", "rowselected"]
+- !private ["So8NSObjectP", "selectedTabViewItem"]
+- !private ["So8NSObjectP", "setState"]
+- !private ["So8NSObjectP", "sourceRow"]
+- !private ["So8NSObjectP", "state"]
+- !private ["So8NSObjectP", "suffixe"]
+- !private ["So8NSObjectP", "tabView"]
+- !private ["So8NSObjectP", "tabviewItem"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "textColorMethod"]
+- !private ["So8NSObjectP", "verifControl"]
+- !private ["So19NSPasteboardReadingP", "capitalized"]
+- !private ["So19NSPasteboardWritingP", "capitalized"]
+- !private ["So17NSPopoverDelegateP", "donnees"]
+- !private ["So17NSPopoverDelegateP", "tabView"]
+- !private ["So11NSResponderC", "donnees"]
+- !private ["So11NSResponderC", "perform"]
+- !private ["So11NSResponderC", "responds"]
+- !private ["So11NSResponderC", "rowselected"]
+- !private ["So11NSResponderC", "selectedTabViewItem"]
+- !private ["So11NSResponderC", "sourceRow"]
+- !private ["So11NSResponderC", "state"]
+- !private ["So11NSResponderC", "suffixe"]
+- !private ["So11NSResponderC", "tabView"]
+- !private ["So11NSResponderC", "textColor"]
+- !private ["So14NSSecureCodingP", "capitalized"]
+- !private ["So17NSSeguePerformingP", "donnees"]
+- !private ["So17NSSeguePerformingP", "tabView"]
+- !private ["So30NSStandardKeyBindingRespondingP", "donnees"]
+- !private ["So30NSStandardKeyBindingRespondingP", "perform"]
+- !private ["So30NSStandardKeyBindingRespondingP", "responds"]
+- !private ["So30NSStandardKeyBindingRespondingP", "rowselected"]
+- !private ["So30NSStandardKeyBindingRespondingP", "selectedTabViewItem"]
+- !private ["So30NSStandardKeyBindingRespondingP", "sourceRow"]
+- !private ["So30NSStandardKeyBindingRespondingP", "state"]
+- !private ["So30NSStandardKeyBindingRespondingP", "suffixe"]
+- !private ["So30NSStandardKeyBindingRespondingP", "tabView"]
+- !private ["So30NSStandardKeyBindingRespondingP", "textColor"]
+- !private ["So8NSStringC", "capitalized"]
+- !private ["So9NSTabViewC", "selectedTabViewItem"]
+- !private ["So17NSTabViewDelegateP", "donnees"]
+- !private ["So17NSTabViewDelegateP", "tabView"]
+- !private ["So13NSTabViewItemC", "editionOnlyWhenSelected"]
+- !private ["So13NSTabViewItemC", "tabView"]
+- !private ["So11NSTableViewC", "rowselected"]
+- !private ["So11NSTableViewC", "sourceRow"]
+- !private ["So11NSTableViewC", "state"]
+- !private ["So21NSTableViewDataSourceP", "donnees"]
+- !private ["So21NSTableViewDataSourceP", "tabView"]
+- !private ["So19NSTableViewDelegateP", "donnees"]
+- !private ["So19NSTableViewDelegateP", "tabView"]
+- !private ["So14NSTextDelegateP", "rowselected"]
+- !private ["So14NSTextDelegateP", "sourceRow"]
+- !private ["So14NSTextDelegateP", "state"]
+- !private ["So11NSTextFieldC", "suffixe"]
+- !private ["So11NSTextFieldC", "textColor"]
+- !private ["So19NSTextFieldDelegateP", "donnees"]
+- !private ["So19NSTextFieldDelegateP", "suffixe"]
+- !private ["So19NSTextFieldDelegateP", "tabView"]
+- !private ["So19NSTextFieldDelegateP", "textColor"]
+- !private ["So18NSTextViewDelegateP", "rowselected"]
+- !private ["So18NSTextViewDelegateP", "sourceRow"]
+- !private ["So18NSTextViewDelegateP", "state"]
+- !private ["So18NSTouchBarProviderP", "donnees"]
+- !private ["So18NSTouchBarProviderP", "perform"]
+- !private ["So18NSTouchBarProviderP", "responds"]
+- !private ["So18NSTouchBarProviderP", "rowselected"]
+- !private ["So18NSTouchBarProviderP", "selectedTabViewItem"]
+- !private ["So18NSTouchBarProviderP", "sourceRow"]
+- !private ["So18NSTouchBarProviderP", "state"]
+- !private ["So18NSTouchBarProviderP", "suffixe"]
+- !private ["So18NSTouchBarProviderP", "tabView"]
+- !private ["So18NSTouchBarProviderP", "textColor"]
+- !private ["So23NSUserActivityRestoringP", "donnees"]
+- !private ["So23NSUserActivityRestoringP", "perform"]
+- !private ["So23NSUserActivityRestoringP", "responds"]
+- !private ["So23NSUserActivityRestoringP", "rowselected"]
+- !private ["So23NSUserActivityRestoringP", "selectedTabViewItem"]
+- !private ["So23NSUserActivityRestoringP", "sourceRow"]
+- !private ["So23NSUserActivityRestoringP", "state"]
+- !private ["So23NSUserActivityRestoringP", "suffixe"]
+- !private ["So23NSUserActivityRestoringP", "tabView"]
+- !private ["So23NSUserActivityRestoringP", "textColor"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "donnees"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "rowselected"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "selectedTabViewItem"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "sourceRow"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "state"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "suffixe"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "tabView"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "textColor"]
+- !private ["So26NSUserInterfaceValidationsP", "rowselected"]
+- !private ["So26NSUserInterfaceValidationsP", "sourceRow"]
+- !private ["So26NSUserInterfaceValidationsP", "state"]
+- !private ["So26NSUserInterfaceValidationsP", "suffixe"]
+- !private ["So26NSUserInterfaceValidationsP", "textColor"]
+- !private ["So6NSViewC", "rowselected"]
+- !private ["So6NSViewC", "selectedTabViewItem"]
+- !private ["So6NSViewC", "sourceRow"]
+- !private ["So6NSViewC", "state"]
+- !private ["So6NSViewC", "suffixe"]
+- !private ["So6NSViewC", "textColor"]
+- !private ["So16NSViewControllerC", "donnees"]
+- !private ["So16NSViewControllerC", "tabView"]
+- !private ["So18NSWindowControllerC", "donnees"]
+- !private ["So18NSWindowControllerC", "tabView"]
+- !private ["So16NSWindowDelegateP", "donnees"]
+- !private ["So16NSWindowDelegateP", "tabView"]
+- !private ["Sq", "controles"]
+- !private ["Sq", "perform"]
+- !private ["Sq", "responds"]
+- !private ["Sq", "selectedTabViewItem"]
+- !private ["Sq", "subscript"]
+- !private ["Sq", "tabView"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "ctrl"]
+- !private ["Sk", "identifier"]
+- !private ["Sk", "isEnabled"]
+- !private ["Sk", "isLabel"]
+- !private ["Sk", "removeAll"]
+- !private ["Sk", "subscript"]
+- !private ["Sk", "tabviewItem"]
+- !private ["Sk", "verifControl"]
+- !private ["Sm", "append"]
+- !private ["Sm", "capitalized"]
+- !private ["Sm", "count"]
+- !private ["Sm", "ctrl"]
+- !private ["Sm", "identifier"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "isEnabled"]
+- !private ["Sm", "isLabel"]
+- !private ["Sm", "removeAll"]
+- !private ["Sm", "subscript"]
+- !private ["Sm", "tabviewItem"]
+- !private ["Sm", "verifControl"]
+- !private ["10ObjectiveC8SelectorV", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "capitalized"]
+- !private ["ST", "contains"]
+- !private ["ST", "count"]
+- !private ["ST", "ctrl"]
+- !private ["ST", "identifier"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "isEnabled"]
+- !private ["ST", "isLabel"]
+- !private ["ST", "keys"]
+- !private ["ST", "removeAll"]
+- !private ["ST", "subscript"]
+- !private ["ST", "tabviewItem"]
+- !private ["ST", "verifControl"]
+- !private ["s5SliceV", "ctrl"]
+- !private ["s5SliceV", "isEnabled"]
+- !private ["s5SliceV", "isLabel"]
+- !private ["s5SliceV", "tabviewItem"]
+- !private ["SS", "capitalized"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "capitalized"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "capitalized"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "capitalized"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "capitalized"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s9UnmanagedV", "fromOpaque"]
+- !private ["s9UnmanagedV", "takeUnretainedValue"]
+- !private ["s9UnmanagedV", "toOpaque"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rowselected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "selectedTabViewItem"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sourceRow"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "state"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "suffixe"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "ctrl"]
+- !private ["s24_DestructorSafeContainerP", "identifier"]
+- !private ["s24_DestructorSafeContainerP", "isEnabled"]
+- !private ["s24_DestructorSafeContainerP", "isLabel"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "tabviewItem"]
+- !private ["s24_DestructorSafeContainerP", "verifControl"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "capitalized"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "capitalized"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "capitalized"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "capitalized"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "capitalized"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "capitalized"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "keys"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "capitalized"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ctrl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "donnees"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "editionOnlyWhenSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "input"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEditable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "nextFocusControl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "output"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "previousFocusControl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "responds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rowselected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedTabViewItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setState"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sourceRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "state"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "suffixe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabviewItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textColorMethod"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "verifControl"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "capitalized"]
+- !private ["s21_ObjectiveCBridgeableP", "controles"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "keys"]
+- !private ["s21_ObjectiveCBridgeableP", "perform"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "responds"]
+- !private ["s21_ObjectiveCBridgeableP", "selectedTabViewItem"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "tabView"]
+- !private ["s16_SwiftStringViewP", "capitalized"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["13PRMacControls15cbaseControllerC", "deinit"]
+- !private ["13PRMacControls15cbaseControllerC", "donnees"]
+- !private ["13PRMacControls15cbaseControllerC", "tabView"]
+- !private ["13PRMacControls9cbaseViewC", "deinit"]
+- !private ["13PRMacControls9cbaseViewC", "donnees"]
+- !private ["13PRMacControls9cbaseViewC", "tabView"]
+- !private ["13PRMacControls15clisteControlesC", "AnyObject"]
+- ["13PRMacControls15clisteControlesC", "Bool"]
+- ["13PRMacControls15clisteControlesC", "Int"]
+- !private ["13PRMacControls15clisteControlesC", "NSColor"]
+- ["13PRMacControls15clisteControlesC", "NSControl"]
+- ["13PRMacControls15clisteControlesC", "NSResponder"]
+- ["13PRMacControls15clisteControlesC", "NSTabView"]
+- ["13PRMacControls15clisteControlesC", "NSTabViewItem"]
+- ["13PRMacControls15clisteControlesC", "NSTableView"]
+- ["13PRMacControls15clisteControlesC", "NSView"]
+- !private ["13PRMacControls15clisteControlesC", "Selector"]
+- ["13PRMacControls15clisteControlesC", "String"]
+- !private ["13PRMacControls15clisteControlesC", "Swift"]
+- !private ["13PRMacControls15clisteControlesC", "Unmanaged"]
+- ["13PRMacControls15clisteControlesC", "Void"]
+- ["13PRMacControls15clisteControlesC", "append"]
+- !private ["13PRMacControls15clisteControlesC", "cbaseController"]
+- !private ["13PRMacControls15clisteControlesC", "cbaseView"]
+- ["13PRMacControls15clisteControlesC", "cmyControl"]
+- !private ["13PRMacControls15clisteControlesC", "cmyTable"]
+- ["13PRMacControls15clisteControlesC", "cmyTabviewItem"]
+- !private ["13PRMacControls15clisteControlesC", "cmyTextfield"]
+- !private ["13PRMacControls15clisteControlesC", "cmyTextfieldAdresse"]
+- ["13PRMacControls15clisteControlesC", "controles"]
+- ["13PRMacControls15clisteControlesC", "deinit"]
+- ["13PRMacControls15clisteControlesC", "enVerification"]
+- ["13PRMacControls15clisteControlesC", "etatWindow"]
+- ["13PRMacControls15clisteControlesC", "getControl"]
+- ["13PRMacControls15clisteControlesC", "getIndex"]
+- ["13PRMacControls15clisteControlesC", "init"]
+- ["13PRMacControls15clisteControlesC", "input"]
+- ["13PRMacControls15clisteControlesC", "myController"]
+- ["13PRMacControls15clisteControlesC", "nextFocus"]
+- ["13PRMacControls15clisteControlesC", "output"]
+- ["13PRMacControls15clisteControlesC", "previousFocus"]
+- ["13PRMacControls15clisteControlesC", "setState"]
+- ["13PRMacControls15clisteControlesC", "verifControl"]
+- !private ["13PRMacControls10cmyControlC", "ctrl"]
+- !private ["13PRMacControls10cmyControlC", "identifier"]
+- !private ["13PRMacControls10cmyControlC", "init"]
+- !private ["13PRMacControls10cmyControlC", "input"]
+- !private ["13PRMacControls10cmyControlC", "isEditable"]
+- !private ["13PRMacControls10cmyControlC", "isEnabled"]
+- !private ["13PRMacControls10cmyControlC", "isLabel"]
+- !private ["13PRMacControls10cmyControlC", "nextFocusControl"]
+- !private ["13PRMacControls10cmyControlC", "output"]
+- !private ["13PRMacControls10cmyControlC", "previousFocusControl"]
+- !private ["13PRMacControls10cmyControlC", "setState"]
+- !private ["13PRMacControls10cmyControlC", "tabviewItem"]
+- !private ["13PRMacControls10cmyControlC", "textColorMethod"]
+- !private ["13PRMacControls10cmyControlC", "verifControl"]
+- !private ["13PRMacControls8cmyTableC", "rowselected"]
+- !private ["13PRMacControls8cmyTableC", "sourceRow"]
+- !private ["13PRMacControls8cmyTableC", "state"]
+- !private ["13PRMacControls14cmyTabviewItemC", "editionOnlyWhenSelected"]
+- !private ["13PRMacControls12cmyTextfieldC", "suffixe"]
+- !private ["13PRMacControls12cmyTextfieldC", "textColor"]
+- !private ["13PRMacControls19cmyTextfieldAdresseC", "suffixe"]
+- !private ["13PRMacControls12csourceTableC", "ctrls"]
+- !private ["13PRMacControls10etatWindowO", "deinit"]
+- !private ["13PRMacControls10etatWindowO", "edition"]
+- !private ["13PRMacControls10etatWindowO", "nonedition"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "donnees"]
+- !private ["13PRMacControls31myBaseServiceProtocolOperationsP", "tabView"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "donnees"]
+- !private ["13PRMacControls20myBaseServiceTabviewP", "tabView"]
+- !private ["13PRMacControls18mySelectorProtocolP", "ctrl"]
+- !private ["13PRMacControls18mySelectorProtocolP", "identifier"]
+- !private ["13PRMacControls18mySelectorProtocolP", "init"]
+- !private ["13PRMacControls18mySelectorProtocolP", "input"]
+- !private ["13PRMacControls18mySelectorProtocolP", "isEditable"]
+- !private ["13PRMacControls18mySelectorProtocolP", "isEnabled"]
+- !private ["13PRMacControls18mySelectorProtocolP", "isLabel"]
+- !private ["13PRMacControls18mySelectorProtocolP", "nextFocusControl"]
+- !private ["13PRMacControls18mySelectorProtocolP", "output"]
+- !private ["13PRMacControls18mySelectorProtocolP", "previousFocusControl"]
+- !private ["13PRMacControls18mySelectorProtocolP", "rowselected"]
+- !private ["13PRMacControls18mySelectorProtocolP", "setState"]
+- !private ["13PRMacControls18mySelectorProtocolP", "sourceRow"]
+- !private ["13PRMacControls18mySelectorProtocolP", "state"]
+- !private ["13PRMacControls18mySelectorProtocolP", "tabviewItem"]
+- !private ["13PRMacControls18mySelectorProtocolP", "textColorMethod"]
+- !private ["13PRMacControls18mySelectorProtocolP", "verifControl"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- !private "SK"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "SD4KeysV"
+- !private "s22LazyCollectionProtocolP"
+- !private "s20LazySequenceProtocolP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "So22NSAccessibilityElementP"
+- !private "So20NSAccessibilityGroupP"
+- !private "So34NSAccessibilityNavigableStaticTextP"
+- !private "So15NSAccessibilityP"
+- !private "So25NSAccessibilityStaticTextP"
+- !private "So20NSAccessibilityTableP"
+- !private "So29NSAnimatablePropertyContainerP"
+- !private "So25NSAppearanceCustomizationP"
+- !private "So8NSCodingP"
+- !private "So20NSComboBoxDataSourceP"
+- !private "So18NSComboBoxDelegateP"
+- !private "So9NSControlC"
+- !private "So28NSControlTextEditingDelegateP"
+- !private "So9NSCopyingP"
+- !private "So21NSDraggingDestinationP"
+- !private "So16NSDraggingSourceP"
+- !private "So8NSEditorP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- !private "So17NSPopoverDelegateP"
+- !private "So11NSResponderC"
+- !private "So14NSSecureCodingP"
+- !private "So17NSSeguePerformingP"
+- !private "So30NSStandardKeyBindingRespondingP"
+- !private "So8NSStringC"
+- !private "So9NSTabViewC"
+- !private "So17NSTabViewDelegateP"
+- !private "So13NSTabViewItemC"
+- !private "So11NSTableViewC"
+- !private "So21NSTableViewDataSourceP"
+- !private "So19NSTableViewDelegateP"
+- !private "So14NSTextDelegateP"
+- !private "So11NSTextFieldC"
+- !private "So19NSTextFieldDelegateP"
+- !private "So18NSTextViewDelegateP"
+- !private "So18NSTouchBarProviderP"
+- !private "So23NSUserActivityRestoringP"
+- !private "So33NSUserInterfaceItemIdentificationP"
+- !private "So26NSUserInterfaceValidationsP"
+- !private "So6NSViewC"
+- !private "So16NSViewControllerC"
+- !private "So18NSWindowControllerC"
+- !private "So16NSWindowDelegateP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- !private "10ObjectiveC8SelectorV"
+- !private "ST"
+- !private "s5SliceV"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s9UnmanagedV"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+- !private "13PRMacControls15cbaseControllerC"
+- !private "13PRMacControls9cbaseViewC"
+- "13PRMacControls15clisteControlesC"
+- !private "13PRMacControls10cmyControlC"
+- !private "13PRMacControls8cmyTableC"
+- !private "13PRMacControls14cmyTabviewItemC"
+- !private "13PRMacControls12cmyTextfieldC"
+- !private "13PRMacControls19cmyTextfieldAdresseC"
+- !private "13PRMacControls12csourceTableC"
+- !private "13PRMacControls10etatWindowO"
+- !private "13PRMacControls31myBaseServiceProtocolOperationsP"
+- !private "13PRMacControls20myBaseServiceTabviewP"
+- !private "13PRMacControls18mySelectorProtocolP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/PRMacControls/PRMacControls.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
+- "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/SwiftMigration/PRMacControls/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "35fd4508d1eadf2e6affeb4950346481"
