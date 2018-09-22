@@ -14,6 +14,8 @@ depends-top-level:
 - "Bundle"
 - "CGRect"
 - !private "CGSize"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSCoder"
 - "NSNib"
 - "NSTextField"
@@ -22,13 +24,14 @@ depends-top-level:
 - !private "StringLiteralType"
 - "popoverController"
 depends-member:
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["So6BundleC", "init"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "origin"]
-- !private ["SC6CGSizeV", "height"]
-- !private ["SC6CGSizeV", "init"]
-- !private ["SC6CGSizeV", "width"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["So8NSBundleC", "init"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "origin"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "init"]
+- !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "Bundle"]
 - !private ["s7CVarArgP", "CGRect"]
 - !private ["s7CVarArgP", "CGSize"]
@@ -38,13 +41,16 @@ depends-member:
 - !private ["s7CVarArgP", "fittingSize"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "label"]
 - !private ["s7CVarArgP", "popoverController"]
 - !private ["s7CVarArgP", "stringValue"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Bundle"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
@@ -55,6 +61,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "label"]
 - !private ["s28CustomDebugStringConvertibleP", "origin"]
 - !private ["s28CustomDebugStringConvertibleP", "popoverController"]
@@ -64,11 +71,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "origin"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "fittingSize"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "origin"]
+- !private ["s17CustomReflectableP", "stringValue"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
@@ -79,63 +90,79 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "fittingSize"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "label"]
 - !private ["s23CustomStringConvertibleP", "popoverController"]
 - !private ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "origin"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "origin"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EquatableP", "Bundle"]
-- !private ["s9EquatableP", "CGRect"]
-- !private ["s9EquatableP", "CGSize"]
-- !private ["s9EquatableP", "NSNib"]
-- ["s9EquatableP", "Name"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "fittingSize"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "label"]
-- !private ["s9EquatableP", "origin"]
-- !private ["s9EquatableP", "popoverController"]
-- !private ["s9EquatableP", "stringValue"]
-- !private ["s9EquatableP", "view"]
-- !private ["s9EquatableP", "viewDidLoad"]
-- !private ["s9EquatableP", "width"]
+- !private ["Se", "fittingSize"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "origin"]
+- !private ["Se", "stringValue"]
+- !private ["Se", "width"]
+- !private ["SE", "fittingSize"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "origin"]
+- !private ["SE", "stringValue"]
+- !private ["SE", "width"]
+- !private ["SQ", "Bundle"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "NSNib"]
+- ["SQ", "Name"]
+- ["SQ", ""]
+- !private ["SQ", "fittingSize"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "height"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "label"]
+- !private ["SQ", "origin"]
+- !private ["SQ", "popoverController"]
+- !private ["SQ", "stringValue"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "width"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "fittingSize"]
+- !private ["s23ExpressibleByNilLiteralP", "stringValue"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "Bundle"]
-- !private ["s8HashableP", "CGRect"]
-- !private ["s8HashableP", "CGSize"]
-- !private ["s8HashableP", "NSNib"]
-- ["s8HashableP", "Name"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "fittingSize"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "label"]
-- !private ["s8HashableP", "popoverController"]
-- !private ["s8HashableP", "stringValue"]
-- !private ["s8HashableP", "view"]
-- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "Bundle"]
+- !private ["SH", "CGRect"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "NSNib"]
+- ["SH", "Name"]
+- ["SH", ""]
+- !private ["SH", "fittingSize"]
+- !private ["SH", "frame"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "label"]
+- !private ["SH", "popoverController"]
+- !private ["SH", "stringValue"]
+- !private ["SH", "view"]
+- !private ["SH", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So22NSAccessibilityElementP", "fittingSize"]
+- !private ["So22NSAccessibilityElementP", "frame"]
+- !private ["So22NSAccessibilityElementP", "stringValue"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "fittingSize"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "stringValue"]
 - !private ["So15NSAccessibilityP", "fittingSize"]
 - !private ["So15NSAccessibilityP", "frame"]
 - !private ["So15NSAccessibilityP", "stringValue"]
-- !private ["So30NSAccessibilityElementProtocolP", "fittingSize"]
-- !private ["So30NSAccessibilityElementProtocolP", "frame"]
-- !private ["So30NSAccessibilityElementProtocolP", "stringValue"]
-- !private ["So34NSAccessibilityNavigableStaticTextP", "fittingSize"]
-- !private ["So34NSAccessibilityNavigableStaticTextP", "stringValue"]
 - !private ["So25NSAccessibilityStaticTextP", "fittingSize"]
 - !private ["So25NSAccessibilityStaticTextP", "stringValue"]
 - !private ["So29NSAnimatablePropertyContainerP", "fittingSize"]
@@ -163,6 +190,16 @@ depends-member:
 - !private ["So21NSDraggingDestinationP", "fittingSize"]
 - !private ["So21NSDraggingDestinationP", "frame"]
 - !private ["So21NSDraggingDestinationP", "stringValue"]
+- !private ["So8NSEditorP", "Bundle"]
+- !private ["So8NSEditorP", "CGRect"]
+- !private ["So8NSEditorP", "CGSize"]
+- !private ["So8NSEditorP", "NSNib"]
+- ["So8NSEditorP", ""]
+- !private ["So8NSEditorP", "init"]
+- !private ["So8NSEditorP", "label"]
+- !private ["So8NSEditorP", "popoverController"]
+- !private ["So8NSEditorP", "view"]
+- !private ["So8NSEditorP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "Bundle"]
 - !private ["So26NSExtensionRequestHandlingP", "CGRect"]
 - !private ["So26NSExtensionRequestHandlingP", "CGSize"]
@@ -191,20 +228,20 @@ depends-member:
 - !private ["So8NSObjectC", "stringValue"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
-- !private ["So16NSObjectProtocolP", "Bundle"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "NSNib"]
-- ["So16NSObjectProtocolP", "Name"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "fittingSize"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "label"]
-- !private ["So16NSObjectProtocolP", "popoverController"]
-- !private ["So16NSObjectProtocolP", "stringValue"]
-- !private ["So16NSObjectProtocolP", "view"]
-- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So8NSObjectP", "Bundle"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "NSNib"]
+- ["So8NSObjectP", "Name"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "fittingSize"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "label"]
+- !private ["So8NSObjectP", "popoverController"]
+- !private ["So8NSObjectP", "stringValue"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewDidLoad"]
 - ["So11NSResponderC", "Bundle"]
 - ["So11NSResponderC", "CGRect"]
 - !private ["So11NSResponderC", "CGSize"]
@@ -231,6 +268,19 @@ depends-member:
 - !private ["So17NSSeguePerformingP", "popoverController"]
 - !private ["So17NSSeguePerformingP", "view"]
 - !private ["So17NSSeguePerformingP", "viewDidLoad"]
+- !private ["So30NSStandardKeyBindingRespondingP", "Bundle"]
+- !private ["So30NSStandardKeyBindingRespondingP", "CGRect"]
+- !private ["So30NSStandardKeyBindingRespondingP", "CGSize"]
+- !private ["So30NSStandardKeyBindingRespondingP", "NSNib"]
+- ["So30NSStandardKeyBindingRespondingP", ""]
+- !private ["So30NSStandardKeyBindingRespondingP", "fittingSize"]
+- !private ["So30NSStandardKeyBindingRespondingP", "frame"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "label"]
+- !private ["So30NSStandardKeyBindingRespondingP", "popoverController"]
+- !private ["So30NSStandardKeyBindingRespondingP", "stringValue"]
+- !private ["So30NSStandardKeyBindingRespondingP", "view"]
+- !private ["So30NSStandardKeyBindingRespondingP", "viewDidLoad"]
 - !private ["So11NSTextFieldC", "fittingSize"]
 - !private ["So11NSTextFieldC", "stringValue"]
 - !private ["So18NSTouchBarProviderP", "Bundle"]
@@ -246,6 +296,19 @@ depends-member:
 - !private ["So18NSTouchBarProviderP", "stringValue"]
 - !private ["So18NSTouchBarProviderP", "view"]
 - !private ["So18NSTouchBarProviderP", "viewDidLoad"]
+- !private ["So23NSUserActivityRestoringP", "Bundle"]
+- !private ["So23NSUserActivityRestoringP", "CGRect"]
+- !private ["So23NSUserActivityRestoringP", "CGSize"]
+- !private ["So23NSUserActivityRestoringP", "NSNib"]
+- ["So23NSUserActivityRestoringP", ""]
+- !private ["So23NSUserActivityRestoringP", "fittingSize"]
+- !private ["So23NSUserActivityRestoringP", "frame"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "label"]
+- !private ["So23NSUserActivityRestoringP", "popoverController"]
+- !private ["So23NSUserActivityRestoringP", "stringValue"]
+- !private ["So23NSUserActivityRestoringP", "view"]
+- !private ["So23NSUserActivityRestoringP", "viewDidLoad"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "Bundle"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "CGRect"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "CGSize"]
@@ -278,23 +341,38 @@ depends-member:
 - ["So16NSViewControllerC", "setLabel"]
 - !private ["So16NSViewControllerC", "view"]
 - ["So16NSViewControllerC", "viewDidLoad"]
-- !private ["So5NSNibC4NameV", "init"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "init"]
-- !private ["s8SequenceP", "init"]
+- !private ["So9NSNibNamea", "init"]
+- !private ["Sq", "fittingSize"]
+- !private ["Sq", "stringValue"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "fittingSize"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "stringValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
@@ -309,11 +387,15 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stringValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "fittingSize"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "origin"]
+- !private ["s21_ObjectiveCBridgeableP", "stringValue"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s20_SwiftNewtypeWrapperP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - ["13PRMacControls17popoverControllerC", "Bundle"]
 - ["13PRMacControls17popoverControllerC", "CGRect"]
@@ -322,7 +404,6 @@ depends-member:
 - ["13PRMacControls17popoverControllerC", "NSNib"]
 - ["13PRMacControls17popoverControllerC", "NSTextField"]
 - ["13PRMacControls17popoverControllerC", "String"]
-- ["13PRMacControls17popoverControllerC", "deinit"]
 - ["13PRMacControls17popoverControllerC", "init"]
 - ["13PRMacControls17popoverControllerC", "label"]
 - !private ["13PRMacControls17popoverControllerC", "popoverController"]
@@ -330,53 +411,58 @@ depends-member:
 - !private ["13PRMacControls17popoverControllerC", "view"]
 - ["13PRMacControls17popoverControllerC", "viewDidLoad"]
 depends-nominal:
-- !private "s23BidirectionalCollectionP"
-- !private "So6BundleC"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "SK"
+- !private "So8NSBundleC"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So15NSAccessibilityP"
-- !private "So30NSAccessibilityElementProtocolP"
+- !private "So22NSAccessibilityElementP"
 - !private "So34NSAccessibilityNavigableStaticTextP"
+- !private "So15NSAccessibilityP"
 - !private "So25NSAccessibilityStaticTextP"
 - !private "So29NSAnimatablePropertyContainerP"
 - !private "So25NSAppearanceCustomizationP"
 - "So8NSCodingP"
 - !private "So9NSControlC"
 - !private "So21NSDraggingDestinationP"
+- "So8NSEditorP"
 - "So26NSExtensionRequestHandlingP"
 - "So5NSNibC"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So11NSResponderC"
 - "So17NSSeguePerformingP"
+- "So30NSStandardKeyBindingRespondingP"
 - !private "So11NSTextFieldC"
 - "So18NSTouchBarProviderP"
+- "So23NSUserActivityRestoringP"
 - "So33NSUserInterfaceItemIdentificationP"
 - !private "So26NSUserInterfaceValidationsP"
 - !private "So6NSViewC"
 - "So16NSViewControllerC"
-- !private "So5NSNibC4NameV"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "So9NSNibNamea"
+- !private "Sq"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "9Alamofire14URLConvertibleP"
@@ -386,6 +472,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
@@ -415,15 +502,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "7d494629c34915e6d60acf3f975dd208"

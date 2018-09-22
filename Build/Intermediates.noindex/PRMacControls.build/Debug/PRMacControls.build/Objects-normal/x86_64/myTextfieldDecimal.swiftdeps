@@ -24,7 +24,9 @@ depends-top-level:
 - "Bool"
 - "BooleanLiteralType"
 - "Float"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "NSEvent"
 - "NumberFormatter"
 - "String"
@@ -36,11 +38,13 @@ depends-top-level:
 - !private "||"
 depends-member:
 - !private ["Sa", "contains"]
-- !private ["s23BidirectionalCollectionP", "contains"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "toFloat"]
-- !private ["s19BinaryFloatingPointP", "init"]
-- !private ["s19BinaryFloatingPointP", "toMonetaire"]
+- !private ["s13ArrayProtocolP", "contains"]
+- !private ["SK", "contains"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "toFloat"]
+- !private ["SB", "init"]
+- !private ["SB", "toMonetaire"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "Float"]
 - !private ["s7CVarArgP", "NumberFormatter"]
@@ -56,6 +60,7 @@ depends-member:
 - !private ["s7CVarArgP", "floatValue"]
 - !private ["s7CVarArgP", "format"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "keyCode"]
 - !private ["s7CVarArgP", "monetaire"]
 - !private ["s7CVarArgP", "myFormat"]
@@ -66,12 +71,14 @@ depends-member:
 - !private ["s7CVarArgP", "toFloat"]
 - !private ["s7CVarArgP", "toMonetaire"]
 - !private ["s7CVarArgP", "type"]
-- !private ["s10CollectionP", "contains"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "toFloat"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "toFloat"]
-- !private ["s10ComparableP", "toMonetaire"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "toFloat"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "toFloat"]
+- !private ["SL", "toMonetaire"]
 - !private ["s28CustomDebugStringConvertibleP", "Float"]
 - !private ["s28CustomDebugStringConvertibleP", "NumberFormatter"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
@@ -85,6 +92,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "floatValue"]
 - !private ["s28CustomDebugStringConvertibleP", "format"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "keyCode"]
 - !private ["s28CustomDebugStringConvertibleP", "monetaire"]
 - !private ["s28CustomDebugStringConvertibleP", "myFormat"]
@@ -97,11 +105,17 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "type"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "toFloat"]
 - !private ["s29CustomPlaygroundQuickLookableP", "toMonetaire"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "decimalSeparator"]
+- !private ["s17CustomReflectableP", "format"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "number"]
+- !private ["s17CustomReflectableP", "string"]
 - !private ["s17CustomReflectableP", "toFloat"]
 - !private ["s17CustomReflectableP", "toMonetaire"]
 - !private ["s23CustomStringConvertibleP", "Float"]
@@ -118,6 +132,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "floatValue"]
 - !private ["s23CustomStringConvertibleP", "format"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "keyCode"]
 - !private ["s23CustomStringConvertibleP", "monetaire"]
 - !private ["s23CustomStringConvertibleP", "myFormat"]
@@ -128,120 +143,130 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "toFloat"]
 - !private ["s23CustomStringConvertibleP", "toMonetaire"]
 - !private ["s23CustomStringConvertibleP", "type"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "contains"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "toFloat"]
-- !private ["s9DecodableP", "toMonetaire"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "contains"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "toFloat"]
-- !private ["s9EncodableP", "toMonetaire"]
-- !private ["s9EquatableP", "Float"]
-- !private ["s9EquatableP", "NumberFormatter"]
-- !private ["s9EquatableP", "String"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "bz"]
-- !private ["s9EquatableP", "characters"]
-- !private ["s9EquatableP", "ckeyboardKeys"]
-- !private ["s9EquatableP", "contains"]
-- !private ["s9EquatableP", "decimalSeparator"]
-- !private ["s9EquatableP", "decimales"]
-- !private ["s9EquatableP", "floatValue"]
-- !private ["s9EquatableP", "format"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "keyCode"]
-- !private ["s9EquatableP", "keyUp"]
-- !private ["s9EquatableP", "monetaire"]
-- !private ["s9EquatableP", "myFormat"]
-- !private ["s9EquatableP", "number"]
-- !private ["s9EquatableP", "setformatter"]
-- !private ["s9EquatableP", "string"]
-- !private ["s9EquatableP", "stringValue"]
-- !private ["s9EquatableP", "toFloat"]
-- !private ["s9EquatableP", "toMonetaire"]
-- !private ["s9EquatableP", "type"]
-- !private ["So7NSEventC9EventTypeO", "keyUp"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "contains"]
+- !private ["Se", "decimalSeparator"]
+- !private ["Se", "format"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "number"]
+- !private ["Se", "string"]
+- !private ["Se", "toFloat"]
+- !private ["Se", "toMonetaire"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "contains"]
+- !private ["SE", "decimalSeparator"]
+- !private ["SE", "format"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "number"]
+- !private ["SE", "string"]
+- !private ["SE", "toFloat"]
+- !private ["SE", "toMonetaire"]
+- !private ["SQ", "Float"]
+- !private ["SQ", "NumberFormatter"]
+- !private ["SQ", "String"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "bz"]
+- !private ["SQ", "characters"]
+- !private ["SQ", "ckeyboardKeys"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "decimalSeparator"]
+- !private ["SQ", "decimales"]
+- !private ["SQ", "floatValue"]
+- !private ["SQ", "format"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "keyCode"]
+- !private ["SQ", "keyUp"]
+- !private ["SQ", "monetaire"]
+- !private ["SQ", "myFormat"]
+- !private ["SQ", "number"]
+- !private ["SQ", "setformatter"]
+- !private ["SQ", "string"]
+- !private ["SQ", "stringValue"]
+- !private ["SQ", "toFloat"]
+- !private ["SQ", "toMonetaire"]
+- !private ["SQ", "type"]
+- !private ["So11NSEventTypeV", "keyUp"]
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "toFloat"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "toMonetaire"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "toMonetaire"]
+- !private ["s23ExpressibleByNilLiteralP", "decimalSeparator"]
+- !private ["s23ExpressibleByNilLiteralP", "format"]
+- !private ["s23ExpressibleByNilLiteralP", "number"]
+- !private ["s23ExpressibleByNilLiteralP", "string"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "toFloat"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "toFloat"]
 - !private ["Sf", "init"]
 - !private ["Sf", "toMonetaire"]
-- !private ["s13FloatingPointP", "init"]
-- !private ["s13FloatingPointP", "toMonetaire"]
-- !private ["So9FormatterC", "decimalSeparator"]
-- !private ["So9FormatterC", "format"]
-- !private ["So9FormatterC", "init"]
-- !private ["So9FormatterC", "number"]
-- !private ["So9FormatterC", "string"]
-- !private ["s8HashableP", "Float"]
-- !private ["s8HashableP", "NumberFormatter"]
-- !private ["s8HashableP", "String"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "bz"]
-- !private ["s8HashableP", "characters"]
-- !private ["s8HashableP", "ckeyboardKeys"]
-- !private ["s8HashableP", "decimalSeparator"]
-- !private ["s8HashableP", "decimales"]
-- !private ["s8HashableP", "floatValue"]
-- !private ["s8HashableP", "format"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "keyCode"]
-- !private ["s8HashableP", "keyUp"]
-- !private ["s8HashableP", "monetaire"]
-- !private ["s8HashableP", "myFormat"]
-- !private ["s8HashableP", "number"]
-- !private ["s8HashableP", "setformatter"]
-- !private ["s8HashableP", "string"]
-- !private ["s8HashableP", "stringValue"]
-- !private ["s8HashableP", "toFloat"]
-- !private ["s8HashableP", "toMonetaire"]
-- !private ["s8HashableP", "type"]
+- !private ["SF", "init"]
+- !private ["SF", "toMonetaire"]
+- !private ["So11NSFormatterC", "decimalSeparator"]
+- !private ["So11NSFormatterC", "format"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "number"]
+- !private ["So11NSFormatterC", "string"]
+- !private ["SH", "Float"]
+- !private ["SH", "NumberFormatter"]
+- !private ["SH", "String"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "bz"]
+- !private ["SH", "characters"]
+- !private ["SH", "ckeyboardKeys"]
+- !private ["SH", "contains"]
+- !private ["SH", "decimalSeparator"]
+- !private ["SH", "decimales"]
+- !private ["SH", "floatValue"]
+- !private ["SH", "format"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "keyCode"]
+- !private ["SH", "keyUp"]
+- !private ["SH", "monetaire"]
+- !private ["SH", "myFormat"]
+- !private ["SH", "number"]
+- !private ["SH", "setformatter"]
+- !private ["SH", "string"]
+- !private ["SH", "stringValue"]
+- !private ["SH", "toFloat"]
+- !private ["SH", "toMonetaire"]
+- !private ["SH", "type"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "toFloat"]
 - !private ["s25LosslessStringConvertibleP", "toMonetaire"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "toFloat"]
-- !private ["s17MutableCollectionP", "contains"]
-- !private ["So15NSAccessibilityP", "Float"]
-- !private ["So15NSAccessibilityP", "NumberFormatter"]
-- !private ["So15NSAccessibilityP", "String"]
-- ["So15NSAccessibilityP", ""]
-- !private ["So15NSAccessibilityP", "bz"]
-- !private ["So15NSAccessibilityP", "ckeyboardKeys"]
-- !private ["So15NSAccessibilityP", "decimales"]
-- !private ["So15NSAccessibilityP", "floatValue"]
-- !private ["So15NSAccessibilityP", "init"]
-- !private ["So15NSAccessibilityP", "monetaire"]
-- !private ["So15NSAccessibilityP", "myFormat"]
-- !private ["So15NSAccessibilityP", "setformatter"]
-- !private ["So15NSAccessibilityP", "stringValue"]
-- !private ["So30NSAccessibilityElementProtocolP", "Float"]
-- !private ["So30NSAccessibilityElementProtocolP", "NumberFormatter"]
-- !private ["So30NSAccessibilityElementProtocolP", "String"]
-- ["So30NSAccessibilityElementProtocolP", ""]
-- !private ["So30NSAccessibilityElementProtocolP", "bz"]
-- !private ["So30NSAccessibilityElementProtocolP", "ckeyboardKeys"]
-- !private ["So30NSAccessibilityElementProtocolP", "decimales"]
-- !private ["So30NSAccessibilityElementProtocolP", "floatValue"]
-- !private ["So30NSAccessibilityElementProtocolP", "init"]
-- !private ["So30NSAccessibilityElementProtocolP", "monetaire"]
-- !private ["So30NSAccessibilityElementProtocolP", "myFormat"]
-- !private ["So30NSAccessibilityElementProtocolP", "setformatter"]
-- !private ["So30NSAccessibilityElementProtocolP", "stringValue"]
+- !private ["SM", "contains"]
+- !private ["So22NSAccessibilityElementP", "Float"]
+- !private ["So22NSAccessibilityElementP", "NumberFormatter"]
+- !private ["So22NSAccessibilityElementP", "String"]
+- ["So22NSAccessibilityElementP", ""]
+- !private ["So22NSAccessibilityElementP", "bz"]
+- !private ["So22NSAccessibilityElementP", "ckeyboardKeys"]
+- !private ["So22NSAccessibilityElementP", "decimales"]
+- !private ["So22NSAccessibilityElementP", "floatValue"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "monetaire"]
+- !private ["So22NSAccessibilityElementP", "myFormat"]
+- !private ["So22NSAccessibilityElementP", "setformatter"]
+- !private ["So22NSAccessibilityElementP", "stringValue"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "Float"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "NumberFormatter"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "String"]
@@ -251,10 +276,25 @@ depends-member:
 - !private ["So34NSAccessibilityNavigableStaticTextP", "decimales"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "floatValue"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "init"]
+- !private ["So34NSAccessibilityNavigableStaticTextP", "init"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "monetaire"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "myFormat"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "setformatter"]
 - !private ["So34NSAccessibilityNavigableStaticTextP", "stringValue"]
+- !private ["So15NSAccessibilityP", "Float"]
+- !private ["So15NSAccessibilityP", "NumberFormatter"]
+- !private ["So15NSAccessibilityP", "String"]
+- ["So15NSAccessibilityP", ""]
+- !private ["So15NSAccessibilityP", "bz"]
+- !private ["So15NSAccessibilityP", "ckeyboardKeys"]
+- !private ["So15NSAccessibilityP", "decimales"]
+- !private ["So15NSAccessibilityP", "floatValue"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "monetaire"]
+- !private ["So15NSAccessibilityP", "myFormat"]
+- !private ["So15NSAccessibilityP", "setformatter"]
+- !private ["So15NSAccessibilityP", "stringValue"]
 - !private ["So25NSAccessibilityStaticTextP", "Float"]
 - !private ["So25NSAccessibilityStaticTextP", "NumberFormatter"]
 - !private ["So25NSAccessibilityStaticTextP", "String"]
@@ -263,6 +303,7 @@ depends-member:
 - !private ["So25NSAccessibilityStaticTextP", "ckeyboardKeys"]
 - !private ["So25NSAccessibilityStaticTextP", "decimales"]
 - !private ["So25NSAccessibilityStaticTextP", "floatValue"]
+- !private ["So25NSAccessibilityStaticTextP", "init"]
 - !private ["So25NSAccessibilityStaticTextP", "init"]
 - !private ["So25NSAccessibilityStaticTextP", "monetaire"]
 - !private ["So25NSAccessibilityStaticTextP", "myFormat"]
@@ -277,6 +318,7 @@ depends-member:
 - !private ["So29NSAnimatablePropertyContainerP", "decimales"]
 - !private ["So29NSAnimatablePropertyContainerP", "floatValue"]
 - !private ["So29NSAnimatablePropertyContainerP", "init"]
+- !private ["So29NSAnimatablePropertyContainerP", "init"]
 - !private ["So29NSAnimatablePropertyContainerP", "monetaire"]
 - !private ["So29NSAnimatablePropertyContainerP", "myFormat"]
 - !private ["So29NSAnimatablePropertyContainerP", "setformatter"]
@@ -289,6 +331,7 @@ depends-member:
 - !private ["So25NSAppearanceCustomizationP", "ckeyboardKeys"]
 - !private ["So25NSAppearanceCustomizationP", "decimales"]
 - !private ["So25NSAppearanceCustomizationP", "floatValue"]
+- !private ["So25NSAppearanceCustomizationP", "init"]
 - !private ["So25NSAppearanceCustomizationP", "init"]
 - !private ["So25NSAppearanceCustomizationP", "monetaire"]
 - !private ["So25NSAppearanceCustomizationP", "myFormat"]
@@ -305,6 +348,7 @@ depends-member:
 - !private ["So8NSCodingP", "decimales"]
 - !private ["So8NSCodingP", "floatValue"]
 - !private ["So8NSCodingP", "format"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "keyCode"]
 - !private ["So8NSCodingP", "monetaire"]
@@ -328,6 +372,7 @@ depends-member:
 - ["So9NSControlC", "decimales"]
 - ["So9NSControlC", "floatValue"]
 - ["So9NSControlC", "init"]
+- !private ["So9NSControlC", "init"]
 - ["So9NSControlC", "monetaire"]
 - ["So9NSControlC", "myFormat"]
 - ["So9NSControlC", "setformatter"]
@@ -340,6 +385,7 @@ depends-member:
 - !private ["So28NSControlTextEditingDelegateP", "ckeyboardKeys"]
 - !private ["So28NSControlTextEditingDelegateP", "decimales"]
 - !private ["So28NSControlTextEditingDelegateP", "floatValue"]
+- !private ["So28NSControlTextEditingDelegateP", "init"]
 - !private ["So28NSControlTextEditingDelegateP", "init"]
 - !private ["So28NSControlTextEditingDelegateP", "monetaire"]
 - !private ["So28NSControlTextEditingDelegateP", "myFormat"]
@@ -362,6 +408,7 @@ depends-member:
 - !private ["So21NSDraggingDestinationP", "ckeyboardKeys"]
 - !private ["So21NSDraggingDestinationP", "decimales"]
 - !private ["So21NSDraggingDestinationP", "floatValue"]
+- !private ["So21NSDraggingDestinationP", "init"]
 - !private ["So21NSDraggingDestinationP", "init"]
 - !private ["So21NSDraggingDestinationP", "monetaire"]
 - !private ["So21NSDraggingDestinationP", "myFormat"]
@@ -389,6 +436,7 @@ depends-member:
 - ["So8NSObjectC", "floatValue"]
 - !private ["So8NSObjectC", "format"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "keyCode"]
 - ["So8NSObjectC", "monetaire"]
 - ["So8NSObjectC", "myFormat"]
@@ -398,27 +446,28 @@ depends-member:
 - ["So8NSObjectC", "stringValue"]
 - !private ["So8NSObjectC", "toFloat"]
 - !private ["So8NSObjectC", "type"]
-- !private ["So16NSObjectProtocolP", "Float"]
-- !private ["So16NSObjectProtocolP", "NumberFormatter"]
-- !private ["So16NSObjectProtocolP", "String"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "bz"]
-- !private ["So16NSObjectProtocolP", "characters"]
-- !private ["So16NSObjectProtocolP", "ckeyboardKeys"]
-- !private ["So16NSObjectProtocolP", "decimalSeparator"]
-- !private ["So16NSObjectProtocolP", "decimales"]
-- !private ["So16NSObjectProtocolP", "floatValue"]
-- !private ["So16NSObjectProtocolP", "format"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "keyCode"]
-- !private ["So16NSObjectProtocolP", "monetaire"]
-- !private ["So16NSObjectProtocolP", "myFormat"]
-- !private ["So16NSObjectProtocolP", "number"]
-- !private ["So16NSObjectProtocolP", "setformatter"]
-- !private ["So16NSObjectProtocolP", "string"]
-- !private ["So16NSObjectProtocolP", "stringValue"]
-- !private ["So16NSObjectProtocolP", "toFloat"]
-- !private ["So16NSObjectProtocolP", "type"]
+- !private ["So8NSObjectP", "Float"]
+- !private ["So8NSObjectP", "NumberFormatter"]
+- !private ["So8NSObjectP", "String"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bz"]
+- !private ["So8NSObjectP", "characters"]
+- !private ["So8NSObjectP", "ckeyboardKeys"]
+- !private ["So8NSObjectP", "decimalSeparator"]
+- !private ["So8NSObjectP", "decimales"]
+- !private ["So8NSObjectP", "floatValue"]
+- !private ["So8NSObjectP", "format"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "keyCode"]
+- !private ["So8NSObjectP", "monetaire"]
+- !private ["So8NSObjectP", "myFormat"]
+- !private ["So8NSObjectP", "number"]
+- !private ["So8NSObjectP", "setformatter"]
+- !private ["So8NSObjectP", "string"]
+- !private ["So8NSObjectP", "stringValue"]
+- !private ["So8NSObjectP", "toFloat"]
+- !private ["So8NSObjectP", "type"]
 - !private ["So19NSPasteboardReadingP", "toFloat"]
 - !private ["So19NSPasteboardWritingP", "toFloat"]
 - ["So11NSResponderC", "Bool"]
@@ -434,11 +483,26 @@ depends-member:
 - ["So11NSResponderC", "decimales"]
 - ["So11NSResponderC", "floatValue"]
 - ["So11NSResponderC", "init"]
+- !private ["So11NSResponderC", "init"]
 - ["So11NSResponderC", "monetaire"]
 - ["So11NSResponderC", "myFormat"]
 - ["So11NSResponderC", "setformatter"]
 - ["So11NSResponderC", "stringValue"]
 - !private ["So14NSSecureCodingP", "toFloat"]
+- !private ["So30NSStandardKeyBindingRespondingP", "Float"]
+- !private ["So30NSStandardKeyBindingRespondingP", "NumberFormatter"]
+- !private ["So30NSStandardKeyBindingRespondingP", "String"]
+- ["So30NSStandardKeyBindingRespondingP", ""]
+- !private ["So30NSStandardKeyBindingRespondingP", "bz"]
+- !private ["So30NSStandardKeyBindingRespondingP", "ckeyboardKeys"]
+- !private ["So30NSStandardKeyBindingRespondingP", "decimales"]
+- !private ["So30NSStandardKeyBindingRespondingP", "floatValue"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "monetaire"]
+- !private ["So30NSStandardKeyBindingRespondingP", "myFormat"]
+- !private ["So30NSStandardKeyBindingRespondingP", "setformatter"]
+- !private ["So30NSStandardKeyBindingRespondingP", "stringValue"]
 - !private ["So8NSStringC", "toFloat"]
 - ["So11NSTextFieldC", "Bool"]
 - ["So11NSTextFieldC", "Float"]
@@ -453,6 +517,7 @@ depends-member:
 - ["So11NSTextFieldC", "decimales"]
 - ["So11NSTextFieldC", "floatValue"]
 - ["So11NSTextFieldC", "init"]
+- !private ["So11NSTextFieldC", "init"]
 - ["So11NSTextFieldC", "monetaire"]
 - ["So11NSTextFieldC", "myFormat"]
 - ["So11NSTextFieldC", "setformatter"]
@@ -465,6 +530,7 @@ depends-member:
 - !private ["So19NSTextFieldDelegateP", "ckeyboardKeys"]
 - !private ["So19NSTextFieldDelegateP", "decimales"]
 - !private ["So19NSTextFieldDelegateP", "floatValue"]
+- !private ["So19NSTextFieldDelegateP", "init"]
 - !private ["So19NSTextFieldDelegateP", "init"]
 - !private ["So19NSTextFieldDelegateP", "monetaire"]
 - !private ["So19NSTextFieldDelegateP", "myFormat"]
@@ -479,10 +545,25 @@ depends-member:
 - !private ["So18NSTouchBarProviderP", "decimales"]
 - !private ["So18NSTouchBarProviderP", "floatValue"]
 - !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "init"]
 - !private ["So18NSTouchBarProviderP", "monetaire"]
 - !private ["So18NSTouchBarProviderP", "myFormat"]
 - !private ["So18NSTouchBarProviderP", "setformatter"]
 - !private ["So18NSTouchBarProviderP", "stringValue"]
+- !private ["So23NSUserActivityRestoringP", "Float"]
+- !private ["So23NSUserActivityRestoringP", "NumberFormatter"]
+- !private ["So23NSUserActivityRestoringP", "String"]
+- ["So23NSUserActivityRestoringP", ""]
+- !private ["So23NSUserActivityRestoringP", "bz"]
+- !private ["So23NSUserActivityRestoringP", "ckeyboardKeys"]
+- !private ["So23NSUserActivityRestoringP", "decimales"]
+- !private ["So23NSUserActivityRestoringP", "floatValue"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "monetaire"]
+- !private ["So23NSUserActivityRestoringP", "myFormat"]
+- !private ["So23NSUserActivityRestoringP", "setformatter"]
+- !private ["So23NSUserActivityRestoringP", "stringValue"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "Float"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "NumberFormatter"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "String"]
@@ -491,6 +572,7 @@ depends-member:
 - !private ["So33NSUserInterfaceItemIdentificationP", "ckeyboardKeys"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "decimales"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "floatValue"]
+- !private ["So33NSUserInterfaceItemIdentificationP", "init"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "init"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "monetaire"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "myFormat"]
@@ -504,6 +586,7 @@ depends-member:
 - !private ["So26NSUserInterfaceValidationsP", "ckeyboardKeys"]
 - !private ["So26NSUserInterfaceValidationsP", "decimales"]
 - !private ["So26NSUserInterfaceValidationsP", "floatValue"]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
 - !private ["So26NSUserInterfaceValidationsP", "init"]
 - !private ["So26NSUserInterfaceValidationsP", "monetaire"]
 - !private ["So26NSUserInterfaceValidationsP", "myFormat"]
@@ -522,40 +605,51 @@ depends-member:
 - ["So6NSViewC", "decimales"]
 - ["So6NSViewC", "floatValue"]
 - ["So6NSViewC", "init"]
+- !private ["So6NSViewC", "init"]
 - ["So6NSViewC", "monetaire"]
 - ["So6NSViewC", "myFormat"]
 - ["So6NSViewC", "setformatter"]
 - ["So6NSViewC", "stringValue"]
-- !private ["So15NumberFormatterC", "decimalSeparator"]
-- !private ["So15NumberFormatterC", "format"]
-- !private ["So15NumberFormatterC", "init"]
-- !private ["So15NumberFormatterC", "number"]
-- !private ["So15NumberFormatterC", "string"]
-- !private ["s7NumericP", "init"]
-- !private ["s7NumericP", "toMonetaire"]
-- !private ["s22RandomAccessCollectionP", "contains"]
-- !private ["s26RangeReplaceableCollectionP", "contains"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "toFloat"]
-- !private ["s16RawRepresentableP", "keyUp"]
-- !private ["s8SequenceP", "contains"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "toFloat"]
+- !private ["So17NSNumberFormatterC", "decimalSeparator"]
+- !private ["So17NSNumberFormatterC", "format"]
+- !private ["So17NSNumberFormatterC", "init"]
+- !private ["So17NSNumberFormatterC", "number"]
+- !private ["So17NSNumberFormatterC", "string"]
+- !private ["Sj", "init"]
+- !private ["Sj", "toMonetaire"]
+- !private ["Sq", "decimalSeparator"]
+- !private ["Sq", "format"]
+- !private ["Sq", "number"]
+- !private ["Sq", "string"]
+- !private ["Sk", "contains"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "toFloat"]
+- !private ["SY", "keyUp"]
+- !private ["ST", "contains"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "toFloat"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["s13SignedNumericP", "toMonetaire"]
-- !private ["s10StrideableP", "init"]
-- !private ["s10StrideableP", "toMonetaire"]
+- !private ["Sx", "init"]
+- !private ["Sx", "toMonetaire"]
+- !private ["SS", "init"]
 - !private ["SS", "init"]
 - !private ["SS", "toFloat"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["s14StringProtocolP", "toFloat"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "toFloat"]
+- !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "toFloat"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "toFloat"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "toFloat"]
-- !private ["s14_ArrayProtocolP", "contains"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s15_CVarArgAlignedP", "toMonetaire"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
@@ -569,6 +663,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "decimales"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "floatValue"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "monetaire"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "myFormat"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setformatter"]
@@ -576,20 +671,28 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "contains"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "toFloat"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "toMonetaire"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "toMonetaire"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "toFloat"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "toFloat"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "toFloat"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "toFloat"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "toFloat"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "toMonetaire"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Float"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NumberFormatter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
@@ -602,6 +705,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "floatValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "format"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "keyCode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "monetaire"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "myFormat"]
@@ -613,9 +717,15 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "decimalSeparator"]
+- !private ["s21_ObjectiveCBridgeableP", "format"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "number"]
+- !private ["s21_ObjectiveCBridgeableP", "string"]
 - !private ["s21_ObjectiveCBridgeableP", "toFloat"]
 - !private ["s21_ObjectiveCBridgeableP", "toMonetaire"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "toFloat"]
 - !private ["13PRMacControls13ckeyboardKeysC", "delete"]
@@ -632,7 +742,6 @@ depends-member:
 - ["13PRMacControls19cmyTextFieldDecimalC", "bz"]
 - !private ["13PRMacControls19cmyTextFieldDecimalC", "ckeyboardKeys"]
 - ["13PRMacControls19cmyTextFieldDecimalC", "decimales"]
-- ["13PRMacControls19cmyTextFieldDecimalC", "deinit"]
 - ["13PRMacControls19cmyTextFieldDecimalC", "floatValue"]
 - ["13PRMacControls19cmyTextFieldDecimalC", "init"]
 - ["13PRMacControls19cmyTextFieldDecimalC", "monetaire"]
@@ -651,8 +760,10 @@ depends-member:
 - ["13PRMacControls15cmyTextFieldNumC", "bz"]
 - !private ["13PRMacControls15cmyTextFieldNumC", "ckeyboardKeys"]
 - ["13PRMacControls15cmyTextFieldNumC", "decimales"]
+- !private ["13PRMacControls15cmyTextFieldNumC", "deinit"]
 - ["13PRMacControls15cmyTextFieldNumC", "floatValue"]
 - ["13PRMacControls15cmyTextFieldNumC", "init"]
+- !private ["13PRMacControls15cmyTextFieldNumC", "init"]
 - ["13PRMacControls15cmyTextFieldNumC", "monetaire"]
 - ["13PRMacControls15cmyTextFieldNumC", "myFormat"]
 - ["13PRMacControls15cmyTextFieldNumC", "setformatter"]
@@ -670,43 +781,46 @@ depends-member:
 - ["13PRMacControls12cmyTextfieldC", "decimales"]
 - ["13PRMacControls12cmyTextfieldC", "floatValue"]
 - ["13PRMacControls12cmyTextfieldC", "init"]
+- !private ["13PRMacControls12cmyTextfieldC", "init"]
 - ["13PRMacControls12cmyTextfieldC", "monetaire"]
 - ["13PRMacControls12cmyTextfieldC", "myFormat"]
 - ["13PRMacControls12cmyTextfieldC", "setformatter"]
 - ["13PRMacControls12cmyTextfieldC", "stringValue"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
-- !private "s19BinaryFloatingPointP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "SB"
 - !private "Sb"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
-- !private "So7NSEventC9EventTypeO"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "So11NSEventTypeV"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "Sf"
-- !private "s13FloatingPointP"
-- !private "So9FormatterC"
-- "s8HashableP"
+- !private "SF"
+- !private "So11NSFormatterC"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
-- "So15NSAccessibilityP"
-- "So30NSAccessibilityElementProtocolP"
+- !private "SM"
+- "So22NSAccessibilityElementP"
 - "So34NSAccessibilityNavigableStaticTextP"
+- "So15NSAccessibilityP"
 - "So25NSAccessibilityStaticTextP"
 - "So29NSAnimatablePropertyContainerP"
 - "So25NSAppearanceCustomizationP"
@@ -720,32 +834,34 @@ depends-nominal:
 - !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So19NSPasteboardReadingP"
 - !private "So19NSPasteboardWritingP"
 - "So11NSResponderC"
 - !private "So14NSSecureCodingP"
+- "So30NSStandardKeyBindingRespondingP"
 - !private "So8NSStringC"
 - "So11NSTextFieldC"
 - "So19NSTextFieldDelegateP"
 - "So18NSTouchBarProviderP"
+- "So23NSUserActivityRestoringP"
 - "So33NSUserInterfaceItemIdentificationP"
 - "So26NSUserInterfaceValidationsP"
 - "So6NSViewC"
-- !private "So15NumberFormatterC"
-- !private "s7NumericP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "So17NSNumberFormatterC"
+- !private "Sj"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
 - !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "Sx"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "9Alamofire14URLConvertibleP"
-- !private "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -790,15 +906,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "66853c6f3fecc0318a68c0bf3283691d"

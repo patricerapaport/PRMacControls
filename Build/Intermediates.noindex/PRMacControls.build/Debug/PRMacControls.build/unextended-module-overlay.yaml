@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/PRMacControls.framework/Modules'
+    'name': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/PRMacControls.framework/Modules"
     'contents': [{
       'type': 'file',
-      'name': 'module.modulemap',
-      'external-contents': '/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap',
+      'name': "module.modulemap",
+      'external-contents': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap",
     }]
   }]
 }

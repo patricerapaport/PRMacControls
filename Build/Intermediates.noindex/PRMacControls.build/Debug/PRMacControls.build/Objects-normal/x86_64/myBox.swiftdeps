@@ -17,6 +17,8 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - "CGRect"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSBox"
 - "NSCoder"
 - "NSColor"
@@ -26,13 +28,17 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "ctrl"]
+- !private ["s13ArrayProtocolP", "subscript"]
 - !private ["s10ArraySliceV", "ctrl"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "ctrl"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "ctrl"]
+- !private ["SK", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["So5NSBoxC7BoxTypeO", "custom"]
+- !private ["So9NSBoxTypeV", "custom"]
 - !private ["So7CALayerC", "backgroundColor"]
 - !private ["So13CAMediaTimingP", "backgroundColor"]
 - ["s7CVarArgP", ""]
@@ -51,10 +57,10 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "wantsLayer"]
 - ["s7CVarArgP", "white"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "ctrl"]
-- !private ["s10CollectionP", "subscript"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "ctrl"]
+- !private ["Sl", "subscript"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
@@ -92,55 +98,67 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "wantsLayer"]
 - ["s23CustomStringConvertibleP", "white"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "subscript"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "boxType"]
-- !private ["s9EquatableP", "cgColor"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "ctrl"]
-- !private ["s9EquatableP", "ctrls"]
-- !private ["s9EquatableP", "custom"]
-- !private ["s9EquatableP", "fillColor"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isHidden"]
-- !private ["s9EquatableP", "layer"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "wantsLayer"]
-- ["s9EquatableP", "white"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "subscript"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "boxType"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "count"]
+- !private ["SQ", "ctrl"]
+- !private ["SQ", "ctrls"]
+- !private ["SQ", "custom"]
+- !private ["SQ", "fillColor"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isHidden"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "wantsLayer"]
+- ["SQ", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "ctrl"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "boxType"]
-- !private ["s8HashableP", "cgColor"]
-- !private ["s8HashableP", "ctrl"]
-- !private ["s8HashableP", "ctrls"]
-- !private ["s8HashableP", "custom"]
-- !private ["s8HashableP", "fillColor"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isHidden"]
-- !private ["s8HashableP", "layer"]
-- !private ["s8HashableP", "wantsLayer"]
-- ["s8HashableP", "white"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "append"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "boxType"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "count"]
+- !private ["SH", "ctrl"]
+- !private ["SH", "ctrls"]
+- !private ["SH", "custom"]
+- !private ["SH", "fillColor"]
+- !private ["SH", "init"]
+- !private ["SH", "isHidden"]
+- !private ["SH", "layer"]
+- !private ["SH", "subscript"]
+- !private ["SH", "wantsLayer"]
+- ["SH", "white"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "ctrl"]
-- !private ["s17MutableCollectionP", "subscript"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "ctrl"]
+- !private ["SM", "subscript"]
+- ["So22NSAccessibilityElementP", ""]
+- !private ["So22NSAccessibilityElementP", "backgroundColor"]
+- !private ["So22NSAccessibilityElementP", "boxType"]
+- !private ["So22NSAccessibilityElementP", "ctrls"]
+- !private ["So22NSAccessibilityElementP", "fillColor"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "isHidden"]
+- !private ["So22NSAccessibilityElementP", "layer"]
+- !private ["So22NSAccessibilityElementP", "wantsLayer"]
 - ["So15NSAccessibilityP", ""]
 - !private ["So15NSAccessibilityP", "backgroundColor"]
 - !private ["So15NSAccessibilityP", "boxType"]
@@ -150,15 +168,6 @@ depends-member:
 - !private ["So15NSAccessibilityP", "isHidden"]
 - !private ["So15NSAccessibilityP", "layer"]
 - !private ["So15NSAccessibilityP", "wantsLayer"]
-- ["So30NSAccessibilityElementProtocolP", ""]
-- !private ["So30NSAccessibilityElementProtocolP", "backgroundColor"]
-- !private ["So30NSAccessibilityElementProtocolP", "boxType"]
-- !private ["So30NSAccessibilityElementProtocolP", "ctrls"]
-- !private ["So30NSAccessibilityElementProtocolP", "fillColor"]
-- !private ["So30NSAccessibilityElementProtocolP", "init"]
-- !private ["So30NSAccessibilityElementProtocolP", "isHidden"]
-- !private ["So30NSAccessibilityElementProtocolP", "layer"]
-- !private ["So30NSAccessibilityElementProtocolP", "wantsLayer"]
 - ["So29NSAnimatablePropertyContainerP", ""]
 - !private ["So29NSAnimatablePropertyContainerP", "backgroundColor"]
 - !private ["So29NSAnimatablePropertyContainerP", "boxType"]
@@ -235,18 +244,18 @@ depends-member:
 - ["So8NSObjectC", "prepareForInterfaceBuilder"]
 - !private ["So8NSObjectC", "wantsLayer"]
 - ["So8NSObjectC", "white"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "boxType"]
-- !private ["So16NSObjectProtocolP", "cgColor"]
-- !private ["So16NSObjectProtocolP", "ctrl"]
-- !private ["So16NSObjectProtocolP", "ctrls"]
-- !private ["So16NSObjectProtocolP", "fillColor"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isHidden"]
-- !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "wantsLayer"]
-- ["So16NSObjectProtocolP", "white"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "boxType"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "ctrl"]
+- !private ["So8NSObjectP", "ctrls"]
+- !private ["So8NSObjectP", "fillColor"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isHidden"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "wantsLayer"]
+- ["So8NSObjectP", "white"]
 - !private ["So19NSPasteboardReadingP", "cgColor"]
 - ["So19NSPasteboardReadingP", "white"]
 - !private ["So19NSPasteboardWritingP", "cgColor"]
@@ -269,6 +278,15 @@ depends-member:
 - !private ["So14NSSecureCodingP", "backgroundColor"]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - ["So14NSSecureCodingP", "white"]
+- ["So30NSStandardKeyBindingRespondingP", ""]
+- !private ["So30NSStandardKeyBindingRespondingP", "backgroundColor"]
+- !private ["So30NSStandardKeyBindingRespondingP", "boxType"]
+- !private ["So30NSStandardKeyBindingRespondingP", "ctrls"]
+- !private ["So30NSStandardKeyBindingRespondingP", "fillColor"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "isHidden"]
+- !private ["So30NSStandardKeyBindingRespondingP", "layer"]
+- !private ["So30NSStandardKeyBindingRespondingP", "wantsLayer"]
 - ["So18NSTouchBarProviderP", ""]
 - !private ["So18NSTouchBarProviderP", "backgroundColor"]
 - !private ["So18NSTouchBarProviderP", "boxType"]
@@ -278,6 +296,15 @@ depends-member:
 - !private ["So18NSTouchBarProviderP", "isHidden"]
 - !private ["So18NSTouchBarProviderP", "layer"]
 - !private ["So18NSTouchBarProviderP", "wantsLayer"]
+- ["So23NSUserActivityRestoringP", ""]
+- !private ["So23NSUserActivityRestoringP", "backgroundColor"]
+- !private ["So23NSUserActivityRestoringP", "boxType"]
+- !private ["So23NSUserActivityRestoringP", "ctrls"]
+- !private ["So23NSUserActivityRestoringP", "fillColor"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "isHidden"]
+- !private ["So23NSUserActivityRestoringP", "layer"]
+- !private ["So23NSUserActivityRestoringP", "wantsLayer"]
 - ["So33NSUserInterfaceItemIdentificationP", ""]
 - !private ["So33NSUserInterfaceItemIdentificationP", "backgroundColor"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "boxType"]
@@ -302,23 +329,19 @@ depends-member:
 - !private ["So6NSViewC", "layer"]
 - ["So6NSViewC", "prepareForInterfaceBuilder"]
 - !private ["So6NSViewC", "wantsLayer"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "ctrl"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "ctrl"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s16RawRepresentableP", "custom"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "ctrl"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "ctrl"]
-- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "ctrl"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "ctrl"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "custom"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "ctrl"]
+- !private ["ST", "subscript"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "boxType"]
@@ -335,6 +358,9 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "boxType"]
@@ -360,7 +386,6 @@ depends-member:
 - !private ["13PRMacControls6cmyBoxC", "boxType"]
 - ["13PRMacControls6cmyBoxC", "cmyControl"]
 - ["13PRMacControls6cmyBoxC", "ctrls"]
-- ["13PRMacControls6cmyBoxC", "deinit"]
 - !private ["13PRMacControls6cmyBoxC", "fillColor"]
 - ["13PRMacControls6cmyBoxC", "init"]
 - ["13PRMacControls6cmyBoxC", "isHidden"]
@@ -371,28 +396,29 @@ depends-member:
 - !private ["13PRMacControls18mySelectorProtocolP", "ctrl"]
 depends-nominal:
 - !private "Sa"
+- !private "s13ArrayProtocolP"
 - !private "s10ArraySliceV"
-- !private "s23BidirectionalCollectionP"
+- !private "SK"
 - !private "Sb"
-- !private "So5NSBoxC7BoxTypeO"
+- !private "So9NSBoxTypeV"
 - !private "So7CALayerC"
 - !private "So13CAMediaTimingP"
 - "s7CVarArgP"
-- !private "s10CollectionP"
+- !private "Sl"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
-- !private "s17MutableCollectionP"
+- !private "SM"
+- "So22NSAccessibilityElementP"
 - "So15NSAccessibilityP"
-- "So30NSAccessibilityElementProtocolP"
 - "So29NSAnimatablePropertyContainerP"
 - "So25NSAppearanceCustomizationP"
 - "So5NSBoxC"
@@ -401,23 +427,25 @@ depends-nominal:
 - "So9NSCopyingP"
 - "So21NSDraggingDestinationP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So19NSPasteboardReadingP"
 - "So19NSPasteboardWritingP"
 - "So11NSResponderC"
 - "So14NSSecureCodingP"
+- "So30NSStandardKeyBindingRespondingP"
 - "So18NSTouchBarProviderP"
+- "So23NSUserActivityRestoringP"
 - "So33NSUserInterfaceItemIdentificationP"
 - "So6NSViewC"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
-- !private "s14_ArrayProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s26_ExpressibleByColorLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "13PRMacControls6cmyBoxC"
@@ -447,15 +475,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "fcc51c626f7430d48be7d8d5ec324ac9"

@@ -20,7 +20,9 @@ depends-top-level:
 - !private "Date"
 - !private "DateFormatter"
 - "Dictionary"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "String"
 - "StringLiteralType"
 - "TernaryPrecedence"
@@ -30,29 +32,35 @@ depends-top-level:
 - !private "~="
 depends-member:
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "components"]
-- !private ["s23BidirectionalCollectionP", "contains"]
-- ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
-- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "components"]
+- !private ["SK", "contains"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["SK", "subscript"]
+- !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "components"]
 - !private ["s7CVarArgP", "contains"]
 - !private ["s7CVarArgP", "dateFormat"]
 - ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "string"]
 - !private ["s7CVarArgP", "subscript"]
-- !private ["s10CollectionP", "components"]
-- !private ["s10CollectionP", "contains"]
-- ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "components"]
-- !private ["s10ComparableP", "contains"]
-- ["s10ComparableP", "init"]
+- !private ["Sl", "components"]
+- !private ["Sl", "contains"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "components"]
+- !private ["SL", "contains"]
+- ["SL", "init"]
+- ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "components"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "string"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
@@ -60,9 +68,11 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "components"]
 - !private ["s29CustomPlaygroundQuickLookableP", "contains"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "components"]
 - !private ["s17CustomReflectableP", "contains"]
+- ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
@@ -70,60 +80,71 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "contains"]
 - !private ["s23CustomStringConvertibleP", "dateFormat"]
 - ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "string"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation4DateV", "init"]
-- !private ["So13DateFormatterC", "dateFormat"]
-- !private ["So13DateFormatterC", "init"]
-- !private ["So13DateFormatterC", "string"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "components"]
-- !private ["s9DecodableP", "contains"]
-- ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "components"]
-- !private ["s9EncodableP", "contains"]
-- ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "components"]
-- !private ["s9EquatableP", "contains"]
-- !private ["s9EquatableP", "dateFormat"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "string"]
-- !private ["s9EquatableP", "subscript"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
+- !private ["So15NSDateFormatterC", "string"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "components"]
+- !private ["Se", "contains"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "components"]
+- !private ["SE", "contains"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "components"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "dateFormat"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "string"]
+- !private ["SQ", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "components"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contains"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "components"]
 - !private ["s26ExpressibleByStringLiteralP", "contains"]
 - ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "components"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "contains"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
-- !private ["So9FormatterC", "dateFormat"]
-- !private ["So9FormatterC", "init"]
-- !private ["So9FormatterC", "string"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "components"]
-- !private ["s8HashableP", "contains"]
-- !private ["s8HashableP", "dateFormat"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "string"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "string"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "components"]
+- !private ["SH", "contains"]
+- !private ["SH", "dateFormat"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "string"]
+- !private ["SH", "subscript"]
 - !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "components"]
 - !private ["s25LosslessStringConvertibleP", "contains"]
 - ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "components"]
 - !private ["s10MirrorPathP", "contains"]
 - ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "subscript"]
+- ["s10MirrorPathP", "init"]
+- !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "components"]
 - !private ["So8NSCodingP", "contains"]
 - !private ["So8NSCodingP", "dateFormat"]
@@ -145,11 +166,11 @@ depends-member:
 - !private ["So8NSObjectC", "dateFormat"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "string"]
-- !private ["So16NSObjectProtocolP", "components"]
-- !private ["So16NSObjectProtocolP", "contains"]
-- !private ["So16NSObjectProtocolP", "dateFormat"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "string"]
+- !private ["So8NSObjectP", "components"]
+- !private ["So8NSObjectP", "contains"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "string"]
 - !private ["So19NSPasteboardReadingP", "components"]
 - !private ["So19NSPasteboardReadingP", "contains"]
 - !private ["So19NSPasteboardWritingP", "components"]
@@ -158,57 +179,70 @@ depends-member:
 - !private ["So14NSSecureCodingP", "contains"]
 - !private ["So8NSStringC", "components"]
 - !private ["So8NSStringC", "contains"]
-- !private ["s7NumericP", "init"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "components"]
-- !private ["s26RangeReplaceableCollectionP", "contains"]
-- ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["Sj", "init"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "components"]
+- !private ["Sm", "contains"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
-- !private ["s8SequenceP", "components"]
-- !private ["s8SequenceP", "contains"]
-- ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s13SignedIntegerP", "init"]
+- !private ["ST", "components"]
+- !private ["ST", "contains"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
-- !private ["s10StrideableP", "init"]
+- !private ["Sx", "init"]
 - !private ["SS", "components"]
 - !private ["SS", "contains"]
 - ["SS", "init"]
-- !private ["s14StringProtocolP", "components"]
-- !private ["s14StringProtocolP", "contains"]
-- ["s14StringProtocolP", "init"]
+- ["SS", "init"]
+- !private ["Sy", "components"]
+- !private ["Sy", "contains"]
+- ["Sy", "init"]
+- ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "components"]
 - !private ["s16TextOutputStreamP", "contains"]
+- ["s16TextOutputStreamP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "components"]
 - !private ["s20TextOutputStreamableP", "contains"]
 - ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "components"]
 - !private ["9Alamofire14URLConvertibleP", "contains"]
 - ["9Alamofire14URLConvertibleP", "init"]
-- !private ["s14_ArrayProtocolP", "subscript"]
+- ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "components"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "contains"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "components"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "contains"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "components"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "contains"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "components"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "contains"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "components"]
 - !private ["s33_ExpressibleByStringInterpolationP", "contains"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "components"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
@@ -218,9 +252,11 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "components"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "components"]
 - !private ["s16_SwiftStringViewP", "contains"]
+- ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 - !private ["13PRMacControls6cDatesC", "Date"]
 - !private ["13PRMacControls6cDatesC", "DateFormatter"]
@@ -231,7 +267,6 @@ depends-member:
 - !private ["13PRMacControls6cDatesC", "cDates"]
 - ["13PRMacControls6cDatesC", "dateDuJour"]
 - ["13PRMacControls6cDatesC", "decrementerMois"]
-- ["13PRMacControls6cDatesC", "deinit"]
 - ["13PRMacControls6cDatesC", "dictMois"]
 - ["13PRMacControls6cDatesC", "dictMoisAbrege"]
 - ["13PRMacControls6cDatesC", "diffmois"]
@@ -247,21 +282,22 @@ depends-member:
 - ["13PRMacControls6cDatesC", "toSsaisie"]
 depends-nominal:
 - !private "Sa"
-- "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
+- !private "s13ArrayProtocolP"
+- "SK"
+- !private "Sz"
 - !private "Sb"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation4DateV"
-- !private "So13DateFormatterC"
-- "s9DecodableP"
-- "s9EncodableP"
-- "s9EquatableP"
+- !private "So15NSDateFormatterC"
+- "Se"
+- "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -269,37 +305,36 @@ depends-nominal:
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "So9FormatterC"
-- "s8HashableP"
+- !private "So11NSFormatterC"
+- "SH"
 - !private "Si"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So19NSPasteboardReadingP"
 - !private "So19NSPasteboardWritingP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- !private "s7NumericP"
-- !private "s22RandomAccessCollectionP"
-- "s26RangeReplaceableCollectionP"
+- !private "Sj"
+- !private "Sk"
+- "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
-- "s8SequenceP"
-- !private "s13SignedIntegerP"
+- "ST"
+- !private "SZ"
 - !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "Sx"
 - "SS"
-- "s14StringProtocolP"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "9Alamofire14URLConvertibleP"
-- !private "s14_ArrayProtocolP"
 - !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -338,15 +373,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "79b08b72a00e1c123efa8530dd442f92"

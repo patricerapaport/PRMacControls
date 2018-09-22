@@ -51,24 +51,24 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "enregistrer"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "selected"]
-- !private ["s9EquatableP", "Ajouter"]
-- !private ["s9EquatableP", "Annuler"]
-- ["s9EquatableP", ""]
-- ["s9EquatableP", "afterSend"]
-- !private ["s9EquatableP", "chargements"]
-- !private ["s9EquatableP", "closeWindow"]
-- !private ["s9EquatableP", "enregistrer"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "selected"]
-- !private ["s8HashableP", "Ajouter"]
-- !private ["s8HashableP", "Annuler"]
-- ["s8HashableP", ""]
-- ["s8HashableP", "afterSend"]
-- !private ["s8HashableP", "chargements"]
-- !private ["s8HashableP", "closeWindow"]
-- !private ["s8HashableP", "enregistrer"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "selected"]
+- !private ["SQ", "Ajouter"]
+- !private ["SQ", "Annuler"]
+- ["SQ", ""]
+- ["SQ", "afterSend"]
+- !private ["SQ", "chargements"]
+- !private ["SQ", "closeWindow"]
+- !private ["SQ", "enregistrer"]
+- !private ["SQ", "init"]
+- !private ["SQ", "selected"]
+- !private ["SH", "Ajouter"]
+- !private ["SH", "Annuler"]
+- ["SH", ""]
+- ["SH", "afterSend"]
+- !private ["SH", "chargements"]
+- !private ["SH", "closeWindow"]
+- !private ["SH", "enregistrer"]
+- !private ["SH", "init"]
+- !private ["SH", "selected"]
 - !private ["So8NSCodingP", "Ajouter"]
 - !private ["So8NSCodingP", "Annuler"]
 - ["So8NSCodingP", ""]
@@ -123,15 +123,15 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "selected"]
 - ["So8NSObjectC", "transformDonnees"]
-- !private ["So16NSObjectProtocolP", "Ajouter"]
-- !private ["So16NSObjectProtocolP", "Annuler"]
-- ["So16NSObjectProtocolP", ""]
-- ["So16NSObjectProtocolP", "afterSend"]
-- !private ["So16NSObjectProtocolP", "chargements"]
-- !private ["So16NSObjectProtocolP", "closeWindow"]
-- !private ["So16NSObjectProtocolP", "enregistrer"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "selected"]
+- !private ["So8NSObjectP", "Ajouter"]
+- !private ["So8NSObjectP", "Annuler"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "afterSend"]
+- !private ["So8NSObjectP", "chargements"]
+- !private ["So8NSObjectP", "closeWindow"]
+- !private ["So8NSObjectP", "enregistrer"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "selected"]
 - !private ["So17NSPopoverDelegateP", "Ajouter"]
 - !private ["So17NSPopoverDelegateP", "Annuler"]
 - ["So17NSPopoverDelegateP", ""]
@@ -168,6 +168,15 @@ depends-member:
 - !private ["So17NSSeguePerformingP", "enregistrer"]
 - !private ["So17NSSeguePerformingP", "init"]
 - !private ["So17NSSeguePerformingP", "selected"]
+- !private ["So30NSStandardKeyBindingRespondingP", "Ajouter"]
+- !private ["So30NSStandardKeyBindingRespondingP", "Annuler"]
+- ["So30NSStandardKeyBindingRespondingP", ""]
+- ["So30NSStandardKeyBindingRespondingP", "afterSend"]
+- !private ["So30NSStandardKeyBindingRespondingP", "chargements"]
+- !private ["So30NSStandardKeyBindingRespondingP", "closeWindow"]
+- !private ["So30NSStandardKeyBindingRespondingP", "enregistrer"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "selected"]
 - !private ["So17NSTabViewDelegateP", "Ajouter"]
 - !private ["So17NSTabViewDelegateP", "Annuler"]
 - ["So17NSTabViewDelegateP", ""]
@@ -213,6 +222,15 @@ depends-member:
 - !private ["So18NSTouchBarProviderP", "enregistrer"]
 - !private ["So18NSTouchBarProviderP", "init"]
 - !private ["So18NSTouchBarProviderP", "selected"]
+- !private ["So23NSUserActivityRestoringP", "Ajouter"]
+- !private ["So23NSUserActivityRestoringP", "Annuler"]
+- ["So23NSUserActivityRestoringP", ""]
+- ["So23NSUserActivityRestoringP", "afterSend"]
+- !private ["So23NSUserActivityRestoringP", "chargements"]
+- !private ["So23NSUserActivityRestoringP", "closeWindow"]
+- !private ["So23NSUserActivityRestoringP", "enregistrer"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "selected"]
 - ["So18NSWindowControllerC", "Ajouter"]
 - ["So18NSWindowControllerC", "Annuler"]
 - ["So18NSWindowControllerC", "Bool"]
@@ -312,22 +330,24 @@ depends-nominal:
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
-- "s9EquatableP"
-- "s8HashableP"
+- "SQ"
+- "SH"
 - "So8NSCodingP"
 - "So20NSComboBoxDataSourceP"
 - "So18NSComboBoxDelegateP"
 - "So28NSControlTextEditingDelegateP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So17NSPopoverDelegateP"
 - "So11NSResponderC"
 - "So17NSSeguePerformingP"
+- "So30NSStandardKeyBindingRespondingP"
 - "So17NSTabViewDelegateP"
 - "So21NSTableViewDataSourceP"
 - "So19NSTableViewDelegateP"
 - "So19NSTextFieldDelegateP"
 - "So18NSTouchBarProviderP"
+- "So23NSUserActivityRestoringP"
 - "So18NSWindowControllerC"
 - "So16NSWindowDelegateP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -360,15 +380,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "8cf79dfb3dd40d35ced696044f35cefd"

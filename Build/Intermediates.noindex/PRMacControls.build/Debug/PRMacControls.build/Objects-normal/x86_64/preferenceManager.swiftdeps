@@ -12,7 +12,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - "=="
 - "CastingPrecedence"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "NSRect"
 - "PreferenceManager"
 - "String"
@@ -32,16 +34,21 @@ depends-top-level:
 - !private "webServiceLocal"
 - !private "~="
 depends-member:
-- ["s23BidirectionalCollectionP", "init"]
+- ["SK", "init"]
+- ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "object"]
 - !private ["s7CVarArgP", "removeObject"]
 - !private ["s7CVarArgP", "set"]
 - ["s7CVarArgP", "standard"]
-- ["s10CollectionP", "init"]
-- ["s10ComparableP", "init"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "object"]
 - !private ["s28CustomDebugStringConvertibleP", "removeObject"]
@@ -49,66 +56,80 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "object"]
 - !private ["s23CustomStringConvertibleP", "removeObject"]
 - !private ["s23CustomStringConvertibleP", "set"]
 - ["s23CustomStringConvertibleP", "standard"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- ["s9DecodableP", "init"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- ["s9EncodableP", "init"]
-- ["s9EquatableP", "RawValue"]
-- ["s9EquatableP", ""]
-- ["s9EquatableP", "_Default_RawValue"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- ["s9EquatableP", "hashValue"]
-- !private ["s9EquatableP", "inconnu"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "local"]
-- !private ["s9EquatableP", "object"]
-- ["s9EquatableP", "rawValue"]
-- !private ["s9EquatableP", "removeObject"]
-- !private ["s9EquatableP", "set"]
-- ["s9EquatableP", "standard"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- ["SE", "init"]
+- ["SE", "init"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "inconnu"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "local"]
+- !private ["SQ", "object"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "removeObject"]
+- !private ["SQ", "set"]
+- ["SQ", "standard"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s8HashableP", "RawValue"]
-- ["s8HashableP", ""]
-- ["s8HashableP", "_Default_RawValue"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- ["s8HashableP", "hashValue"]
-- !private ["s8HashableP", "inconnu"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "local"]
-- !private ["s8HashableP", "object"]
-- ["s8HashableP", "rawValue"]
-- !private ["s8HashableP", "removeObject"]
-- !private ["s8HashableP", "set"]
-- ["s8HashableP", "standard"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "inconnu"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "local"]
+- !private ["SH", "object"]
+- ["SH", "rawValue"]
+- !private ["SH", "removeObject"]
+- !private ["SH", "set"]
+- ["SH", "standard"]
+- !private ["s6HasherV", "combine"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
 - !private ["So8NSObjectC", "object"]
 - !private ["So8NSObjectC", "removeObject"]
 - !private ["So8NSObjectC", "set"]
 - ["So8NSObjectC", "standard"]
-- !private ["So16NSObjectProtocolP", "object"]
-- !private ["So16NSObjectProtocolP", "removeObject"]
-- !private ["So16NSObjectProtocolP", "set"]
-- ["So16NSObjectProtocolP", "standard"]
+- !private ["So8NSObjectP", "object"]
+- !private ["So8NSObjectP", "removeObject"]
+- !private ["So8NSObjectP", "set"]
+- ["So8NSObjectP", "standard"]
 - ["13PRMacControls17PreferenceManagerC", "Int"]
 - ["13PRMacControls17PreferenceManagerC", "NSRect"]
 - ["13PRMacControls17PreferenceManagerC", "String"]
 - ["13PRMacControls17PreferenceManagerC", "UserDefaults"]
 - ["13PRMacControls17PreferenceManagerC", "adrdistant"]
 - ["13PRMacControls17PreferenceManagerC", "adrlocal"]
-- ["13PRMacControls17PreferenceManagerC", "deinit"]
 - ["13PRMacControls17PreferenceManagerC", "dirdistant"]
 - ["13PRMacControls17PreferenceManagerC", "dirlocal"]
 - ["13PRMacControls17PreferenceManagerC", "init"]
@@ -138,30 +159,43 @@ depends-member:
 - ["13PRMacControls17PreferenceManagerC", "wsService"]
 - ["13PRMacControls17PreferenceManagerC", "wsSvceDistant"]
 - ["13PRMacControls17PreferenceManagerC", "wsSvceLocal"]
-- ["s26RangeReplaceableCollectionP", "init"]
-- ["s16RawRepresentableP", "RawValue"]
-- ["s16RawRepresentableP", ""]
-- ["s16RawRepresentableP", "_Default_RawValue"]
-- ["s16RawRepresentableP", "hashValue"]
-- !private ["s16RawRepresentableP", "inconnu"]
-- ["s16RawRepresentableP", "init"]
-- !private ["s16RawRepresentableP", "local"]
-- ["s16RawRepresentableP", "rawValue"]
-- ["s8SequenceP", "init"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "inconnu"]
+- ["SY", "init"]
+- !private ["SY", "local"]
+- ["SY", "rawValue"]
+- ["ST", "init"]
+- ["ST", "init"]
 - ["SS", "init"]
-- ["s14StringProtocolP", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - ["9Alamofire14URLConvertibleP", "init"]
-- !private ["So12UserDefaultsC", "object"]
-- !private ["So12UserDefaultsC", "removeObject"]
-- !private ["So12UserDefaultsC", "set"]
-- ["So12UserDefaultsC", "standard"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["So14NSUserDefaultsC", "object"]
+- !private ["So14NSUserDefaultsC", "removeObject"]
+- !private ["So14NSUserDefaultsC", "set"]
+- ["So14NSUserDefaultsC", "standard"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObject"]
@@ -169,48 +203,52 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 - ["13PRMacControls10serverTypeO", "RawValue"]
 - ["13PRMacControls10serverTypeO", "_Default_RawValue"]
 - ["13PRMacControls10serverTypeO", "deinit"]
 - ["13PRMacControls10serverTypeO", "distant"]
+- ["13PRMacControls10serverTypeO", "hash"]
 - ["13PRMacControls10serverTypeO", "hashValue"]
 - ["13PRMacControls10serverTypeO", "inconnu"]
 - ["13PRMacControls10serverTypeO", "init"]
 - ["13PRMacControls10serverTypeO", "local"]
 - ["13PRMacControls10serverTypeO", "rawValue"]
 depends-nominal:
-- "s23BidirectionalCollectionP"
+- "SK"
 - !private "Sb"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "s9DecodableP"
-- "s9EncodableP"
-- "s9EquatableP"
+- "Se"
+- "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
+- !private "s6HasherV"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "13PRMacControls17PreferenceManagerC"
-- "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
-- "s8SequenceP"
+- "Sm"
+- "SY"
+- "ST"
 - "SS"
-- "s14StringProtocolP"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "9Alamofire14URLConvertibleP"
-- "So12UserDefaultsC"
+- "So14NSUserDefaultsC"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
@@ -245,15 +283,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "ae1fa64793b8e7c64945df6dd6a029f1"

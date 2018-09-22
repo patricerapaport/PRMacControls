@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules'
+    'name': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules"
     'contents': [{
       'type': 'file',
-      'name': 'module.modulemap',
-      'external-contents': '/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/Pods.build/Debug/Alamofire.build/unextended-module.modulemap',
+      'name': "module.modulemap",
+      'external-contents': "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/Pods.build/Debug/Alamofire.build/unextended-module.modulemap",
     }]
   }]
 }

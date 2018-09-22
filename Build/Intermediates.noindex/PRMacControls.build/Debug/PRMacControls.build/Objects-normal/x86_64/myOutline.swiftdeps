@@ -21,12 +21,14 @@ depends-member:
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "action"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "nom"]
 - !private ["s7CVarArgP", "perform"]
 - !private ["s7CVarArgP", "selectors"]
 - !private ["s7CVarArgP", "target"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "action"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "nom"]
 - !private ["s28CustomDebugStringConvertibleP", "perform"]
@@ -38,52 +40,63 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "action"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "nom"]
 - !private ["s23CustomStringConvertibleP", "perform"]
 - !private ["s23CustomStringConvertibleP", "selectors"]
 - !private ["s23CustomStringConvertibleP", "target"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "action"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "nom"]
-- !private ["s9EquatableP", "perform"]
-- !private ["s9EquatableP", "selectors"]
-- !private ["s9EquatableP", "target"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "action"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "nom"]
+- !private ["SQ", "perform"]
+- !private ["SQ", "selectors"]
+- !private ["SQ", "target"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "action"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "nom"]
-- !private ["s8HashableP", "perform"]
-- !private ["s8HashableP", "selectors"]
-- !private ["s8HashableP", "target"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "action"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "nom"]
+- !private ["SH", "perform"]
+- !private ["SH", "selectors"]
+- !private ["SH", "target"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- ["So15NSAccessibilityP", ""]
-- !private ["So15NSAccessibilityP", "init"]
-- !private ["So15NSAccessibilityP", "selectors"]
-- ["So30NSAccessibilityElementProtocolP", ""]
-- !private ["So30NSAccessibilityElementProtocolP", "init"]
-- !private ["So30NSAccessibilityElementProtocolP", "selectors"]
+- ["So22NSAccessibilityElementP", ""]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "init"]
+- !private ["So22NSAccessibilityElementP", "selectors"]
 - ["So20NSAccessibilityGroupP", ""]
+- !private ["So20NSAccessibilityGroupP", "init"]
 - !private ["So20NSAccessibilityGroupP", "init"]
 - !private ["So20NSAccessibilityGroupP", "selectors"]
 - ["So22NSAccessibilityOutlineP", ""]
 - !private ["So22NSAccessibilityOutlineP", "init"]
+- !private ["So22NSAccessibilityOutlineP", "init"]
 - !private ["So22NSAccessibilityOutlineP", "selectors"]
+- ["So15NSAccessibilityP", ""]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "init"]
+- !private ["So15NSAccessibilityP", "selectors"]
 - ["So20NSAccessibilityTableP", ""]
+- !private ["So20NSAccessibilityTableP", "init"]
 - !private ["So20NSAccessibilityTableP", "init"]
 - !private ["So20NSAccessibilityTableP", "selectors"]
 - ["So29NSAnimatablePropertyContainerP", ""]
 - !private ["So29NSAnimatablePropertyContainerP", "init"]
+- !private ["So29NSAnimatablePropertyContainerP", "init"]
 - !private ["So29NSAnimatablePropertyContainerP", "selectors"]
 - ["So25NSAppearanceCustomizationP", ""]
 - !private ["So25NSAppearanceCustomizationP", "init"]
+- !private ["So25NSAppearanceCustomizationP", "init"]
 - !private ["So25NSAppearanceCustomizationP", "selectors"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "perform"]
 - !private ["So8NSCodingP", "selectors"]
@@ -95,14 +108,17 @@ depends-member:
 - ["So9NSControlC", "datasource"]
 - ["So9NSControlC", "hasSelector"]
 - ["So9NSControlC", "init"]
+- !private ["So9NSControlC", "init"]
 - ["So9NSControlC", "nomSelectors"]
 - ["So9NSControlC", "performAction"]
 - ["So9NSControlC", "selectors"]
 - !private ["So28NSControlTextEditingDelegateP", "perform"]
 - ["So21NSDraggingDestinationP", ""]
 - !private ["So21NSDraggingDestinationP", "init"]
+- !private ["So21NSDraggingDestinationP", "init"]
 - !private ["So21NSDraggingDestinationP", "selectors"]
 - ["So16NSDraggingSourceP", ""]
+- !private ["So16NSDraggingSourceP", "init"]
 - !private ["So16NSDraggingSourceP", "init"]
 - !private ["So16NSDraggingSourceP", "selectors"]
 - ["So8NSObjectC", "Bool"]
@@ -112,19 +128,21 @@ depends-member:
 - ["So8NSObjectC", "datasource"]
 - ["So8NSObjectC", "hasSelector"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "nom"]
 - ["So8NSObjectC", "nomSelectors"]
 - !private ["So8NSObjectC", "perform"]
 - ["So8NSObjectC", "performAction"]
 - ["So8NSObjectC", "selectors"]
 - !private ["So8NSObjectC", "target"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "action"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "nom"]
-- !private ["So16NSObjectProtocolP", "perform"]
-- !private ["So16NSObjectProtocolP", "selectors"]
-- !private ["So16NSObjectProtocolP", "target"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "action"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "nom"]
+- !private ["So8NSObjectP", "perform"]
+- !private ["So8NSObjectP", "selectors"]
+- !private ["So8NSObjectP", "target"]
 - ["So13NSOutlineViewC", "Bool"]
 - ["So13NSOutlineViewC", ""]
 - ["So13NSOutlineViewC", "cmySelector"]
@@ -132,6 +150,7 @@ depends-member:
 - ["So13NSOutlineViewC", "datasource"]
 - ["So13NSOutlineViewC", "hasSelector"]
 - ["So13NSOutlineViewC", "init"]
+- !private ["So13NSOutlineViewC", "init"]
 - ["So13NSOutlineViewC", "nomSelectors"]
 - ["So13NSOutlineViewC", "performAction"]
 - ["So13NSOutlineViewC", "selectors"]
@@ -142,11 +161,17 @@ depends-member:
 - ["So11NSResponderC", "datasource"]
 - ["So11NSResponderC", "hasSelector"]
 - ["So11NSResponderC", "init"]
+- !private ["So11NSResponderC", "init"]
 - ["So11NSResponderC", "nomSelectors"]
 - !private ["So11NSResponderC", "perform"]
 - ["So11NSResponderC", "performAction"]
 - ["So11NSResponderC", "selectors"]
 - !private ["So17NSSeguePerformingP", "perform"]
+- ["So30NSStandardKeyBindingRespondingP", ""]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "init"]
+- !private ["So30NSStandardKeyBindingRespondingP", "perform"]
+- !private ["So30NSStandardKeyBindingRespondingP", "selectors"]
 - !private ["So17NSTabViewDelegateP", "perform"]
 - ["So11NSTableViewC", "Bool"]
 - ["So11NSTableViewC", "cmySelector"]
@@ -154,6 +179,7 @@ depends-member:
 - ["So11NSTableViewC", "datasource"]
 - ["So11NSTableViewC", "hasSelector"]
 - ["So11NSTableViewC", "init"]
+- !private ["So11NSTableViewC", "init"]
 - ["So11NSTableViewC", "nomSelectors"]
 - ["So11NSTableViewC", "performAction"]
 - ["So11NSTableViewC", "selectors"]
@@ -161,19 +187,29 @@ depends-member:
 - !private ["So19NSTableViewDelegateP", "perform"]
 - ["So14NSTextDelegateP", ""]
 - !private ["So14NSTextDelegateP", "init"]
+- !private ["So14NSTextDelegateP", "init"]
 - !private ["So14NSTextDelegateP", "selectors"]
 - !private ["So19NSTextFieldDelegateP", "perform"]
 - ["So18NSTextViewDelegateP", ""]
 - !private ["So18NSTextViewDelegateP", "init"]
+- !private ["So18NSTextViewDelegateP", "init"]
 - !private ["So18NSTextViewDelegateP", "selectors"]
 - ["So18NSTouchBarProviderP", ""]
 - !private ["So18NSTouchBarProviderP", "init"]
+- !private ["So18NSTouchBarProviderP", "init"]
 - !private ["So18NSTouchBarProviderP", "perform"]
 - !private ["So18NSTouchBarProviderP", "selectors"]
+- ["So23NSUserActivityRestoringP", ""]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "perform"]
+- !private ["So23NSUserActivityRestoringP", "selectors"]
 - ["So33NSUserInterfaceItemIdentificationP", ""]
+- !private ["So33NSUserInterfaceItemIdentificationP", "init"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "init"]
 - !private ["So33NSUserInterfaceItemIdentificationP", "selectors"]
 - ["So26NSUserInterfaceValidationsP", ""]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
 - !private ["So26NSUserInterfaceValidationsP", "init"]
 - !private ["So26NSUserInterfaceValidationsP", "selectors"]
 - ["So6NSViewC", "Bool"]
@@ -182,6 +218,7 @@ depends-member:
 - ["So6NSViewC", "datasource"]
 - ["So6NSViewC", "hasSelector"]
 - ["So6NSViewC", "init"]
+- !private ["So6NSViewC", "init"]
 - ["So6NSViewC", "nomSelectors"]
 - ["So6NSViewC", "performAction"]
 - ["So6NSViewC", "selectors"]
@@ -189,10 +226,12 @@ depends-member:
 - !private ["So16NSWindowDelegateP", "perform"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "selectors"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "action"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "nom"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
@@ -203,7 +242,6 @@ depends-member:
 - ["13PRMacControls8cOutlineC", "cmySelector"]
 - ["13PRMacControls8cOutlineC", "crowsTable"]
 - ["13PRMacControls8cOutlineC", "datasource"]
-- ["13PRMacControls8cOutlineC", "deinit"]
 - ["13PRMacControls8cOutlineC", "hasSelector"]
 - ["13PRMacControls8cOutlineC", "init"]
 - ["13PRMacControls8cOutlineC", "nomSelectors"]
@@ -224,16 +262,16 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
-- "So15NSAccessibilityP"
-- "So30NSAccessibilityElementProtocolP"
+- "So22NSAccessibilityElementP"
 - "So20NSAccessibilityGroupP"
 - "So22NSAccessibilityOutlineP"
+- "So15NSAccessibilityP"
 - "So20NSAccessibilityTableP"
 - "So29NSAnimatablePropertyContainerP"
 - "So25NSAppearanceCustomizationP"
@@ -245,11 +283,12 @@ depends-nominal:
 - "So21NSDraggingDestinationP"
 - "So16NSDraggingSourceP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So13NSOutlineViewC"
 - !private "So17NSPopoverDelegateP"
 - "So11NSResponderC"
 - !private "So17NSSeguePerformingP"
+- "So30NSStandardKeyBindingRespondingP"
 - !private "So17NSTabViewDelegateP"
 - "So11NSTableViewC"
 - !private "So21NSTableViewDataSourceP"
@@ -258,6 +297,7 @@ depends-nominal:
 - !private "So19NSTextFieldDelegateP"
 - "So18NSTextViewDelegateP"
 - "So18NSTouchBarProviderP"
+- "So23NSUserActivityRestoringP"
 - "So33NSUserInterfaceItemIdentificationP"
 - "So26NSUserInterfaceValidationsP"
 - "So6NSViewC"
@@ -297,15 +337,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "6e526a1bcbcbc6ab8c4222a177e8a299"

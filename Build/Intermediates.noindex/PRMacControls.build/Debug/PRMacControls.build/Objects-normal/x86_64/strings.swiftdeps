@@ -18,18 +18,20 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - "Float"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - !private "NSString"
 - "String"
 depends-member:
-- !private ["s23BidirectionalCollectionP", "Int"]
-- !private ["s23BidirectionalCollectionP", "String"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "index"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "startIndex"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
-- !private ["s13BinaryIntegerP", "init"]
+- !private ["SK", "Int"]
+- !private ["SK", "String"]
+- !private ["SK", "count"]
+- !private ["SK", "index"]
+- !private ["SK", "init"]
+- !private ["SK", "startIndex"]
+- !private ["SK", "subscript"]
+- !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "String"]
@@ -41,20 +43,20 @@ depends-member:
 - !private ["s7CVarArgP", "intValue"]
 - !private ["s7CVarArgP", "startIndex"]
 - !private ["s7CVarArgP", "subscript"]
-- !private ["s10CollectionP", "Int"]
-- !private ["s10CollectionP", "String"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "index"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "startIndex"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "Int"]
-- !private ["s10ComparableP", "String"]
-- !private ["s10ComparableP", "count"]
-- !private ["s10ComparableP", "index"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "startIndex"]
-- !private ["s10ComparableP", "subscript"]
+- !private ["Sl", "Int"]
+- !private ["Sl", "String"]
+- !private ["Sl", "count"]
+- !private ["Sl", "index"]
+- !private ["Sl", "init"]
+- !private ["Sl", "startIndex"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "Int"]
+- !private ["SL", "String"]
+- !private ["SL", "count"]
+- !private ["SL", "index"]
+- !private ["SL", "init"]
+- !private ["SL", "startIndex"]
+- !private ["SL", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
@@ -92,32 +94,32 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "intValue"]
 - !private ["s23CustomStringConvertibleP", "startIndex"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
-- !private ["s9DecodableP", "Int"]
-- !private ["s9DecodableP", "String"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "index"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "startIndex"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9EncodableP", "Int"]
-- !private ["s9EncodableP", "String"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "index"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "startIndex"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "Int"]
-- !private ["s9EquatableP", "String"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "floatValue"]
-- !private ["s9EquatableP", "index"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "intValue"]
-- !private ["s9EquatableP", "startIndex"]
-- !private ["s9EquatableP", "subscript"]
+- !private ["Se", "Int"]
+- !private ["Se", "String"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "count"]
+- !private ["Se", "index"]
+- !private ["Se", "init"]
+- !private ["Se", "startIndex"]
+- !private ["Se", "subscript"]
+- !private ["SE", "Int"]
+- !private ["SE", "String"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "count"]
+- !private ["SE", "index"]
+- !private ["SE", "init"]
+- !private ["SE", "startIndex"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "Int"]
+- !private ["SQ", "String"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "count"]
+- !private ["SQ", "floatValue"]
+- !private ["SQ", "index"]
+- !private ["SQ", "init"]
+- !private ["SQ", "intValue"]
+- !private ["SQ", "startIndex"]
+- !private ["SQ", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Int"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "String"]
@@ -148,16 +150,16 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "startIndex"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
 - !private ["s17FixedWidthIntegerP", "init"]
-- !private ["s8HashableP", "Int"]
-- !private ["s8HashableP", "String"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "count"]
-- !private ["s8HashableP", "floatValue"]
-- !private ["s8HashableP", "index"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "intValue"]
-- !private ["s8HashableP", "startIndex"]
-- !private ["s8HashableP", "subscript"]
+- !private ["SH", "Int"]
+- !private ["SH", "String"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "count"]
+- !private ["SH", "floatValue"]
+- !private ["SH", "index"]
+- !private ["SH", "init"]
+- !private ["SH", "intValue"]
+- !private ["SH", "startIndex"]
+- !private ["SH", "subscript"]
 - !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "Int"]
 - !private ["s25LosslessStringConvertibleP", "String"]
@@ -210,12 +212,12 @@ depends-member:
 - !private ["So8NSObjectC", "intValue"]
 - !private ["So8NSObjectC", "startIndex"]
 - !private ["So8NSObjectC", "subscript"]
-- !private ["So16NSObjectProtocolP", "count"]
-- !private ["So16NSObjectProtocolP", "floatValue"]
-- !private ["So16NSObjectProtocolP", "index"]
-- !private ["So16NSObjectProtocolP", "intValue"]
-- !private ["So16NSObjectProtocolP", "startIndex"]
-- !private ["So16NSObjectProtocolP", "subscript"]
+- !private ["So8NSObjectP", "count"]
+- !private ["So8NSObjectP", "floatValue"]
+- !private ["So8NSObjectP", "index"]
+- !private ["So8NSObjectP", "intValue"]
+- !private ["So8NSObjectP", "startIndex"]
+- !private ["So8NSObjectP", "subscript"]
 - !private ["So19NSPasteboardReadingP", "count"]
 - !private ["So19NSPasteboardReadingP", "floatValue"]
 - !private ["So19NSPasteboardReadingP", "index"]
@@ -240,24 +242,24 @@ depends-member:
 - !private ["So8NSStringC", "intValue"]
 - !private ["So8NSStringC", "startIndex"]
 - !private ["So8NSStringC", "subscript"]
-- !private ["s7NumericP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "Int"]
-- !private ["s26RangeReplaceableCollectionP", "String"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "index"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "startIndex"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s8SequenceP", "Int"]
-- !private ["s8SequenceP", "String"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "index"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "startIndex"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s13SignedIntegerP", "init"]
+- !private ["Sj", "init"]
+- !private ["Sm", "Int"]
+- !private ["Sm", "String"]
+- !private ["Sm", "count"]
+- !private ["Sm", "index"]
+- !private ["Sm", "init"]
+- !private ["Sm", "startIndex"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "Int"]
+- !private ["ST", "String"]
+- !private ["ST", "count"]
+- !private ["ST", "index"]
+- !private ["ST", "init"]
+- !private ["ST", "startIndex"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
-- !private ["s10StrideableP", "init"]
+- !private ["Sx", "init"]
 - ["SS", "Float"]
 - ["SS", "Int"]
 - !private ["SS", "NSString"]
@@ -270,13 +272,13 @@ depends-member:
 - ["SS", "substr"]
 - ["SS", "toFloat"]
 - ["SS", "toInt"]
-- !private ["s14StringProtocolP", "Int"]
-- !private ["s14StringProtocolP", "String"]
-- !private ["s14StringProtocolP", "count"]
-- !private ["s14StringProtocolP", "index"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["s14StringProtocolP", "startIndex"]
-- !private ["s14StringProtocolP", "subscript"]
+- !private ["Sy", "Int"]
+- !private ["Sy", "String"]
+- !private ["Sy", "count"]
+- !private ["Sy", "index"]
+- !private ["Sy", "init"]
+- !private ["Sy", "startIndex"]
+- !private ["Sy", "subscript"]
 - !private ["s16TextOutputStreamP", "Int"]
 - !private ["s16TextOutputStreamP", "String"]
 - !private ["s16TextOutputStreamP", "count"]
@@ -339,6 +341,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "floatValue"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "intValue"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "startIndex"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
@@ -364,26 +367,26 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "startIndex"]
 - !private ["s16_SwiftStringViewP", "subscript"]
 depends-nominal:
-- !private "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
+- !private "SK"
+- !private "Sz"
 - !private "Sb"
 - !private "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "s8HashableP"
+- !private "SH"
 - !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -393,19 +396,19 @@ depends-nominal:
 - !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So19NSPasteboardReadingP"
 - !private "So19NSPasteboardWritingP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- !private "s7NumericP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s8SequenceP"
-- !private "s13SignedIntegerP"
+- !private "Sj"
+- !private "Sm"
+- !private "ST"
+- !private "SZ"
 - !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "Sx"
 - "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "9Alamofire14URLConvertibleP"
@@ -445,15 +448,17 @@ depends-external:
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Intermediates.noindex/PRMacControls.build/Debug/PRMacControls.build/unextended-module.modulemap"
 - "/Users/patricerapaport/Desktop/swift/PRMacControls/Build/Products/Debug/Alamofire/Alamofire.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "b99df44b83f38b76b3b1239d418e28f0"
