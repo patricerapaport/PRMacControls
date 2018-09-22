@@ -41,7 +41,6 @@
 		A6E81A6F210D93D700B9139E /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A6E210D93D700B9139E /* user.swift */; };
 		A6E81A71210D942400B9139E /* preferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A70210D942400B9139E /* preferenceManager.swift */; };
 		A6E81A74210D955500B9139E /* popoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A72210D955400B9139E /* popoverController.swift */; };
-		A6E81A75210D955500B9139E /* popoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E81A73210D955400B9139E /* popoverController.xib */; };
 		A6E81A78210D95C400B9139E /* documentPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A76210D95C400B9139E /* documentPopoverController.swift */; };
 		A6E81A79210D95C400B9139E /* documentPopoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E81A77210D95C400B9139E /* documentPopoverController.xib */; };
 		A6E81A7B210D963000B9139E /* myWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81A7A210D963000B9139E /* myWindow.swift */; };
@@ -321,7 +320,6 @@
 			files = (
 				A6E81A79210D95C400B9139E /* documentPopoverController.xib in Resources */,
 				A67394C92111766600339E80 /* Assets.xcassets in Resources */,
-				A6E81A75210D955500B9139E /* popoverController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
